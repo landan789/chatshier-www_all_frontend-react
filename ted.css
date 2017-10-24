@@ -1,0 +1,2208 @@
+#answerQuestion4,#answerQuestion5,#answerQuestion6,#answerQuestion7,#answerQuestion8,#answerQuestion9,#answerQuestion10,#answerQuestion11,#answerQuestion12,#answerQuestion13,#answerQuestion14,#answerQuestion15{
+  display:none
+}
+
+/*talbe trial begins*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    padding: 8px;
+}
+
+/*Ted's css*/
+#Indexslogan-header {
+  font-size: 51px;
+  text-align: left;
+}
+
+/*Ted's css*/
+#pricingpack2-caption, #contact-caption {
+  font-size: 51px;
+  text-align: center;
+}
+
+#price-caption {
+  font-size: 51px;
+  text-align: center;
+}
+/*Ted's css*/
+
+
+/*Ted's css*/
+
+/*table trial ends*/
+
+/*lance table*/
+/*For article price-details*/
+.price-details , .M-price-details {
+  padding: 20px 0;
+  height:1276px
+}
+.price-holder {
+  margin: 0 0 147px;
+  display: block;
+}
+.price-table {
+  text-align: center;
+  /*margin: 0 0 20px;*/
+  overflow:hidden;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.price-table th {
+  font-size: 28px;
+  line-height: 40px;
+  padding: 15px 10px;
+  vertical-align: bottom;
+  font-weight: 700;
+  border-bottom: solid 4px #33CCFF;
+  text-align: center;
+  height: 93px;
+}
+.price-table th:first-child {
+  text-align: left;
+}
+.price-table th .img {
+  display: block;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+.pricr-table tr {
+  vertical-align: middle;
+}
+.price-table td {
+  font-size: 20px;
+  line-height: 24px;
+  vertical-align: middle;
+  border-bottom: solid 2px #33CCFF;
+  padding: 20px 10px;
+  height: 93px;
+}
+.price-table td:first-child {
+  text-align: left;
+}
+.price-table tbody tr:last-child td:first-child {
+  position: relative;
+}
+.price-table tbody tr:last-child td:first-child:after {
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: -9999px;
+    margin: 0 auto;
+    position: absolute;
+    right: -9999px;
+    border: double 4px #33CCFF;
+}
+.price-table tbody:last-child tr:last-child td:first-child:after {
+  border: 0;
+}
+.price-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.price-table tbody:last-child tr:last-child {
+  border-bottom: 4px solid #33CCFF;
+}
+.price-note {
+  margin: 0 0 25px 0;
+  list-style-type: none;
+}
+.price-note > li {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+.btn-holder {
+  text-align: center;
+}
+.btn-style2 {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  background: #33CCFF;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  transition: 0.4s ease;
+}
+.btn-style2:visited {
+  background: #33CCFF;
+  color: white;
+  text-decoration: none;
+}
+.btn-style2:hover {
+  background-color: #1677CB;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+/*trial*/
+.overlay {
+   background:transparent;
+   position:relative;
+   width:100%;
+   height:480px; /* your iframe height */
+   top:480px;  /* your iframe height */
+   margin-top:-480px;  /* your iframe height */
+}
+
+/*============================================General====================================*/
+body{
+  font-family: Microsoft JhengHei;
+}
+p {
+  font-size: 24px;
+}
+/*navbar*/
+.navbar-inverse{
+border-color:white;
+background-color:white
+}
+.navbar-toggle{
+border-color:white;
+background-color:#ddd
+}
+.navbar-brand img{
+width:80px
+}
+#myNavbar{
+margin-top:35px
+}
+.navbar-nav li a strong{
+  color:#33ccff
+}
+.navbar-inverse .navbar-nav>li>a {
+font-size: 24px;
+}
+.navbar-inverse .navbar-toggle{
+  border-color:white;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+  border-color:#33ccff
+}
+/*icon on the right*/
+#fbicon{
+  position:fixed;
+  right:15px;
+  bottom:170px;
+  margin:0;
+  padding:0;
+}
+#fbicon img{
+  width: 72px;
+  height:72px
+}
+#lineicon{
+  position:fixed;
+  right:15px;
+  bottom:90px;
+  margin:0;
+  padding:0;
+}
+#lineicon img{
+  width: 71px;
+  height: 71px
+}
+h1{
+  font-size:80px;
+}
+#caption{
+  font-size:51px;
+   text-align: left;
+}
+
+#CaptionCenter{
+  font-size:52px;
+  text-align:center
+}
+
+.paragraph{
+  font-size:24px
+}
+
+
+
+  /*footer*/
+  #footerbox2 hr{
+border: 3px solid #33ccff;
+  }
+  #footerbox2 .row .col-12{
+padding-left:16px
+  }
+  /*just to test something-can safely remove*/
+  #footerbox .row .col-12{
+margin-left:16px
+  }
+
+  /*=================================================Index==================================*/
+  /*slogan*/
+  #Indexslogan {
+    color: white;
+    background-color: #33CCFF;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #Indexslogan aside{
+    float:left
+  }
+#IndexSloganText{
+	font-size:72px
+}
+  #Indexslogan aside div{
+  	font-size: 75px;
+  	font-weight: bold
+  }
+  #Indexslogan .col-5 img{
+  	width:80%;
+  	margin-top:40px
+  }
+#SloganText{
+	font-size:35px
+}
+
+  /*video*/
+  .IndexVideo2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height:350px;
+    /*border:2px solid black*/
+  }
+  /*Ted's css*/
+  .videotitle {
+    line-height: 300px;
+  }
+  /*Ted's css*/
+  .IndexVideo2 .col-5{
+  float: left;
+  height:200px;
+  /*border:2px solid black*/
+  }
+
+  .IndexVideo2 .col-7{
+    float: left;
+    height:400px;
+  }
+  #introVideo {
+    width: 600px;
+    height: 350px;
+  }
+
+  /*Introduction 2 */
+  #Indexintro2 header{
+    font-weight:bold;
+    font-size:51px
+  }
+  #Indexintro2 {
+    background-color: #33CCFF;
+    color: white;
+    width: 100%;
+    padding-top:50px;
+    padding-bottom: 50px;
+  }
+
+  .Intro2Bottom .col-5, .col-7{
+    float:left
+  }
+  .Intro2Bottom .col-5{
+    padding-left:227px
+  }
+  .fontOneHundreds {
+      font-size: 90px;
+  }
+  .firstFlexbox{
+    float:left;
+    padding-right: 50px
+  }
+
+    .FlexBox aside{
+    	float:left
+    }
+  /*end of intro2*/
+
+
+
+
+  #MarketingTop{
+    /*height:250px;*/
+    border: 2px solid black
+  }
+  .MarketingTopBox {
+    border: solid 1px grey;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .TopLeft{
+    float:left;
+    width:60%
+  }
+
+  .TopRight{
+    float:left;
+  }
+
+  #MarketingTop2{
+    height:250px;
+    border: 2px solid red;
+  }
+
+  .BottomLeft{
+    margin-left:450px;
+    float:left
+    }
+
+  .material-icons{
+    font-size: 200px
+  }
+
+
+
+
+  #everyday{
+    font-size:20px
+  }
+
+
+
+  #tinichatsLogo {
+    width: 95px;
+  }
+
+  #talkImg {
+    width: 346.66px;
+    height: 257.95px;
+  }
+
+
+
+  #slogan, #intro1, #intro2, .wordIntro {
+    /*border: solid 2px black;*/
+    padding: 100px;
+  }
+
+  #contact {
+    padding: 50px 200px;
+  }
+
+  #pricingpack {
+    padding: 100px 300px;
+  }
+
+
+
+  #slogan header, #slogan p {
+    text-align: left;
+    font-weight: 900;
+  }
+
+
+
+
+  /*Featurse*/
+  #features3asdfa header{
+    font-size:51px;
+    text-align:center;
+
+  }
+  #featuresBlock1st{
+    margin-bottom:50px
+  }
+  #featuresBlock{
+    margin-bottom:30px
+  }
+  #features3asdfa{
+
+    margin-bottom: 30px;
+
+  }
+  .box1 {
+    /*margin-right: 20px;*/
+    float:left;
+    border: solid 1px grey;
+    text-align: center;
+    /*padding: 22px 22px 150px 22px;*/
+    width: 31%;
+    height: 400px;
+    padding: 10px
+  }
+
+  #pricingpack2{
+    overflow:hidden;
+    height: 890px;
+      padding-top:30px;
+      padding-bottom: 30px;
+      background-color:#33ccff;
+      color:white;
+
+  }
+
+
+
+  .lightb {
+    color: #33ccff;
+  }
+  /*Form*/
+
+  fieldset {
+    /*margin-left: 48px;*/
+    font-size: 1.5em;
+    border: none;
+  }
+
+  select, #textinput {
+    font-size: 16px;
+    height: 45px;
+  }
+
+  textarea {
+    font-size: 16px;
+    height: 200px;
+  }
+
+  form {
+    /*border-bottom: 3px solid #33CCFF;*/
+    margin-bottom: 10px;
+
+  }
+
+
+  #intro1title{
+    text-align: left;
+  }
+
+  #intro2, #pricingpack {
+    background-color: #33CCFF;
+    color: white;
+    width: 100%;
+  }
+
+  #featureTitle {
+    text-align: center;
+  }
+  #privacy{
+    font-size:10px;
+  }
+  .box {
+    border: solid 1px grey;
+    text-align: center;
+    height: 500px;
+    padding: 50px;
+  }
+
+
+  /*Pricing start*/
+  #tables,#tables2,#tables3{
+    height:631px;
+    border: white 3px solid
+  }
+
+  .content {
+      padding: 30px 0;
+  }
+
+  .pricing {
+    position: relative;
+    margin-bottom: 15px;
+    border: 3px solid #eee;
+    height: 500px;
+  }
+
+  .pricing-active {
+    border: 3px solid #36d7ac;
+    margin-top: -10px;
+    box-shadow: 7px 7px rgba(54, 215, 172, 0.2);
+  }
+
+  .pricing-head {
+    text-align: center;
+  }
+
+  .pricing-head h3,
+  .pricing-head h4 {
+    margin: 0;
+    line-height: normal;
+  }
+
+  .pricing-head h3 span,
+  .pricing-head h4 span {
+    display: block;
+    margin-top: 5px;
+    font-size: 24px;
+    font-style: none;
+    text-align: left;
+  }
+
+  .pricing-head h3 {
+    font-weight: 300;
+    color: #fafafa;
+    padding: 12px 0;
+    font-size: 27px;
+    background: #33CCFF;
+    border-bottom: solid 1px #41b91c;
+  }
+
+  .pricing-head h4 {
+    color: black;
+    padding: 5px 0;
+    font-size: 54px;
+    font-weight: 300;
+    background: #fbfef2;
+    border-bottom: solid 1px #f5f9e7;
+  }
+
+  .pricing-head-active h4 {
+    color: #36d7ac;
+  }
+
+  .pricing-head h4 i {
+    top: -8px;
+    font-size: 28px;
+    font-style: normal;
+    position: relative;
+  }
+
+  .pricing-head h4 span {
+    top: -10px;
+    font-size: 14px;
+    font-style: normal;
+    position: relative;
+  }
+
+  .pricing-content li {
+    /*color: #888;*/
+    color: white;
+    font-size: 24px;
+    padding: 7px 15px;
+    border-bottom: solid 1px #f5f9e7;
+  }
+
+  .pricing-footer {
+    color: #777;
+    font-size: 11px;
+    line-height: 17px;
+    text-align: center;
+    padding: 0 20px 19px;
+    margin-top: 184px
+  }
+
+  .pricing-footer2 {
+    color: #777;
+    font-size: 11px;
+    line-height: 17px;
+    text-align: center;
+    padding: 0 20px 19px;
+    margin-top:116px
+  }
+
+  /*Priceing Active*/
+  .price-active,
+  .pricing:hover {
+    z-index: 9;
+  }
+
+  .price-active h4 {
+    color: #36d7ac;
+  }
+
+  .no-space-pricing .pricing:hover {
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+  .no-space-pricing .price-active .pricing-head h4,
+  .no-space-pricing .pricing:hover .pricing-head h4 {
+    color: #36d7ac;
+    padding: 15px 0;
+    font-size: 80px;
+    transition: color 0.5s ease-in-out;
+  }
+
+  .yellow-crusta.btn {
+    color: #FFFFFF;
+    background-color: #f3c200;
+  }
+  .yellow-crusta.btn:hover,
+  .yellow-crusta.btn:focus,
+  .yellow-crusta.btn:active,
+  .yellow-crusta.btn.active {
+      color: #FFFFFF;
+      background-color: #cfa500;
+  }
+
+/*==============================Pricing=========================*/
+/*Top Image Block*/
+.PrTopImage {
+  padding-top:250px;
+  background-image: url(../images/set.jpg);
+  border: 0.1px solid transparent;
+  background-size: cover
+}
+.PrTopImage #appletree {
+  color: white;
+  margin-bottom:183px;
+  font-weight: bold;
+  /*margin-right: 76%;*/
+  font-size: 52px;
+  /*border: 1px solid green*/
+}
+#PrImageHead{
+  font-size:52px;
+  margin-right:0%;
+  font-weight: bold
+}
+.PrImage p {
+  color: white;
+  font-weight: bold;
+  /*margin-right: 65%;*/
+  font-size: 24px
+}
+#appletree a{
+  font-size:24px
+}
+
+
+/*pointer*/
+#PrPointer{
+  background-color:#33ccff;
+  height:100px
+}
+
+/*2nd Short Table*/
+#shortTableContainer{
+  margin-left:auto;
+  margin-right: auto;
+  height:507px;
+  width:1200px;
+}
+
+#PrBox2 a{
+  font-size:24px
+}
+#PrBox3 a{
+  font-size:24px
+}
+#PrBox4 a{
+  font-size:24px
+}
+#PrMostPop{
+  color: black;
+  font-size:35px
+}
+
+
+/*2nd table*/
+#PrBox11 img{
+  margin-top: 68px;
+  width: 65%;
+/*margin-left: 30px;*/
+
+}
+#PrBox11{
+  float:left;
+  /*border: 2px white solid;*/
+  width: 18%;
+  color: white;
+  margin-top: 69px
+}
+#PrBox22{
+  padding: 22px;
+  border: 3px #b6bac1 solid;
+  /*margin-left: 2%;*/
+  float:left;
+  color: black;
+  margin-top: 67px;
+  background-color: white;
+  text-align:center
+}
+#PrBox33{
+  padding: 22px;
+  border: 3px #b6bac1 solid;
+  margin-left: 25px;
+  float:left;
+  color: black;
+  margin-top: 67px;
+  background-color: white;
+  text-align:center;
+   box-shadow: 15px 12px 8px #888888;
+
+}
+#PrBox44{
+  padding: 22px;
+  border: 3px #b6bac1 solid;
+  margin-left: 25px;
+  float:left;
+  color: black;
+  margin-top: 67px;
+  background-color: white;
+  text-align:center
+
+}
+#PrBox22 a{
+  font-size:24px
+}
+#PrBox33 a{
+  font-size:24px
+}
+
+#PrBox44 a{
+  font-size:24px
+}
+.fa-star{
+  color: #f1f442
+}
+
+/*1 line*/
+#Pr1line{
+  text-align:center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size:52px
+}
+
+/*features box*/
+#featuresBox{
+  height:400px;
+  margin-bottom: 50px;
+  background-color:#33ccff
+}
+#featuresBox header .col-12{
+  height:157px;
+  padding-top:40px;
+  color:white;
+  text-align:center
+}
+#featuresBox section{
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100px;
+  color:white
+}
+#featuresBox section p{
+  float:left
+}
+
+/*still image1*/
+.parallax {
+    /* The image used */
+    background-image: url("../images/set.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+  }
+
+.transbox2 {
+  border: 1px solid transparent;
+  opacity: 0.7;
+  /*filter: alpha(opacity=60); /* For IE8 and earlier */*/
+}
+#PrParallax{
+  background-color: black;
+  margin-top: 150px;
+  color: white;
+  height: 200px
+}
+#PrParallaxLeft .col-3,.col-9{
+  float:left
+}
+.img-circle{
+  margin-top: 20px;
+  margin-left: 73px;
+  width:50%
+}
+#PrParallaxLeft .col-9 p:first-child{
+  margin-top:20px
+}
+/*common questions*/
+#PrCommonHead{
+text-align: center;
+font-size: 52px;
+margin-top: 50px;
+margin-bottom: 50px
+}
+
+#PrCommonMainDiv{
+  float:left;
+  padding: 2%;
+  text-align:left;
+  font-size:24px;
+}
+
+
+
+
+.PrTrial div{
+  color: white;
+  font-size:50px;
+  border: 2px white solid;
+  float: left
+}
+
+
+
+
+
+
+#Pricing1{
+  background-color:#33ccff;
+  height: 250px
+}
+
+#PricingBox{
+  padding-top:130px;
+  padding-bottom:30px;
+  height: 446px;
+  background-color:#33ccff;
+}
+#RealTable1{
+  margin-left:425px;
+  float:left;
+  width: 63%;
+    height: 196px;
+    border: white 3px solid;
+    background-color:white;
+
+}
+#RealTable2{
+  margin-left:279px;
+  float:left;
+  width: 63%;
+    height: 196px;
+    border: white 3px solid;
+    background-color:white;
+
+}
+
+#RealTable3{
+  float:right;
+  width: 63%;
+    height: 196px;
+    border: white 3px solid;
+    background-color:white;
+
+}
+#month{
+  font-size:20px
+}
+#RealTablePrice{
+  font-size:40px
+}
+.RealPricingButton{
+  color: #777;
+    font-size: 11px;
+    line-height: 17px;
+    text-align: center;
+    padding: 0 20px 19px;
+    margin-top: 35px;
+}
+#PricingImage{
+  float:left
+}
+#PricingBox1{
+  background-color: white;
+  margin-left: 2%;
+  width: 20%;
+  height: 200px;
+  float:left;
+  border: grey 3px solid
+}
+#PricingLine{
+  font-size: 51px;
+  text-align:center;
+  margin: 55px;
+  }
+  #PricingAnotherBox{
+    height:400px;
+    background-color:#33ccff
+  }
+#PrAnotherBox{
+  text-align:center;
+  padding-top:50px;
+  color:white;
+
+}
+#PrAsk{
+  border: 1px solid grey;
+  height: 100px;
+  padding: 20px;
+}
+
+
+
+
+
+
+td{
+  font-size:24px
+}
+
+.fa-check{
+  color:#33ccff
+}
+.fa-times{
+  color:black
+}
+
+#TableColomn1{
+  width:518px
+}
+#TableColomn2{
+    width:22%
+}
+#TableColomn3{
+    width:12%
+}
+#TableColomn4{
+  padding-left:109px
+}
+
+
+
+
+
+
+
+/*tooptip*/
+#tooltip {
+    position: absolute;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    font-size:18px;
+
+
+}
+
+#tooltip #tooltiptext {
+
+  visibility: hidden;
+ width: 120px;
+ background-color: black;
+ color: #fff;
+ text-align: center;
+ border-radius: 6px;
+ padding: 5px 0;
+
+ /* Position the tooltip */
+ position: absolute;
+ z-index: 1;
+ bottom: 100%;
+ left: 50%;
+ margin-left: -60px;
+}
+
+#tooltip:hover #tooltiptext {
+    visibility: visible;
+    color:white;
+    background-color: #33ccff
+}
+#tooltip #tooltiptext2 {
+
+  visibility: hidden;
+ width: 120px;
+ background-color: black;
+ color: #fff;
+ text-align: center;
+ border-radius: 6px;
+ padding: 5px 0;
+
+ /* Position the tooltip */
+ position: absolute;
+ z-index: 1;
+ bottom: 100%;
+ left: 50%;
+ margin-left: -60px;
+}
+
+#tooltip:hover #tooltiptext2 {
+    visibility: visible;
+    color:black;
+    background-color: white
+}
+
+
+/*Pricing end*/
+
+/*加價*/
+
+#addon {
+  background-color: white;
+  font-size: 25px;
+}
+
+#addonTitle {
+  text-shadow: none;
+}
+
+#addonTitle h4 {
+  text-align: center;
+  color: black;
+  padding: 30px;
+  font-size: 25px;
+}
+
+#addonContent {
+  text-align: center;
+  font-size: 15px;
+}
+
+#addonContent li {
+  color: black;
+}
+
+#pricingpacktitle {
+  text-align: center;
+}
+
+#opay {
+  border: solid 1px white;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-size:24px
+}
+
+#contactDes {
+  text-align: center;
+}
+
+#contactTitle {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+#comInfo {
+  font-size: 20px;
+}
+
+
+
+.pricing-footer3{
+    text-align:center;
+    margin-top:41px
+}
+
+#box{
+  width:85%
+}
+/*========================faq css===========================================*/
+.subheading{
+  font-size:39px
+}
+#FaqBoxHeader{
+  text-align:center;
+  font-size:3.25em;
+  margin-bottom: 50px
+}
+.FaqBox{
+  height: 200px;
+  /*border: 2px black solid;*/
+}
+.FaqQuestion{
+  margin-bottom: 30px;
+  margin-left:15px
+}
+.FaqQuestion div{
+  font-size:30px;
+  float:left;
+  margin-right:9px
+}
+
+.FaqQuestion .Q{
+  color:#33ccff;
+}
+
+.FaqQuestion .A{
+  color:black;
+}
+
+.FaqQuestion p{
+  padding-top:6px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#BottomContent{
+  padding: 25px 47px 20px 47px;
+width: 100%;
+background-color: #f2f4f7
+}
+/*trial*/
+#answerQuestion{
+  display: none;
+}
+#answerQuestion2{
+  display: none;
+}
+#answerQuestion3{
+  display: none;
+}
+#answerQuestion4{
+  display: none;
+}
+#answerQuestion5{
+  display: none;
+}
+/*trial ends*/
+/*=======================================Privacy =================================================*/
+#PrivacyTop{
+  margin-bottom: 40px
+}
+#PrivacySub{
+  font-weight: 700
+}
+
+
+
+
+
+  /*bootstrap try */
+  * {
+      box-sizing: border-box;
+  }
+
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  @media only screen and (min-width:1031px) and (max-width: 1200px){
+    /*Ted's css*/
+    .videotitle {
+      line-height: normal;
+      height: 350px;
+    }
+    /*Ted's css*/
+  }
+
+@media only screen and (min-width:769px) and (max-width: 1030px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+/*==============generic============*/
+.navbar-nav{
+  margin-left:76px
+}
+p{
+  font-size:23px
+}
+
+/*Ted's css*/
+#pricingpack2-caption, #contact-caption {
+  font-size: 51px;
+  text-align: center;
+}
+
+#price-caption {
+  font-size: 51px;
+  text-align: center;
+}
+/*Ted's css*/
+
+/*================index============*/
+/*slogan*/
+#Indexslogan {
+  color: white;
+  background-color: #33CCFF;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  /*font-size: 1em;*/
+}
+#Indexslogan aside{
+  width:100%;
+  text-align:center
+}
+
+#Indexslogan aside div{
+	font-size: 50px;
+	font-weight: bold
+}
+#Indexslogan .col-5 img{
+	width:33%;
+	margin-top:40px
+}
+
+.slogan-content {
+  padding: 0px 140px;
+  font-size: 24px;
+  text-align: left;
+}
+
+/*video*/
+/*Ted's css*/
+.videotitle {
+  line-height: 200%;
+  padding-left: 30%;
+}
+/*Ted's css*/
+.IndexVideo2 .col-5{
+	height: 137px;
+	text-align:center
+}
+.IndexVideo2 .col-7{
+	text-align:center
+}
+/*Introduction2*/
+#Indexintro2 header{
+  font-size:41px
+}
+#Indexintro2{
+  text-align:-webkit-center
+}
+
+.firstFlexbox {
+  text-align: center;
+}
+.firstFlexbox header {
+  width: 430px;
+  text-align: left;
+  font-size: 36px;
+}
+.firstFlexbox p {
+  width: 565px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.Intro2Bottom .col-5, .col-7{
+  float:none
+}
+.Intro2Bottom .col-5{
+  padding-left:0px
+}
+
+.Intro2part2 header {
+  text-align: left;
+}
+
+.Intro2part2 p {
+  text-align: left;
+  font-size: 24px;
+}
+
+.FlexBox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.FlexBox .firstFlexbox {
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  order: 1;
+}
+
+/*features*/
+#featuresBlock1st{
+  margin-bottom:50px
+}
+.box1 {
+  height: 400px;
+}
+#features3asdfa{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+#features3asdfa header{
+  font-size: 40px;
+  text-align:center;
+  font-weight:bold
+}
+/*pricing*/
+#tables{
+	height:494px;
+}
+#tables2{
+	height:565px;
+}
+#pricingpack2{
+	height:1862px;
+  padding-top:45px
+}
+.pricing-footer{
+	margin-top:50px
+}
+.pricing-footer2{
+	margin-top:51px
+}
+
+/*Ted's css*/
+#Indexslogan-header {
+  font-size: 51px;
+  text-align: left;
+  padding-left: 30%;
+}
+
+
+
+/*Ted's css*/
+
+#tables, #tables2, #tables3 {
+  margin: 0 140px;
+}
+
+#contact {
+  padding: 50px 100px;
+}
+
+	#PrBox11 {
+    width: 69%;
+	margin-left:14%;
+}
+
+	#PrBox11 img {
+    margin-top: 68px;
+    width: 30%;
+    /* margin-left: 30px; */
+    margin-left: 35%;
+	}
+	#PrBox33{
+		margin-left:0px;
+		box-shadow: none
+	}
+	#PrBox44{
+		margin-left:0px
+	}
+
+
+	/*=======================pricing===================*/
+  /*TOP IMAGE*/
+  .PrTopImage #appletree{
+    text-align:center
+  }
+  .PrTopImage{
+    background-image:none;
+    background-color:#00253d;
+    height:341px;
+    padding-top:0px
+  }
+  .price-table th{
+    font-size:20px
+  }
+/*2nd Short Table*/
+#PrBox22 p:first-child{
+  font-weight:bold;
+  font-size:30px
+}
+#PrBox2Price{
+  font-weight:bold;
+  font-size:30px
+}
+#PrBox33 p:first-child{
+  font-weight:bold;
+  font-size:30px
+}
+#PrBox44 p:first-child{
+  font-weight:bold;
+  font-size:30px
+}
+
+
+/*3 tables*/
+#PrBox11{
+  display:none
+}
+#PrBox22,#PrBox33,#PrBox44{
+  width:100%
+}
+#PrBox33{
+  margin-top:0px
+}
+#PrBox44{
+  margin-top:0px
+}
+	/*features*/
+  #tooltip #tooltiptext {
+    color:white;
+  }
+
+  #featuresBox{
+    height:597px
+  }
+  #featuresBox header .col-12{
+    height:220px
+  }
+	#PrFeatures{
+		padding:1%;
+		height:466px
+	}
+	#PrFeatures header{
+		height:211px
+	}
+  #featuresBox section p{
+    width:100%;
+    text-align:center;
+    font-weight:30px;
+    font-weight:bold
+  }
+  /*still image*/
+  .img-circle{
+
+    margin-top: 52px;
+    margin-left: 37px;
+    width: 63%;
+  }
+  #PrParallax{
+    height:225px
+  }
+  .doit{
+    padding-right:11px
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+  /*==============generic============*/
+  .navbar-nav{
+  margin-left:76px
+  }
+  p{
+  font-size:23px
+  }
+
+  /*Ted's css*/
+  #caption {
+    font-size: 51px;
+    text-align: left;
+    padding-left: 75px;
+  }
+
+  #pricingpack2-caption, #contact-caption {
+    font-size: 46px;
+    text-align: center;
+  }
+
+  #price-caption {
+    font-size: 51px;
+    text-align: center;
+  }
+
+  /*Ted's css*/
+
+  /*================index============*/
+  /*slogan*/
+  #Indexslogan {
+  color: white;
+  background-color: #33CCFF;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  /*font-size: 1em;*/
+  }
+  #Indexslogan aside{
+  width:100%;
+  text-align:center
+  }
+
+  #Indexslogan aside div{
+  font-size: 50px;
+  font-weight: bold
+  }
+  #Indexslogan .col-5 img{
+  width:33%;
+  margin-top:40px
+  }
+
+  .slogan-content {
+    padding: 0px 75px;
+    font-size: 24px;
+    text-align: left;
+  }
+
+  /*Ted's css*/
+  #Indexslogan-header {
+    font-size: 51px;
+    text-align: left;
+    padding-left: 75px;
+  }
+
+
+
+  /*Ted's css*/
+
+  /*video*/
+    /*Ted's css*/
+  .videotitle {
+    line-height: 200%;
+  }
+
+  .firstFlexbox header {
+    width: 430px;
+    text-align: left;
+  }
+
+  .firstFlexbox p {
+    width: 430px;
+    text-align: left;
+    font-size: 24px;
+  }
+    /*Ted's css*/
+  .IndexVideo2 .col-5{
+  height: 137px;
+  text-align:center
+  }
+  .IndexVideo2 .col-7{
+  text-align:center
+  }
+  /*Introduction2*/
+  #Indexintro2 header{
+  font-size:41px
+  }
+  #Indexintro2{
+  text-align:-webkit-center
+  }
+
+
+
+  .Intro2Bottom .col-5, .col-7{
+  float:none
+  }
+  .Intro2Bottom .col-5{
+  padding-left:0px
+  }
+
+  .Intro2part2 header {
+  text-align: left;
+  }
+
+  .Intro2part2 p {
+  text-align: left;
+  font-size: 24px;
+  }
+
+  .FlexBox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  }
+
+  .FlexBox .firstFlexbox {
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  order: 1;
+  }
+
+  /*features*/
+  #featuresBlock1st{
+  margin-bottom:50px
+  }
+  .box1 {
+  height: 400px;
+  }
+  #features3asdfa{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  }
+  #features3asdfa header{
+  font-size: 40px;
+  text-align:center;
+  font-weight:bold
+  }
+  /*pricing*/
+  #tables{
+  height:494px;
+  }
+  #tables2{
+  height:565px;
+  }
+  #pricingpack2{
+  height:1862px;
+  padding-top:45px
+  }
+  .pricing-footer{
+  margin-top:50px
+  }
+  .pricing-footer2{
+  margin-top:51px
+  }
+
+  #tables, #tables2, #tables3 {
+  margin: 0 140px;
+  }
+
+  #contact {
+  padding: 50px 100px;
+  }
+
+  #PrBox11 {
+    width: 69%;
+  margin-left:14%;
+  }
+
+  #PrBox11 img {
+    margin-top: 68px;
+    width: 30%;
+    /* margin-left: 30px; */
+    margin-left: 35%;
+  }
+  #PrBox33{
+    margin-left:0px;
+    box-shadow: none
+  }
+  #PrBox44{
+    margin-left:0px
+  }
+
+
+  /*=======================pricing===================*/
+  /*TOP IMAGE*/
+  .PrTopImage #appletree{
+    text-align:center
+  }
+  .PrTopImage{
+    background-image:none;
+    background-color:#00253d;
+    height:341px;
+    padding-top:0px
+  }
+  .price-table th{
+    font-size:20px
+  }
+  /*2nd Short Table*/
+  #PrBox22 p:first-child{
+  font-weight:bold;
+  font-size:30px
+  }
+  #PrBox2Price{
+  font-weight:bold;
+  font-size:30px
+  }
+  #PrBox33 p:first-child{
+  font-weight:bold;
+  font-size:30px
+  }
+  #PrBox44 p:first-child{
+  font-weight:bold;
+  font-size:30px
+  }
+
+
+  /*3 tables*/
+  #PrBox11{
+  display:none
+  }
+  #PrBox22,#PrBox33,#PrBox44{
+  width:100%
+  }
+  #PrBox33{
+  margin-top:0px
+  }
+  #PrBox44{
+  margin-top:0px
+  }
+  /*features*/
+  #tooltip #tooltiptext {
+    color:white;
+  }
+
+  #featuresBox{
+    height:597px
+  }
+  #featuresBox header .col-12{
+    height:220px
+  }
+  #PrFeatures{
+    padding:1%;
+    height:466px
+  }
+  #PrFeatures header{
+    height:211px
+  }
+  #featuresBox section p{
+    width:100%;
+    text-align:center;
+    font-weight:30px;
+    font-weight:bold
+  }
+  /*still image*/
+  .img-circle{
+
+    margin-top: 52px;
+    margin-left: 37px;
+    width: 63%;
+  }
+  #PrParallax{
+    height:225px
+  }
+  .doit{
+    padding-right:11px
+  }
+}
+
+@media only screen and (max-width: 736px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+/*generic*/
+#myNavbar{
+  text-align:center
+}
+#caption{
+  font-size: 26px;
+  font-weight: bold
+}
+.firstFlexbox h1{
+	text-align:center
+}
+#pricingpack2{
+	height:1818px;
+  padding-top:45px
+}
+    #PrPointer{
+      display: none;
+    }
+    .PrShortTable1{
+      display: none;
+    }
+    .table{
+      display: none;
+    }
+.container-fluid{
+      text-align: -webkit-center
+  }
+  .navbar-brand img{
+    display:none
+  }
+  p{
+    font-size:20px
+  }
+    /*=====================================Index=====================*/
+/*slogan*/
+#Indexslogan header, #Indexslogan p{
+	text-align:center
+}
+#Indexslogan {
+  padding-top:26px;
+  padding-bottom:0px;
+  text-align:center
+}
+#Indexslogan aside div{
+  font-size:32px;
+  text-align:center
+}
+#Indexslogan .col-5 img{
+  width:44%
+}
+    /*video*/
+    .IndexVideo2{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      height:50px;
+      /*border:2px solid black*/
+    }
+	.IndexVideo2{
+	  height:316px;
+	  /*border:2px solid black*/
+	}
+    .IndexVideo2 {
+    margin-top: 43px;
+    margin-bottom: 0px;
+  }
+    .IndexVideo2 .col-5 {
+    text-align:center;
+     height: 95px;
+  }
+    .IndexVideo2 .col-7{
+      text-align:center;
+      height:0px
+    }
+
+    /*Introduction2*/
+    #Indexintro2 header{
+      font-size:26px
+    }
+    #Indexintro2 {
+        padding-top:20px;
+        padding-bottom: 20px;
+    }
+    .material-icons{
+      font-size:130px
+    }
+    .Intro2Bottom .col-5{
+      padding-left:0px
+    }
+    #Indexintro2{
+      text-align:center
+    }
+
+	.firstFlexbox{
+	padding-right: 0px
+	}
+
+	.Intro2Bottom .col-5{
+		padding-left:0px
+	}
+	.Intro2Bottom .col-7{
+		padding-left: 0px
+	}
+
+    .FlexBox {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -moz-box-align: start;
+      -ms-flex-align: start;
+      -webkit-align-items: flex-start;
+      align-items: flex-start;
+    }
+
+    .FlexBox .firstFlexbox {
+      -webkit-box-ordinal-group: 2;
+      -moz-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      -webkit-order: 1;
+      order: 1;
+    }
+	/*features*/
+  #featuresBlock{
+    margin-bottom:20px
+  }
+  #features3asdfa header{
+    font-size:24px;
+    text-align:center;
+    font-weight:bold
+  }
+  #featuresBlock1st{
+    margin-bottom:0px
+  }
+	#features3asdfa{
+	  margin-top:0px;
+	  margin-bottom: 0px;
+
+	}
+    /*pricing*/
+	.pricing-footer,.pricing-footer2,.pricing-footer3{
+		margin-top:57px
+	}
+
+    #tables{
+      height: 473px;
+    }
+	#tables2{
+	  height:546px;
+	}
+    /*faq*/
+    .FaqContainer p{
+      font-size:22px
+    }
+
+
+    .box1 {
+      /*margin-right: 20px;*/
+      float:left;
+      border: solid 1px grey;
+      text-align: center;
+      /*padding: 22px 22px 150px 22px;*/
+      /*width: 31%;*/
+      height: 322px;
+      padding: 10px
+    }
+    /*index*/
+    .col-md-8 div{
+      font-size: 52px
+    }
+    .col-7 h1{
+      font-size: 52px
+    }
+
+    #features3 p{
+      font-size:24px
+    }
+    #BottomContent p{
+      font-size: 20px;
+    }
+    #tinichatsLogo {
+      width: 60px;
+      position: fixed;
+      left: 10px;
+      top: 1px;
+    }
+
+    .fontTwoHundreds {
+      font-size: 200px;
+    }
+
+
+
+.col-7 h1{
+	text-align: center
+}
+
+
+
+
+  #slogan header h1{
+      font-size: 24px;
+    }
+
+    #introVideo {
+      width: auto;
+      height: auto;
+    }
+
+    #contactTitle {
+      font-size: 1em;
+      text-align: center;
+    }
+
+    /*Form*/
+
+    fieldset {
+      margin-left: 0;
+      font-size: 1em;
+    }
+
+    select, #textinput {
+      font-size: 10px;
+      height: 45px;
+    }
+
+    textarea {
+      font-size: 10px;
+      height: 200px;
+    }
+    /*Form End*/
+
+
+    #comInfo {
+      font-size: 10px;
+    }
+
+    /*#license {
+      font-size: 5px;
+      color: grey;
+    }*/
+
+    .box {
+      border: solid 1px grey;
+      text-align: center;
+      height: 250px;
+      padding: 20px;
+    }
+
+    #contactTitle p {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    #contactDes p {
+      text-align: center;
+    }
+
+    form {
+      text-align: left;
+    }
+
+/*============================Pricing========================*/
+/*Top image block*/
+.PrTopImage{
+  background-image:none;
+  background-color:#00253d;
+	padding-top: 20px;
+  text-align: center;
+  height:252px
+}
+#appletree a{
+	display: none;
+}
+.PrTopImage #appletree{
+	margin-bottom: 79px
+}
+#PrImageHead{
+  font-size:40px;
+}
+.price-details .price-table,.price-details .price-note,.price-details .btn-holder {
+  display: none;
+}
+.price-details{
+  display:none
+}
+
+/*2nd short table*/
+#PrBox11 img{
+	display: none
+}
+#PrBox22{
+	margin-top: 0px
+}
+#PrBox22 p:first-child{
+  font-weight:bold
+}
+#PrBox33{
+	margin-top: 0px;
+	box-shadow: none;
+	margin-left:0px
+}
+#PrBox33 p:first-child{
+  font-weight:bold
+}
+#PrBox44{
+	margin-top:0px;
+	margin-left:0px
+
+}
+#PrBox44 p:first-child{
+  font-weight:bold;
+}
+
+/*still image1&2*/
+#PrParallax{
+  background-color: #00253d;
+  margin-top: 0px;
+  /*color: white;*/
+  height: 450px;
+  font-size:24px;
+  padding:30px
+
+}
+.img-circle{
+  width:20%;
+}
+.transbox2 {
+     border: none;
+     opacity: 1;
+}
+.parallax {
+    /* The image used */
+    background-image: none;
+      min-height:0px
+  }
+  .parallax .col-9 p{
+    text-align:center
+  }
+
+  #PrParallaxLeft .col-3, .col-9{
+    text-align:center
+  }
+  .img-circle{
+    margin-left:0px
+  }
+
+
+/*1 line*/
+#Pr1line{
+  font-size:30px;
+  padding: 2px
+}
+#PrFeatures header{
+  padding: 2px;
+  padding-top: 40px;
+  text-align: center;
+  height: 157px;
+  color:white
+}
+/*features box*/
+#featuresBox{
+  height:516px;
+  text-align:center
+}
+
+/*common questions*/
+#PrCommonMainDiv{
+  margin-bottom: 44px
+}
+/*=================faq==================*/
+#FaqBoxHeader{
+  font-size:38px;
+}
+.subheading{
+  font-size:30px
+}
+}
+
+@media screen and (max-width:320px){
+  body{
+		width: 320px;
+	}
+}

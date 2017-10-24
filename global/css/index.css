@@ -1,0 +1,316 @@
+
+/*================================blog================================*/
+/*nav*/
+#lineicon{
+  position:fixed;
+  right:15px;
+  bottom:90px;
+  margin:0;
+  padding:0;
+}
+#lineicon img{
+  width: 80px;
+  height: 80px
+}
+#nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 0 200px;
+}
+
+#navWords {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 900px;
+  font-family: "Microsoft JhengHei"
+}
+
+#navWords li a {
+  text-decoration: none;
+  color: #33CCFF;
+}
+#tinichatsLogo {
+  width: 95px;
+}
+/*footer*/
+#pineapple{
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 63px;
+}
+#pineapple p{
+  font-size: 24px
+}
+
+/*==================================================Luke's css=====================*/
+*{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+body{
+  font-family: Microsoft JhengHei;
+
+}
+hr{
+  border: 1px solid black;
+}
+#top{
+  width: 100%;
+  height:30px;
+  background-color: white;
+}
+#header{
+  margin-top:0px;
+  height:100px;
+  border-bottom:1px solid #33CCFF;
+  background-color: white;
+}
+#logo{
+  margin-left: 200px;
+}
+#logo img{
+  width:80px;
+  height:80px;
+}
+#social{
+  margin-left: 1000px;
+}
+#logo-title{
+  margin-top: 109px;
+  text-align: center;
+}
+#logo-title img{
+  margin-bottom: 20px;
+  width:150px;
+  height:150px;
+}
+#logo-title p{
+  margin-bottom: 20px;
+}
+#aside-title{
+  margin-top: 20px;
+}
+#aside ul li{
+  margin-top: 10px;
+  height:30px;
+  line-height: 30px;
+
+}
+#aside ul li:hover{
+  margin-top: 10px;
+  height:30px;
+  line-height: 30px;
+  color:#33CCFF;
+}
+.navside{
+  color:black;
+  margin-left: 20px;
+}
+#aside2{
+  color:black;
+}
+#aside4-button{
+  background-color:#33CCFF;
+  color:white;
+  padding: 5px;
+  border-radius: 5px;
+}
+#article div{
+  background-color:#33CCFF;
+  color:white;
+}
+#article header{
+  font-size: 36px;
+  padding-top:4%;
+  padding-bottom:4%;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+#article header a{
+  color:white;
+  font-size:14px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#article footer{
+  font-size:24px;
+  padding: 80px;;
+  border-bottom: 1px solid black;
+}
+#article header strong {
+  color:white;
+}
+#article-box{
+  padding-left: 70%;
+  padding-bottom: 20px;
+  margin-bottom:50px;
+}
+#article-box div{
+  margin-top: 30px;
+}
+#readmore a{
+  background-color: white;
+  color:#33CCFF;
+  padding:5px;
+  border-radius: 5px;
+}
+#navbottom {
+  text-align: center;
+  margin-top: 50px;
+  color:white;
+}
+#navbottom a{
+  width:30px;
+  height:30px;
+  background-color: #33CCFF;
+  text-align: center;
+  margin-top: 20px;
+  color:white;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+#footer{
+  width:100%;
+  background-color: #33CCFF;
+  margin-top: 50px;
+  text-align: center;
+  height:100px;
+  line-height: 50px;
+  color:white;
+}
+@media screen and (min-width: 1200px) and (max-width:1400px){
+  #social{
+    margin-left: 700px;
+  }
+  #logo{
+    margin-left: 200px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width:1200px){
+  #social{
+    margin-left: 500px;
+  }
+  #logo{
+    margin-left: 200px;
+  }
+  #navWords {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 900px;
+    font-family: Microsoft JhengHei;
+  }
+  #nav {
+    padding: 0 0px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width:800px){
+  #social{
+    margin-left: 300px;
+  }
+  #logo{
+    margin-left: 100px;
+  }
+  #navWords {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 900px;
+    font-family: Microsoft JhengHei;
+  }
+}
+@media screen and (max-width:600px){
+  #social{
+    margin-left: 100px;
+  }
+  #logo{
+    margin-left: 0px;
+  }
+  #navWords {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 900px;
+    font-family: Microsoft JhengHei;
+  }
+}
+@media screen and (min-width:700px) and (max-width:800px){
+  .navside{
+    color:black;
+    margin-left: 0px;
+  }
+  #pineapple{
+    width:100%
+  }
+  #navWords {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 900px;
+    font-family: Microsoft JhengHei;
+  }
+  #nav {
+    padding: 0 0px;
+}
+}
+@media screen and (max-width:700px){
+  .navside{
+    display: none;
+  }
+  #pineapple{
+    width:100%
+  }
+  #navWords {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 900px;
+    font-family: Microsoft JhengHei;
+  }
+  #nav {
+    padding: 0 0px;
+}
+}
+@media screen and (max-width: 500px) {
+  #article header{
+    font-size: 30px;
+    padding-top:2%;
+    padding-left:15%;
+  }
+  #article footer{
+    font-size:20px;
+    padding-top:2%;
+    padding-left:15%;
+  }
+  #pineapple{
+    width:100%
+  }
+  #navWords {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 900px;
+    font-family: Microsoft JhengHei;
+  }
+  #nav {
+    padding: 0 0px;
+}
+
+}
+@media screen and (max-width:600px){
+  #article-box{
+    padding-left: 50%;
+  }
+  #pineapple{
+    width:100%
+  }
+  #navWords {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 900px;
+    font-family: Microsoft JhengHei;
+  }
+  #nav {
+    padding: 0 0px;
+}
+}

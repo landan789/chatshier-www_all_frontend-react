@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0" charset= "UTF-8">
+      <meta name="description" content="替你聊為您提供線上文字客服服務，不同於一般的電話客服外包，無需等待漫長轉接，即時在線替你回答及處理顧客的問題，想擁有高品質的顧客服務?就交給替你聊把關!"/>
+      <meta name="keywords"
+         content="即時客服 建構客服平台 客戶即時通訊 聊天機器人 線上客服 客服支援 客服委外 網路聊天 網路支援 客服軟體 客服工具 人工智能客服
+         客戶問題 推播行銷內容 自動化客服 客服 協助用戶 監控轉換 追蹤訪客 增加忠誠度 降低工作量隨時有問必答 數位化通訊服務 客戶體驗
+         自助聊天人員 傳訊息 貼近客人 從FB Messenger靠近客人 即刻支援 雲端專員 真人客服 即時服務 客服處理 商品諮詢 售後服務 線上諮詢 替你聊
+         客服系統 文字客服 客服委外 網路購物 ">
+      <title>Tinichats 替你聊，替你客服。</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="jquery.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="icon" href="../assets/images/tab.png" />
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <!-- fb icon -->
+      <a id="lineicon" target="_blank" href="https://www.messenger.com/t/1004305116338186" >
+      <img src="../assets/images/fb.png" alt="HTML tutorial" >
+      </a>
+      <!-- Navbar -->
+      <div class="navbar navbar-default" id="nav" style="background-color: white">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a href="global.html"><img id="tinichatsLogo" src="../assets/images/tab.png" alt="tinichats" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav" id="navWords">
+                  <li><a href="global.html"><strong>Home</strong></a></li>
+                  <li><a href="#featuresBlock"><strong>Solutions</strong></a></li>
+                  <li><a href="Pricing.html"><strong>Pricing</strong></a></li>
+                  <li><a href="faq.html"><strong>How it Works</strong></a></li>
+                  <li><a href="blog.html"><strong>Blog</strong></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="slogan" style="overflow:hidden">
+         <div class="container" >
+            <div class="row">
+               <aside class="col-5" >
+                  <img src="../assets/images/intro pic.png" alt="tinichats" >
+               </aside>
+               <section id="slideshowapple" class="col-7">
+                  <h2>
+                     TINICHATS
+                  </h2>
+                  <div >
+                     <p class="caption slogancaption">
+                        Where deals are sealed.
+                     </p>
+                     <p>
+                        Live agents can increase your website conversion rate by 25%
+                     </p>
+                  </div>
+                  <div>
+                     <p class="caption slogancaption">
+                        Never miss a potential customer.
+                     </p>
+                     <p>
+                        Live agents can increase your website conversion rate by 25%
+                     </p>
+                  </div>
+                  <div>
+                     <p class="caption slogancaption">
+                        Ready for Your Customers 24/7
+                     </p>
+                     <p>
+                        Connect with your customers and build meaningful relationships by talking to customers over live chat
+                        Live agents can increase your website conversion rate by 25%
+                     </p>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+      <!-- ==================================Video========================== -->
+      <div class="container" >
+         <div class="row IndexVideo"  >
+            <div class="col-5 col-m-12" >
+               <div class="subheading">Get to know Tinichats</div>
+            </div>
+            <div class="col-7 col-m-12" >
+               <iframe id="introVideo" src="https://www.youtube.com/embed/smau9cToEGw" frameborder="0" allowFullScreen></iframe>
+            </div>
+         </div>
+      </div>
+      <!--============================= Introduction2 =======================-->
+      <div id="intro2">
+         <div class="container">
+            <div class="row FlexBox">
+               <div class="firstFlexbox col-6" >
+                  <div id="caption">
+                     Live Agents Not Bots
+                  </div>
+                  <p class="w3-justify">
+                     Our trained agents will meet user needs where bots can’t reach and help increase customer satisfaction.
+                  </p>
+               </div>
+               <aside  class="col-6" >
+                  <i class="material-icons">face</i>
+               </aside>
+            </div>
+            <div class="row Intro2">
+               <div class="col-5">
+                  <i class="material-icons">thumb_up</i>
+               </div>
+               <div class="col-7" >
+                  <p id="caption">
+                     Bump Up the Chatter
+                  </p>
+                  <p class="w3-justify" id="wtf">
+                     Customers see chat’s benefits and expect to use it more.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ===========Features========= -->
+      <div id="featuresBlock" >
+         <!--just for the sake of anchor -->
+      </div>
+      <div id="features3" class="container">
+         <div>
+            <!-- <h2 id="featureTitle"> -->
+            <h2 id="caption" style="text-align:center" >
+               Do it Before Your Competition Does
+            </h2>
+         </div>
+         <br />
+         <br />
+         <!-- 1st row -->
+         <div class="row">
+            <div class="box1 col-4" >
+               <!-- 1st box -->
+               <span><i class="material-icons" style="color: #33ccff; font-size: 100px">chat</i></span>
+               <h3><strong>Never Miss a Potential Customer</strong></h3>
+               <p>
+                  We guarantee fast support times for whenever you need a little help.
+               </p>
+            </div>
+            <div class="box1 col-4">
+               <!-- 2nd box -->
+               <span><i class="fa fa-search" aria-hidden="true" style="color: #33ccff; font-size: 100px"></i></span>
+               <h3><strong>Chat History</strong></h3>
+               <p>
+                  Your chat history are kept and may be filtered and searched by you at any time according to your preferences.
+               </p>
+            </div>
+            <div class="box1 col-4">
+               <!-- 3rd box -->
+               <span><i class="fa fa-money" aria-hidden="true" style="color: #33ccff; font-size: 100px"></i></span>
+               <h3><strong>Customer Conversion</strong></h3>
+               <p>
+                  With an average 26% increase in conversions, we collect all information, problems and requirements from your customers and rout them to the right support representatives at the right time.
+            </div>
+         </div>
+         <br />
+         <br />
+         <div class="row">
+            <div class="box1 col-4" >
+               <!-- 4th box -->
+               <span><i class="fa fa-bar-chart" aria-hidden="true" style="color: #33ccff; font-size: 100px"></i></span>
+               <h3><strong>Data Driven Reports</strong></h3>
+               <p>
+                  Busy work day and no time? Get a daily digest of your account’s performance delivered straight to your inbox, complete with analytical reports with average response time, satisfaction scores, question escalations, and much more.
+               </p>
+            </div>
+            <div class="box1 col-4">
+               <!-- 5th box -->
+               <span><i class="material-icons" style="color: #33ccff; font-size: 100px">access_time</i></span>
+               <h3><strong>Affordable and Flexible</strong></h3>
+               <p>
+                  Our flexible packages allow you to allocate the time slots when you need assistance the most.
+               </p>
+            </div>
+            <div class="box1 col-4">
+               <!-- 6th box -->
+               <span><i class="material-icons" style="color: #33ccff; font-size: 100px">sentiment_very_satisfied</i></span>
+               <h3><strong>Help & Sell with a Personal Touch</strong></h3>
+               <p>
+                  Answer questions fast and start conversations proactively with live person chats.
+               </p>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!-- Pricing -->
+      <div id="pricingpack2" style="overflow:hidden">
+         <div >
+            <div class="container"  >
+               <!-- <h2 id="pricingpacktitle"> -->
+               <h2 id="caption" style="text-align:center">
+                  Check out Our Pricing Packages </br>
+                  There must be One You Need
+               </h2>
+               <br />
+               <br />
+               <div class="row">
+                  <div class="col-4 col-m-12" style="float:left">
+                     <div id="tables" >
+                        <div class="pricing-head">
+                           <p  id="caption">4 Hours Plan
+                              <span id="everyday">daily</span>
+                           </p>
+                           <h4><i>$</i>800<i>montly</i></h4>
+                        </div>
+                        <ul class="paragraph" class="pricing-content list-unstyled">
+                           <li>
+                              Offline Messages
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">系統24小時接收訪客留言，客服於上班時間及時處理。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Trigger setting (Basic)
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">提供多種「迎賓訊息」，系統自動招呼訪客，避免漫長等待。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Customer file building
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">將訪客的相關資訊建檔，含基本資訊及客服筆記。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Chat history: 7 days
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">您可查閱過去7天內的訪客聊天記錄。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Knowledge base set-up: 30 cases
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">可建立30則「常見問題」於客服系統知識庫中，讓客服快速精確解決客戶問題。</span>
+                              </div>
+                           </li>
+                        </ul>
+                        <div class="pricing-footer">
+                           <a href="https://p.allpay.com.tw/c76Bv" id="opay">
+                           Get Started
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-4 col-m-12" style="float:left">
+                     <div id="tables" >
+                        <div class="pricing-head">
+                           <p  id="caption">8 Hours Plan
+                              <span id="everyday">daily</span>
+                           </p>
+                           <h4><i>$</i>1200<i>monthly</i></h4>
+                        </div>
+                        <ul class="paragraph" class="pricing-content list-unstyled">
+                           <li>
+                              Offline Messages
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">系統24小時接收訪客留言，客服於上班時間及時處理。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Trigger setting (Basic)
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">提供多種「迎賓訊息」，系統自動招呼訪客，避免漫長等待。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Customer file building
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">將訪客的相關資訊建檔，含基本資訊及客服筆記。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Chat history: 30 days
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">您可查閱過去30天內的訪客聊天記錄。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Knowledge base set-up: 100 cases
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">可建立100則「常見問題」於客服系統知識庫中，讓客服快速精確解決客戶問題。</span>
+                              </div>
+                           </li>
+                        </ul>
+                        <div class="pricing-footer">
+                           <a href="https://p.allpay.com.tw/c76Bv" id="opay">
+                           Get Started
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-4 col-m-12" style="float:left">
+                     <div id="tables" >
+                        <div class="pricing-head">
+                           <p  id="caption">16 Hour Plan
+                              <span id="everyday">daily</span>
+                           </p>
+                           <h4><i>$</i>2,400<i>monthly</i></h4>
+                        </div>
+                        <ul class="paragraph" class="pricing-content list-unstyled">
+                           <li>
+                              Offline Messages
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">系統24小時接收訪客留言，客服於上班時間及時處理。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Trigger setting (Customed))
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">提供多種「迎賓訊息」且您可自訂訊息內容。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Customer file building
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">將訪客的相關資訊建檔，含基本資訊及客服筆記。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Chat history: unlimited
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">您可查閱過去不限天數的訪客聊天記錄。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Knowledge base set-up: unlimited
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">可建立不限則數的「應答問題」於客服系統知識庫中，讓客服快速精確解決客戶問題。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Knowledge base expanding: unlimited
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">幫您主動收集與建立新的「應答問題」。</span>
+                              </div>
+                           </li>
+                           <li>
+                              Analytic report
+                              <div id="tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                                 <span id="tooltiptext">提供多面向的客戶分析，包含案例分析、數據統計等。</span>
+                              </div>
+                           </li>
+                        </ul>
+                        <div class="pricing-footer3">
+                           <a href="https://p.allpay.com.tw/c76Bv" id="opay">
+                           Get Started
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact us trial -->
+      <!-- <div class="container">
+         <div style="height:200px; border:1px solid black">
+           <div class="col-" style="width: 48%; height:20px; float:left">
+             <input  required  style={{fontSize:'16px',height:'45px'}}id="textinput" name="textinput" type="text" placeholder="名字*" class="form-control input-md" />
+           </div>
+           <div class="col-" style="margin-left: 20px;width: 48%; height:20px; float:left">
+             <input  required  style={{fontSize:'16px',height:'45px'}}id="textinput" name="textinput" type="text" placeholder="名字*" class="form-control input-md" />
+           </div>
+         </div>
+         </div> -->
+      <!-- contact us trial -->
+      <!-- Contact Us -->
+      <div id="contact">
+         <!-- <div id="contactTitle"> -->
+         <h2  id="caption" style="text-align:center">
+            Where to find us?
+         </h2>
+         <br />
+         <div style="text-align:center">
+            <p>
+               Click the chat window right corner to talk our online agents</br>
+               or fill the form below and we will get back to you soon
+            </p>
+         </div>
+         <br />
+         <form class="form-horizontal" method="post" action="//www.enformed.io/j4aj4z7p"  method="POST">
+            <div class="form-group">
+               <label class="col-md-4 control-label" htmlfor="textinput"></label>
+               <div class="col-md-4">
+                  <input  required  style={{fontSize:'16px',height:'45px'}}id="textinput" name="textinput" type="text" placeholder="Name*" class="form-control input-md" />
+               </div>
+            </div>
+            <div class="form-group">
+               <label class="col-md-4 control-label" htmlfor="textinput"></label>
+               <div class="col-md-4">
+                  <input required style={{fontSize:'16px',height:'45px'}} id="textinput" name="textinput" type="email" placeholder="Email*" class="form-control input-md" />
+               </div>
+            </div>
+            <div class="form-group">
+               <label class="col-md-4 control-label" htmlfor="textinput"></label>
+               <div class="col-md-4">
+                  <input style={{fontSize:'16px',height:'45px'}} id="textinput" name="textinput" type="text" placeholder="Title" class="form-control input-md" />
+               </div>
+            </div>
+            <div class="form-group">
+               <label class="col-md-4 control-label" htmlfor="textinput"></label>
+               <div class="col-md-4">
+                  <input style={{fontSize:'16px',height:'45px'}} id="textinput" name="textinput" type="text" placeholder="Company" class="form-control input-md" />
+               </div>
+            </div>
+            <div class="form-group">
+               <label  class="col-md-4 control-label" htmlfor="selectbasic"></label>
+               <div class="col-md-4">
+                  <select  style={{fontSize:'16px',height:'45px'}} id="selectbasic" name="selectbasic" class="form-control">
+                     <option value="">Location</option>
+                     <option value="1">Asia-Pacific</option>
+                     <option value="2">Central and Eastern Europe</option>
+                     <option value="3">Central and South America</option>
+                     <option value="4">Middle East</option>
+                     <option value="5">North America</option>
+                     <option value="6">North and Central Africa</option>
+                     <option value="7">Southern Africa</option>
+                     <option value="8">Western Europe</option>
+                  </select>
+               </div>
+            </div>
+            <div class="form-group">
+               <label class="col-md-4 control-label" htmlfor="selectbasic"></label>
+               <div class="col-md-4">
+                  <select style={{fontSize:'16px',height:'45px'}} id="selectbasic" name="selectbasic" class="form-control">
+                     <option value="">Type of questions</option>
+                     <option value="1">General Information</option>
+                     <option value="2">Media Relations</option>
+                     <option value="3">Online Application Support</option>
+                     <option value="4">Other</option>
+                     <option value="5">Post a Job Lead</option>
+                     <option value="6">Recruiting</option>
+                     <option value="7">Request for Proposal</option>
+                     <option value="8">Technical Support</option>
+                     <option value="9">Web Site Feedback</option>
+                  </select>
+               </div>
+            </div>
+            <div class="form-group">
+               <label class="col-md-4 control-label" htmlfor="textarea"></label>
+               <div class="col-md-4">
+                  <textarea  required style="height:100px" class="form-control" id="textarea" name="textarea" placeholder="Message*"></textarea>
+               </div>
+            </div>
+            <div>
+               <label  class="col-md-4 control-label" htmlfor="singlebutton"></label>
+               <div class="col-md-4">
+                  <button id="singlebutton" name="singlebutton" class="btn btn-info btn-lg btn-block">Submit</button>
+               </div>
+            </div>
+         </form>
+      </div>
+      <!-- footer  -->
+      <div id="footer">
+         <div id="footer2" class="container" >
+            <!-- <a href="https://www.facebook.com/Tinichats-%E6%9B%BF%E4%BD%A0%E8%81%8A-1004305116338186/">
+               <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+               </a> -->
+            <div class="row">
+               <div class="col-12">
+                 <h2 id="license-title">Contact Us</h2></br></br>
+                  <p id="license"><strong>Address :</strong> 9F.-1,No.415, Sec. 4, Xinyi Rd.,Xinyi Dist., Taipei City 11051, Taiwan</p>
+                  <p id="license"><strong>Office Hour :</strong> M~F 09:00 ~ 18:00</p>
+                  <p id="license"><strong>Phone :</strong> 886-2-2758-3626</p>
+                  <p id="license"><strong>Email :</strong> sales@tinichats.com</p>
+                  <p id="license">or go to<a href="https://www.facebook.com/Tinichats-%E6%9B%BF%E4%BD%A0%E8%81%8A-1004305116338186/" class="lightb"> TiniChats Facebook Fan Page</a></p>
+                  <p id="license">&copy;2017 tinichats.com  <a href="terms.html"　><span style="font-size:15px">Terms & Conditions </span></a>|<a href="privacy.html"　><span style="font-size:15px"> Privacy Policy</span></a></p>
+                  <!-- <p id="comInfo">Licensed under the Creative Commons Attribution license <a href="https://html5up.net">html5 up</a></p> -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!-- Live Chat -->
+      <script src="../assets/js/helpdesk.js"></script>
+      <!-- GA -->
+      <script src="../assets/js/ga.js"></script>
+      <!-- firebase -->
+      <script src="../assets/js/firebaseConfig.js"></script>
+      <!-- 歐付寶 -->
+      <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+   </body>
+</html>

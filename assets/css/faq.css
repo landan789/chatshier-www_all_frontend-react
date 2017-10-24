@@ -1,0 +1,162 @@
+/*
+/ Author: Lacne
+/ Date: 2017/06/30
+/ Version: 1
+/ Modify: faq css樣式彙整
+*/
+/*
+/ Author: Lacne
+/ Date: 2017/07/03.04
+/ Version: 2
+/ Modify: 1024介面完成
+*/
+/*talbe trial begins*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    padding: 8px;
+}
+/*============================================General====================================*/
+body{
+  font-family: Microsoft JhengHei;
+}
+p {
+  font-size: 16px;
+}
+h1{
+  font-size:80px;
+}
+/*========================faq css===========================================*/
+.FaqContainer{
+  margin-top:172px
+}
+#FaqBoxHeader{
+  text-align:center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.FaqBox{
+  height: 200px;
+  /*border: 2px black solid;*/
+}
+.FaqQuestion{
+  margin-bottom: 30px;
+  /*margin-left:15px*/
+}
+.FaqQuestion div{
+  font-size:21px;
+  float:left;
+  margin-right:9px
+}
+
+.FaqQuestion .Q{
+  color:#33ccff;
+}
+
+.FaqQuestion .A{
+  color:black;
+}
+
+.FaqQuestion p{
+  display: -webkit-box;
+  padding-top:6px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:16px;
+}
+.FaqContainer p>span {
+  display: inline-block;
+    }
+#BottomContent{
+  padding: 25px 47px 20px 47px;
+width: 100%;
+background-color: #f2f4f7
+}
+/*trial*/
+#testQuestion,#testQuestion2,#testQuestion3,#testQuestion4,#testQuestion5,#testQuestion6,#testQuestion7,#testQuestion8,#testQuestion9,#testQuestion10,#testQuestion11,#testQuestion12,#testQuestion13,#testQuestion14,#testQuestion15{
+  font-weight: bold;
+}
+#answerQuestion,#answerQuestion2,#answerQuestion3,#answerQuestion4,#answerQuestion5,#answerQuestion6,#answerQuestion7,#answerQuestion8,#answerQuestion9,#answerQuestion10,#answerQuestion11,#answerQuestion12,#answerQuestion13,#answerQuestion14,#answerQuestion15{
+  display:none
+}
+/*trial ends*/
+  * {
+      box-sizing: border-box;
+  }
+
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  @media only screen and (min-width:1201px){
+    .FaqQuestion div {
+      font-size: 25px;
+    }
+    .FaqQuestion p {
+      font-size: 20px;
+    }
+  }
+@media only screen and (min-width:769px) and (max-width: 1030px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+/*========================================================768============================================================*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+/*=================faq==================*/
+.FaqContainer{
+	margin-top:124px
+}
+}
+
+/*===========================================================736=============================================================*/
+@media only screen and (max-width: 736px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:375px) {
+  body{
+		width: 375px;
+	}
+  #FaqBoxHeader {
+    font-size: 35px;
+  }
+  .FaqContainer h2 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width:320px){
+  body{
+		width: 320px;
+	}
+}

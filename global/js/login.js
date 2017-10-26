@@ -1,63 +1,81 @@
-// firebase write push, set
-
-var ref = firebase.database().ref("users/");
-
-// event type: value
-ref.on("value", function(snapshot) {
-		// let snap = snapshot.val();
-		snapshot.forEach(function(childSnapshot) {
-		   console.log(childSnapshot.key);
-		});
-	}, function (error) {
-   		console.log("Error: " + error.code);
-	});
+/**
+  file name: login.js
+  purpose: let client to sign up/in an account
+  */
+ const msg = {
+ 	pwd_not_match: "Passwords not match",
+ 	login_fail: "Incorrect username or password."
+ };
 
 $(document).ready(function() {
-	// signup button
+	/**
+	  sign up button
+	  */
 	$('#signup').submit(function(event) {
 		event.preventDefault();
+		document.getElementById("register-err").innerHTML = "";
 
 		let email = $('#email');
 		let reg_userid = $('#reg_userid');
 		let reg_password = $('#reg_password');
 		let re_reg_password = $('#re_reg_password');
 
-		if(email.val() === "a") {
-			document.getElementById("register-err").innerHTML = '<span style="color:red">email has been registered</span>';
-		} else if(reg_userid.val() === "b") {
-			document.getElementById("register-err").innerHTML = '<span style="color:red">username has been registered</span>';
-		} else if(reg_password.val().length < 8) {
-			document.getElementById("register-err").innerHTML = '<span style="color:red">password is too short</span>';
-		} else if(reg_password.val() !== re_reg_password.val()) {
-			document.getElementById("register-err").innerHTML = '<span style="color:red">password not match</span>';
+		if(reg_password.val() === re_reg_password.val()) {
+			let email_v = email.val();
+			let password = reg_password.val();
+
+			/** 
+			  connect firebase create user
+			  */
+			auth.createUserWithEmailAndPassword(email_v, password)
+			.then((o) => {
+				$("#myModal").modal('hide');
+			}).catch(function(error) {
+				let errorCode = error.code;
+				let errorMessage = error.message;
+				
+				$("#register-err").html(errorMessage).addClass('red');				
+			});
+		
 		} else {
+			$("#register-err").html(msg.pwd_not_match).addClass('red');
+		}
 
-		} 
-
+		/**
+		  clear input text area 
+		  */
 		email.val('');
 		reg_userid.val('');
 		reg_password.val('');
 		re_reg_password.val('');
-
 	})
 
-	// signin button
+	/**
+	  sign in button 
+	  */
 	$("#signin").submit(function(event) {
 		event.preventDefault();
-
+		document.getElementById("login-err").innerHTML = '';
 		let userid = $('#userid');
-		let password = $('#password');
+		let pwd = $('#password');
 		
-		// console.log(user);
-		// console.log(pwd);
+		let user = userid.val();
+		let password = pwd.val();
+		auth.signInWithEmailAndPassword(user, password)
+		.then((o) => {
+			window.location.href = './global.html';
+		}).catch((error) => {
+			// Handle Errors here.
+			var errorCode = error.code;
+			var errorMessage = error.message;
+			// console.log(errorCode);
 
-		if(userid.val() === 'aaa' && password.val() === 'bbb') {
-			window.location.replace("http://www.google.com");
-		} else {
+			$("#login-err").html(msg.login_fail).addClass('red');
+	
 			userid.val("");
-			password.val("");
-			document.getElementById("login-err").innerHTML = '<span style="color:red">username or/and password is wrong!</span>';
-		}
+			pwd.val("");
+		});
+
 	})
 })
 

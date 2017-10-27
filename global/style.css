@@ -1863,9 +1863,6 @@ background-color: #f2f4f7
 .red {
   color: red;
 }
-.navbar-right{
-  margin-right: 20%;
-}
 /* ============================== */
 /* for in.html*/
   .dropdown-menu:before {
@@ -1915,6 +1912,10 @@ background-color: #f2f4f7
 #nickname{
   font-family: "Microsoft JhengHei";
   color: #0099CC;
-  font-weight: 600;
+  /*font-weight: 600;*/
   font-size: 18px;
+}
+
+.navbar-right{
+  margin-right: 0;
 }

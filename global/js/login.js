@@ -8,6 +8,11 @@
  };
 
 $(document).ready(function() {
+
+
+
+
+
 	/**
 	  sign up button
 	  */
@@ -52,8 +57,9 @@ $(document).ready(function() {
 		/**
 		  clear input text area
 		  */
+    reg_name.val('');
 		reg_email.val('');
-		reg_userid.val('');
+		reg_nickname.val('');
 		reg_password.val('');
 		re_reg_password.val('');
 	})

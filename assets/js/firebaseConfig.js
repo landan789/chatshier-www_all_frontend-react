@@ -13,11 +13,13 @@
 
 // Initialize Firebase
 var config = {
-	apiKey: "AIzaSyCvEeDhpi-a8TDq5xzf3bG0GLyeHmyWz1c",
-	authDomain: "tinichats-1c78f.firebaseapp.com",
-	databaseURL: "https://tinichats-1c78f.firebaseio.com",
-	projectId: "tinichats-1c78f",
-	storageBucket: "tinichats-1c78f.appspot.com",
-	messagingSenderId: "703410504817"
+	apiKey: "AIzaSyAQs4pa3MQHEsKEyaFgHAYnrsc21czEzl0",
+	authDomain: "fea-chatshier-edbdb.firebaseapp.com",
+	databaseURL: "https://fea-chatshier-edbdb.firebaseio.com",
+	projectId: "fea-chatshier-edbdb",
+	storageBucket: "fea-chatshier-edbdb.appspot.com",
+	messagingSenderId: "1002085022470"
 };
 firebase.initializeApp(config);
+const auth = firebase.auth();
+const database = firebase.database();

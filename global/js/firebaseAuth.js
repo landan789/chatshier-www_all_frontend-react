@@ -27,6 +27,6 @@ auth.onAuthStateChanged(user => {
 function logout(){
   auth.signOut()
   .then(response => {
-    // window.location = 'tinich/global/global.html';
+    window.location = 'global.html';
   })
 }

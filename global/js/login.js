@@ -15,20 +15,28 @@ $(document).ready(function() {
 		event.preventDefault();
 		document.getElementById("register-err").innerHTML = "";
 
-		let email = $('#email');
-		let reg_userid = $('#reg_userid');
+    let reg_name = $('#reg_name');
+		let reg_email = $('#reg_email');
+		let reg_nickname = $('#reg_nickname');
 		let reg_password = $('#reg_password');
 		let re_reg_password = $('#re_reg_password');
 
 		if(reg_password.val() === re_reg_password.val()) {
-			let email_v = email.val();
+      let name = reg_name.val();
+			let email = reg_email.val();
 			let password = reg_password.val();
+      let nickname = reg_nickname.val();
 
 			/**
 			  connect firebase create user
 			  */
-			auth.createUserWithEmailAndPassword(email_v, password)
+			auth.createUserWithEmailAndPassword(email, password)
 			.then((o) => {
+        database.ref('users/' + auth.currentUser.uid).set({
+          name: name,
+          nickname: nickname,
+          email: email,
+        });
 				$("#myModal").modal('hide');
 			}).catch(function(error) {
 				let errorCode = error.code;
@@ -44,7 +52,7 @@ $(document).ready(function() {
 		/**
 		  clear input text area
 		  */
-		email.val('');
+		reg_email.val('');
 		reg_userid.val('');
 		reg_password.val('');
 		re_reg_password.val('');
@@ -56,9 +64,8 @@ $(document).ready(function() {
 	$("#signin").submit(function(event) {
 		event.preventDefault();
 		document.getElementById("login-err").innerHTML = '';
-		let userid = $('#userid');
-		let pwd = $('#password');
-
+		let userid = $('#login_email');
+		let pwd = $('#login_password');
 		let user = userid.val();
 		let password = pwd.val();
 		auth.signInWithEmailAndPassword(user, password)
@@ -71,20 +78,8 @@ $(document).ready(function() {
 			// console.log(errorCode);
 
 			$("#login-err").html(msg.login_fail).addClass('red');
-
 			userid.val("");
 			pwd.val("");
 		});
-
 	})
-
-	auth.onAuthStateChanged(user => {
-    if(user){
-      //window.location.replace('http://fea-chatshier.com:3000');
-			console.log('sign in');
-    } else {
-      console.log('need to sign in');
-    }
-  });
-
 })

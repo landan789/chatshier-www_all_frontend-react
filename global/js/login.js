@@ -1,51 +1,81 @@
+/**
+  file name: login.js
+  purpose: let client to sign up/in an account
+  */
+ const msg = {
+ 	pwd_not_match: "Passwords not match",
+ 	login_fail: "Incorrect username or password."
+ };
+
 $(document).ready(function() {
-	// signup button
+	/**
+	  sign up button
+	  */
 	$('#signup').submit(function(event) {
 		event.preventDefault();
+		document.getElementById("register-err").innerHTML = "";
 
 		let email = $('#email');
 		let reg_userid = $('#reg_userid');
 		let reg_password = $('#reg_password');
 		let re_reg_password = $('#re_reg_password');
 
-		// if(email.val() === "a") {
-		// 	document.getElementById("register-err").innerHTML = '<span style="color:red">email has been registered</span>';
-		// } else if(reg_userid.val() === "b") {
-		// 	document.getElementById("register-err").innerHTML = '<span style="color:red">username has been registered</span>';
-		// } else if(reg_password.val().length < 8) {
-		// 	document.getElementById("register-err").innerHTML = '<span style="color:red">password is too short</span>';
-		// } else if(reg_password.val() !== re_reg_password.val()) {
-		// 	document.getElementById("register-err").innerHTML = '<span style="color:red">password not match</span>';
-		// } else {
-		//
-		// }
+		if(reg_password.val() === re_reg_password.val()) {
+			let email_v = email.val();
+			let password = reg_password.val();
 
-		auth.createUserWithEmailAndPassword(email.val(), reg_password.val()).then(() => {
-      database.ref('users/' + auth.currentUser.uid).set({
-        email: email.val()
-      });
-    }).catch(error => {
-      showError(error.message);
-    });
+			/**
+			  connect firebase create user
+			  */
+			auth.createUserWithEmailAndPassword(email_v, password)
+			.then((o) => {
+				$("#myModal").modal('hide');
+			}).catch(function(error) {
+				let errorCode = error.code;
+				let errorMessage = error.message;
 
+				$("#register-err").html(errorMessage).addClass('red');
+			});
 
+		} else {
+			$("#register-err").html(msg.pwd_not_match).addClass('red');
+		}
 
+		/**
+		  clear input text area
+		  */
 		email.val('');
 		reg_userid.val('');
 		reg_password.val('');
 		re_reg_password.val('');
-
 	})
 
-	// signin button
+	/**
+	  sign in button
+	  */
 	$("#signin").submit(function(event) {
 		event.preventDefault();
+		document.getElementById("login-err").innerHTML = '';
+		let userid = $('#userid');
+		let pwd = $('#password');
 
-		let userid = $('#userid').val();
-		let password = $('#password').val();
-		auth.signInWithEmailAndPassword(userid, password).then(response => {}).catch(error => {
-	   console.log(error.message);
-  	});
+		let user = userid.val();
+		let password = pwd.val();
+		auth.signInWithEmailAndPassword(user, password)
+		.then((o) => {
+			window.location.href = './global.html';
+		}).catch((error) => {
+			// Handle Errors here.
+			var errorCode = error.code;
+			var errorMessage = error.message;
+			// console.log(errorCode);
+
+			$("#login-err").html(msg.login_fail).addClass('red');
+
+			userid.val("");
+			pwd.val("");
+		});
+
 	})
 
 	auth.onAuthStateChanged(user => {

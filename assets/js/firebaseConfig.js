@@ -21,5 +21,6 @@ var config = {
 	messagingSenderId: "1002085022470"
 };
 firebase.initializeApp(config);
-const auth = firebase.auth();
+
 const database = firebase.database();
+const auth = firebase.auth();

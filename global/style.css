@@ -244,7 +244,6 @@ p {
   z-index: 1;
   padding: 0 200px;
 }
-
 #navWords {
   margin-top: 20px;
   font-size: 16px;
@@ -255,6 +254,41 @@ p {
   text-decoration: none;
   color: #33CCFF;
 }
+
+/* 10/24 add */
+.modal {
+  font-size: 10px;
+}
+.oblique {
+  font-style: oblique;
+}
+#login {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: "Microsoft JhengHei"
+}
+
+#login li a {
+  text-decoration: none;
+  color: #33CCFF;
+}
+#login li a:hover {
+  background-color: transparent;
+  color: #22BBEE;
+  text-decoration: underline;
+}
+#login li a:focus {
+  /*border-shadow: none;*/
+  color: #11AADD;
+  background: #fff;
+}
+.label-sm {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 1px;
+}
+/* 10/24 end*/
+
 #intro2 {
   padding: 0;
 }
@@ -384,15 +418,6 @@ form {
   font-size: 16px;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
 
 #intro1title{
   text-align: left;
@@ -1832,4 +1857,65 @@ background-color: #f2f4f7
   body{
 		width: 320px;
 	}
+}
+
+ /* Color class */
+.red {
+  color: red;
+}
+/* ============================== */
+/* for in.html*/
+  .dropdown-menu:before {
+  position: absolute;
+  top: -7px;
+  right: 19px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+
+.dropdown-menu:after {
+  position: absolute;
+  top: -6px;
+  right: 20px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  content: '';
+}
+
+#account {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: "Microsoft JhengHei"
+}
+
+#account li a {
+  text-decoration: none;
+  color: #33CCFF;
+  cursor:pointer;
+}
+#account li a:hover {
+  background-color: transparent;
+  color: #22BBEE;
+}
+#account li a:focus {
+  /*border-shadow: none;*/
+  color: #11AADD;
+  background: #fff;
+}
+
+#nickname{
+  font-family: "Microsoft JhengHei";
+  color: #0099CC;
+  /*font-weight: 600;*/
+  font-size: 18px;
+}
+
+.navbar-right{
+  margin-right: 0;
 }

@@ -54,6 +54,49 @@ p{
   width: auto;
 }
 
+/*blog*/
+#article div{
+  background-color:#33CCFF;
+  color:white;
+}
+#article header{
+  font-size: 36px;
+  padding-top:4%;
+  padding-bottom:4%;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+#article header a{
+  color:white;
+  font-size:14px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#article footer{
+  font-size: 16px;
+  padding: 80px;;
+  border-bottom: 1px solid black;
+}
+#article header strong {
+  color:white;
+  font-size: 30px;
+  padding: 0 30px;
+}
+
+#article-box{
+  padding-left: 70%;
+  padding-bottom: 20px;
+  margin-bottom:50px;
+}
+#article-box div{
+  margin-top: 30px;
+}
+#readmore a{
+  background-color: white;
+  color:#33CCFF;
+  padding:5px;
+  border-radius: 5px;
+}
 
 
 /*=================================================Index==================================*/
@@ -81,6 +124,105 @@ p{
     /*border:1px solid black*/
 }
 
+
+/*font*/
+.caption{
+  /*font-size:2em;*/
+  font-weight:900
+}
+#slogan {
+  margin-top: 20px;
+  height:590px;
+  color: white;
+  background-color: #33CCFF;
+}
+#slogan div aside{
+float:left;width:35%
+}
+
+#slogan div aside img{
+  width: 100%; padding-right: 20px;margin-top: 50px
+}
+
+#slogan div section{
+  float:left;width:65%
+}
+
+#slogan div section header{
+  font-size:50px;margin-top:20px
+}
+/*Introduction 2 */
+.firstFlexbox{
+float:left;
+padding-right: 30px;
+padding-top: 50px;
+padding-left: 20px;
+}
+
+.FlexBox aside{
+	float:left;
+  padding-left:70px;
+}
+.Intro2 .col-5{
+	float:left;
+	padding-left:135px
+}
+.Intro2 .col-7{
+	float:left;
+	padding-left: 70px;
+  padding-top:50px;
+}
+#intro2, #pricingpack {
+  background-color: #33CCFF;
+  color: white;
+  width: 100%;
+}
+.fontOneHundreds {
+    font-size: 90px;
+  }
+
+#MarketingTop{
+  /*height:250px;*/
+  border: 2px solid black
+}
+.MarketingTopBox {
+  border: solid 1px grey;
+  text-align: center;
+  padding: 50px;
+}
+
+.TopLeft{
+  float:left;
+  width:60%
+}
+
+.TopRight{
+  float:left;
+}
+
+#MarketingTop2{
+  height:250px;
+  border: 2px solid red;
+}
+
+.BottomLeft{
+  margin-left:450px;
+  float:left
+  }
+
+.material-icons{
+  font-size: 200px
+}
+
+
+
+
+#everyday{
+  font-size:20px
+}
+
+
+
 #tinichatsLogo {
   width: 95px;
 }
@@ -102,45 +244,36 @@ p {
   z-index: 1;
   padding: 0 200px;
 }
-#navWords {
+ul.nav.navWords {
   margin-top: 20px;
-  font-size: 16px;
-  font-family: "Microsoft JhengHei";
+  font-size: 24px;
+  font-family: "Microsoft JhengHei"
 }
 
-#navWords li a {
+ul.nav.navWords li a {
   text-decoration: none;
+  color: #33CCFF;
+}
+
+ul.nav.navWords li a:hover {
+  background:transparent;
+  color: #33CCFF;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  background:transparent;
   color: #33CCFF;
 }
 
 /* 10/24 add */
-.modal {
-  font-size: 10px;
-}
 .oblique {
   font-style: oblique;
 }
 
-#login {
-  margin-top: 20px;
-  font-size: 16px;
-  font-family: "Microsoft JhengHei"
+.btn-group>.btn-group {
+     float: none; 
 }
 
-#login li a {
-  text-decoration: none;
-  color: #33CCFF;
-}
-#login li a:hover {
-  background-color: transparent;
-  color: #22BBEE;
-  text-decoration: underline;
-}
-#login li a:focus {
-  /*border-shadow: none;*/
-  color: #11AADD;
-  background: #fff;
-}
 .label-sm {
   font-size: 14px;
   font-weight: 500;
@@ -241,7 +374,7 @@ padding-left: 100px;
 
 fieldset {
   /*margin-left: 48px;*/
-  font-size: 1.5em;
+  font-size: 1em;
   border: none;
 }
 
@@ -536,9 +669,6 @@ form {
 
 }
 
-
-
-
 /*2nd Short Table*/
 #shortTableContainer{
   margin-left:auto;
@@ -728,11 +858,6 @@ margin-bottom: 50px
   float: left
 }
 
-
-
-
-
-
 #Pricing1{
   background-color:#33ccff;
   height: 250px
@@ -816,11 +941,6 @@ margin-bottom: 50px
   height: 100px;
   padding: 20px;
 }
-
-
-
-
-
 
 td{
   font-size: 16px
@@ -1031,7 +1151,7 @@ background-color: #f2f4f7
 
 /*============================================rwd begins=========================================*/
 /*@media screen and (max-width:959px){
-  #features{
+	#features{
     width: 100%;
     font-size:2px;
   }
@@ -1063,9 +1183,9 @@ background-color: #f2f4f7
 
   @media screen and (max-width:320px){
     #features{
-      width: 320px;
+  		width: 320px;
         font-size:2px;
-    }
+  	}
     #box{
       font-size:2px;
       width: 320px;
@@ -1117,7 +1237,7 @@ background-color: #f2f4f7
     #logo{
       margin-left: 200px;
     }
-    #navWords {
+    ul.nav.navWords {
       margin-top: 20px;
       font-size: 19px;
       font-weight: 900px;
@@ -1147,7 +1267,7 @@ background-color: #f2f4f7
 /*================index============*/
 /*slogan*/
 #slogan{
-  padding-top:200px;
+	padding-top:200px;
 
 }
 .subheading {
@@ -1155,8 +1275,8 @@ background-color: #f2f4f7
 }
 /*video*/
 .IndexVideo .col-5{
-  height: 137px;
-  text-align:center;
+	height: 137px;
+	text-align:center;
   padding-left: 0px;
 }
 .IndexVideo .col-7{
@@ -1164,7 +1284,7 @@ background-color: #f2f4f7
   }
 /*Introduction2*/
 .Intro2 .col-5{
-  padding-left:116px
+	padding-left:116px
 }
 
 /*features*/
@@ -1176,56 +1296,56 @@ background-color: #f2f4f7
 }
 /*pricing*/
 #tables{
-  margin-left: 10%;
-  margin-right: 10%;
-  /*height:527px;*/
+	margin-left: 10%;
+	margin-right: 10%;
+	/*height:527px;*/
 }
 
 #pricingpack2{
-  /*height:1800px;*/
+	/*height:1800px;*/
   /*padding-top:45px*/
 }
 .pricing-footer{
-  margin-top:50px
+	margin-top:50px
 }
 
 
-  #PrBox11 {
+	#PrBox11 {
     width: 69%;
-  margin-left:14%;
+	margin-left:14%;
 }
 
-  #PrBox11 img {
+	#PrBox11 img {
     margin-top: 68px;
     width: 30%;
     /* margin-left: 30px; */
     margin-left: 35%;
-  }
-  #PrBox33{
-    margin-left:0px;
-    box-shadow: none
-  }
-  #PrBox44{
-    margin-left:0px
-  }
+	}
+	#PrBox33{
+		margin-left:0px;
+		box-shadow: none
+	}
+	#PrBox44{
+		margin-left:0px
+	}
 
-  /*Footer*/
-  #footer2{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    margin-top: 63px;
-  }
-  /*=======================pricing===================*/
-  /*features*/
-  #PrFeatures{
-    padding:1%;
-    height:466px
-  }
-  #PrFeatures header{
-    height:211px
-  }
+	/*Footer*/
+	#footer2{
+	  width: 50%;
+	  margin-left: auto;
+	  margin-right: auto;
+	  text-align: left;
+	  margin-top: 63px;
+	}
+	/*=======================pricing===================*/
+	/*features*/
+	#PrFeatures{
+		padding:1%;
+		height:466px
+	}
+	#PrFeatures header{
+		height:211px
+	}
 }
 
 @media screen and (min-width: 600px) and (max-width:800px){
@@ -1239,7 +1359,7 @@ background-color: #f2f4f7
   #logo{
     margin-left: 100px;
   }
-  #navWords {
+  ul.nav.navWords {
     margin-top: 20px;
     font-size: 19px;
     font-weight: 900px;
@@ -1257,7 +1377,7 @@ background-color: #f2f4f7
   #logo{
     margin-left: 0px;
   }
-  #navWords {
+  ul.nav.navWords {
     margin-top: 20px;
     font-size: 19px;
     font-weight: 900px;
@@ -1275,7 +1395,7 @@ background-color: #f2f4f7
   #pineapple{
     width:100%
   }
-  #navWords {
+  ul.nav.navWords {
     margin-top: 20px;
     font-size: 19px;
     font-weight: 900px;
@@ -1296,7 +1416,7 @@ background-color: #f2f4f7
   #pineapple{
     width:100%
   }
-  #navWords {
+  ul.nav.navWords {
     margin-top: 20px;
     font-size: 12px;
     font-weight: 900px;
@@ -1324,7 +1444,7 @@ background-color: #f2f4f7
   #pineapple{
     width:100%
   }
-  #navWords {
+  ul.nav.navWords {
     margin-top: 20px;
     font-size: 12px;
     font-weight: 900px;
@@ -1342,7 +1462,7 @@ background-color: #f2f4f7
   #pineapple{
     width:100%
   }
-  #navWords {
+  ul.nav.navWords {
     margin-top: 20px;
     font-size: 12px;
     font-weight: 900px;
@@ -1382,10 +1502,10 @@ background-color: #f2f4f7
   font-weight: bold;
 }
 .firstFlexbox h1{
-  text-align:center
+	text-align:center
 }
 #pricingpack2{
-  /*height:1813px;*/
+	/*height:1813px;*/
   /*padding-top:45px*/
 }
     #PrPointer{
@@ -1403,26 +1523,26 @@ background-color: #f2f4f7
     /*=====================================Index=====================*/
 /*slogan*/
 #slogan{
-  text-align:center
+	text-align:center
 }
 #slogan aside div{
-  font-size: 37px;
+	font-size: 37px;
 }
 #slogan header, #slogan p{
-  text-align:center
+	text-align:center
 }
 #slogan .col-5 img{
-  width: 60%
+	width: 60%
 }
 .slogancaption{
   font-size:1.5em;
   line-height:1.5em;
 }
     /*video*/
-  .IndexVideo{
-    height:316px;
-    /*border:2px solid black*/
-  }
+	.IndexVideo{
+	  height:316px;
+	  /*border:2px solid black*/
+	}
     .IndexVideo {
     margin-top: 43px;
     margin-bottom: 0px;
@@ -1442,16 +1562,16 @@ background-color: #f2f4f7
       text-align:center
     }
 
-  .firstFlexbox{
-  padding-right: 0px
-  }
+	.firstFlexbox{
+	padding-right: 0px
+	}
 
-  .Intro2 .col-5{
-    padding-left:0px
-  }
-  .Intro2 .col-7{
-    padding-left: 0px
-  }
+	.Intro2 .col-5{
+		padding-left:0px
+	}
+	.Intro2 .col-7{
+		padding-left: 0px
+	}
 
     .FlexBox {
       display: -webkit-box;
@@ -1478,15 +1598,15 @@ background-color: #f2f4f7
       -webkit-order: 1;
       order: 1;
     }
-  /*features*/
+	/*features*/
   #featuresBlock{
     margin-bottom:0px;
   }
-  #features3{
-    margin-top:40px;
-    margin-bottom: 61px;
+	#features3{
+	  margin-top:40px;
+	  margin-bottom: 61px;
 
-  }
+	}
     /*pricing*/
     #tables{
       /*height: 520px;*/
@@ -1537,11 +1657,11 @@ background-color: #f2f4f7
 
     .fontOneHundreds {
       font-size: 146px;
-    margin-left: 0px
+	  margin-left: 0px
     }
 
 .col-7 h1{
-  text-align: center
+	text-align: center
 }
     p {
       font-size: 16px;
@@ -1558,7 +1678,7 @@ background-color: #f2f4f7
     }
 
 
-    #navWords {
+    ul.nav.navWords {
       margin-top: 20px;
       font-size: 12px;
       font-weight: 900px;
@@ -1626,22 +1746,110 @@ background-color: #f2f4f7
       text-align: left;
     }
 
+/*============================Pricing========================*/
+/*Top image block*/
+.PrTopImage{
+	padding-top: 109px
+}
+#appletree a{
+	display: none;
+}
+.PrTopImage #appletree{
+	margin-bottom: 79px
+}
 
+/*2nd short table*/
+#PrBox11 img{
+	display: none
+}
+#PrBox22{
+	margin-top: 0px
+}
+#PrBox33{
+	margin-top: 0px;
+	box-shadow: none;
+	margin-left:0px
+}
+#PrBox44{
+	margin-top:0px;
+	margin-left:0px
+
+}
+/*still image1&2*/
+#PrParallax{
+  background-color: #00253d;
+  margin-top: 0px;
+  /*color: white;*/
+  height: 450px;
+  font-size: 16px;
+  padding:30px
+
+}
+.img-circle{
+  width:20%;
+}
+.transbox2 {
+     border: none;
+     opacity: 1;
+}
+.parallax {
+    /* The image used */
+    background-image: none;
+      min-height:0px
+  }
+  .parallax .col-9 p{
+    text-align:center
+  }
+
+  #PrParallaxLeft .col-3, .col-9{
+    text-align:center
+  }
+  .img-circle{
+    margin-left:0px
+  }
+
+
+/*1 line*/
+#Pr1line{
+  /*font-size:30px;*/
+  padding: 2px;
+}
+#PrFeatures header{
+  padding: 2px;
+  padding-top: 40px;
+  text-align: center;
+  height: 157px;
+  color:white
+}
+/*features box*/
+#PrFeatures{
+  height: 700px;
+  text-align:center
+  }
+/*common questions*/
+#PrCommonMainDiv{
+  margin-bottom: 44px
+}
+}
 
 @media screen and (max-width:320px){
   body{
-    width: 320px;
-  }
+		width: 320px;
+	}
 }
 
  /* Color class */
 .red {
   color: red;
 }
-
 /* ============================== */
 /* for in.html*/
-  .dropdown-menu:before {
+.dropdown-menu {
+  min-width: 250px;
+  padding: 5px;
+}
+
+.dropdown-menu:before {
   position: absolute;
   top: -7px;
   right: 19px;
@@ -1664,10 +1872,8 @@ background-color: #f2f4f7
   content: '';
 }
 
-#account {
-  margin-top: 20px;
-  font-size: 16px;
-  font-family: "Microsoft JhengHei";
+#register li a{
+  color: #33CCFF;
 }
 
 #account li a {
@@ -1675,25 +1881,20 @@ background-color: #f2f4f7
   color: #33CCFF;
   cursor:pointer;
 }
-
 #account li a:hover {
   background-color: transparent;
-  color: #22BBEE;
-}
-
-#account li a:focus {
-  /*border-shadow: none;*/
-  color: #11AADD;
-  background: #fff;
 }
 
 #nickname{
-  font-family: "Microsoft JhengHei";
-  color: #0099CC;
-  font-weight: 600;
-  font-size: 18px;
+  margin-top: 20px;
+  font-size: 19px;
+  color: #33CCFF;
+  font-family: "Microsoft JhengHei"
 }
 
-.navbar-right {
+.navbar-right{
   margin-right: 0;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+  background-color: transparent;
 }

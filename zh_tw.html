@@ -3,28 +3,123 @@
   <head>
     <meta charset="utf-8">
     <title>Chatshier</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/zh_tw.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/socialMediaIcon.css"/>
+    <link rel="stylesheet" href="css/zh_tw.css"/>
   </head>
   <body>
+    <!-- fb icon -->
+    <a id="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186" >
+    <img src="assets/images/fb.png" alt="FB Icon" >
+    </a>
+    <a id="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n" >
+    <img src="assets/images/oh9ei2P.png" alt="LINE Icon" >
+    </a>
+    <a id="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true" >
+    <img src="assets/images/tinichats_chaticon.png" alt="Tawk Icon" >
+    </a>
     <section id="header" class="container-fluid text-white">
       <div class="container">
         <div class="row">
           <div class="col-md-6 column">
             <div class="logo">
-              <img alt="logo" src="image/logo.png"/>
+              <a href="zh_tw.html"><img alt="logo" src="image/logo.png"/></a>
             </div>
           </div>
           <div class="col-sm-12 col-md-6 column header-menu">
             <div class="menu">
-              <a href="#about">關於我們</a>
-              <a href="#feature">產品特色</a>
-              <a href="#pricing">價錢方案</a>
+              <a href="zh_tw.html#about">關於我們</a>
+              <a href="zh_tw.html#feature">產品特色</a>
+              <a href="zh_tw.html#pricing">價錢方案</a>
               <a href="#">支援</a>
-              <a href="#">部落格</a>
-              <a href="#">登入</a>
-              <a href="#">註冊</a>
+              <a href="blog.html">部落格</a>
+              <div class="dropdown">
+                <a href="#">登入</a>
+                <div class="dropdown-content">
+                  <form class="form-horizontal">
+                    <fieldset>
+                      <div class="control-group">
+                        <label class="control-label" for="login_email">電郵:</label>
+                        <div class="controls">
+                          <input required="" id="login_email" type="text" class="form-control"  class="input-medium" required="">
+                        </div>
+                        <!-- Password input-->
+                        <div class="control-group">
+                          <label class="control-label" for="login_password">密碼:</label>
+                          <div class="controls">
+                            <input required="" id="login_password" class="form-control" type="password" class="input-medium">
+                          </div>
+                        </div>
+                        <!-- Error Message -->
+                        <div id="login-err">
+                        </div>
+                        <!-- Button -->
+                        <div class="control-group">
+                          <label class="control-label" for="signin"></label>
+                          <div class="controls">
+                            <button id="signin" name="signin" class="btn btn-success">登入</button>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="#">註冊</a>
+                <div class="dropdown-content">
+                  <form class="form-horizontal">
+                    <fieldset>
+                      <!-- Text input-->
+                      <div class="control-group">
+                        <label class="control-label" for="reg_email">電郵:</label>
+                        <div class="controls">
+                          <input id="reg_email" class="form-control" type="text" class="input-large" required="">
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="control-group">
+                        <label class="control-label" for="reg_name">名字:</label>
+                        <div class="controls">
+                          <input id="reg_name" class="form-control" type="text" class="input-large" required="">
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="control-group">
+                        <label class="control-label" for="reg_nickname">綽號:</label>
+                        <div class="controls">
+                          <input id="reg_nickname" class="form-control" type="text" class="input-large" required="">
+                        </div>
+                      </div>
+                      <!-- Password input-->
+                      <div class="control-group">
+                        <label class="control-label" for="password">密碼:</label>
+                        <div class="controls">
+                          <input id="reg_password" class="form-control" type="password"  class="input-large" required="">
+                          <!-- <p><span class="oblique">1-8 Characters</span></p> -->
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="control-group">
+                        <label class="control-label" for="re_reg_password">再輸入密碼:</label>
+                        <div class="controls">
+                          <input id="re_reg_password" class="form-control" type="password" class="input-large" required="">
+                        </div>
+                      </div>
+                      <br>
+                      <div id="register-err"></div>
+                      <!-- Button -->
+                      <div class="control-group">
+                        <label class="control-label" for="confirmsignup"></label>
+                        <div class="controls">
+                          <button id="signup" name="confirmsignup" class="btn btn-success">註冊</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -72,7 +167,8 @@
                   </div>
                   <div class="col-sm-10">
                     <p class="font-17 bold-and-red">Automate Sales Funnels</p>
-                    <p class="font-17">Build a Facebook bot without coding to automate sales or lead qualification process.
+                    <p class="font-17">
+                      Build a Facebook bot without coding to automate sales or lead qualification process.
                       Bots can help you with giving a coupon, asking common questions or sharing content.
                     </p>
                   </div>
@@ -87,7 +183,8 @@
                   </div>
                   <div class="col-sm-10">
                     <p class="font-17 bold-and-red">Facebook Messenger Marketing</p>
-                    <p class="font-17">Automatically send personal private messages to customers who comment
+                    <p class="font-17">
+                      Automatically send personal private messages to customers who comment
                       on a specific Facebook post or click on your Facebook Ads.
                     </p>
                   </div>
@@ -186,7 +283,8 @@
         <div class="row">
           <div class="col-md-12 column">
             <h2 class="text-center">帶您認識Chatshier</h2>
-            <p class="lead text-center">WhatsHelp helps businesses increase sales and build close relationships
+            <p class="lead text-center">
+              WhatsHelp helps businesses increase sales and build close relationships
               with customers via Facebook Messenger by providing powerful automation tools.
               Chatting, broadcasting and bots are all in one place!
             </p>
@@ -207,7 +305,7 @@
         </div>
         <div class="row">
           <div class="col-md-12 text-center padding-0-80">
-            <img alt="圖片" class="hot-it-works-image video-image-style" src="https://labstats.com/wp-content/uploads/2017/03/application-usage-report.png"/>
+            <img alt="圖片" class="hot-it-works-image video-image-style" src="http://www.weareagoodcompany.com/images/work/ginkgo.png"/>
           </div>
         </div>
       </div>
@@ -293,7 +391,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 column">
-            <h2 class="text-center">Pricing</h2>
+            <h2 class="text-center">價錢方案</h2>
             <p class="text-center lead">You start for free and pay-as-you-go with honest pricing that scales as you grow.</p>
             <p class="font-17 text-center">
               <b>$29</b>/month - up to 1,000 contacts <br>
@@ -345,10 +443,6 @@
                           </div>
                         </blockquote>
                       </div>
-                    </div>
-                    <div class="story-style" class="col-md-12">
-                      <a href="https://whatshelp.io/customers/onlinetours" class="btn btn-lg btn-link">Read Full Story  → </a>
-                      <br/><br/>
                     </div>
                   </div>
                 </div>

@@ -6,19 +6,6 @@
 body{
   font-family: Georgia, serif;
 }
-#lineicon{
-  position:fixed;
-  right:15px;
-  bottom:90px;
-  margin:0;
-  padding:0;
-  z-index: 99;
-}
-#lineicon img{
-  width: 60px;
-  height: 60px
-}
-
 h1{
   font-size:80px;
 }
@@ -271,7 +258,7 @@ ul.nav.navWords li a:hover {
 }
 
 .btn-group>.btn-group {
-     float: none; 
+     float: none;
 }
 
 .label-sm {

@@ -1,0 +1,4 @@
+#fbicon{position:fixed;right:21px;bottom:150px;margin:0;padding:0;z-index:1000;}
+#lineicon{position:fixed;right:21px;bottom:85px;margin:0;padding:0;z-index:1000;}
+#tawkicon{position:fixed;right:21px;bottom:20px;margin:0;padding:0;z-index:1000;}
+#fbicon img, #lineicon img ,#tawkicon img{width:48px;height:48px}

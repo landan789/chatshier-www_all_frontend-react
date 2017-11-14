@@ -15,8 +15,13 @@
     <link rel="stylesheet" href="assets/css/footer.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="assets/js/style.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script type="text/javascript" src="config/firebaseConfig.js"></script>
+    <script type="text/javascript" src="config/urlConfig.js"></script>
+    <!-- <script src="jquery.js"></script> -->
 
-
+    <link rel="icon" href="assets/images/tab.png" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- fb icon -->
@@ -30,36 +35,147 @@
       <img src="assets/images/tinichats_chaticon.png" alt="HTML tutorial" >
     </a>
     <!-- nav bar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="topnav">
-       <div class="container">
-          <div class="row">
-             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="tw.html">
-                <img src="assets/images/tinichats_logo_web.png"  />
-                </a>
-             </div>
-             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                   <li><a href="tw.html"><strong>關於我們</strong></a></li>
-                   <li><a href="tw.html#featuresBlock" ><strong>產品特色</strong></a></li>
-                   <li><a href="Pricing.html"><strong>價錢方案</strong></a></li>
-                   <li><a href="faq.html" ><strong>問與答</strong></a></li>
-                   <li><a href="blog.html" ><strong>部落格</strong></a></li>
-                   <li><a href="contact.html" ><strong>聯絡我們</strong></a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                   <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
-                </ul>
-             </div>
-          </div>
-       </div>
-    </nav>
+     <nav class="navbar navbar-inverse navbar-fixed-top" id="topnav">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="tw.html">
+                  <img src="assets/images/tinichats_logo_web.png"  />
+                  </a>
+               </div>
+               <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav navWords">
+                     <li><a href="tw.html"><strong>關於我們</strong></a></li>
+                     <li><a href="tw.html#featuresBlock" ><strong>產品特色</strong></a></li>
+                     <li><a href="Pricing.html"><strong>價錢方案</strong></a></li>
+                     <li><a href="faq.html" ><strong>問與答</strong></a></li>
+                     <li><a href="blog.html" ><strong>部落格</strong></a></li>
+                     <li><a href="contact.html" ><strong>聯絡我們</strong></a></li>
+                  </ul>
+                  <!-- login start -->
+                  <div id="register" style="display:none;">
+                        <ul class="nav navbar-nav navbar-right navWords">
+                           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>登入</strong></a>
+                              <div class="dropdown-menu" id="signin">
+                                 <form class="form-horizontal">
+                                 <fieldset>
+                                    <div class="control-group">
+                                        <label class="control-label" for="login_email">電郵:</label>
+                                        <div class="controls">
+                                            <input required="" id="login_email" type="text" class="form-control"  class="input-medium" required="">
+                                        </div>
+                                        <!-- Password input-->
+                                        <div class="control-group">
+                                            <label class="control-label" for="login_password">密碼:</label>
+                                            <div class="controls">
+                                                <input required="" id="login_password" class="form-control" type="password" class="input-medium">
+                                            </div>
+                                        </div>
+                                        <!-- Error Message -->
+                                        <div id="login-err">
+                                        </div>
+
+                                        <!-- Button -->
+                                        <div class="control-group">
+                                            <label class="control-label" for="signin"></label>
+                                            <div class="controls">
+                                                <button id="signin" name="signin" class="btn btn-success">登入</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </fieldset>
+                                 </form>
+                              </div>
+                          </li>
+
+                           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>註冊</strong></a>
+                              <div class="dropdown-menu" id="signup">
+                              <form class="form-horizontal">
+                              <fieldset>
+                                  <!-- Text input-->
+                                  <div class="control-group">
+                                    <label class="control-label" for="reg_email">電郵:</label>
+                                    <div class="controls">
+                                      <input id="reg_email" class="form-control" type="text" class="input-large" required="">
+                                    </div>
+                                  </div>
+
+                                  <!-- Text input-->
+                                  <div class="control-group">
+                                    <label class="control-label" for="reg_name">名字:</label>
+                                    <div class="controls">
+                                      <input id="reg_name" class="form-control" type="text" class="input-large" required="">
+                                    </div>
+                                  </div>
+
+                                  <!-- Text input-->
+                                  <div class="control-group">
+                                    <label class="control-label" for="reg_nickname">綽號:</label>
+                                    <div class="controls">
+                                      <input id="reg_nickname" class="form-control" type="text" class="input-large" required="">
+                                    </div>
+                                  </div>
+
+                                  <!-- Password input-->
+                                  <div class="control-group">
+                                    <label class="control-label" for="password">密碼:</label>
+                                    <div class="controls">
+                                      <input id="reg_password" class="form-control" type="password"  class="input-large" required="">
+                                      <!-- <p><span class="oblique">1-8 Characters</span></p> -->
+                                    </div>
+                                  </div>
+
+                                  <!-- Text input-->
+                                  <div class="control-group">
+                                    <label class="control-label" for="re_reg_password">再輸入密碼:</label>
+                                    <div class="controls">
+                                      <input id="re_reg_password" class="form-control" type="password" class="input-large" required="">
+                                    </div>
+                                  </div>
+
+                                  <br>
+                                  <div id="register-err"></div>
+
+                                  <!-- Button -->
+                                  <div class="control-group">
+                                    <label class="control-label" for="confirmsignup"></label>
+                                    <div class="controls">
+                                      <button id="signup" name="confirmsignup" class="btn btn-success">註冊</button>
+                                    </div>
+                                  </div>
+                              </fieldset>
+                              </form>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div id="account" style="display:none;">
+                        <ul class="nav navbar-right dropdown navWords" >
+                           <li class="dropdown-toggle" data-toggle="dropdown">
+                              <a><strong>帳號</strong><span class="caret"></span></a>
+                           </li>
+                           <ul class="dropdown-menu  dropdown-menu-right" role="menu" aria-labelledby="menu1">
+                              <li class="dropdown-header"><strong id="nickname"></strong></li>
+                              <li class="divider"></li>
+                              <li><a id="chatshier-link" target="_blank">Chatshier</a></li>
+                              <li><a href="profile.html">你的檔案</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#" onclick="logout();">登出</a></li>
+                           </ul>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- login end -->
+               </div>
+            </div>
+         </div>
+      </nav>
     <!-- nav bar ends -->
 
     <div class="container">
@@ -277,6 +393,10 @@ Tinichats 資料中所述及之主題得擁有專利權、專利申請權、商�
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- custom -->
+    <script src="js/firebaseAuth.js"></script>
+    <script src="js/login.js"></script>
 
 
 

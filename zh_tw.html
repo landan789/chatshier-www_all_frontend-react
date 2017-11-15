@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Chatshier</title>
+    <link rel="icon" href="assets/images/tab.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="assets/css/socialMediaIcon.css"/>
@@ -35,8 +36,8 @@
               <a href="#">支援</a>
               <a href="blog.html">部落格</a>
               <div class="dropdown">
-                <a href="#">登入</a>
-                <div class="dropdown-content">
+                <a href="#" onclick="showLoginBox()">登入</a>
+                <div class="dropdown-content" id="login-link">
                   <form class="form-horizontal">
                     <fieldset>
                       <div class="control-group">
@@ -67,8 +68,8 @@
                 </div>
               </div>
               <div class="dropdown">
-                <a href="#">註冊</a>
-                <div class="dropdown-content">
+                <a href="#" onclick="showRegisterBox()">註冊</a>
+                <div class="dropdown-content" id="register-link">
                   <form class="form-horizontal">
                     <fieldset>
                       <!-- Text input-->
@@ -125,7 +126,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 column">
-            <h1 class="main-title margin-top-140">替你聊，替你客服</h1>
+            <h1 class="main-title margin-top-80">替你聊，替你客服</h1>
             <p class="text-left lead">
               客服即時在線，掌握顧客需求，為你抓住訂單。
               <br />傾聽顧客反饋，助你調整步伐。
@@ -146,7 +147,7 @@
           <h1 class="main-title overview-title-style">Grow your business with Facebook Messenger</h1>
           <div class="col-xs-12 text-center">
           </div>
-          <div class="col-sm-12 col-md-6 column div-wh-img-wrapper wh-support">
+          <div class="col-sm-12 col-md-6 column">
             <img alt="圖片" class="img-responsive" src="https://labstats.com/wp-content/uploads/2017/03/application-usage-report.png"/>
           </div>
           <div class="col-sm-12 col-md-6">
@@ -288,7 +289,7 @@
               with customers via Facebook Messenger by providing powerful automation tools.
               Chatting, broadcasting and bots are all in one place!
             </p>
-            <div class="col-md-8 col-md-offset-3 col-sm-8 col-sm-offset-2 column text-center">
+            <!-- <div class="col-md-8 col-md-offset-3 col-sm-8 col-sm-offset-2 column text-center">
               <div class="row margin-top15-btm50">
                 <div class="col-sm-4 col-md-3 column padding-top-btm-10">
                   <a class="how-it-works-active text-uppercase-bold" href="javascript:void(0)" onclick="changeHowItWorksImage('conversations', this)">Conversations</a>
@@ -300,7 +301,7 @@
                   <a class="text-uppercase-bold" href="javascript:void(0)" onclick="changeHowItWorksImage('analytics', this)">Analytics</a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="row">
@@ -321,7 +322,7 @@
           <div class="col-md-8 col-md-offset-2 column">
             <div class="row">
               <!-- RIGHT COLUMN -->
-              <div class="col-sm-4 col-md-4 column wh-features">
+              <div class="col-sm-4 col-md-4">
                 <!-- #1 -->
                 <div class="item-icon wh-icon-feature">
                   <i class="fa fa-comments fa-2x"></i>
@@ -331,7 +332,7 @@
                   客服人員皆經過我們改良的處理流程訓練，提供即時在線服務，顧客問問題不怕找不到人，並且在短時間內得到回覆。
                 </p>
                 <!-- #2 -->
-                <div class="item-icon wh-icon-feature">
+                <div class="item-icon">
                   <i class="fa fa-search fa-2x"></i>
                 </div>
                 <h3>聊天紀錄查閱</h3>
@@ -340,7 +341,7 @@
                 </p>
               </div>
               <!-- IPHONE IMAGE -->
-              <div class="col-sm-4 col-md-4 column">
+              <div class="col-sm-4 col-md-4">
                 <!-- #1 -->
                 <div class="item-icon wh-icon-feature">
                   <i class="fa fa-usd fa-2x"></i>
@@ -350,7 +351,7 @@
                   致力於將對你產品有興趣的訪客變成顧客!留意每位顧客細節與偏好， 悉心傾聽每個意見，把產品賣進顧客的心坎裡。
                 </p>
                 <!-- #2 -->
-                <div class="item-icon wh-icon-feature">
+                <div class="item-icon">
                   <i class="fa fa-area-chart fa-2x"></i>
                 </div>
                 <h3>多樣化支援</h3>
@@ -359,7 +360,7 @@
                 </p>
               </div>
               <!-- LEFT COLUMN -->
-              <div class="col-sm-4 col-md-4 column">
+              <div class="col-sm-4 col-md-4">
                 <!-- #1 -->
                 <div class="item-icon wh-icon-feature">
                   <i class="fa fa-clock-o fa-2x"></i>
@@ -370,7 +371,7 @@
                 </p>
 
                 <!-- #2 -->
-                <div class="item-icon wh-icon-feature">
+                <div class="item-icon">
                   <i class="fa fa-smile-o fa-2x"></i>
                 </div>
                 <h3>有溫度的客服體驗</h3>
@@ -416,9 +417,7 @@
             <h2 class="text-center margin-btm-40">Trusted by 5 000+ businesses in over 70 countries</h2>
             <div class="col-md-12 text-center padding-0-80">
               <img alt="圖片" src="image/richesse.png"/>
-              <img alt="圖片" src="image/9thflr.jpg"/>
               <img alt="圖片" src="image/applied-arch.png"/>
-              <img alt="圖片" src="image/tinistart.png" width="240px" height="240px"/>
             </div>
             <!-- case onlinetours -->
             <div class="row">
@@ -478,6 +477,6 @@
         </div>
       </div>
     </section>
-
+    <script src="js/zh_tw.js" charset="utf-8"></script>
   </body>
 </html>

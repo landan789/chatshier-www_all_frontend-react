@@ -103,7 +103,7 @@
     border: 1px solid #ccc;
 	border-radius: 5px;
     overflow: hidden;
-    background-image: url("../assets/images/icon-select-arrow-gray.svg") !important;
+    background-image: url("../assets/images/icon_select_arrow_gray.svg") !important;
     background-repeat: no-repeat !important;
     background-position: right 10px center !important;
     background-size: 10px !important;

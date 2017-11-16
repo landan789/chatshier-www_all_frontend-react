@@ -1,4 +1,3 @@
-
 .d-flex {
 	display: flex;
 	flex-flow: row wrap;
@@ -58,7 +57,7 @@
 	padding-right: 30px;
 }
 
-.x-btn {
+#contactBtn, .x-btn {
     width: 100%;
 	padding: 14px 20px;
 	color: #ffffff;
@@ -68,7 +67,7 @@
 	outline: none;
 }
 
-.x-btn:hover {
+#contactBtn:focus, #contactBtn:active, #contactBtn:focus:active, #contactBtn:hover, .x-btn:hover {
 	color: #ffffff;
 	background: #33CCFF;
 	border: none;
@@ -76,18 +75,7 @@
 	outline: none;
 }
 
-.btn.active.focus, .btn.active:focus, .btn.focus, 
-.btn:active.focus, .btn:active:focus, .btn:focus.x-btn:active, 
-.x-btn:focus {
-	color: #ffffff;
-	background: #33CCFF;
-	border: none;
-	box-shadow: none;
-	outline: none;
-}
-
-
-.img_ct_phone {
+.img-ct-phone {
 	width: 70%;
 	height: 70%;
 	margin-left: 70px;
@@ -174,5 +162,14 @@ textarea:focus, .form-style-textarea:focus {
 	box-shadow: none;
 	outline: none;
 }
+
+/* font settings */
+.font-18 { font-size: 18px; }
+.font-17 { font-size: 17.5px; }
+.font-16 { font-size: 16px; }
+
+.text-justify {text-align: justify;}
+
+
 
 

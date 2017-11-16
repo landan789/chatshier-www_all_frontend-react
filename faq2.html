@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chatshier</title>
+    <link rel="icon" href="assets/images/tab.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/socialMediaIcon.css"/>
+    <link rel="stylesheet" href="css/zh_tw.css"/>
+    <link rel="stylesheet" href="css/faq.css"/>
+  </head>
+  <body>
+    <!-- fb icon -->
+    <a id="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186" >
+    <img src="assets/images/fb.png" alt="FB Icon" >
+    </a>
+    <a id="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n" >
+    <img src="assets/images/oh9ei2P.png" alt="LINE Icon" >
+    </a>
+    <a id="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true" >
+    <img src="assets/images/tinichats_chaticon.png" alt="Tawk Icon" >
+    </a>
+    <section id="header" class="container-fluid text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 column">
+            <div class="logo">
+              <a href="zh_tw.html"><img alt="logo" src="image/logo.png"/></a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 column header-menu">
+            <div class="menu">
+              <a href="zh_tw.html#about">關於我們</a>
+              <a href="zh_tw.html#feature">產品特色</a>
+              <a href="zh_tw.html#pricing">價錢方案</a>
+              <a href="#">支援</a>
+              <a href="blog.html">部落格</a>
+              <div class="dropdown">
+                <a href="#" onclick="showLoginBox()">登入</a>
+                <div class="dropdown-content" id="login-link">
+                  <form class="form-horizontal">
+                    <fieldset>
+                      <div class="control-group">
+                        <label class="control-label" for="login_email">電郵:</label>
+                        <div class="controls">
+                          <input required="" id="login_email" type="text" class="form-control"  class="input-medium" required="">
+                        </div>
+                        <!-- Password input-->
+                        <div class="control-group">
+                          <label class="control-label" for="login_password">密碼:</label>
+                          <div class="controls">
+                            <input required="" id="login_password" class="form-control" type="password" class="input-medium">
+                          </div>
+                        </div>
+                        <!-- Error Message -->
+                        <div id="login-err">
+                        </div>
+                        <!-- Button -->
+                        <div class="control-group">
+                          <label class="control-label" for="signin"></label>
+                          <div class="controls">
+                            <button id="signin" name="signin" class="btn btn-success">登入</button>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="#" onclick="showRegisterBox()">註冊</a>
+                <div class="dropdown-content" id="register-link">
+                  <form class="form-horizontal">
+                    <fieldset>
+                      <!-- Text input-->
+                      <div class="control-group">
+                        <label class="control-label" for="reg_email">電郵:</label>
+                        <div class="controls">
+                          <input id="reg_email" class="form-control" type="text" class="input-large" required="">
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="control-group">
+                        <label class="control-label" for="reg_name">名字:</label>
+                        <div class="controls">
+                          <input id="reg_name" class="form-control" type="text" class="input-large" required="">
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="control-group">
+                        <label class="control-label" for="reg_nickname">綽號:</label>
+                        <div class="controls">
+                          <input id="reg_nickname" class="form-control" type="text" class="input-large" required="">
+                        </div>
+                      </div>
+                      <!-- Password input-->
+                      <div class="control-group">
+                        <label class="control-label" for="password">密碼:</label>
+                        <div class="controls">
+                          <input id="reg_password" class="form-control" type="password"  class="input-large" required="">
+                          <!-- <p><span class="oblique">1-8 Characters</span></p> -->
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="control-group">
+                        <label class="control-label" for="re_reg_password">再輸入密碼:</label>
+                        <div class="controls">
+                          <input id="re_reg_password" class="form-control" type="password" class="input-large" required="">
+                        </div>
+                      </div>
+                      <br>
+                      <div id="register-err"></div>
+                      <!-- Button -->
+                      <div class="control-group">
+                        <label class="control-label" for="confirmsignup"></label>
+                        <div class="controls">
+                          <button id="signup" name="confirmsignup" class="btn btn-success">註冊</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="text-blue overview-padding-0">
+      <div class="container">
+        <div class="row">
+          <h1 class="main-title overview-title-style">問與答</h1>
+          <div class="col-xs-12 text-center">
+          </div>
+          <div><h2 class="">關於替你聊</h2></div>
+          <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading1-1">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapse1-1" aria-expanded="true" aria-controls="collapse1-1">
+                    什麼是文字客服? 和電話客服有什麼差別?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse1-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1-1">
+                <div class="panel-body">
+                  所謂的<strong>文字客服</strong>基本上就像是在使用通訊軟體一樣是用打字進行交流的，
+                  和<strong>電話客服</strong>的不同的地方，在於使用文字交流可以避免不好意思開口詢問的問題。<br/>
+                  同時現代人大多習慣藉由通訊軟體進行交流，
+                  所以我們也採取相似的方式進行客服。
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading1-2">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapse1-2" aria-expanded="false" aria-controls="collapse1-2">
+                    使用Chatshier這個網頁需要安裝特定的軟體嗎?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse1-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1-2">
+                <div class="panel-body">
+                  客人您並不需要安裝任何軟體，只需要加一段程式碼將功能安插進去即可，大致上和在google的功能列上新增功能類似。<br/>
+                  <a href="#">操作說明</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div><h2 class="">產品/服務</h2></div>
+          <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading2-1">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2-1" aria-expanded="true" aria-controls="collapse2-1">
+                    請問你們是怎麼知道客人要問的東西?然後你們回答的內容是從哪裡來的?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2-1">
+                <div class="panel-body">
+                  我們會事先從委託人那裡取得商品的相關資訊整理出一份客人可能會問的問題的答案。
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading2-2">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2-2" aria-expanded="false" aria-controls="collapse2-2">
+                    客人的問題你們回答不出來的話要怎麼辦?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2-2">
+                <div class="panel-body">
+                  我們會盡快向委託人連絡取得更進一步的資訊或是代替您向委託人轉達問題。
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading2-3">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2-3" aria-expanded="false" aria-controls="collapse2-3">
+                    請問在客服人員下班後，我們的詢問的訊息會怎樣被處理，會不會被遺漏掉?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2-3">
+                <div class="panel-body">
+                  在您選定的客服服務時段內，網站訪客的提問基本上都能馬上獲得回應，而在客服人員下班及選定服務時段以外的時間，訪客可以留下離線訊息，我們會在次日服務時段時立刻幫您處理。
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading2-4">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2-4" aria-expanded="false" aria-controls="collapse2-4">
+                    我在Tinichats可以得到哪些服務呢?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2-4">
+                <div class="panel-body">
+                  Tinichats提供專業的線上文字客服，採用真人客服，並且滿足你在即時客服的需求， 例如產品詢問、買賣糾紛、帳號權限、遊戲安裝等問題， 依據客戶的產業客服會對訪客有不同的解答，並且聊天記錄我們會保留以供客戶查詢， 更進一步還能替你分析訪客分布等等的數據統計，至於數據的分析深淺取決於你的所選擇的方案
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading2-5">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2-5" aria-expanded="false" aria-controls="collapse2-5">
+                    甚麼是知識庫?，而知識庫的用途是?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2-5">
+                <div class="panel-body">
+                  我們會將您提供的公司產品/服務的相關內容，協助您建立知識庫。若您選擇16小時方案， 我們更將進一步幫您彙整出訪客時常詢問但尚未在知識庫裡的問題，擴充知識庫。 知識庫用來供客服人員回答訪客的常見問題，讓客服人員迅速解決問題。
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading2-6">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2-6" aria-expanded="false" aria-controls="collapse2-6">
+                    訪客用手機跟平板都能連絡到文字客服嗎?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2-6">
+                <div class="panel-body">
+                  電腦、手機、平板等行動裝置，只要能瀏覽網頁，都能夠進行線上文字客服。
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading2-7">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2-7" aria-expanded="false" aria-controls="collapse2-7">
+                    觸發訊息功能是甚麼?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2-7">
+                <div class="panel-body">
+                  提供多種「迎賓訊息」，系統自動招呼訪客，避免漫長等待。
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div><h2 class="">服務時段</h2></div>
+          <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading3-1">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapse3-1" aria-expanded="true" aria-controls="collapse3-1">
+                    請問提供「四個時段」是哪四個時段?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse3-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3-1">
+                <div class="panel-body">
+                  「0700~1100」</br>「1100~1500」</br>「1500~1900」</br>「1900~2300」</br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading3-2">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapse3-2" aria-expanded="false" aria-controls="collapse3-2">
+                    我選了「8小時」方案，是可以從你們所提供的四個時段裡任挑兩個嗎?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse3-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3-2">
+                <div class="panel-body">
+                  是的。<br />但這兩個時段必須是「連續的」<br />如:<br />「0700~1100」及「1100~1500」<br />「1100~1500」及「1500~1900」<br />「1500~1900」及「1900~2300」。
+                </div>
+              </div>
+            </div>
+
+            <div><h2 class="">價格方案</h2></div>
+            <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading4-1">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse4-1" aria-expanded="true" aria-controls="collapse4-1">
+                      會有幾位客服來處理我的事務?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse4-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading4-1">
+                  <div class="panel-body">
+                    我們會視您的訪客流量調整人員配置，確保您的顧客的都能及時地獲得協助。
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading4-2">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse4-2" aria-expanded="false" aria-controls="collapse4-2">
+                      假如我買了「4小時」(或「8小時」「16小時」)方案，我後來需要延長時段，可以加購時數嗎?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse4-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4-2">
+                  <div class="panel-body">
+                    可以！<br />加購時數的計費方式將由專人為您說明。
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default" style="color:red">
+                <div class="panel-heading" role="tab" id="heading4-3" style="color:red">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse4-3" aria-expanded="false" aria-controls="collapse4-3">
+                      請問你們的方案有試用期嗎?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse4-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4-3">
+                  <div class="panel-body">
+                    沒有，請直接選擇適合您的方案開始啟用服務。若您希望先試用服務，我們建議您可以先選用「4小時」方案，之後可再升級成您想要的方案
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading4-4">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse4-4" aria-expanded="false" aria-controls="collapse4-4">
+                      請問歐付寶該如何操作付款?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse4-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4-4">
+                  <div class="panel-body">
+                    點擊「歐付寶付款去」後，系統將會引導您操作步驟，詳情可參考<a href="https://www.opay.tw/Landing">歐付寶官網</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr/>
+
+    <section id="overview" class="text-blue overview-top-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 p_title">
+                <h2>Stay in touch</h2>
+                <p class="lead text-left">
+                  Reach out to your customers, wherever they are. Segment customer based
+                  on custom parameters such as the messaging channel or the date of last contact.
+                  Send relevant content and personal offers to the specific segment or simultaneously to all of your customers.
+                </p>
+              </div>
+              <div class="col-sm-12 col-sm-12 col-md-12 margin-btm-40">
+                <div class="row">
+                  <div class="col-sm-2">
+                    <div class="item-icon wh-icon wh-icon3">
+                      <i class="fa fa-bullhorn fa-2x link-style"></i>
+                    </div>
+                  </div>
+                  <div class="col-sm-10">
+                    <p class="font-17 bold-and-red">Manual or Automatic Sending</p>
+                    <p class="font-17">Setting up broadcasts is a breeze with our visual builder.
+                      Create rich messages with images, files and deep links.
+                      Automate the process with recurring campaigns, scheduling and much more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 column">
+            <img alt="圖片" class="img-responsive stay-in-touch-img" src="https://labstats.com/wp-content/uploads/2017/03/application-usage-report.png"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr/>
+
+
+
+
+
+
+    <section id="logos" class="container-fluid text-blue padding-100-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 column">
+            <h2 class="text-center margin-btm-40">Trusted by 5 000+ businesses in over 70 countries</h2>
+            <div class="col-md-12 text-center padding-0-80">
+              <img alt="圖片" src="image/richesse.png"/>
+              <img alt="圖片" src="image/applied-arch.png"/>
+            </div>
+            <!-- case onlinetours -->
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 column margin-top-100">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="row">
+                      <div class="col-sm-3 text-center">
+                        <img alt="圖片" class="img-circle logo-image-width-100" src="image/person.png"/>
+                      </div>
+                      <div class="col-sm-9">
+                        <blockquote>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <p class="customer-quote">
+                                In only two months we managed to increase our lead count by over 200% and reduce advertisement costs sixfold! At first, the team was panicking because of the significant influx of customers. We were simply unable to handle all of them.
+                              </p>
+                              <small><b>Olga Karpova</b>, SMM director, Onlinetours<br>
+                              Please mind that we do not guarantee specific results and your results can vary.
+                              </small>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /case onlinetours -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="text-white bg-light-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 column text-center">
+            <h2 class="text-center">Try It For Free</h2>
+            <p class="lead text-center">Better experience for your customers, fewer headaches for your team.</p>
+          </div>
+          <div class="col-md-12 text-center">
+            <a href="/signup" class="btn btn-lg text-white signup-btn" onclick="onClickSendGaStarted(this)">
+            <span class="fb-icon"></span>
+            Get Started For Free
+            </a>
+          </div>
+          <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 text-center copyright-space">
+            <p>
+              &copy;2017 chatshier.com
+              &nbsp;·&nbsp; <a href="terms.html" class="text-white" target="_blank">服務條款</a>
+              &nbsp;·&nbsp; <a href="privacy.html" class="text-white" target="_blank">隱私權條款</a>
+            </p>
+            <br/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/zh_tw.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,1 +1,0 @@
-const chatshierURL =  'https://4ba26a59.ngrok.io';

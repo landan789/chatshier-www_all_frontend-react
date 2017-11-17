@@ -8,30 +8,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="icon" href="assets/images/tab.png" />
-    <link rel="stylesheet" href="assets/css/TermsPrivacy.css">
+    <link rel="stylesheet" href="assets/css/terms-privacy.css">
     <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="stylesheet" href="assets/css/socialMediaIcon.css">
+    <link rel="stylesheet" href="assets/css/social-media-icon.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/style.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-    <script type="text/javascript" src="config/firebaseConfig.js"></script>
-    <script type="text/javascript" src="config/urlConfig.js"></script>
+    <script type="text/javascript" src="config/firebase-config.js"></script>
+    <script type="text/javascript" src="config/url-config.js"></script>
     <!-- <script src="jquery.js"></script> -->
     <link rel="icon" href="assets/images/tab.png" />
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/zh_tw.css"/>
+    <link rel="stylesheet" href="css/zh-tw.css"/>
   </head>
   <body>
     <!-- fb icon -->
-    <a id="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186" >
-    <img src="assets/images/fb.png" alt="HTML tutorial" >
+    <a class="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186" >
+    <img src="assets/images/fb.png" alt="HTML tutorial" />
     </a>
-    <a id="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n" >
-    <img src="assets/images/oh9ei2P.png" alt="HTML tutorial" >
+    <a class="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n" >
+    <img src="assets/images/oh9ei2P.png" alt="HTML tutorial" />
     </a>
-    <a id="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true" >
-    <img src="assets/images/tinichats_chaticon.png" alt="HTML tutorial" >
+    <a class="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true" >
+    <img src="assets/images/tinichats_chaticon.png" alt="HTML tutorial" />
     </a>
     <section id="header" class="container-fluid text-white">
       <div class="container">
@@ -49,8 +49,8 @@
               <a href="#">支援</a>
               <a href="blog.html">部落格</a>
               <div class="dropdown">
-                <a href="#">登入</a>
-                <div class="dropdown-content">
+                <a href="#" onclick="showLoginBox()">登入</a>
+                <div class="dropdown-content" id="login-link">
                   <form class="form-horizontal">
                     <fieldset>
                       <div class="control-group">
@@ -81,8 +81,8 @@
                 </div>
               </div>
               <div class="dropdown">
-                <a href="#">註冊</a>
-                <div class="dropdown-content">
+                <a href="#" onclick="showRegisterBox()">註冊</a>
+                <div class="dropdown-content" id="register-link">
                   <form class="form-horizontal">
                     <fieldset>
                       <!-- Text input-->
@@ -136,8 +136,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
         </div>
       </div>
     </section>
@@ -316,7 +314,7 @@
             Get Started For Free
             </a>
           </div>
-          <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 text-center copyright-space">
+          <div class="col-sm-12 col-sm-offset-1 col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-1 text-center copyright-space">
             <p>
               &copy;2017 chatshier.com
               &nbsp;·&nbsp; <a href="terms.html" class="text-white" target="_blank">服務條款</a>
@@ -327,12 +325,14 @@
         </div>
       </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/zh-tw.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <!-- custom -->
-    <script src="js/firebaseAuth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script type="text/javascript" src="config/firebase-config.js"></script>
+    <script type="text/javascript" src="config/url-config.js"></script>
+    <script src="js/firebase-auth.js"></script>
     <script src="js/login.js"></script>
+    <script src="assets/js/ga.js"></script>
   </body>
 </html>

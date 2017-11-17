@@ -6,6 +6,7 @@ auth.onAuthStateChanged(user => {
   if(user){
     console.log('sign in');
     $('#register').hide();
+    $('#login').hide();
     $('#account').show();
     console.log(auth.currentUser.uid);
     database.ref('users/' + auth.currentUser.uid).on('value', snap => {
@@ -14,12 +15,13 @@ auth.onAuthStateChanged(user => {
         console.log('profInfo not found');
       } else {
         let profInfo = snap.val();
-        $('#nickname').text(profInfo.nickname);
+        $('#nickname').text('你好，' + profInfo.nickname);
       }
     });
   }else {
     console.log('need to sign in');
     $('#register').show();
+    $('#login').show();
     $('#account').hide();
   }
 });
@@ -27,6 +29,6 @@ auth.onAuthStateChanged(user => {
 function logout(){
   auth.signOut()
   .then(response => {
-    window.location = 'tw.html';
+    window.location = 'zh_tw.html';
   })
 }

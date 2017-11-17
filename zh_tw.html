@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Chatshier</title>
+    <link rel="icon" href="assets/images/tab.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="assets/css/socialMediaIcon.css"/>
-    <link rel="stylesheet" href="css/zh_tw.css"/>
+    <link rel="stylesheet" href="assets/css/social-media-icon.css"/>
+    <link rel="stylesheet" href="css/zh-tw.css"/>
   </head>
   <body>
     <!-- fb icon -->
-    <a id="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186" >
-    <img src="assets/images/fb.png" alt="FB Icon" >
+    <a class="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186">
+    <img src="assets/images/fb.png" alt="FB Icon"/>
     </a>
-    <a id="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n" >
-    <img src="assets/images/oh9ei2P.png" alt="LINE Icon" >
+    <a class="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n">
+    <img src="assets/images/oh9ei2P.png" alt="LINE Icon"/>
     </a>
-    <a id="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true" >
-    <img src="assets/images/tinichats_chaticon.png" alt="Tawk Icon" >
+    <a class="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true">
+    <img src="assets/images/tinichats_chaticon.png" alt="Tawk Icon"/>
     </a>
     <section id="header" class="container-fluid text-white">
       <div class="container">
@@ -31,12 +32,13 @@
             <div class="menu">
               <a href="zh_tw.html#about">關於我們</a>
               <a href="zh_tw.html#feature">產品特色</a>
-              <a href="zh_tw.html#pricing">價錢方案</a>
+              <a href="pricing.html">價錢方案</a>
               <a href="#">支援</a>
               <a href="blog.html">部落格</a>
-              <div class="dropdown">
-                <a href="#">登入</a>
-                <div class="dropdown-content">
+
+              <div id="login" class="dropdown">
+                <a href="#" onclick="showLoginBox()">登入</a>
+                <div class="dropdown-content" id="login-link">
                   <form class="form-horizontal">
                     <fieldset>
                       <div class="control-group">
@@ -52,8 +54,7 @@
                           </div>
                         </div>
                         <!-- Error Message -->
-                        <div id="login-err">
-                        </div>
+                        <div id="login-err"></div>
                         <!-- Button -->
                         <div class="control-group">
                           <label class="control-label" for="signin"></label>
@@ -66,9 +67,10 @@
                   </form>
                 </div>
               </div>
-              <div class="dropdown">
-                <a href="#">註冊</a>
-                <div class="dropdown-content">
+
+              <div id="register" class="dropdown">
+                <a href="#" onclick="showRegisterBox()">註冊</a>
+                <div class="dropdown-content" id="register-link">
                   <form class="form-horizontal">
                     <fieldset>
                       <!-- Text input-->
@@ -120,12 +122,25 @@
                   </form>
                 </div>
               </div>
+
+              <div id="account" class="dropdown">
+                <a href="#" onclick="showAccountBox()">帳號</a>
+                <div class="dropdown-content" id="account-link">
+                  <br/><strong id="nickname"></strong><br/>
+                  <br/><hr/>
+                  <br/><a id="chatshier-link" target="_blank">Chatshier</a><br/>
+                  <br/><a href="profile.html">你的檔案</a><br/>
+                  <br/><hr/>
+                  <br/><a href="#" onclick="logout();">登出</a><br/>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 column">
-            <h1 class="main-title margin-top-140">替你聊，替你客服</h1>
+            <h1 class="main-title margin-top-20">替你聊，替你客服</h1>
             <p class="text-left lead">
               客服即時在線，掌握顧客需求，為你抓住訂單。
               <br />傾聽顧客反饋，助你調整步伐。
@@ -146,7 +161,7 @@
           <h1 class="main-title overview-title-style">Grow your business with Facebook Messenger</h1>
           <div class="col-xs-12 text-center">
           </div>
-          <div class="col-sm-12 col-md-6 column div-wh-img-wrapper wh-support">
+          <div class="col-sm-12 col-md-6 column">
             <img alt="圖片" class="img-responsive" src="https://labstats.com/wp-content/uploads/2017/03/application-usage-report.png"/>
           </div>
           <div class="col-sm-12 col-md-6">
@@ -288,19 +303,6 @@
               with customers via Facebook Messenger by providing powerful automation tools.
               Chatting, broadcasting and bots are all in one place!
             </p>
-            <div class="col-md-8 col-md-offset-3 col-sm-8 col-sm-offset-2 column text-center">
-              <div class="row margin-top15-btm50">
-                <div class="col-sm-4 col-md-3 column padding-top-btm-10">
-                  <a class="how-it-works-active text-uppercase-bold" href="javascript:void(0)" onclick="changeHowItWorksImage('conversations', this)">Conversations</a>
-                </div>
-                <div class="col-sm-3 col-md-3 column padding-top-btm-10">
-                  <a class="text-uppercase-bold" href="javascript:void(0)" onclick="changeHowItWorksImage('customers', this)">Customers</a>
-                </div>
-                <div class="col-sm-3 col-md-3 column padding-top-btm-10">
-                  <a class="text-uppercase-bold" href="javascript:void(0)" onclick="changeHowItWorksImage('analytics', this)">Analytics</a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div class="row">
@@ -321,7 +323,7 @@
           <div class="col-md-8 col-md-offset-2 column">
             <div class="row">
               <!-- RIGHT COLUMN -->
-              <div class="col-sm-4 col-md-4 column wh-features">
+              <div class="col-sm-4 col-md-4">
                 <!-- #1 -->
                 <div class="item-icon wh-icon-feature">
                   <i class="fa fa-comments fa-2x"></i>
@@ -331,7 +333,7 @@
                   客服人員皆經過我們改良的處理流程訓練，提供即時在線服務，顧客問問題不怕找不到人，並且在短時間內得到回覆。
                 </p>
                 <!-- #2 -->
-                <div class="item-icon wh-icon-feature">
+                <div class="item-icon">
                   <i class="fa fa-search fa-2x"></i>
                 </div>
                 <h3>聊天紀錄查閱</h3>
@@ -340,7 +342,7 @@
                 </p>
               </div>
               <!-- IPHONE IMAGE -->
-              <div class="col-sm-4 col-md-4 column">
+              <div class="col-sm-4 col-md-4">
                 <!-- #1 -->
                 <div class="item-icon wh-icon-feature">
                   <i class="fa fa-usd fa-2x"></i>
@@ -350,7 +352,7 @@
                   致力於將對你產品有興趣的訪客變成顧客!留意每位顧客細節與偏好， 悉心傾聽每個意見，把產品賣進顧客的心坎裡。
                 </p>
                 <!-- #2 -->
-                <div class="item-icon wh-icon-feature">
+                <div class="item-icon">
                   <i class="fa fa-area-chart fa-2x"></i>
                 </div>
                 <h3>多樣化支援</h3>
@@ -359,7 +361,7 @@
                 </p>
               </div>
               <!-- LEFT COLUMN -->
-              <div class="col-sm-4 col-md-4 column">
+              <div class="col-sm-4 col-md-4">
                 <!-- #1 -->
                 <div class="item-icon wh-icon-feature">
                   <i class="fa fa-clock-o fa-2x"></i>
@@ -370,7 +372,7 @@
                 </p>
 
                 <!-- #2 -->
-                <div class="item-icon wh-icon-feature">
+                <div class="item-icon">
                   <i class="fa fa-smile-o fa-2x"></i>
                 </div>
                 <h3>有溫度的客服體驗</h3>
@@ -416,9 +418,7 @@
             <h2 class="text-center margin-btm-40">Trusted by 5 000+ businesses in over 70 countries</h2>
             <div class="col-md-12 text-center padding-0-80">
               <img alt="圖片" src="image/richesse.png"/>
-              <img alt="圖片" src="image/9thflr.jpg"/>
               <img alt="圖片" src="image/applied-arch.png"/>
-              <img alt="圖片" src="image/tinistart.png" width="240px" height="240px"/>
             </div>
             <!-- case onlinetours -->
             <div class="row">
@@ -467,7 +467,7 @@
             Get Started For Free
             </a>
           </div>
-          <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 text-center copyright-space">
+          <div class="col-sm-12 col-sm-offset-1 col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-1 text-center copyright-space">
             <p>
               &copy;2017 chatshier.com
               &nbsp;·&nbsp; <a href="terms.html" class="text-white" target="_blank">服務條款</a>
@@ -478,6 +478,14 @@
         </div>
       </div>
     </section>
-
+    <script src="js/zh-tw.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script type="text/javascript" src="config/firebase-config.js"></script>
+    <script type="text/javascript" src="config/url-config.js"></script>
+    <script src="js/firebase-auth.js"></script>
+    <script src="js/login.js"></script>
+    <script src="assets/js/ga.js"></script>
   </body>
 </html>

@@ -51,7 +51,7 @@ p {
   padding-left: 90px;
 }
 .menu a { color: rgb(255,255,255);margin-right: 20px;font-weight: bold;font-size: 16px; }
-[href="signin.html"], [href="signup.html"], [href="profile.html"] { display: none; }
+.menu [href="signin.html"], .menu [href="signup.html"], .menu [href="profile.html"] { display: none; }
 .main-title { margin-bottom: 40px; }
 .text-left { text-align: left; }
 .lead {
@@ -59,7 +59,8 @@ p {
   font-size: 16px;font-weight: 300;
   line-height: 1.4;
 }
-.signup-btn { background-color: #F48B84;border-color: #F48B84; }
+.signup-btn { background-color: #009ace;border-color: #009ace; }
+.signup-btn:hover { color: #ffffff; }
 .fb-icon {
   background-image: url(https://static.whatshelp.io/img/ic_fbmessenger_white.svg);
   content: ' ';
@@ -122,7 +123,7 @@ p {
 #feature h3 { color: #33CCFF;font-weight: 300; }
 /*SIGNUP SIGNIN*/
 img[alt="Chatshier-logo"] { border-radius: 50%; }
-.form-content { border: 1px solid #e5e5e5; background-color: #ffffff; border-radius: 15px; }
+.form-content { border: 1px solid #e5e5e5; background-color: #ffffff; border-radius: 15px; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 .padding-left-right { padding: 0 50px; }
 .login-title, .signup-title { line-height: 300%; }
 .forget-password { line-height: 200%; }

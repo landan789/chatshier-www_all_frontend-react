@@ -145,13 +145,13 @@
     background: transparent;
 }
 
-textarea {
+.form-style-textarea {
     padding: 10px 8px;
     resize: none;
     -webkit-appearance: none;
 }
 
-textarea:focus, .form-style-textarea:focus {
+.form-style-textarea:focus {
     padding: 10px 8px;
     border: 1px solid #ccc;
     box-shadow: none;

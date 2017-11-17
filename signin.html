@@ -18,35 +18,35 @@
     <script src="assets/js/ga.js"></script>
   </head>
   <body>
-    <div id="feature" class="text-blue">
+    <div id="feature" class="top-blue-down-white">
       <div class="container">
         <div class="row clearfix">
           <div class="col-md-12 text-center">
-            <a href="/"><img alt="WhatsHelp" src="image/logo.png"></a>
+            <a href="index.html"><img alt="Chatshier-logo" src="image/logo.png"></a>
           </div>
           <div class="col-md-12 column wh-reg-step-login">
             <div class="row clearfix">
+              <br/><br/>
               <div class="col-md-6 col-md-offset-3 form-content">
-                <h2 class="text-center">登入您的帳號</h2>
+                <h2 class="text-center login-title">登入您的帳號</h2>
                 <div class="form-container">
                   <form class="form-horizontal">
                     <fieldset>
                       <div class="control-group">
-                        <label class="control-label" for="login_email">電子郵件</label>
-                        <div class="controls">
-                          <input required="" id="login_email" type="text" class="form-control"  class="input-medium" required="">
+                        <div class="input-group padding-left-right">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <input id="login_email" type="text" class="form-control" name="email" placeholder="電子郵件" required/>
                         </div>
-                        <!-- Password input-->
-                        <div class="control-group">
-                          <label class="control-label" for="login_password">密碼</label>
-                          <div class="controls">
-                            <input required="" id="login_password" class="form-control" type="password" class="input-medium">
+                        <br/>
+                        <div class="control-group padding-left-right">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="login_password" type="password" class="form-control" name="password" placeholder="密碼" required/>
                           </div>
                         </div>
                         <br/>
                         <div id="login-err"></div>
-                        <br/>
-                        <div class="control-group">
+                        <div class="control-group padding-left-right">
                           <label class="control-label" for="signin"></label>
                           <div class="controls">
                             <button id="signin" name="signin" class="btn btn-info">登入</button>
@@ -56,11 +56,12 @@
                     </fieldset>
                   </form>
                 </div>
-                <br><br>
-                <p class="text-center">
+                <br/><br/>
+                <p class="text-center forget-password">
                   忘記密碼？請按<a href="#">這裡</a>重設密碼。<br/>
                   還沒有帳號嗎？請按<a href="signup.html">這裡</a>註冊。
                 </p>
+                <br/>
               </div>
             </div>
           </div>

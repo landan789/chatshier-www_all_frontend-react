@@ -121,7 +121,14 @@ p {
 }
 #feature h3 { color: #33CCFF;font-weight: 300; }
 /*SIGNUP SIGNIN*/
-.form-content { border: 1px solid #e5e5e5; }
+img[alt="Chatshier-logo"] { border-radius: 50%; }
+.form-content { border: 1px solid #e5e5e5; background-color: #ffffff; border-radius: 15px; }
+.padding-left-right { padding: 0 50px; }
+.login-title, .signup-title { line-height: 300%; }
+.forget-password { line-height: 200%; }
+.top-blue-down-white { background: linear-gradient(#33CCFF, #ffffff); }
+.forget-password [href="signup.html"], .forget-password [href="signin.html"] { display: inline-block; }
+.forget-password a { color: #33CCFF; }
 @media (min-width: 321px){
   #about, #intro, #feature, #pricing, #overview, #logos, #video, #footer { padding-top: 30px;padding-bottom: 50px;}
   h1 { font-size: 28px; }

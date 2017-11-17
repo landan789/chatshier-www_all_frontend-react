@@ -5,8 +5,6 @@ $(document).ready(function() {
       database.ref('users/' + userId).on('value', snap => {
         let profInfo = snap.val();
         if(profInfo === null) {
-          console.log('FUCK');
-          // $('#error-message').show();
         } else {
           let profInfo = snap.val();
           $('#edit-name').val(profInfo.name);
@@ -15,6 +13,7 @@ $(document).ready(function() {
         }
       });
     } else {
+      window.location.href = 'index.html';
       console.log('need to sign in');
     }
   });

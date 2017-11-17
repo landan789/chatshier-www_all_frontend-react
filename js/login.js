@@ -26,6 +26,9 @@ $(document).ready(function() {
           nickname: nickname,
           email: email,
         });
+        setTimeout(() => {
+          window.location.href = 'index.html';
+        }, 2000);
       }).catch(function(error) {
         let errorCode = error.code;
         let errorMessage = error.message;
@@ -48,7 +51,7 @@ $(document).ready(function() {
     let user = userid.val();
     let password = pwd.val();
     auth.signInWithEmailAndPassword(user, password).then((o) => {
-      window.location.href = 'zh_tw.html';
+      window.location.href = 'index.html';
     }).catch((error) => {
       var errorCode = error.code;
       var errorMessage = error.message;
@@ -57,5 +60,5 @@ $(document).ready(function() {
       pwd.val("");
     });
   });
-  document.getElementById('chatshier-link').href = chatshierURL;
+  // document.getElementById('chatshier-link').href = chatshierURL;
 });

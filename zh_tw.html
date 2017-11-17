@@ -20,7 +20,7 @@
     <a class="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true">
     <img src="assets/images/tinichats_chaticon.png" alt="Tawk Icon"/>
     </a>
-    <section id="header" class="container-fluid text-white">
+    <div id="header" class="container-fluid text-white">
       <div class="container">
         <div class="row">
           <div class="col-md-6 column">
@@ -35,106 +35,9 @@
               <a href="pricing.html">價錢方案</a>
               <a href="#">支援</a>
               <a href="blog.html">部落格</a>
-
-              <div id="login" class="dropdown">
-                <a href="#" onclick="showLoginBox()">登入</a>
-                <div class="dropdown-content" id="login-link">
-                  <form class="form-horizontal">
-                    <fieldset>
-                      <div class="control-group">
-                        <label class="control-label" for="login_email">電郵:</label>
-                        <div class="controls">
-                          <input required="" id="login_email" type="text" class="form-control"  class="input-medium" required="">
-                        </div>
-                        <!-- Password input-->
-                        <div class="control-group">
-                          <label class="control-label" for="login_password">密碼:</label>
-                          <div class="controls">
-                            <input required="" id="login_password" class="form-control" type="password" class="input-medium">
-                          </div>
-                        </div>
-                        <!-- Error Message -->
-                        <div id="login-err"></div>
-                        <!-- Button -->
-                        <div class="control-group">
-                          <label class="control-label" for="signin"></label>
-                          <div class="controls">
-                            <button id="signin" name="signin" class="btn btn-success">登入</button>
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
-                  </form>
-                </div>
-              </div>
-
-              <div id="register" class="dropdown">
-                <a href="#" onclick="showRegisterBox()">註冊</a>
-                <div class="dropdown-content" id="register-link">
-                  <form class="form-horizontal">
-                    <fieldset>
-                      <!-- Text input-->
-                      <div class="control-group">
-                        <label class="control-label" for="reg_email">電郵:</label>
-                        <div class="controls">
-                          <input id="reg_email" class="form-control" type="text" class="input-large" required="">
-                        </div>
-                      </div>
-                      <!-- Text input-->
-                      <div class="control-group">
-                        <label class="control-label" for="reg_name">名字:</label>
-                        <div class="controls">
-                          <input id="reg_name" class="form-control" type="text" class="input-large" required="">
-                        </div>
-                      </div>
-                      <!-- Text input-->
-                      <div class="control-group">
-                        <label class="control-label" for="reg_nickname">綽號:</label>
-                        <div class="controls">
-                          <input id="reg_nickname" class="form-control" type="text" class="input-large" required="">
-                        </div>
-                      </div>
-                      <!-- Password input-->
-                      <div class="control-group">
-                        <label class="control-label" for="password">密碼:</label>
-                        <div class="controls">
-                          <input id="reg_password" class="form-control" type="password"  class="input-large" required="">
-                          <!-- <p><span class="oblique">1-8 Characters</span></p> -->
-                        </div>
-                      </div>
-                      <!-- Text input-->
-                      <div class="control-group">
-                        <label class="control-label" for="re_reg_password">再輸入密碼:</label>
-                        <div class="controls">
-                          <input id="re_reg_password" class="form-control" type="password" class="input-large" required="">
-                        </div>
-                      </div>
-                      <br>
-                      <div id="register-err"></div>
-                      <!-- Button -->
-                      <div class="control-group">
-                        <label class="control-label" for="confirmsignup"></label>
-                        <div class="controls">
-                          <button id="signup" name="confirmsignup" class="btn btn-success">註冊</button>
-                        </div>
-                      </div>
-                    </fieldset>
-                  </form>
-                </div>
-              </div>
-
-              <div id="account" class="dropdown">
-                <a href="#" onclick="showAccountBox()">帳號</a>
-                <div class="dropdown-content" id="account-link">
-                  <br/><strong id="nickname"></strong><br/>
-                  <br/><hr/>
-                  <br/><a id="chatshier-link" target="_blank">Chatshier</a><br/>
-                  <br/><a href="profile.html">你的檔案</a><br/>
-                  <br/><hr/>
-                  <br/><a href="#" onclick="logout();">登出</a><br/>
-                </div>
-              </div>
-
+              <a href="signin.html">登入</a>
+              <a href="signup.html">註冊</a>
+              <a href="profile.html">帳號</a>
             </div>
           </div>
         </div>
@@ -153,9 +56,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="about" class="text-blue overview-padding-0">
+    <div id="about" class="text-blue overview-padding-0">
       <div class="container">
         <div class="row">
           <h1 class="main-title overview-title-style">Grow your business with Facebook Messenger</h1>
@@ -209,11 +112,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <hr/>
 
-    <section id="overview" class="text-blue overview-top-120">
+    <div id="overview" class="text-blue overview-top-120">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
@@ -249,11 +152,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <hr/>
 
-    <section id="intro" class="text-blue">
+    <div id="intro" class="text-blue">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6 column div-wh-img-wrapper wh-widget padding-left0-right80">
@@ -291,9 +194,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="video" class="container-fluid text-blue video-block bg-light-grey">
+    <div id="video" class="container-fluid text-blue video-block bg-light-grey">
       <div class="container">
         <div class="row">
           <div class="col-md-12 column">
@@ -311,9 +214,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="feature" class="text-blue">
+    <div id="feature" class="text-blue">
       <div class="container">
         <div class="row">
           <div class="col-md-12 column">
@@ -385,11 +288,11 @@
         </div>
       </div>
       <!-- /container -->
-    </section>
+    </div>
 
     <hr/>
 
-    <section id="pricing" class="text-blue bg-light-grey">
+    <div id="pricing" class="text-blue bg-light-grey">
       <div class="container">
         <div class="row">
           <div class="col-md-12 column">
@@ -409,9 +312,9 @@
         </div>
       </div>
       <!-- /container -->
-    </section>
+    </div>
 
-    <section id="logos" class="container-fluid text-blue padding-100-0">
+    <div id="logos" class="container-fluid text-blue padding-100-0">
       <div class="container">
         <div class="row">
           <div class="col-md-12 column">
@@ -452,9 +355,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="footer" class="text-white bg-light-grey">
+    <div id="footer" class="text-white bg-light-grey">
       <div class="container">
         <div class="row">
           <div class="col-md-12 column text-center">
@@ -462,9 +365,8 @@
             <p class="lead text-center">Better experience for your customers, fewer headaches for your team.</p>
           </div>
           <div class="col-md-12 text-center">
-            <a href="/signup" class="btn btn-lg text-white signup-btn" onclick="onClickSendGaStarted(this)">
-            <span class="fb-icon"></span>
-            Get Started For Free
+            <a href="signup.html" class="btn btn-lg text-white signup-btn">
+            馬上註冊
             </a>
           </div>
           <div class="col-sm-12 col-sm-offset-1 col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-1 text-center copyright-space">
@@ -477,7 +379,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <script src="js/zh-tw.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -485,7 +387,6 @@
     <script type="text/javascript" src="config/firebase-config.js"></script>
     <script type="text/javascript" src="config/url-config.js"></script>
     <script src="js/firebase-auth.js"></script>
-    <script src="js/login.js"></script>
     <script src="assets/js/ga.js"></script>
   </body>
 </html>

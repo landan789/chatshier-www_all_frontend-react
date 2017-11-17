@@ -51,6 +51,7 @@ p {
   padding-left: 90px;
 }
 .menu a { color: rgb(255,255,255);margin-right: 20px;font-weight: bold;font-size: 16px; }
+[href="signin.html"], [href="signup.html"], [href="profile.html"] { display: none; }
 .main-title { margin-bottom: 40px; }
 .text-left { text-align: left; }
 .lead {
@@ -119,6 +120,8 @@ p {
   text-align: center;
 }
 #feature h3 { color: #33CCFF;font-weight: 300; }
+/*SIGNUP SIGNIN*/
+.form-content { border: 1px solid #e5e5e5; }
 @media (min-width: 321px){
   #about, #intro, #feature, #pricing, #overview, #logos, #video, #footer { padding-top: 30px;padding-bottom: 50px;}
   h1 { font-size: 28px; }

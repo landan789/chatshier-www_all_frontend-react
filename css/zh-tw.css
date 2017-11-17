@@ -181,6 +181,11 @@ p {
   background: #33ccff;
 }
 
+.tc.navbar {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
 .tc.navbar-default .navbar-nav > li > a {
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
@@ -203,11 +208,11 @@ p {
 }
 
 .tc.navbar-default .navbar-toggle {
-  border-color: #ffffff; 
+  border-color: #ffffff;
 }
 
 .tc .navbar-collapse {
-  -webkit-box-shadow: inset 0 0px 0 rgba(255,255,255,.1); 
+  -webkit-box-shadow: inset 0 0px 0 rgba(255,255,255,.1);
   box-shadow: inset 0 0px 0 rgba(255,255,255,.1);
 }
 
@@ -221,4 +226,8 @@ p {
 
 .tc .navbar-brand img {
   height: 50px;
+}
+
+.bg-s1 {
+  background: #33ccff;
 }

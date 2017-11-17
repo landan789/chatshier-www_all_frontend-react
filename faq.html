@@ -1,46 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content=
-      "替你聊提供的文字客服運用現代人習慣的文字通訊方式，可以即時回應您顧客的詢問，無需等待電話客服層層轉接。你不需下載安裝軟體，即可讓您的顧客在網頁上聯絡到真人客服!"/>
-    <meta name="keywords"
-      content="即時客服 建構客服平台 客戶即時通訊 聊天機器人 線上客服 客服支援 客服委外 網路聊天 網路支援 客服軟體 客服工具 人工智能客服
-      客戶問題 推播行銷內容 自動化客服 客服 協助用戶 監控轉換 追蹤訪客 增加忠誠度 降低工作量隨時有問必答 數位化通訊服務 客戶體驗
-      自助聊天人員 傳訊息 貼近客人 從FB Messenger靠近客人 即刻支援 雲端專員 真人客服 即時服務 客服處理 商品諮詢 售後服務 線上諮詢 替你聊
-      客服系統 文字客服 客服委外 網路購物 ">
-    <title>Tinichats 替你聊 問與答</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Chatshier</title>
     <link rel="icon" href="assets/images/tab.png" />
-    <link rel="stylesheet" href="assets/css/faq.css">
-    <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="stylesheet" href="assets/css/social-media-icon.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/style.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-    <script type="text/javascript" src="config/firebase-config.js"></script>
-    <script type="text/javascript" src="config/url-config.js"></script>
-    <link rel="icon" href="assets/images/tab.png" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/social-media-icon.css"/>
     <link rel="stylesheet" href="css/zh-tw.css"/>
+    <link rel="stylesheet" href="css/faq.css"/>
   </head>
   <body>
     <!-- fb icon -->
-    <a class="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186" >
-    <img src="assets/images/fb.png" alt="HTML tutorial" >
+    <a class="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186">
+    <img src="assets/images/fb.png" alt="FB Icon"/>
     </a>
-    <!-- line -->
-    <a class="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n" >
-    <img src="assets/images/oh9ei2P.png" alt="HTML tutorial" >
+    <a class="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n">
+    <img src="assets/images/oh9ei2P.png" alt="LINE Icon"/>
     </a>
-    <a class="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true" >
-    <img src="assets/images/tinichats_chaticon.png" alt="HTML tutorial" >
+    <a class="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true">
+    <img src="assets/images/tinichats_chaticon.png" alt="Tawk Icon"/>
     </a>
     <section id="header" class="container-fluid text-white">
       <div class="container">
@@ -54,10 +33,11 @@
             <div class="menu">
               <a href="zh_tw.html#about">關於我們</a>
               <a href="zh_tw.html#feature">產品特色</a>
-              <a href="zh_tw.html#pricing">價錢方案</a>
+              <a href="pricing.html">價錢方案</a>
               <a href="#">支援</a>
               <a href="blog.html">部落格</a>
-              <div class="dropdown">
+
+              <div id="login" class="dropdown">
                 <a href="#" onclick="showLoginBox()">登入</a>
                 <div class="dropdown-content" id="login-link">
                   <form class="form-horizontal">
@@ -75,8 +55,7 @@
                           </div>
                         </div>
                         <!-- Error Message -->
-                        <div id="login-err">
-                        </div>
+                        <div id="login-err"></div>
                         <!-- Button -->
                         <div class="control-group">
                           <label class="control-label" for="signin"></label>
@@ -89,7 +68,8 @@
                   </form>
                 </div>
               </div>
-              <div class="dropdown">
+
+              <div id="register" class="dropdown">
                 <a href="#" onclick="showRegisterBox()">註冊</a>
                 <div class="dropdown-content" id="register-link">
                   <form class="form-horizontal">
@@ -143,312 +123,282 @@
                   </form>
                 </div>
               </div>
+
+              <div id="account" class="dropdown">
+                <a href="#" onclick="showAccountBox()">帳號</a>
+                <div class="dropdown-content" id="account-link">
+                  <br/><strong id="nickname"></strong><br/>
+                  <br/><hr/>
+                  <br/><a id="chatshier-link" target="_blank">Chatshier</a><br/>
+                  <br/><a href="profile.html">你的檔案</a><br/>
+                  <br/><hr/>
+                  <br/><a href="#" onclick="logout();">登出</a><br/>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="faq" class="text-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-xs-12">
+            <h1 class="text-center">問與答</h1>
+            <div class="col-xs-12 text-center">
+            </div>
+            <div><h2 class="">關於 Chatshier </h2></div>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading1-1">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" href="#collapse1-1" aria-expanded="true" aria-controls="collapse1-1">
+                      什麼是文字客服? 和電話客服有什麼差別 ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse1-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1-1">
+                  <div class="panel-body">
+                    所謂的<strong>文字客服</strong>基本上就像是在使用通訊軟體一樣是用打字進行交流的，<br/>
+                    和<strong>電話客服</strong>的不同的地方，在於使用文字交流可以避免不好意思開口詢問的問題，電話打不通等等問題。<br/>
+                    同時現代人大多習慣藉由通訊軟體進行交流，
+                    所以我們也採取相似的方式進行客服。
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading1-2">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse1-2" aria-expanded="false" aria-controls="collapse1-2">
+                      使用 Chatshier 這個網頁需要安裝特定的軟體嗎 ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse1-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1-2">
+                  <div class="panel-body">
+                    您並不需要安裝任何軟體，皆可使用各種瀏覽器進入<a href="https://dev-chatshier.herokuapp.com/chat">Chatshier</a>頁面，
+                    第一次登入時，依照各種通訊軟體完成設定即可使用。<br/>
+                    更詳細<a href="#">操作說明</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr/>
+
+            <div><h2 class="">產品與服務</h2></div>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading2-1">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" href="#collapse2-1" aria-expanded="true" aria-controls="collapse2-1">
+                      我在 Chatshier 可以得到哪些服務呢 ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse2-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2-1">
+                  <div class="panel-body">
+                    Chatshier 一共支援多款通訊軟體
+                    <img class="soft_icon" src="https://www.seeklogo.net/wp-content/uploads/2016/09/facebook-icon-preview-1.png" alt="Facebook">Facebook、
+                    <img class="soft_icon" src="http://expandedramblingscom-oxyllvbag8y7yalm1.stackpathdns.com/wp-content/uploads/2014/05/LINE_icon01.png" alt="LINE">LINE
+                    等等。<br/>
+                    並可以同時設定多個帳號，是個能讓店家與顧客保持緊密聯擊的最佳小工具。
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading2-2">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2-2" aria-expanded="false" aria-controls="collapse2-2">
+                      Chatshier 有支援哪些通訊軟體 ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse2-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2-2">
+                  <div class="panel-body">
+                    目前 Chatshier 支援多款通訊軟體<br/>
+                    <img class="soft_icon" src="https://www.seeklogo.net/wp-content/uploads/2016/09/facebook-icon-preview-1.png" alt="Facebook">Facebook
+                    <br/>
+                    <img class="soft_icon" src="http://expandedramblingscom-oxyllvbag8y7yalm1.stackpathdns.com/wp-content/uploads/2014/05/LINE_icon01.png" alt="LINE">LINE
+                    <br/>
+                    未來將會開發<br/>
+                    <img class="soft_icon" src="http://www.thecus.com/images/WeChat-Icon.png" alt="WeChat">WeChat
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading2-3">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2-3" aria-expanded="false" aria-controls="collapse2-3">
+                      客人用手機跟平板都能連絡到線上文字客服嗎 ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse2-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2-3">
+                  <div class="panel-body">
+                    電腦、手機、平板等行動裝置，只要能瀏覽網頁，皆能夠進行線上文字客服。
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading2-4">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2-4" aria-expanded="false" aria-controls="collapse2-4">
+                      請問在客服人員下班後，顧客的詢問的訊息會怎樣被處理，會不會被遺漏掉 ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse2-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2-4">
+                  <div class="panel-body">
+                    客服人員可以針對一般問題，可以設定關鍵字回覆 <br/><br/>
+                    例如一般旅遊業 : <br/>
+                    顧客 : 請問有日本旅遊的行程嗎? <br/>
+                    客服人員 : 您好，有的，目前有東京五日遊行程，詳細資料如下<a href="#">東京五日遊</a>
+                    <br/><br/>
+                    客服人員也可以設定時段自動回覆 <br/><br/>
+                    例如 : <br/>
+                    顧客 : 請問可以和我聊天嗎? <br/>
+                    客服人員 : 您好，目前並無客服人員在線上。線上文字客服 服務時間: 週一至週五 9:00~21:00，例假日 9:00~18:00。
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading2-5">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2-5" aria-expanded="false" aria-controls="collapse2-5">
+                      標籤功能是什麼 ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse2-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2-5">
+                  <div class="panel-body">
+                    標籤是一個提供客服人員簡單且更輕易了解顧客的資料、需求等等。<br/>
+                    <br/>
+                    預設標籤20個<br/>
+                    姓名、編號、電子郵件、年齡、性別、地區、備註、特性、VIP等級、聊天次數、付費階段......<br/>
+                    <br/>
+                    自訂標籤<br/>
+                    無上限新增標籤項目，含單選、多選、文字
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr/>
+
+            <div><h2 class="">功能說明</h2></div>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading3-1">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" href="#collapse3-1" aria-expanded="true" aria-controls="collapse3-1">
+                      群發訊息是什麼 ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse3-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3-1">
+                  <div class="panel-body">
+                    群發訊息是發送訊息給整個群組或設定的客戶群。<br/><br/>
+                    客服人員可以設定<br/>
+                    <strong>發送對象</strong> ─ 全部發送、單一顧客發送<br/>
+                    <strong>發送時間</strong> ─ 立即發送、設定某一時間發送<br/>
+                    <strong>發送內容</strong> ─ 設定群發訊息，可以包含文字、圖片、影片、音樂檔
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading3-2">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3-2" aria-expanded="false" aria-controls="collapse3-2">
+                      自動回覆訊息是什麼 ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse3-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3-2">
+                  <div class="panel-body">
+                    目前尚無客服人員在線上時，自動回應的訊息。<br/><br/>
+                    客服人員可以設定<br/>
+                    <strong>傳送時間</strong> ─ 例如 : 24:00 ~ 08:00 <br/>
+                    <strong>回覆內容</strong> ─ 設定回覆訊息，可以包含文字、圖片、影片、音樂檔
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading3-3">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3-3" aria-expanded="false" aria-controls="collapse3-3">
+                      關鍵字回覆訊息是什麼 ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse3-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3-3">
+                  <div class="panel-body">
+                    客戶訊息觸發關鍵字，系統自動回覆訊息<br/><br/>
+                    客服人員可以設定<br/>
+                    <strong>主關鍵字、副關鍵字</strong> ─ 例如 : 你好 <br/>
+                    <strong>回覆內容</strong> ─ 設定回覆訊息，可以包含文字、圖片、影片、音樂檔
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading3-4">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3-4" aria-expanded="false" aria-controls="collapse3-4">
+                      加好友回覆訊息是什麼 ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse3-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3-4">
+                  <div class="panel-body">
+                    客戶加好友時自動回覆的訊息。<br/><br/>
+                    客服人員可以設定<br/>
+                    <strong>回覆內容</strong> ─ 設定回覆訊息，可以包含文字、圖片、影片、音樂檔
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr/>
+
+            <div><h2 class="faq_">價格方案</h2></div>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default" style="border: 2px solid red;">
+                <div class="panel-heading" role="tab" id="heading4-1">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" href="#collapse4-1" aria-expanded="true" aria-controls="collapse4-1">
+                      請問你們的方案有試用期嗎?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse4-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading4-1">
+                  <div class="panel-body">
+                    沒有
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default" style="border: 2px solid red;">
+                <div class="panel-heading" role="tab" id="heading4-2">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4-2" aria-expanded="false" aria-controls="collapse4-2">
+                      請問歐付寶該如何操作付款?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse4-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4-2">
+                  <div class="panel-body">
+                    點擊「歐付寶付款去」後，系統將會引導您操作步驟，詳情可參考<a href="https://www.opay.tw/Landing">歐付寶官網</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- section begins -->
-    <div class="container">
-      <div class="FaqContainer">
-        <!-- head -->
-        <h2 id="FaqBoxHeader">
-          TiniChats 問與答
-        </h2>
-        <h2>
-          關於替你聊
-        </h2>
-        <br />
-        <!-- 1st question -->
-        <div class="col-12 FaqQuestion" id="testQuestion">
-          <div class="Q ">
-            Q:
-          </div>
-          <p >
-            什麼是文字客服?和電話客服有什麼差別?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            所謂的文字客服基本上就像是在使用通訊軟體一樣是用打字進行交流的，和
-            電話客服的不同的地方在於使用文字交流可以避免不好意思開口詢問的問題，
-            同時現代人大多習慣藉由通訊軟體進行交流，所以我們也採取相似的方式進行客服。
-          </p>
-        </div>
-        <!-- </div> -->
-        <!-- 2nd question -->
-        <!-- <div class="FaqBox"> -->
-        <div class="col-12 FaqQuestion" id="testQuestion2">
-          <div class="Q">
-            Q:
-          </div>
-          <p >
-            使用這個網頁需要安裝特定的軟體嗎?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion2">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            客人您並不需要安裝任何軟體，只需要加一段程式碼將功能安插進去即可，大致上和在google的功能列上新增功能類似。
-          </p>
-        </div>
-        <!-- </div> -->
-        <br/>
-        <br/>
-        <h2>
-          產品/服務
-        </h2>
-        <br/>
-        <!-- 3rd question -->
-        <div class="col-12 FaqQuestion" id="testQuestion3">
-          <div class="Q">
-            Q:
-          </div>
-          <p >
-            請問你們是怎麼知道客人要問的東西?然後你們回答的內容是從哪裡來的?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion3">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            我們會事先從委託人那裡取得商品的相關資訊整理出一份客人可能會問的問題的答案。
-          </p>
-        </div>
-        <!-- 4th question -->
-        <div class="col-12 FaqQuestion" id="testQuestion4">
-          <div class="Q">
-            Q:
-          </div>
-          <p >
-            客人的問題你們回答不出來的話要怎麼辦?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion4">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            我們會盡快向委託人連絡取得更進一步的資訊或是代替您向委託人轉達問題。
-          </p>
-        </div>
-        <!-- 5th question -->
-        <div class="col-12 FaqQuestion" id="testQuestion5">
-          <div class="Q">
-            Q:
-          </div>
-          <p >
-            請問在客服人員下班後，我們的詢問的訊息會怎樣被處理，會不會被遺漏掉?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion5">
-          <div class="A">
-            A:
-          </div>
-          <p id="apple">
-            在您選定的客服服務時段內，網站訪客的提問基本上都能馬上獲得回應，而在客服人員下班及選定服務時段以外的時間，訪客可以留下離線訊息，我們會在次日服務時段時立刻幫您處理。
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="testQuestion6">
-          <div class="Q ">
-            Q:
-          </div>
-          <p >
-            我在Tinichats可以得到哪些服務呢?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion6">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            Tinichats提供專業的線上文字客服，採用真人客服，並且滿足你在即時客服的需求，
-            例如產品詢問、買賣糾紛、帳號權限、遊戲安裝等問題，
-            依據客戶的產業客服會對訪客有不同的解答，並且聊天記錄我們會保留以供客戶查詢，
-            更進一步還能替你分析訪客分布等等的數據統計，至於數據的分析深淺取決於你的所選擇的方案
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="testQuestion7">
-          <div class="Q ">
-            Q:
-          </div>
-          <p >
-            甚麼是知識庫?，而知識庫的用途是?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion7">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            我們會將您提供的公司產品/服務的相關內容，協助您建立知識庫。若您選擇16小時方案，
-            我們更將進一步幫您彙整出訪客時常詢問但尚未在知識庫裡的問題，擴充知識庫。
-            知識庫用來供客服人員回答訪客的常見問題，讓客服人員迅速解決問題。
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="testQuestion8">
-          <div class="Q ">
-            Q:
-          </div>
-          <p >
-            訪客用手機跟平板都能連絡到文字客服嗎?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion8">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            電腦、手機、平板等行動裝置，只要能瀏覽網頁，都能夠進行線上文字客服。
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="testQuestion9">
-          <div class="Q ">
-            Q:
-          </div>
-          <p >
-            觸發訊息功能是甚麼?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion9">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            提供多種「迎賓訊息」，系統自動招呼訪客，避免漫長等待。
-          </p>
-        </div>
-        <br/>
-        </br/>
-        <h2>
-          服務時段
-        </h2>
-        <br/>
-        <div class="col-12 FaqQuestion" id="testQuestion10">
-          <div class="Q ">
-            Q:
-          </div>
-          <p >
-            請問提供「四個時段」是哪四個時段?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion10">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            「0700~1100」<br />「1100~1500」<br />「1500~1900」<br />「1900~2300」
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="testQuestion11">
-          <div class="Q ">
-            Q:
-          </div>
-          <p >
-            我選了「8小時」方案，是可以從你們所提供的四個時段裡任挑兩個嗎?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion11">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            是的。<br />但這兩個時段必須是「連續的」<br />如:<br />「0700~1100」及「1100~1500」<br />「1100~1500」及「1500~1900」<br />「1500~1900」及「1900~2300」。
-          </p>
-        </div>
-        <br/>
-        </br/>
-        <h2>
-          價格方案
-        </h2>
-        <br/>
-        <div class="col-12 FaqQuestion" id="testQuestion12">
-          <div class="Q ">
-            Q:
-          </div>
-          <p >
-            會有幾位客服來處理我的事務?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion12">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            我們會視您的訪客流量調整人員配置，確保您的顧客的都能及時地獲得協助。
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="testQuestion13">
-          <div class="Q ">
-            Q:
-          </div>
-          <p >
-            假如我買了「4小時」(或「8小時」「16小時」)方案，我後來需要延長時段，可以加購時數嗎?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion13">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            可以！<br />加購時數的計費方式將由專人為您說明。
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="testQuestion14">
-          <div class="Q ">
-            Q:
-          </div>
-          <p >
-            請問你們的方案有試用期嗎?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion14">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            沒有，請直接選擇適合您的方案開始啟用服務。若您希望先試用服務，我們建議您可以先選用「4小時」方案，之後可再升級成您想要的方案
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="testQuestion15">
-          <div class="Q ">
-            Q:
-          </div>
-          <p >
-            請問歐付寶該如何操作付款?
-            <span style="color:#33ccff">( <i class="fa fa-plus"></i> )</span>
-          </p>
-        </div>
-        <div class="col-12 FaqQuestion" id="answerQuestion15">
-          <div class="A">
-            A:
-          </div>
-          <p >
-            點擊「歐付寶付款去」後，系統將會引導您操作步驟，詳情可參考歐付寶官網
-          </p>
-        </div>
-      </div>
-    </div>
+    <br/>
+    <hr/>
+
     <section id="footer" class="text-white bg-light-grey">
       <div class="container">
         <div class="row">
@@ -462,7 +412,7 @@
             Get Started For Free
             </a>
           </div>
-          <div class="col-sm-12 col-sm-offset-1 col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-1 text-center copyright-space">
+          <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 text-center copyright-space">
             <p>
               &copy;2017 chatshier.com
               &nbsp;·&nbsp; <a href="terms.html" class="text-white" target="_blank">服務條款</a>
@@ -473,141 +423,6 @@
         </div>
       </div>
     </section>
-    <script>
-      $(document).ready(function(){
-          $("#testQuestion").click(function(){
-              $("#answerQuestion").fadeToggle("slow");
-              $("#div3").fadeToggle(3000);
-          });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion2").click(function(){
-
-          $("#answerQuestion2").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion3").click(function(){
-
-          $("#answerQuestion3").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion4").click(function(){
-
-          $("#answerQuestion4").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion5").click(function(){
-
-          $("#answerQuestion5").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion6").click(function(){
-
-          $("#answerQuestion6").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion7").click(function(){
-
-          $("#answerQuestion7").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion8").click(function(){
-
-          $("#answerQuestion8").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion9").click(function(){
-
-          $("#answerQuestion9").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion10").click(function(){
-
-          $("#answerQuestion10").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion11").click(function(){
-
-          $("#answerQuestion11").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion12").click(function(){
-
-          $("#answerQuestion12").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion13").click(function(){
-
-          $("#answerQuestion13").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion14").click(function(){
-
-          $("#answerQuestion14").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $("#testQuestion15").click(function(){
-
-          $("#answerQuestion15").fadeToggle("slow");
-
-      });
-      });
-    </script>
-    <!-- custom -->
     <script src="js/zh-tw.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

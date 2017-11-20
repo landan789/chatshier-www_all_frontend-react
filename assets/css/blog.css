@@ -30,8 +30,78 @@ line-height: 150%;/*lance20170704*/
 #blogcontent{
   margin-top:100px
 }
+
+/*-----------------------------------------------新版BLOG by WYA -------------------------------------------------*/
+#main .container .row .col-sm-12{ /*由於將aside廢除，因此col-sm-9改為col-sm-12*/
+  margin-top:80px;
+}
+#article-x .title{ /*文章標題置中並使用微軟正黑體*/
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-family: Microsoft JhengHei;
+}
+#article-x .foreword{ /*前言字體淡*/
+  font-size: 23px;
+  font-weight: lighter;
+  color: gray;
+}
+#article-x .subtitle{
+  font-size: 23px;
+  text-align: justify;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+#article-x .paragraph{
+  font-weight: bolder;
+  font-family: fantasy;
+}
+#article-x .background{ /*文章內容背景色*/
+  background-color: #d1ffff;
+}
+.author-image { /*作者圖片*/
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    border-radius: 100%;
+}
+.author-image-big {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    border-radius: 100%;
+
+}
+.author{ /*作者名稱與日期小字*/
+  color:red;
+  font-size: 14px;
+  /*padding-left: 10px;*/
+  vertical-align:middle;
+}
+.author-big{ /*作者名稱與日期大字 字體標楷體*/
+  color:black;
+  font-size: 18px;
+  font-family: DFKai-sb;
+  padding-left: 10px;
+  font-weight: lighter;
+  /*vertical-align:middle;*/
+  text-align: right;
+}
+
+.author-time{ /*無法處理圖片旁兩行文字並排問題 暫且不用*/
+  font-size: 10px;
+  vertical-align: bottom;
+  /*text-align: left;*/
+}
+/*-----------------------------------------------新版BLOG by WYA end-------------------------------------------------*/
+
 #main .container .row .col-sm-9{
   margin-top:100px;/*lance20170630*/
+}
+
+#article-x footer h3{
+	font-size: 20px;
 }
 #article-x footer h4 a{
 	color:white;
@@ -195,6 +265,7 @@ hr{
   line-height: 50px;
   color:white;
 }*/
+<<<<<<< HEAD
 /*.more{
   color: black
   font-size: 75%
@@ -225,9 +296,11 @@ hr{
   }  */
 /*  #article-x header img{
     width:72% !important;
-    height:72% !important;   
+    height:72% !important;
   }*/
 }
+=======
+>>>>>>> develop
 
 @media screen and (min-width:1200px){
   #blogcontent{
@@ -289,6 +362,7 @@ hr{
 	#main .container .row{
 		/*margin-top:65px; lance20170630*/
 	}
+<<<<<<< HEAD
   #article header strong {
     margin-top: 20px !important;
     color:black;
@@ -310,6 +384,12 @@ hr{
     width:102% !important;
     height:102% !important;
   }*/
+=======
+  #main .container .row .col-sm-12{
+    margin-top:87px; /*lance20170630*/
+  }
+
+>>>>>>> develop
 }
 @media screen and (max-width:767px){
   #sidebar{
@@ -350,6 +430,9 @@ hr{
 	#main .container .row .col-sm-9{
 		margin-top:95px
 	}
+  #main .container .row .col-sm-12{
+    margin-top:95px; /*lance20170630*/
+  }
   p{
     font-size:16px
   }

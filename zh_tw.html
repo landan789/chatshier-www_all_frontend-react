@@ -20,7 +20,7 @@
     <a class="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true">
     <img src="assets/images/tinichats_chaticon.png" alt="Tawk Icon"/>
     </a>
-    <section id="header" class="container-fluid text-white">
+    <div id="header" class="container-fluid text-white">
       <div class="container">
         <div class="row">
           <div class="col-md-6 column">
@@ -33,118 +33,21 @@
               <a href="zh_tw.html#about">關於我們</a>
               <a href="zh_tw.html#feature">產品特色</a>
               <a href="pricing.html">價錢方案</a>
-              <a href="#">支援</a>
+              <a href="faq.html">問與答</a>
               <a href="blog.html">部落格</a>
-
-              <div id="login" class="dropdown">
-                <a href="#" onclick="showLoginBox()">登入</a>
-                <div class="dropdown-content" id="login-link">
-                  <form class="form-horizontal">
-                    <fieldset>
-                      <div class="control-group">
-                        <label class="control-label" for="login_email">電郵:</label>
-                        <div class="controls">
-                          <input required="" id="login_email" type="text" class="form-control"  class="input-medium" required="">
-                        </div>
-                        <!-- Password input-->
-                        <div class="control-group">
-                          <label class="control-label" for="login_password">密碼:</label>
-                          <div class="controls">
-                            <input required="" id="login_password" class="form-control" type="password" class="input-medium">
-                          </div>
-                        </div>
-                        <!-- Error Message -->
-                        <div id="login-err"></div>
-                        <!-- Button -->
-                        <div class="control-group">
-                          <label class="control-label" for="signin"></label>
-                          <div class="controls">
-                            <button id="signin" name="signin" class="btn btn-success">登入</button>
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
-                  </form>
-                </div>
-              </div>
-
-              <div id="register" class="dropdown">
-                <a href="#" onclick="showRegisterBox()">註冊</a>
-                <div class="dropdown-content" id="register-link">
-                  <form class="form-horizontal">
-                    <fieldset>
-                      <!-- Text input-->
-                      <div class="control-group">
-                        <label class="control-label" for="reg_email">電郵:</label>
-                        <div class="controls">
-                          <input id="reg_email" class="form-control" type="text" class="input-large" required="">
-                        </div>
-                      </div>
-                      <!-- Text input-->
-                      <div class="control-group">
-                        <label class="control-label" for="reg_name">名字:</label>
-                        <div class="controls">
-                          <input id="reg_name" class="form-control" type="text" class="input-large" required="">
-                        </div>
-                      </div>
-                      <!-- Text input-->
-                      <div class="control-group">
-                        <label class="control-label" for="reg_nickname">綽號:</label>
-                        <div class="controls">
-                          <input id="reg_nickname" class="form-control" type="text" class="input-large" required="">
-                        </div>
-                      </div>
-                      <!-- Password input-->
-                      <div class="control-group">
-                        <label class="control-label" for="password">密碼:</label>
-                        <div class="controls">
-                          <input id="reg_password" class="form-control" type="password"  class="input-large" required="">
-                          <!-- <p><span class="oblique">1-8 Characters</span></p> -->
-                        </div>
-                      </div>
-                      <!-- Text input-->
-                      <div class="control-group">
-                        <label class="control-label" for="re_reg_password">再輸入密碼:</label>
-                        <div class="controls">
-                          <input id="re_reg_password" class="form-control" type="password" class="input-large" required="">
-                        </div>
-                      </div>
-                      <br>
-                      <div id="register-err"></div>
-                      <!-- Button -->
-                      <div class="control-group">
-                        <label class="control-label" for="confirmsignup"></label>
-                        <div class="controls">
-                          <button id="signup" name="confirmsignup" class="btn btn-success">註冊</button>
-                        </div>
-                      </div>
-                    </fieldset>
-                  </form>
-                </div>
-              </div>
-
-              <div id="account" class="dropdown">
-                <a href="#" onclick="showAccountBox()">帳號</a>
-                <div class="dropdown-content" id="account-link">
-                  <br/><strong id="nickname"></strong><br/>
-                  <br/><hr/>
-                  <br/><a id="chatshier-link" target="_blank">Chatshier</a><br/>
-                  <br/><a href="profile.html">你的檔案</a><br/>
-                  <br/><hr/>
-                  <br/><a href="#" onclick="logout();">登出</a><br/>
-                </div>
-              </div>
-
+              <a href="signin.html">登入</a>
+              <a href="signup.html">註冊</a>
+              <a href="profile.html">帳號</a>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 column">
-            <h1 class="main-title margin-top-20">替你聊，替你客服</h1>
+            <h1 class="main-title margin-top-20">Chatshier，Make your life easier!</h1>
             <p class="text-left lead">
-              客服即時在線，掌握顧客需求，為你抓住訂單。
-              <br />傾聽顧客反饋，助你調整步伐。
-              <br />採用文字客服，隨時隨地想問問題更方便。
+              通訊平台，為您掌握客戶需求，抓住訂單。
+              <br />機器人小幫手，助你解決客戶需求。
+              <br />客製化功能，讓您越用越安心。
             </p>
             <br>
           </div>
@@ -153,12 +56,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="about" class="text-blue overview-padding-0">
+    <div id="about" class="text-blue overview-padding-0">
       <div class="container">
         <div class="row">
-          <h1 class="main-title overview-title-style">Grow your business with Facebook Messenger</h1>
+          <h1 class="main-title overview-title-style">串接通訊軟體，讓您在行銷上更便利。</h1>
           <div class="col-xs-12 text-center">
           </div>
           <div class="col-sm-12 col-md-6 column">
@@ -167,24 +70,22 @@
           <div class="col-sm-12 col-md-6">
             <div class="row">
               <div class="col-sm-12 col-md-12 p_title">
-                <h2>Capture leads and accelerate sales</h2>
+                <h2>串接多種通訊軟體</h2>
                 <p class="lead text-left">
-                  Link your ads, website and social media presence directly to a conversation engine
-                  that helps you and your customers simplify the process of buying.
+                  擁有LINE，Facebook粉絲頁，WeChat但是卻沒有統一整合的方式嗎？Chatshier可以幫您搞定！
                 </p>
               </div>
               <div class="col-sm-12 col-sm-12 col-md-12 margin-btm-40">
                 <div class="row">
                   <div class="col-sm-2">
                     <div class="item-icon wh-icon">
-                      <i class="fa fa-magic fa-2x link-style"></i>
+                      <i class="fa fa-facebook-official fa-2x link-style"></i>
                     </div>
                   </div>
                   <div class="col-sm-10">
-                    <p class="font-17 bold-and-red">Automate Sales Funnels</p>
+                    <p class="font-17 bold-and-red">客戶自動建檔</p>
                     <p class="font-17">
-                      Build a Facebook bot without coding to automate sales or lead qualification process.
-                      Bots can help you with giving a coupon, asking common questions or sharing content.
+                      提供客戶進線後自動寫入個人資訊至資料庫。客製化設定問卷，提問並取得客戶資料與喜好。
                     </p>
                   </div>
                 </div>
@@ -193,14 +94,14 @@
                 <div class="row">
                   <div class="col-sm-2">
                     <div class="item-icon wh-icon wh-icon2">
-                      <i class="fa fa-rocket fa-2x link-style"></i>
+                      <i class="fa fa-android fa-2x link-style"></i>
                     </div>
                   </div>
                   <div class="col-sm-10">
-                    <p class="font-17 bold-and-red">Facebook Messenger Marketing</p>
+                    <p class="font-17 bold-and-red">機器人Chatbot</p>
                     <p class="font-17">
-                      Automatically send personal private messages to customers who comment
-                      on a specific Facebook post or click on your Facebook Ads.
+                      不會寫程式也能建置通訊機器人並客製您要的銷售內容。
+                      機器人也能解決大部分客戶常見的問題。
                     </p>
                   </div>
                 </div>
@@ -209,21 +110,19 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <hr/>
 
-    <section id="overview" class="text-blue overview-top-120">
+    <div id="overview" class="text-blue overview-top-120">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <div class="row">
               <div class="col-sm-12 col-md-12 p_title">
-                <h2>Stay in touch</h2>
+                <h2>訊息管理功能</h2>
                 <p class="lead text-left">
-                  Reach out to your customers, wherever they are. Segment customer based
-                  on custom parameters such as the messaging channel or the date of last contact.
-                  Send relevant content and personal offers to the specific segment or simultaneously to all of your customers.
+                  想要推播訊息嗎？需要針對不同客戶發訊息嗎？我們可以幫您做到！
                 </p>
               </div>
               <div class="col-sm-12 col-sm-12 col-md-12 margin-btm-40">
@@ -234,10 +133,9 @@
                     </div>
                   </div>
                   <div class="col-sm-10">
-                    <p class="font-17 bold-and-red">Manual or Automatic Sending</p>
-                    <p class="font-17">Setting up broadcasts is a breeze with our visual builder.
-                      Create rich messages with images, files and deep links.
-                      Automate the process with recurring campaigns, scheduling and much more.
+                    <p class="font-17 bold-and-red">分眾群發</p>
+                    <p class="font-17">
+                      藉由Chatshier群發，您可以針對不同喜好的客戶群發送他們會喜歡的產品與優惠。
                     </p>
                   </div>
                 </div>
@@ -249,11 +147,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <hr/>
 
-    <section id="intro" class="text-blue">
+    <div id="intro" class="text-blue">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6 column div-wh-img-wrapper wh-widget padding-left0-right80">
@@ -262,10 +160,9 @@
           <div class="col-sm-12 col-md-6">
             <div class="row">
               <div class="col-sm-12 col-md-12 p_title margin-btm-0">
-                <h2>Offer support on an entirely new level</h2>
-                <p class="lead text-left margin-btm-80">Make yourself available to your customers,
-                  with little or no effort on their part.
-                  Let your customers ask questions directly through Messenger in real time, personally and privately.
+                <h2>商用軟體讓您管理客戶更方便</h2>
+                <p class="lead text-left margin-btm-80">
+                  Chatshier也結合方便好用的商業軟體，讓使用者方便在平台上應用。
                 </p>
                 <div class="col-sm-12 col-sm-12 col-md-12">
                   <div class="row">
@@ -276,12 +173,11 @@
                     </div>
                     <div class="col-sm-10">
                       <p class="font-17 bold-and-red">
-                        Forget e-mail and live chat
+                        待辦事項讓你不會忘記客戶的要求事項。
                       </p>
                       <p class="font-17">
-                        Share order confirmations and shipping status updates
-                        "in the moment" with mobile push notifications. Support customer correspondence
-                        with relevant images and videos to make one-on-one communication real and relevant.
+                        客戶的需求大量擁進的時候會需要一套管理系統來解決。
+                        Chatshier提供待辦事項與行事曆功能來通知使用者，不會有掉單或是客訴的情況。
                       </p>
                     </div>
                   </div>
@@ -291,17 +187,15 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="video" class="container-fluid text-blue video-block bg-light-grey">
+    <div id="video" class="container-fluid text-blue video-block bg-light-grey">
       <div class="container">
         <div class="row">
           <div class="col-md-12 column">
             <h2 class="text-center">帶您認識Chatshier</h2>
             <p class="lead text-center">
-              WhatsHelp helps businesses increase sales and build close relationships
-              with customers via Facebook Messenger by providing powerful automation tools.
-              Chatting, broadcasting and bots are all in one place!
+              Chatshier是一套非常好用的通訊平台，您可以串接LINE跟Facebook Messenger來服務您的客戶。
             </p>
           </div>
         </div>
@@ -311,9 +205,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="feature" class="text-blue">
+    <div id="feature" class="text-blue">
       <div class="container">
         <div class="row">
           <div class="col-md-12 column">
@@ -330,7 +224,7 @@
                 </div>
                 <h3>顧客訊息不漏接</h3>
                 <p>
-                  客服人員皆經過我們改良的處理流程訓練，提供即時在線服務，顧客問問題不怕找不到人，並且在短時間內得到回覆。
+                  顧客問問題不怕漏單，有真人與機器人的服務外也可以接收離線訊息。<br/><br/>
                 </p>
                 <!-- #2 -->
                 <div class="item-icon">
@@ -366,18 +260,9 @@
                 <div class="item-icon wh-icon-feature">
                   <i class="fa fa-clock-o fa-2x"></i>
                 </div>
-                <h3>時段彈性</h3>
+                <h3>訊息客製</h3>
                 <p>
-                  我們提供4個時段，共16個小時，讓你自由調配時間，在對的時間給予顧客最及時的協助。<br/><br/>
-                </p>
-
-                <!-- #2 -->
-                <div class="item-icon">
-                  <i class="fa fa-smile-o fa-2x"></i>
-                </div>
-                <h3>有溫度的客服體驗</h3>
-                <p>
-                  我們依據豐富的客服經驗, 有效並有彈性的處理各式問題，找出最適合每位顧客的解決方案!你的顧客就是我們的顧客, 我們服務你放心。
+                  我們提供客製化訊息，讓可戶可以自訂跟客戶互動的方式。<br/><br/>
                 </p>
               </div>
             </div>
@@ -385,37 +270,35 @@
         </div>
       </div>
       <!-- /container -->
-    </section>
+    </div>
 
     <hr/>
 
-    <section id="pricing" class="text-blue bg-light-grey">
+    <div id="pricing" class="text-blue bg-light-grey">
       <div class="container">
         <div class="row">
           <div class="col-md-12 column">
             <h2 class="text-center">價錢方案</h2>
-            <p class="text-center lead">You start for free and pay-as-you-go with honest pricing that scales as you grow.</p>
+            <p class="text-center lead">我們針對客戶的需求提供不同的方案</p>
             <p class="font-17 text-center">
-              <b>$29</b>/month - up to 1,000 contacts <br>
-              <b>$99</b>/month - up to 3,000 contacts <br>
-              <b>$149</b>/month - up to 10,000 contacts <br>
-              <b>$249</b>/month - up to 20,000 contacts <br>
-              <b>$349</b>/month - up to 30,000 contacts <br>
-              <b>$549</b>/month - up to 50,000 contacts <br><br>
-              WhatsHelp accounts are billed based on the number of contacts (active subscribers).<br>
-              Messages and agents are without limits, and the widget is free forever.<br>
+              <b>免費版</b>/月<br>
+              <b>$99 版</b>/月<br>
+              <b>$299版</b>/月<br>
+              <b>客製版</b>/月<br><br>
+              註冊後不需馬上付費就可使用<br>
+              如有設定方面的問題請於目錄的<br>
             </p>
           </div>
         </div>
       </div>
       <!-- /container -->
-    </section>
+    </div>
 
-    <section id="logos" class="container-fluid text-blue padding-100-0">
+    <div id="logos" class="container-fluid text-blue padding-100-0">
       <div class="container">
         <div class="row">
           <div class="col-md-12 column">
-            <h2 class="text-center margin-btm-40">Trusted by 5 000+ businesses in over 70 countries</h2>
+            <h2 class="text-center margin-btm-40">我們的合作夥伴</h2>
             <div class="col-md-12 text-center padding-0-80">
               <img alt="圖片" src="image/richesse.png"/>
               <img alt="圖片" src="image/applied-arch.png"/>
@@ -434,10 +317,9 @@
                           <div class="row">
                             <div class="col-sm-12">
                               <p class="customer-quote">
-                                In only two months we managed to increase our lead count by over 200% and reduce advertisement costs sixfold! At first, the team was panicking because of the significant influx of customers. We were simply unable to handle all of them.
+                                “Chatshier可是很實用的，不光能幫我出裡客服的問題外， 還能幫我做好分析、統計的工作，非常的便利，省下了我不少功夫。”
                               </p>
-                              <small><b>Olga Karpova</b>, SMM director, Onlinetours<br>
-                              Please mind that we do not guarantee specific results and your results can vary.
+                              <small><b>Alice Huang</b>, 豐豫投資<br/>
                               </small>
                             </div>
                           </div>
@@ -452,19 +334,18 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="footer" class="text-white bg-light-grey">
+    <div id="footer" class="text-white bg-light-grey">
       <div class="container">
         <div class="row">
           <div class="col-md-12 column text-center">
-            <h2 class="text-center">Try It For Free</h2>
-            <p class="lead text-center">Better experience for your customers, fewer headaches for your team.</p>
+            <h2 class="text-center">馬上免費試用</h2>
+            <p class="lead text-center">讓您的團隊更有效率的與客戶溝通。</p>
           </div>
           <div class="col-md-12 text-center">
-            <a href="/signup" class="btn btn-lg text-white signup-btn" onclick="onClickSendGaStarted(this)">
-            <span class="fb-icon"></span>
-            Get Started For Free
+            <a href="signup.html" class="btn btn-lg text-white signup-btn">
+            馬上註冊
             </a>
           </div>
           <div class="col-sm-12 col-sm-offset-1 col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-1 text-center copyright-space">
@@ -477,7 +358,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <script src="js/zh-tw.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -485,7 +366,6 @@
     <script type="text/javascript" src="config/firebase-config.js"></script>
     <script type="text/javascript" src="config/url-config.js"></script>
     <script src="js/firebase-auth.js"></script>
-    <script src="js/login.js"></script>
     <script src="assets/js/ga.js"></script>
   </body>
 </html>

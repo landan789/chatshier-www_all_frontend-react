@@ -8,7 +8,8 @@
 .margin-btm-80 { margin-bottom: 80px; }
 .margin-btm-40 { margin-bottom: 40px; }
 .margin-btm-0 { margin-bottom: 0px; }
-.margin-top-80 { margin-top: 20px; }
+.margin-top-80 { margin-top: 80px; }
+.margin-top-20 { margin-top: 20px; }
 .margin-top-100 { margin-top: 100px; }
 .margin-top-50 { margin-top: 50px; }
 .margin-top15-btm50 { margin-top: 15px;margin-bottom: 50px; }
@@ -17,8 +18,8 @@
 .padding-0-80 { padding: 0 80px; }
 .padding-100-0 { padding: 100px 0px; }
 .text-uppercase-bold { text-transform: uppercase;font-weight: 600; }
-.link-style { font-size: 2.5em;color: white; }
-.link-style3 { font-size: 3.5em;color: white;margin-left: -6px;margin-top: -6px; }
+.link-style { font-size: 2.5em;color: white;padding-left: 5px;}
+.link-style3 { font-size: 3.3em;color: white;margin-left: -4px;margin-top: -4px; }
 h1 { font-size: 28px; }
 hr { margin: 0px; }
 a:hover { text-decoration: none; }
@@ -150,7 +151,7 @@ img[alt="Chatshier-logo"] { border-radius: 50%; }
   .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
     position: relative;
     min-height: 1px;
-    padding-right: 15px;padding-left: 15px;
+    padding-right: 10px;padding-left: 10px;
   }
 }
 @media (min-width: 992px){
@@ -185,5 +186,5 @@ img[alt="Chatshier-logo"] { border-radius: 50%; }
   .overview-title-style { margin-top: 20px;text-align: center;margin-bottom: 80px; }
   .copyright-space p { text-align: center;font-size: 16px; }
   .customer-quote { font-size: 21px;font-weight: 300;margin-bottom: 20px; }
-  .col-sm-12.col-sm-12.col-md-12 .row { margin-right: -15px;margin-left: -30px; }
+  .col-sm-12.col-sm-12.col-md-12 .row { margin-right: -15px;margin-left: -15px; }
 }

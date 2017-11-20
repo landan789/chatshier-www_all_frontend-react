@@ -1,7 +1,7 @@
 .navbar-inverse{border-color:white;background-color:white;}
 .navbar-toggle{border-color:white;background-color:#ddd;}
 .navbar-brand img{width:62px;}
-/*#myNavbar{margin-top:20px;}*/
+#myNavbar{margin-top:20px;}
 .navbar-nav li a strong{color:#33ccff;}
 .navbar-inverse .navbar-nav>li>a{font-size:24px;}
 .navbar-inverse .navbar-toggle{border-color:white;}

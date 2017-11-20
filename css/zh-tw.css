@@ -44,6 +44,10 @@ p {
   top: -75px;
   z-index: 100;
 }
+.logo img {
+  width: 62px;
+  height: 61px;
+}
 .menu {
   position: absolute;
   top: -55px;
@@ -123,7 +127,7 @@ p {
 }
 #feature h3 { color: #33CCFF;font-weight: 300; }
 /*SIGNUP SIGNIN*/
-img[alt="Chatshier-logo"] { border-radius: 50%; }
+.signin-logo img, .signup-logo img { width: 62px;height: 61px; }
 .form-content { border: 1px solid #e5e5e5; background-color: #ffffff; border-radius: 15px; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 .padding-left-right { padding: 0 50px; }
 .login-title, .signup-title { line-height: 300%; }

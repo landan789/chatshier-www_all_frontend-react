@@ -8,7 +8,8 @@
 .margin-btm-80 { margin-bottom: 80px; }
 .margin-btm-40 { margin-bottom: 40px; }
 .margin-btm-0 { margin-bottom: 0px; }
-.margin-top-80 { margin-top: 20px; }
+.margin-top-80 { margin-top: 80px; }
+.margin-top-20 { margin-top: 20px; }
 .margin-top-100 { margin-top: 100px; }
 .margin-top-50 { margin-top: 50px; }
 .margin-top15-btm50 { margin-top: 15px;margin-bottom: 50px; }
@@ -17,8 +18,8 @@
 .padding-0-80 { padding: 0 80px; }
 .padding-100-0 { padding: 100px 0px; }
 .text-uppercase-bold { text-transform: uppercase;font-weight: 600; }
-.link-style { font-size: 2.5em;color: white; }
-.link-style3 { font-size: 3.5em;color: white;margin-left: -6px;margin-top: -6px; }
+.link-style { font-size: 2.5em;color: white;padding-left: 5px;}
+.link-style3 { font-size: 3.3em;color: white;margin-left: -4px;margin-top: -4px; }
 h1 { font-size: 28px; }
 hr { margin: 0px; }
 a:hover { text-decoration: none; }
@@ -43,6 +44,10 @@ p {
   top: -75px;
   z-index: 100;
 }
+.logo img {
+  width: 62px;
+  height: 61px;
+}
 .menu {
   position: absolute;
   top: -55px;
@@ -51,6 +56,7 @@ p {
   padding-left: 90px;
 }
 .menu a { color: rgb(255,255,255);margin-right: 20px;font-weight: bold;font-size: 16px; }
+.menu [href="signin.html"], .menu [href="signup.html"], .menu [href="profile.html"] { display: none; }
 .main-title { margin-bottom: 40px; }
 .text-left { text-align: left; }
 .lead {
@@ -58,7 +64,8 @@ p {
   font-size: 16px;font-weight: 300;
   line-height: 1.4;
 }
-.signup-btn { background-color: #F48B84;border-color: #F48B84; }
+.signup-btn { background-color: #009ace;border-color: #009ace; }
+.signup-btn:hover { color: #ffffff; }
 .fb-icon {
   background-image: url(https://static.whatshelp.io/img/ic_fbmessenger_white.svg);
   content: ' ';
@@ -119,6 +126,15 @@ p {
   text-align: center;
 }
 #feature h3 { color: #33CCFF;font-weight: 300; }
+/*SIGNUP SIGNIN*/
+.signin-logo img, .signup-logo img { width: 62px;height: 61px; }
+.form-content { border: 1px solid #e5e5e5; background-color: #ffffff; border-radius: 15px; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+.padding-left-right { padding: 0 50px; }
+.login-title, .signup-title { line-height: 300%; }
+.forget-password { line-height: 200%; }
+.top-blue-down-white { background: linear-gradient(#33CCFF, #ffffff); }
+.forget-password [href="signup.html"], .forget-password [href="signin.html"] { display: inline-block; }
+.forget-password a { color: #33CCFF; }
 @media (min-width: 321px){
   #about, #intro, #feature, #pricing, #overview, #logos, #video, #footer { padding-top: 30px;padding-bottom: 50px;}
   h1 { font-size: 28px; }
@@ -139,7 +155,7 @@ p {
   .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
     position: relative;
     min-height: 1px;
-    padding-right: 15px;padding-left: 15px;
+    padding-right: 10px;padding-left: 10px;
   }
 }
 @media (min-width: 992px){
@@ -174,5 +190,5 @@ p {
   .overview-title-style { margin-top: 20px;text-align: center;margin-bottom: 80px; }
   .copyright-space p { text-align: center;font-size: 16px; }
   .customer-quote { font-size: 21px;font-weight: 300;margin-bottom: 20px; }
-  .col-sm-12.col-sm-12.col-md-12 .row { margin-right: -15px;margin-left: -30px; }
+  .col-sm-12.col-sm-12.col-md-12 .row { margin-right: -15px;margin-left: -15px; }
 }

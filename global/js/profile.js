@@ -5,7 +5,6 @@ $(document).ready(function() {
       database.ref('users/' + userId).on('value', snap => {
         let profInfo = snap.val();
         if(profInfo === null) {
-          console.log('FUCK');
           // $('#error-message').show();
         } else {
           let profInfo = snap.val();

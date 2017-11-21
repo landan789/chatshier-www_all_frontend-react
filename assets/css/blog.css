@@ -32,8 +32,22 @@ line-height: 150%;/*lance20170704*/
 }
 
 /*-----------------------------------------------新版BLOG by WYA -------------------------------------------------*/
-#main .container .row .col-sm-12{ /*由於將aside廢除，因此col-sm-9改為col-sm-12*/
-  margin-top:80px;
+#main .container .row .col-sm-12{ /*由於將aside廢除，因此文章頁面的col-sm-9改為col-sm-12*/
+  margin-top:100px;
+}
+#main .container .row .col-sm-9{
+  margin-top:100px;
+}
+#main .container .row .col-sm-15{ /*BLOG首頁採用15*/
+  margin-top:100px;
+}
+#article-x footer{ /*文章內容左右對齊*/
+  text-align: justify;
+  text-justify:inter-ideograph;
+}
+#article-x header a{ /*文章作者資訊超連結不出現底線*/
+  text-align: center;
+  text-decoration: none;
 }
 #article-x .title{ /*文章標題置中並使用微軟正黑體*/
   font-size: 45px;
@@ -67,17 +81,16 @@ line-height: 150%;/*lance20170704*/
     border-radius: 100%;
 }
 .author-image-big {
-    width: 50px;
+    width: 75px;
     height: auto;
     display: inline-block;
     border-radius: 100%;
-
 }
 .author{ /*作者名稱與日期小字*/
   color:red;
   font-size: 14px;
   /*padding-left: 10px;*/
-  vertical-align:middle;
+  vertical-align:text-top;
 }
 .author-big{ /*作者名稱與日期大字 字體標楷體*/
   color:black;
@@ -96,21 +109,24 @@ line-height: 150%;/*lance20170704*/
 }
 /*-----------------------------------------------新版BLOG by WYA end-------------------------------------------------*/
 
-#main .container .row .col-sm-9{
-  margin-top:100px;/*lance20170630*/
-}
 
 #article-x footer h3{
 	font-size: 20px;
 }
 #article-x footer h4 a{
 	color:white;
-	font-weight:bold
+	font-weight:bold;
+}
+#article-x .header-title{
+  padding-top: 25px;
 }
 #article-x footer p a{ /*more*/
 	color:#33CCFF;
 	font-weight:bold;
   font-size: 75%
+}
+#article-x{
+  margin:0 !important;
 }
 
 /*==================================================Luke's css=====================*/
@@ -120,7 +136,7 @@ line-height: 150%;/*lance20170704*/
   list-style: none;
 }
 body{
-  font-family: Microsoft JhengHei;
+  font-family: 'Microsoft JhengHei';
 
 }
 hr{
@@ -202,19 +218,23 @@ hr{
   color:black;
   font-size:16px;
   letter-spacing: 1px;
-  text-align: center;
+  text-align: left;
+  padding-left: 10px
 }
 #article footer{
-  padding: 30px;/*lance20170630*/
-  /*文字左右對齊*/
-  text-align: justify;
-  text-justify:inter-ideograph;
+  padding: 10px 30px 30px 30px;/*lance20170630*/
+}
+#article footer a{
+  text-decoration: none
 }
 #article footer p {
   font-size: 18px;
+  color: grey;
 }
 #article header strong {
+  margin-top: 20px !important;
   color:black;
+  font-size: 30px;
 }
 #article-box{
   padding-left: 70%;
@@ -256,8 +276,57 @@ hr{
   color:white;
 }*/
 
+@media screen and (min-width:1200px){
+  #blogcontent{
+    margin-top:90px
+  }
+  #main .container .row .col-sm-9{
+    margin-top:87px; /*lance20170630*/
+  }
+  #main .container .row{
+    /*margin-top:65px; lance20170630*/
+  }
+  #article header strong {
+    margin-top: 20px !important;
+    color:black;
+    font-size: 24px !important;
+  }
+  #article footer p {
+    font-size: 15px !important;
+    color: grey;
+  }
+/*  #major-img{
+    width:80%;
+    height:80%;
+  }*/
+}
 
-@media screen and (min-width: 600px) and (max-width:800px){
+@media screen and (min-width:992px){
+  #blogcontent{
+    margin-top:90px
+  }
+  #main .container .row .col-sm-9{
+    margin-top:87px; /*lance20170630*/
+  }
+  #main .container .row{
+    /*margin-top:65px; lance20170630*/
+  }
+  #article header strong {
+    margin-top: 20px ;
+    color:black;
+    font-size: 24px !important;
+  }
+  #article footer p {
+    font-size: 150% !important;
+    color: grey;
+  }
+/*  #major-img{
+    width:80%;
+    height:80%;
+  }*/
+}
+
+@media screen and (min-width: 768px){
   #blogcontent{
     margin-top:90px
   }
@@ -267,17 +336,59 @@ hr{
 	#main .container .row{
 		/*margin-top:65px; lance20170630*/
 	}
-  #main .container .row .col-sm-12{
-    margin-top:87px; /*lance20170630*/
-  }
 
-}
+  #article header strong {
+    margin-top: 20px !important;
+    color:black;
+    font-size: 18px;
+  }
+  #article footer p {
+    font-size: 14px;
+    color: grey;
+  }
+  #article footer{
+    padding: 10px 10px 30px 10px;/*lance20170630*/
+  }
+  #article div{
+    /*background-color:#33CCFF;*/
+    color:black;
+    font-size: 12px
+  }
+/*  #major-img{
+    width:102% !important;
+    height:102% !important;
+  }*/
+
+
 @media screen and (max-width:767px){
   #sidebar{
     margin-top:0px
   }
     .hr-mia {
     display: none;/* lance20170630 */
+  }
+  #article header strong {
+    margin-top: 20px !important;
+    color:black;
+    font-size: 20px;
+  }
+  #article footer p {
+    font-size: 14px;
+    color: grey;
+  }
+  #article footer{
+    padding: 10px 10px 30px 10px;/*lance20170630*/
+  }
+  #article div{
+    /*background-color:#33CCFF;*/
+    color:black;
+    font-size: 12px
+  }
+  .author-image {
+      width: 8%;
+      height: auto;
+      display: inline-block;
+      border-radius: 100%;
   }
 }
 @media screen and (max-width:600px){
@@ -297,6 +408,29 @@ hr{
   #article-box{
     padding-left: 50%;
   }
+  #article div{
+    /*background-color:#33CCFF;*/
+    color:black;
+    font-size: 12px
+  }
+  #article header strong {
+    margin-top: 20px !important;
+    color:black;
+    font-size: 18px;
+  }
+  #article footer p {
+    font-size: 14px;
+    color: grey;
+  }
+  #article footer{
+    padding: 10px 10px 30px 10px;/*lance20170630*/
+  }
+  .author-image {
+      width: 10%;
+      height: auto;
+      display: inline-block;
+      border-radius: 100%;
+  }
 }
 @media screen and (max-width: 500px) {
   #article header{
@@ -307,6 +441,21 @@ hr{
     font-size:20px;
     padding:2% 15px 2% 15px;
     /*padding-left:15%; lance20170630*/
+  }
+  #article header strong {
+    margin-top: 20px !important;
+    color:black;
+    font-size: 20px;
+  }
+  #article footer p {
+    font-size: 14px;
+    color: grey;
+  }
+  .author-image {
+      width: 12%;
+      height: auto;
+      display: inline-block;
+      border-radius: 100%;
   }
 }
 

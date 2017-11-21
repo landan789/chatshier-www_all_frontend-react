@@ -10,162 +10,34 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
   <link rel="icon" href="assets/images/tab.png" />
-    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-  <script type="text/javascript" src="../config/firebaseConfig.js"></script>
-    <script type="text/javascript" src="../config/urlConfig.js"></script>
-    <script src="jquery.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="icon" href="../assets/images/tab.png" />
-    <link rel="stylesheet" href="css/style.css">
-
-  
-
-    <!-- custom -->
-    <script src="js/firebaseAuth.js"></script>
-    <script src="js/login.js"></script>
 </head>
 <body>
 
   <!-- Navbar -->
-     <div class="navbar navbar-default" id="nav" style="background-color: white">
-         <div class="container-fluid">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <a href="global.html"><img id="tinichatsLogo" src="../assets/images/tab.png" alt="tinichats" /></a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <div> 
-                  <ul class="nav navbar-nav navWords">
-                     <li><a href="global.html"><strong>Home</strong></a></li>
-                     <li><a href="#featuresBlock"><strong>Solutions</strong></a></li>
-                     <li><a href="Pricing.html"><strong>Pricing</strong></a></li>
-                     <li><a href="faq.html"><strong>How it Works</strong></a></li>
-                     <li><a href="blog.html"><strong>Blog</strong></a></li>
-                  </ul>
-               </div>
-               <div id="register" style="display:none;">
-                  <ul class="nav navbar-nav navbar-right navWords">
-                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Sign in</strong></a>
-                        <div class="dropdown-menu" id="signin">
-                           <form class="form-horizontal">
-                           <fieldset>
-                              <div class="control-group">
-                                  <label class="control-label" for="login_email">Email:</label>
-                                  <div class="controls">
-                                      <input required="" id="login_email" type="text" class="form-control"  class="input-medium" required="">
-                                  </div>
-                                  <!-- Password input-->
-                                  <div class="control-group">
-                                      <label class="control-label" for="login_password">Password:</label>
-                                      <div class="controls">
-                                          <input required="" id="login_password" class="form-control" type="password" class="input-medium">
-                                      </div>
-                                  </div>
-                                  <!-- Error Message -->
-                                  <div id="login-err">
-                                  </div>
-
-                                  <!-- Button -->
-                                  <div class="control-group">
-                                      <label class="control-label" for="signin"></label>
-                                      <div class="controls">
-                                          <button id="signin" name="signin" class="btn btn-success">Sign In</button>
-                                      </div>
-                                  </div>
-                              </div>
-                           </fieldset>
-                           </form>
-                        </div>
-                    </li>
-
-                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Register</strong></a>
-                        <div class="dropdown-menu" id="signup">
-                        <form class="form-horizontal">
-                        <fieldset>
-                            <!-- Text input-->
-                            <div class="control-group">
-                              <label class="control-label" for="reg_email">Email:</label>
-                              <div class="controls">
-                                <input id="reg_email" class="form-control" type="text" class="input-large" required="">
-                              </div>
-                            </div>
-
-                            <!-- Text input-->
-                            <div class="control-group">
-                              <label class="control-label" for="reg_name">Name:</label>
-                              <div class="controls">
-                                <input id="reg_name" class="form-control" type="text" class="input-large" required="">
-                              </div>
-                            </div>
-
-                            <!-- Text input-->
-                            <div class="control-group">
-                              <label class="control-label" for="reg_nickname">Nickname:</label>
-                              <div class="controls">
-                                <input id="reg_nickname" class="form-control" type="text" class="input-large" required="">
-                              </div>
-                            </div>
-
-                            <!-- Password input-->
-                            <div class="control-group">
-                              <label class="control-label" for="password">Password:</label>
-                              <div class="controls">
-                                <input id="reg_password" class="form-control" type="password"  class="input-large" required="">
-                                <!-- <p><span class="oblique">1-8 Characters</span></p> -->
-                              </div>
-                            </div>
-
-                            <!-- Text input-->
-                            <div class="control-group">
-                              <label class="control-label" for="re_reg_password">Re-Enter Password:</label>
-                              <div class="controls">
-                                <input id="re_reg_password" class="form-control" type="password" class="input-large" required="">
-                              </div>
-                            </div>
-
-                            <br>
-                            <div id="register-err"></div>
-
-                            <!-- Button -->
-                            <div class="control-group">
-                              <label class="control-label" for="confirmsignup"></label>
-                              <div class="controls">
-                                <button id="signup" name="confirmsignup" class="btn btn-success">Sign Up</button>
-                              </div>
-                            </div>
-                        </fieldset>
-                        </form>
-                        </div>
-                     </li>
-                  </ul>
-               </div>
-
-               <div id="account" style="display:none;">
-                  <ul class="nav navbar-right dropdown navWords" >
-                     <li class="dropdown-toggle" data-toggle="dropdown">
-                        <a><strong>Account</strong><span class="caret"></span></a>
-                     </li>
-                     <ul class="dropdown-menu  dropdown-menu-right" role="menu" aria-labelledby="menu1">
-                        <li class="dropdown-header"><strong id="nickname"></strong></li>
-                        <li class="divider"></li>
-                        <li><a id="chatshier-link" target="_blank">Chatshier</a></li>
-                        <li><a href="profile.html">Your Profile</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#" onclick="logout();">Log out</a></li>
-                     </ul>
-                  </ul>
-               </div>
-            </div>
-         </div>
+  <div class="navbar navbar-default" id="nav" style="background-color: white">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="global.html"><img id="tinichatsLogo" src="../assets/images/tab.png" alt="tinichats" /></a>
       </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav" id="navWords">
+          <li><a href="global.html"><strong>Home</strong></a></li>
+          <li><a href=""><strong>Solutions</strong></a></li>
+          <li><a href="Pricing.html"><strong>Pricing</strong></a></li>
+          <li><a href="faq.html"><strong>How it Works</strong></a></li>
+          <li><a href="blog.html"><strong>Blog</strong></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 <div id="main">
 

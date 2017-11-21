@@ -1,387 +1,398 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tinichats 替你聊 部落格</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="替你聊的部落格與您分享許多在線客服的好文章，不管你是網路購物的商家、或是需要即時客服的服務，您都可以在這找到答案，並放心的把商品諮詢與售後服務交給我們"/>
-    <meta name="keywords"
-      content="即時客服 建構客服平台 客戶即時通訊 聊天機器人 線上客服 客服支援 客服委外 客服軟體 客服工具 人工智能客服
-      客戶問題 自動化客服 Messenger 替你聊
-      客服系統 文字客服 客服委外 網路購物 ">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="icon" href="assets/images/tab.png" />
-    <link rel="stylesheet" href="assets/css/blog.css">
-    <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="stylesheet" href="assets/css/social-media-icon.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/style.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-    <script type="text/javascript" src="config/firebase-config.js"></script>
-    <script type="text/javascript" src="config/url-config.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/zh-tw.css"/>
-  </head>
-  <body>
-    <!-- fb icon -->
-    <a class="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186" >
-    <img src="assets/images/fb.png" alt="HTML tutorial" >
-    </a>
-    <!-- line -->
-    <a class="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n" >
-    <img src="assets/images/oh9ei2P.png" alt="HTML tutorial" >
-    </a>
-    <a class="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true" >
-    <img src="assets/images/tinichats_chaticon.png" alt="HTML tutorial" >
-    </a>
-    <section id="header" class="container-fluid text-white">
+   <head>
+      <!-- <title>Tinichats 替你聊 部落格</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="替你聊的部落格與您分享許多在線客服的好文章，不管你是網路購物的商家、或是需要即時客服的服務，您都可以在這找到答案，並放心的把商品諮詢與售後服務交給我們"/>
+      <meta name="keywords"
+         content="即時客服 建構客服平台 客戶即時通訊 聊天機器人 線上客服 客服支援 客服委外 客服軟體 客服工具 人工智能客服
+         客戶問題 自動化客服 Messenger 替你聊
+         客服系統 文字客服 客服委外 網路購物 ">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="icon" href="assets/images/tab.png" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="assets/css/social-media-icon.css"/>
+
+      <link rel="stylesheet" href="assets/css/blog.css"/> -->
+      <title>Tinichats 替你聊 部落格</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="替你聊的部落格與您分享許多在線客服的好文章，不管你是網路購物的商家、或是需要即時客服的服務，您都可以在這找到答案，並放心的把商品諮詢與售後服務交給我們"/>
+      <meta name="keywords"
+         content="即時客服 建構客服平台 客戶即時通訊 聊天機器人 線上客服 客服支援 客服委外 客服軟體 客服工具 人工智能客服
+         客戶問題 自動化客服 Messenger 替你聊
+         客服系統 文字客服 客服委外 網路購物 ">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="js/index.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/blog.css">
+      <link rel="icon" href="assets/images/tab.png" />
+      <link rel="stylesheet" href="assets/css/nav.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="assets/css/socialMediaIcon.css">
+      <link rel="stylesheet" href="css/zh-tw.css"/>
+      <link rel="stylesheet" href="assets/css/footer.css">
+   </head>
+   <body>
+      <!-- fb icon -->
+      <a class="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186" >
+      <img src="assets/images/fb.png" alt="HTML tutorial" >
+      </a>
+      <!-- line -->
+      <a class="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n" >
+      <img src="assets/images/oh9ei2P.png" alt="HTML tutorial" >
+      </a>
+      <a class="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true" >
+        <img src="assets/images/tinichats_chaticon.png" alt="HTML tutorial" >
+      </a>
+
+      <!-- <div id="header" class="container-fluid text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 column">
+              <div class="logo">
+                <a href="zh_tw.html"><img alt="logo" src="image/logo.png"/></a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 column header-menu">
+              <div class="menu">
+                <a href="zh_tw.html#about">關於我們</a>
+                <a href="zh_tw.html#feature">產品特色</a>
+                <a href="pricing.html">價錢方案</a>
+                <a href="faq.html">問與答</a>
+                <a href="blog.html">部落格</a>
+                <a href="signin.html">登入</a>
+                <a href="signup.html">註冊</a>
+                <a href="profile.html">帳號</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br> -->
+      <!-- nav bar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="topnav">
+         <div class="container">
+            <div class="row">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="../tw.html">
+                  <img src="assets/images/tinichats_logo_web.png"  />
+                  </a>
+               </div>
+               <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                     <li><a href="tw.html"><strong>關於我們</strong></a></li>
+                     <li><a href="tw.html#featuresBlock" ><strong>產品特色</strong></a></li>
+                     <li><a href="Pricing.html"><strong>價錢方案</strong></a></li>
+                     <li><a href="faq.html" ><strong>問與答</strong></a></li>
+                     <li><a href="blog.html" ><strong>部落格</strong></a></li>
+                     <li><a href="contact.html" ><strong>聯絡我們</strong></a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                     <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <!-- nav bar ends -->
+      <div id="main">
+      <!-- <div class="container-fluid">
+         <div class="row">
+           <div class="col-xs-12">
+             <div id="logo-title">
+               <img src="image/logo.png"></img>
+             </div>
+           </div>
+         </div>
+         </div> -->
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 column">
-            <div class="logo">
-              <a href="zh_tw.html"><img alt="logo" src="image/logo.png"/></a>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 column header-menu">
-            <div class="menu">
-              <a href="zh_tw.html#about">關於我們</a>
-              <a href="zh_tw.html#feature">產品特色</a>
-              <a href="pricing.html">價錢方案</a>
-              <a href="#">支援</a>
-              <a href="blog.html">部落格</a>
-              <div class="dropdown">
-                <a href="#">登入</a>
-                <div class="dropdown-content">
-                  <form class="form-horizontal">
-                    <fieldset>
-                      <div class="control-group">
-                        <label class="control-label" for="login_email">電郵:</label>
-                        <div class="controls">
-                          <input required="" id="login_email" type="text" class="form-control"  class="input-medium" required="">
-                        </div>
-                        <!-- Password input-->
-                        <div class="control-group">
-                          <label class="control-label" for="login_password">密碼:</label>
-                          <div class="controls">
-                            <input required="" id="login_password" class="form-control" type="password" class="input-medium">
-                          </div>
-                        </div>
-                        <!-- Error Message -->
-                        <div id="login-err">
-                        </div>
-                        <!-- Button -->
-                        <div class="control-group">
-                          <label class="control-label" for="signin"></label>
-                          <div class="controls">
-                            <button id="signin" name="signin" class="btn btn-success">登入</button>
-                          </div>
-                        </div>
+         <div class="row" >
+            <div class="col-sm-15 col-xs-12">
+               <div id="article">
+
+                 <div class="col-sm-8 col-xs-12 col-lg-7">
+                 <div id="article-x">
+                    <header>
+                      <a href="blog/a1.html"><img id="major-img" src="http://images.wisegeek.com/people-with-headsets.jpg" width="80%" height="80%" />
+                      </a>
+                    </header>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-xs-12">
+                  <div id="article-x">
+                     <header>
+                       <div>
+                        <strong>線上客服完善顧客服務</strong><br>
+                        <!-- <a href="" class="glyphicon glyphicon-time">2017/06/05</a>
+                        <a href="" class="glyphicon glyphicon-user">TED</a> -->
                       </div>
-                    </fieldset>
-                  </form>
-                </div>
-              </div>
-              <div class="dropdown">
-                <a href="#">註冊</a>
-                <div class="dropdown-content">
-                  <form class="form-horizontal">
-                    <fieldset>
-                      <!-- Text input-->
-                      <div class="control-group">
-                        <label class="control-label" for="reg_email">電郵:</label>
-                        <div class="controls">
-                          <input id="reg_email" class="form-control" type="text" class="input-large" required="">
+                     </header>
+                     <footer>
+                        <p style="line-height:2;">
+                           線上客服的功能讓任何小公司都有機會成長為事業發達的公司，無論您是販賣客製化商品或是B2B、
+                           B2C的商業模式。然而顧客同時也被多面向的資訊、廣告吸引，
+                           在這樣的狀況下要如何提供客製化的銷售服務以及給顧客最佳的購<a href="blog/a1.html" >...More</a>
+                        </p>
+                        <div>
+                          <a href="">
+                          <img src="https://sc01.alicdn.com/kf/HTB1wzBiGXXXXXbhXVXXq6xXFXXXx/200144349/HTB1wzBiGXXXXXbhXVXXq6xXFXXXx.jpg" class="author-image"/>
+
+                            <span class="author">Janet  ,  2017/06/05</span></a>
+                            <!-- <span class="author-time">2017/06/05</span> -->
                         </div>
+                     </footer>
+                  </div>
+                </div>
+
+
+
+                  <div class="col-sm-4 col-xs-12">
+                  <div id="article-x">
+                     <header>
+                       <a href="blog/a2.html"><img src="http://www.cas-crm.com/fileadmin/user_uploads/Enterprise/Mittelstand/Bilder-Fotos/crm-glossar-analytisches-crm.jpg" width="80%" height="80%" />
+                       </a>
+                        <div class="header-title">
+                        <strong>整合即時聊天與CRM</strong><br>
+                        <!-- <a href="" class="glyphicon glyphicon-time">2017/06/01</a>
+                        <a href="" class="glyphicon glyphicon-user">Amber</a> -->
                       </div>
-                      <!-- Text input-->
-                      <div class="control-group">
-                        <label class="control-label" for="reg_name">名字:</label>
-                        <div class="controls">
-                          <input id="reg_name" class="form-control" type="text" class="input-large" required="">
+                     </header>
+                     <footer>
+                        <p>
+                        <p style="line-height:2;">
+                           整合即時聊天功能和CRM系統是目前的新趨勢，因為這樣小小的一個整合動作事實上可以帶來大且深遠的影響力。
+                           一個良好的客服功能整合必須包含兩個部分：顧客滿意程度和使用者滿意程度<a href="blog/a2.html">...More</a>
+                        </p>
+                        <div>
+                          <a href="">
+                          <img src="https://sc01.alicdn.com/kf/HTB1wzBiGXXXXXbhXVXXq6xXFXXXx/200144349/HTB1wzBiGXXXXXbhXVXXq6xXFXXXx.jpg" class="author-image"/>
+
+                            <span class="author">Janet  ,  2017/06/01</span></a>
+                            <!-- <span class="author-time">2017/06/05</span> -->
                         </div>
+                        </p>
+                     </footer>
+                  </div>
+                </div>
+
+                  <div class="col-sm-4 col-xs-12">
+                  <div id="article-x">
+                     <header>
+                       <a href="blog/a3.html"><img src="https://i.marketingprofs.com/assets/images/articles/lg/121107-Awesome-Evaluation-Form-lg.jpg" width="80%" height="80%" />
+                       </a>
+                        <div class="header-title">
+                        <strong>完美處理客戶投訴</strong><br>
+                        <!-- <a href="" class="glyphicon glyphicon-time">2017/06/05</a>
+                        <a href="" class="glyphicon glyphicon-user">YK</a> -->
                       </div>
-                      <!-- Text input-->
-                      <div class="control-group">
-                        <label class="control-label" for="reg_nickname">綽號:</label>
-                        <div class="controls">
-                          <input id="reg_nickname" class="form-control" type="text" class="input-large" required="">
+                     </header>
+                     <footer>
+                        <p>
+                        <p style="line-height:2;">
+                           客戶投訴永遠是做服務業的難題，而時代在變，不管各行各業都越來越像服務業，以客為尊幾乎快變成了各個行業的聖旨，
+                           隨著全民狗仔的盛行，顧客的地位日益高漲，也許只是一件小事情沒處理好<a href="blog/a3.html">...More</a>
+                        </p>
+                        <div>
+                          <a href="">
+                          <img src="http://static.stheadline.com/stheadline/news_res/2017/11/08/308661/i_300x300_710055471.jpg" class="author-image"/>
+                            <span class="author">YK  ,  2017/06/05</span></a>
+                            <!-- <span class="author-time">2017/06/05</span> -->
                         </div>
+                        </p>
+                     </footer>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-xs-12">
+                  <div id="article-x">
+                     <header>
+                       <a href="blog/a4.html"><img src="https://techbeacon.scdn7.secure.raxcdn.com/sites/default/files/styles/card/public/field/image/scaling-chatbots.jpg?itok=GqEH-vqS" width="80%" height="80%" />
+                       </a>
+                        <div class="header-title">
+                        <strong>真人vs機器人</strong><br>
+                        <!-- <a href="" class="glyphicon glyphicon-time">2017/06/05</a>
+                        <a href="" class="glyphicon glyphicon-user">YK</a> -->
                       </div>
-                      <!-- Password input-->
-                      <div class="control-group">
-                        <label class="control-label" for="password">密碼:</label>
-                        <div class="controls">
-                          <input id="reg_password" class="form-control" type="password"  class="input-large" required="">
-                          <!-- <p><span class="oblique">1-8 Characters</span></p> -->
+                     </header>
+                     <footer>
+                        <p>
+                        <p style="line-height:2;">
+                           為了避免被機器取代，TiniChats替你聊使用真人代替高科技，帶給你的潛在客戶、陌生訪客一個最貼近人心的服務。
+                           TiniChats替你聊可以依據潛在客戶與陌生訪客說話方式的不同，而進一步去
+                           <a href="blog/a4.html">...More</a>
+                        </p>
+                        <div>
+                          <a href="">
+                          <img src="http://static.stheadline.com/stheadline/news_res/2017/11/08/308661/i_300x300_710055471.jpg" class="author-image"/>
+                            <span class="author">YK  ,  2017/06/05</span></a>
+                            <!-- <span class="author-time">2017/06/05</span> -->
                         </div>
+                        </p>
+                     </footer>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-xs-12">
+                  <div id="article-x">
+                     <header>
+                       <a href="blog/a5.html"><img src="http://loyalie.com/wp-content/uploads/2017/01/123-300x200.png" width="80%" height="80%" />
+                       </a>
+                        <div class="header-title">
+                        <strong>培養忠實客戶，開拓一片藍海</strong><br>
+                        <!-- <a href="" class="glyphicon glyphicon-time">2017/06/05</a>
+                        <a href="" class="glyphicon glyphicon-user">YK</a> -->
                       </div>
-                      <!-- Text input-->
-                      <div class="control-group">
-                        <label class="control-label" for="re_reg_password">再輸入密碼:</label>
-                        <div class="controls">
-                          <input id="re_reg_password" class="form-control" type="password" class="input-large" required="">
+                     </header>
+                     <footer>
+                        <p>
+                        <p style="line-height:2;">
+                           在現今社會中所有的行業都免不了與服務扯上關係，顧客體驗已經不僅是服務業首要目標，在未來，無法成功轉型為服務業的
+                           企業將會面臨無止盡的削價競爭，而取得良好顧客體驗的企業將
+                           <a href="blog/a5.html">...More</a>
+                        </p>
+                        <div>
+                          <a href="">
+                          <img src="http://static.stheadline.com/stheadline/news_res/2017/11/08/308661/i_300x300_710055471.jpg" class="author-image"/>
+                            <span class="author">YK  ,  2017/06/05</span></a>
+                            <!-- <span class="author-time">2017/06/05</span> -->
                         </div>
+                        </p>
+                     </footer>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-xs-12">
+                  <div id="article-x">
+                     <header>
+                       <a href="blog/a6.html"><img src="https://cdn1.nbrii.com/wp-content/uploads/2012/08/bigstock-Poor-Customer-Service-Evaluati-49019642-300x200.jpg" width="80%" height="80%" />
+                       </a>
+                        <div class="header-title">
+                        <strong>服務才是商品的本質</strong><br>
+                        <!-- <a href="" class="glyphicon glyphicon-time">2017/06/05</a>
+                        <a href="" class="glyphicon glyphicon-user">YK</a> -->
                       </div>
-                      <br>
-                      <div id="register-err"></div>
-                      <!-- Button -->
-                      <div class="control-group">
-                        <label class="control-label" for="confirmsignup"></label>
-                        <div class="controls">
-                          <button id="signup" name="confirmsignup" class="btn btn-success">註冊</button>
+                     </header>
+                     <footer>
+                        <p>
+                        <p style="line-height:2;">
+                           台灣整體以中小型企業為主，但是對大多數的中小型企業來說，削價競爭似乎是唯一殺出一條血路的方法，而在滿滿的競爭對手中，
+                           不停的削價往往帶來只是慘痛的結果，有的只是一時且微薄的
+                           <a href="blog/a6.html">...More</a>
+                        </p>
+                        <div>
+                          <a href="">
+                          <img src="http://static.stheadline.com/stheadline/news_res/2017/11/08/308661/i_300x300_710055471.jpg" class="author-image"/>
+                            <span class="author">YK  ,  2017/06/05</span></a>
+                            <!-- <span class="author-time">2017/06/05</span> -->
                         </div>
+                        </p>
+                     </footer>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-xs-12">
+                  <div id="article-x">
+                     <header>
+                       <a href="blog/a7.html"><img src="https://d3tixod1wp885b.cloudfront.net/ed/163950675311e38939d9559141e558/datavisionary_collect_data.jpg" width="80%" height="80%" />
+                       </a>
+                        <div class="header-title">
+                        <strong>數據才是說故事的高手</strong><br>
+                        <!-- <a href="" class="glyphicon glyphicon-time">2017/06/05</a>
+                        <a href="" class="glyphicon glyphicon-user">YK</a> -->
                       </div>
-                    </fieldset>
-                  </form>
+                     </header>
+                     <footer>
+                        <p>
+                        <p style="line-height:2;">
+                           你可曾困惑到底為何客人的回流率這麼差？你可曾困惑為何客人的滿意度這麼低？別在瞎猜了，TiniChats替你聊透過文字客服幫你累積滿滿的數據，
+                           不管是統整後的資訊抑或是細節的歷史聊天訊息
+                           <a href="blog/a7.html">...More</a>
+                        </p>
+                        <div>
+                          <a href="">
+                          <img src="http://static.stheadline.com/stheadline/news_res/2017/11/08/308661/i_300x300_710055471.jpg" class="author-image"/>
+                            <span class="author">YK  ,  2017/06/05</span></a>
+                            <!-- <span class="author-time">2017/06/05</span> -->
+                        </div>
+                        </p>
+                     </footer>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-        </div>
-      </div>
-    </section>
-    <div id="main">
-    <div class="container">
-      <div class="row" >
-        <div class="col-sm-12 col-xs-12">
-          <div id="article">
-            <div class="col-sm-8 col-xs-12">
-              <div id="article-x">
-                <br>
-                <br>
-                <header>
-                  <a href="blog/a1.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Picture_font_awesome.svg/512px-Picture_font_awesome.svg.png" width="640px" height="480px" />
-                  </a>
-                </header>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <div id="article-x">
-                <header>
-                  <div>
-                    <br>
-                    <br>
-                    <br>
-                    <strong>用線上客服讓顧客服務更加完整</strong><br>
-                  </div>
-                </header>
-                <footer>
-                  <p style="line-height:2;">
-                    線上客服的功能讓任何小公司都有機會成長為事業發達的公司，無論您是販賣客製化商品或是B2B、
-                    B2C的商業模式。然而顧客同時也被多面向的資訊、廣告吸引，
-                    在這樣的狀況下要如何提供客製化的銷售服務以及給顧客最佳的購物經驗呢？<a href="blog/a1.html" >...More</a>
-                  </p>
-                  <div>
-                    <a href=""> <!--author template -->
-                    <img src="http://i.dailymail.co.uk/i/pix/2016/06/15/02/26FC2E3000000578-3641721-Snow_s_doppelganger_goes_by_the_name_of_facialfollicles_on_Insta-a-16_1465952970225.jpg" class="author-image"/>
-                    <span class="author">TED</a>  ,  2017/06/05<span/>
-                  </div>
-                </footer>
-                <div id="article-box">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <div id="article-x">
-                <header>
-                  <a href="blog/a2.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Picture_font_awesome.svg/512px-Picture_font_awesome.svg.png" width="300px" height="200px" />
-                  </a>
-                  <div>
-                    <strong>整合即時聊天與CRM功能</strong><br>
-                  </div>
-                </header>
-                <footer>
-                  <p>
-                  <p style="line-height:2;">
-                    整合即時聊天功能和CRM系統是目前的新趨勢，因為這樣小小的一個整合動作事實上可以帶來大且深遠的影響力。
-                    一個良好的客服功能整合必須包含兩個部分：顧客滿意程度和使用者滿意程度，這是我們建議<a href="blog/a2.html">...More</a>
-                  </p>
-                  <div>
-                    <a href="">
-                    <img src="http://i.dailymail.co.uk/i/pix/2016/06/15/02/26FC2E3000000578-3641721-Snow_s_doppelganger_goes_by_the_name_of_facialfollicles_on_Insta-a-16_1465952970225.jpg" class="author-image"/>
-                    <span class="author">Amber</a>  ,  2017/06/01<span/>
-                  </div>
-                  </p>
-                </footer>
-                <div id="article-box">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <div id="article-x">
-                <header>
-                  <a href="blog/a3.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Picture_font_awesome.svg/512px-Picture_font_awesome.svg.png" width="300px" height="200px" />
-                  </a>
-                  <div>
-                    <strong>完美處理客戶投訴</strong><br>
-                  </div>
-                </header>
-                <footer>
-                  <p>
-                  <p style="line-height:2;">
-                    客戶投訴永遠是做服務業的難題，而時代在變，不管各行各業都越來越像服務業，以客為尊幾乎快變成了各個行業的聖旨，
-                    隨著全民狗仔的盛行，顧客的地位日益高漲，也許只是一件小事情沒處理好<a href="blog/a3.html">...More</a>
-                  </p>
-                  <div>
-                    <a href="">
-                    <img src="http://i.dailymail.co.uk/i/pix/2016/06/15/02/26FC2E3000000578-3641721-Snow_s_doppelganger_goes_by_the_name_of_facialfollicles_on_Insta-a-16_1465952970225.jpg" class="author-image"/>
-                    <span class="author">YK</a>  ,  2017/06/05<span/>
-                  </div>
-                  </p>
-                </footer>
-                <div id="article-box">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <div id="article-x">
-                <header>
-                  <a href="blog/a4.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Picture_font_awesome.svg/512px-Picture_font_awesome.svg.png" width="300px" height="200px" />
-                  </a>
-                  <div>
-                    <strong>真人vs機器人</strong><br>
-                  </div>
-                </header>
-                <footer>
-                  <p>
-                  <p style="line-height:2;">
-                    為了避免被機器取代，TiniChats替你聊使用真人代替高科技，帶給你的潛在客戶、陌生訪客一個最貼近人心的服務。
-                    TiniChats替你聊可以依據潛在客戶與陌生訪客說話方式的不同，而進一步去調整
-                    <a href="blog/a4.html">...More</a>
-                  </p>
-                  <div>
-                    <a href="">
-                    <img src="http://i.dailymail.co.uk/i/pix/2016/06/15/02/26FC2E3000000578-3641721-Snow_s_doppelganger_goes_by_the_name_of_facialfollicles_on_Insta-a-16_1465952970225.jpg" class="author-image"/>
-                    <span class="author">YK</a>  ,  2017/06/05<span/>
-                  </div>
-                  </p>
-                </footer>
-                <div id="article-box">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <div id="article-x">
-                <header>
-                  <a href="blog/a5.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Picture_font_awesome.svg/512px-Picture_font_awesome.svg.png" width="300px" height="200px" />
-                  </a>
-                  <div>
-                    <strong>培養忠實客戶，開拓一片藍海</strong><br>
-                  </div>
-                </header>
-                <footer>
-                  <p>
-                  <p style="line-height:2;">
-                    在現今社會中所有的行業都免不了與服務扯上關係，顧客體驗已經不僅是服務業首要目標，在未來，無法成功轉型為服務業的
-                    企業將會面臨無止盡的削價競爭，而取得良好顧客體驗的企業將坐擁一群死忠客戶
-                    <a href="blog/a5.html">...More</a>
-                  </p>
-                  <div>
-                    <a href="">
-                    <img src="http://i.dailymail.co.uk/i/pix/2016/06/15/02/26FC2E3000000578-3641721-Snow_s_doppelganger_goes_by_the_name_of_facialfollicles_on_Insta-a-16_1465952970225.jpg" class="author-image"/>
-                    <span class="author">YK</a>  ,  2017/06/05<span/>
-                  </div>
-                  </p>
-                </footer>
-                <div id="article-box">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <div id="article-x">
-                <header>
-                  <a href="blog/a6.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Picture_font_awesome.svg/512px-Picture_font_awesome.svg.png" width="300px" height="200px" />
-                  </a>
-                  <div>
-                    <strong>服務才是商品的本質</strong><br>
-                  </div>
-                </header>
-                <footer>
-                  <p>
-                  <p style="line-height:2;">
-                    台灣整體以中小型企業為主，但是對大多數的中小型企業來說，削價競爭似乎是唯一殺出一條血路的方法，而在滿滿的競爭對手中，
-                    不停的削價往往帶來只是慘痛的結果，有的只是一時且微薄的
-                    <a href="blog/a6.html">...More</a>
-                  </p>
-                  <div>
-                    <a href="">
-                    <img src="http://i.dailymail.co.uk/i/pix/2016/06/15/02/26FC2E3000000578-3641721-Snow_s_doppelganger_goes_by_the_name_of_facialfollicles_on_Insta-a-16_1465952970225.jpg" class="author-image"/>
-                    <span class="author">YK</a>  ,  2017/06/05<span/>
-                  </div>
-                  </p>
-                </footer>
-                <div id="article-box">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <div id="article-x">
-                <header>
-                  <a href="blog/a7.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Picture_font_awesome.svg/512px-Picture_font_awesome.svg.png" width="300px" height="200px" />
-                  </a>
-                  <div>
-                    <strong>數據才是說故事的高手</strong><br>
-                  </div>
-                </header>
-                <footer>
-                  <p>
-                  <p style="line-height:2;">
-                    你可曾困惑到底為何客人的回流率這麼差？你可曾困惑為何客人的滿意度這麼低？別在瞎猜了，TiniChats替你聊透過文字客服幫你累積滿滿的數據，
-                    不管是統整後的資訊抑或是細節的歷史聊天訊息
-                    <a href="blog/a7.html">...More</a>
-                  </p>
-                  <div>
-                    <a href="">
-                    <img src="http://i.dailymail.co.uk/i/pix/2016/06/15/02/26FC2E3000000578-3641721-Snow_s_doppelganger_goes_by_the_name_of_facialfollicles_on_Insta-a-16_1465952970225.jpg" class="author-image"/>
-                    <span class="author">YK</a>  ,  2017/06/05<span/>
-                  </div>
-                  </p>
-                </footer>
-                <div id="article-box">
-                </div>
-              </div>
+
+               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <section id="footer" class="text-white bg-light-grey">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 column text-center">
-            <h2 class="text-center">Try It For Free</h2>
-            <p class="lead text-center">Better experience for your customers, fewer headaches for your team.</p>
-          </div>
-          <div class="col-md-12 text-center">
-            <a href="/signup" class="btn btn-lg text-white signup-btn" onclick="onClickSendGaStarted(this)">
-            <span class="fb-icon"></span>
-            Get Started For Free
-            </a>
-          </div>
-          <div class="col-sm-12 col-sm-offset-1 col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-1 text-center copyright-space">
-            <p>
-              &copy;2017 chatshier.com
-              &nbsp;·&nbsp; <a href="terms.html" class="text-white" target="_blank">服務條款</a>
-              &nbsp;·&nbsp; <a href="privacy.html" class="text-white" target="_blank">隱私權條款</a>
-            </p>
-            <br/>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script src="js/zh-tw.js" charset="utf-8"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-    <script type="text/javascript" src="config/firebase-config.js"></script>
-    <script type="text/javascript" src="config/url-config.js"></script>
-    <script src="assets/js/ga.js"></script>
-    <script src="js/firebase-auth.js"></script>
-    <script src="js/login.js"></script>
-  </body>
+            <!-- <div id="sidebar" class="col-sm-3 col-xs-12">
+               <hr style="margin-top:0px">
+               <div id="aside2">
+                  <strong>TINICHATS:</strong><br>
+                  前往 tinichats 官網: <a href="tw.html">連結</a><br>
+               </div>
+               <hr>
+               <div>
+                  <strong>精選文章:</strong><br>
+                  <a href="blog/a1.html">用線上客服讓顧客...</a><br>
+                  <a href="blog/a2.html">整合即時聊天與CRM...</a><br>
+                  <a href="blog/a3.html">完美處理客戶投訴...</a><br>
+                  <a href="blog/a4.html">真人vs機器人</a><br>
+                  <a href="blog/a5.html">培養忠實客戶，開拓...</a><br>
+                  <a href="blog/a6.html">服務才是商品的本...</a><br>
+                  <a href="blog/a7.html">數據才是說故事的...</a><br>
+               </div>
+               <hr class="hr-mia">
+
+            </div> -->
+
+
+
+            <div id="footer" class="text-white bg-light-grey">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 column text-center">
+                    <h2 class="text-center">馬上免費試用</h2>
+                    <p class="lead text-center">讓您的團隊更有效率的與客戶溝通。</p>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <a href="signup.html" class="btn btn-lg text-white signup-btn">
+                    馬上註冊
+                    </a>
+                  </div>
+                  <div class="col-sm-12 col-sm-offset-1 col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-1 text-center copyright-space">
+                    <p>
+                      &copy;2017 chatshier.com
+                      &nbsp;·&nbsp; <a href="terms.html" class="text-white" target="_blank">服務條款</a>
+                      &nbsp;·&nbsp; <a href="privacy.html" class="text-white" target="_blank">隱私權條款</a>
+                    </p>
+                    <br/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="js/zh-tw.js" charset="utf-8"></script>
+            <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+            <script type="text/javascript" src="config/firebase-config-dev.js"></script>
+            <script type="text/javascript" src="config/url-config-dev.js"></script>
+            <script src="js/firebase-auth.js"></script>
+            <script src="assets/js/ga.js"></script>
+   </body>
 </html>

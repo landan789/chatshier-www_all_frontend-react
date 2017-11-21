@@ -38,7 +38,7 @@ line-height: 150%;/*lance20170704*/
 #main .container .row .col-sm-9{
   margin-top:100px;
 }
-#main .container .row .col-sm-15{ /*BLOG首頁採用15*/
+#main .container .row .col-sm-15{ /*BLOG首頁採用col-sm-15*/
   margin-top:100px;
 }
 #article-x footer{ /*文章內容左右對齊*/

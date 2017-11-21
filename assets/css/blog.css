@@ -33,10 +33,10 @@ line-height: 150%;/*lance20170704*/
 
 /*-----------------------------------------------新版BLOG by WYA -------------------------------------------------*/
 #main .container .row .col-sm-12{ /*由於將aside廢除，因此文章頁面的col-sm-9改為col-sm-12*/
-  margin-top:100px;
+  margin-top:50px;
 }
 #main .container .row .col-sm-9{
-  margin-top:100px;
+  margin-top:50px;
 }
 #main .container .row .col-sm-15{ /*BLOG首頁採用col-sm-15*/
   margin-top:100px;
@@ -61,24 +61,25 @@ line-height: 150%;/*lance20170704*/
   font-weight: lighter;
   color: gray;
 }
-#article-x .subtitle{
+#article-x .subtitle{ /*title底下的小標題*/
   font-size: 23px;
   text-align: justify;
   letter-spacing: 3px;
   font-weight: bold;
 }
-#article-x .paragraph{
+#article-x .paragraph{ /*小標題底下的段落*/
   font-weight: bolder;
   font-family: fantasy;
 }
 #article-x .background{ /*文章內容背景色*/
   background-color: #d1ffff;
+  margin-bottom: 50px;
 }
 .author-image { /*作者圖片*/
     width: 50px;
     height: auto;
     display: inline-block;
-    border-radius: 100%;
+    border-radius: 100%; /*圓框*/
 }
 .author-image-big {
     width: 75px;

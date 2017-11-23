@@ -1,237 +1,211 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Tinichats 替你聊 部落格</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="替你聊的部落格與您分享許多在線客服的好文章，不管你是網路購物的商家、或是需要即時客服的服務，您都可以在這找到答案，並放心的把商品諮詢與售後服務交給我們"/>
-  <meta name="keywords"
-    content="即時客服 建構客服平台 客戶即時通訊 聊天機器人 線上客服 客服支援 客服委外 客服軟體 客服工具 人工智能客服
-    客戶問題 自動化客服 Messenger 替你聊
-    客服系統 文字客服 客服委外 網路購物 ">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/css/blog.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="../js/index.js"></script>
-  <link rel="icon" href="../assets/images/tab.png" />
-  <link rel="stylesheet" href="../assets/css/nav.css">
-  <link rel="stylesheet" href="../assets/css/socialMediaIcon.css">
-  <link rel="stylesheet" href="../assets/css/footer.css">
-</head>
-<body>
-  <!-- fb icon -->
-  <a id="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186" >
-    <img src="../assets/images/fb.png" alt="HTML tutorial" >
-  </a>
-
-  <!-- line -->
-      <a id="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n" >
-        <img src="../assets/images/oh9ei2P.png" alt="HTML tutorial" >
+   <head>
+      <title>Tinichats 替你聊 部落格</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="替你聊的部落格與您分享許多在線客服的好文章，不管你是網路購物的商家、或是需要即時客服的服務，您都可以在這找到答案，並放心的把商品諮詢與售後服務交給我們"/>
+      <meta name="keywords"
+         content="即時客服 建構客服平台 客戶即時通訊 聊天機器人 線上客服 客服支援 客服委外 客服軟體 客服工具 人工智能客服
+         客戶問題 自動化客服 Messenger 替你聊
+         客服系統 文字客服 客服委外 網路購物 ">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../assets/css/blog.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="../js/index.js"></script>
+      <link rel="icon" href="../assets/images/tab.png" />
+      <link rel="stylesheet" href="../assets/css/nav.css">
+      <link rel="stylesheet" href="../assets/css/social-media-icon.css">
+      <link rel="stylesheet" href="../assets/css/footer.css">
+      <link rel="stylesheet" href="../css/zh-tw.css"/>
+   </head>
+   <body>
+      <!-- fb icon -->
+      <a class="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186">
+      <img src="../assets/images/fb.png" alt="FB Icon"/>
       </a>
-      <a id="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true" >
-        <img src="../assets/images/tinichats_chaticon.png" alt="HTML tutorial" >
+      <a class="lineicon" target="_blank" href="https://line.me/R/ti/p/@rad5112n">
+      <img src="../assets/images/oh9ei2P.png" alt="LINE Icon"/>
       </a>
-
-      <!-- nav bar -->
-      <nav class="navbar navbar-inverse navbar-fixed-top" id="topnav">
-         <div class="container">
-            <div class="row">
-               <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="../tw.html">
-                  <img src="../assets/images/tinichats_logo_web.png"  />
-                  </a>
-               </div>
-               <div class="collapse navbar-collapse" id="myNavbar">
-                  <ul class="nav navbar-nav">
-                     <li><a href="../tw.html"><strong>關於我們</strong></a></li>
-                     <li><a href="../tw.html#featuresBlock" ><strong>產品特色</strong></a></li>
-                     <li><a href="../Pricing.html"><strong>價錢方案</strong></a></li>
-                     <li><a href="../faq.html" ><strong>問與答</strong></a></li>
-                     <li><a href="../blog.html" ><strong>部落格</strong></a></li>
-                     <li><a href="../contact.html" ><strong>聯絡我們</strong></a></li>
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                     <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
-                  </ul>
-               </div>
+      <a class="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true">
+      <img src="../assets/images/tinichats_chaticon.png" alt="Tawk Icon"/>
+      </a>
+      <div id="header" class="container-fluid text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 column">
+              <div class="logo">
+                <a href="../zh_tw.html"><img alt="logo" src="../image/logo.png"/></a>
+              </div>
             </div>
-         </div>
-      </nav>
-      <!-- nav bar ends -->
-
-
-
-
-<div id="main">
-
-      <!-- <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12">
-            <div id="logo-title">
-              <img src="image/logo.png"></img>
+            <div class="col-sm-12 col-md-6 column header-menu">
+              <div class="menu">
+                <a href="../zh_tw.html#about">關於我們</a>
+                <a href="../zh_tw.html#feature">產品特色</a>
+                <a href="../pricing.html">價錢方案</a>
+                <a href="../faq.html">問與答</a>
+                <a href="../blog.html">部落格</a>
+                <a href="../signin.html">登入</a>
+                <a href="../signup.html">註冊</a>
+                <a href="profile.html">帳號</a>
+              </div>
             </div>
           </div>
         </div>
-      </div> -->
-
-      <div class="container">
-          <div class="row" >
-            <div class="col-sm-9 col-xs-12">
-              <div id="article">
-                <div id="article-x">
-                  <header>
-                    <strong>培養忠實客戶，開拓一片藍海</strong><br>
-                    <a href="" class="glyphicon glyphicon-time">2017/06/05</a>
-                    <a href="" class="glyphicon glyphicon-user">YK</a>
-
-                  </header>
-				  <footer>
-					  <h3 style="line-height:2;"><strong>只有當企業能提供好的服務時才具有競爭力</strong></h3>
-            <br />
-					  <h4 style="line-height:2;">在現今社會中所有的行業都免不了與服務扯上關係，顧客體驗已經不僅是服務業首要目標，在未來，無法成功轉型為服務業的企業將會面臨無止盡的削價競爭，而取得良好顧客體驗的企業將坐擁一群死忠客戶，替企業命脈運來生命之泉。而轉型服務業的第一課就是「客戶服務」，TiniChats替你聊提供你在客戶服務端全方面的協助，即使本身的業務繁忙，只需要將客戶服務交給TiniChats替你聊，便能讓TiniChats替你聊從枝微末節之處，抓緊提升服務品質契機。</h4>
-            <br />
-            <h3 style="line-height:2;"><strong>客服部門的建置反映著企業的轉變</strong></h3>
-            <br />
-            <h4 style="line-height:2;">同業競爭是每個行業都免除不了的，而近幾年來競爭的模式也漸漸趨近一樣，各式各樣的折扣活動、一成不變的削價競爭、特色功能的模仿抄襲，彷彿不管無論如何怎麼也脫離不了的循環競爭，但其實只有「人」是無法改變的，華人常說人情、人情，「人」永遠擺在「事情」前面，所以當你有好的服務才能體現出企業最大的價值，並且只有客戶服務不管如何都無法模仿到維妙維肖的，這也是唯一一個你可以和同業拉出巨大差異的所在。大多數的人都願意付出較多的成本來獲取較好的服務，你可以藉此避免陷入價格戰的泥淖。而成立一個新的客服部門不僅消耗時間還消耗資本，TiniChats替你聊讓你每月只需要支付不到22K的成本，替你將整個客服部門建置完成，還進而提供數據分析與統計報表，想在一片削價競爭中獨佔鰲頭嗎？選擇TiniChats替你聊讓你在同行中脫胎換骨。</h4>
-            <br />
-            <h4 style="line-height:2;">你可否曾經疑問過？明明是兩家店賣得是差不多的東西，怎麼排隊的人潮有著十分懸殊的差異，大部分的原因都出在顧客體驗上的差異，許多人花錢買的並不只是商品本身，而是附著在產品背後的消費體驗，可以說跟商品品質毫無關係，卻也能說這是商品的核心價值，而TiniChats替你聊讓你能在顧客消費完成後拿到第一手的消費反饋，讓客戶成為企業成長茁壯最棒的導師。最挑剔的客戶，造就最出色的企業，每個行業莫不是如此。</h4>
-            <br />
-            <h4 style="line-height:2;">TiniChats替你聊可以替你處理每一個顧客服務的小細節。服務是沒有盡頭的，不管你做的再怎麼好，仍難免會接到顧客投訴。其實，假使能在第一時間，讓顧客投訴得到超乎期待的處理，相較起沒有投訴的顧客，這些投訴的顧客更容易因此成為長期的忠實顧客。而在顧客投訴時，他們往往在意的是有沒有人在意他的感受，TiniChats替你聊透過第一時間真人的文字服務，妥善處理客戶的情緒，讓他們重新成為你們忠誠度最高的顧客。</h4>
-				  </footer>
-
-
-                </div>
-
-              </div>
-            </div>
-            <div id="blogcontent" class="col-sm-3 col-xs-12">
-
-              <hr style="margin-top:0px">
-
-              <div id="aside2">
-                <strong>TINICHATS:</strong><br>
-                前往 tinichats 官網: <a href="../tw.html">連結</a><br>
-              </div>
-
-              <hr>
-
-              <div id="">
-                <strong>精選文章:</strong><br>
-                <a href="a1.html">用線上客服讓顧客...</a><br>
-                <a href="a2.html">整合即時聊天與CRM...</a><br>
-                <a href="a3.html">完美處理客戶投訴...</a><br>
-                <a href="a4.html">真人vs機器人</a><br>
-                <a href="a5.html">培養忠實客戶，開拓...</a><br>
-                <a href="a6.html">服務才是商品的本...</a><br>
-                <a href="a7.html">數據才是說故事的...</a><br>
-              </div>
-
-              <hr class="hr-mia">
-
-              <!-- <div  id="aside4">
-                <strong>訂閱文章:</strong>
-                <form method="" action="">
-                  <p>email:<input type="email" placeholder="Your email"></p>
-                  <p><button id="aside4-button">開始訂閱</button></p>
-                </form>
-              </div> -->
-
-              <!-- <hr> -->
-
-
-
-              <!-- <div id="aside">
-                <div id="aside-title">
-                  <strong>替你聊使用者推薦文:</strong>
-                </div>
-                <ul>
-                  <li title="a01" id="a01"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> TED推薦文</li>
-                  <div class="navside" id="navside1">
-                    <p>推薦文1</p>
-                    <p>推薦文2</p>
-                    <p>推薦文3</p>
-                    <p>推薦文4</p>
-                    <p>推薦文5</p>
-                  </div>
-                  <li title="a02" id="a02"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> X推薦文</li>
-                  <li title="a03" id="a03"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> X推薦文</li>
-                  <li title="a04" id="a04"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> X推薦文</li>
-                  <li title="a05" id="a05"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> X推薦文</li>
-                </ul>
-              </div>
-
-                <hr> -->
-
-                <!-- <div id="aside-socia">
-                  <a href="https://www.facebook.com/Tinichats-%E6%9B%BF%E4%BD%A0%E8%81%8A-1004305116338186/"><img src="image/f.png"></img></a>
-                  <a href="#"><img src="image/t.png"></img></a>
-                  <a href="#"><img src="image/g.png"></img></a>
-                </div> -->
-
-            </div>
-          </div>
       </div>
-<div>
-
-  <!-- <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12">
-        <div id="navbottom">
-          <a href="#">上一頁</a>
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#">下一頁</a>
-        </div>
-    </div>
-  </div>
-    </div> -->
-
-  <!-- footer -->
-  <div id="footer">
-    <div id="footerbox" class="container">
-    <hr />
-      <div class="row">
-        <div class="col-12">
-        </br>
-        <p id="license"><strong>聯繫我們</strong></p>
-            </br>
-            <p id="license"><strong>地址 :</strong> 台北市信義區信義路四段415號9樓</p>
-            <p id="license"><strong>服務時間 :</strong> 週一至週五 09:00 ~ 18:00</p>
-            <p id="license"><strong>電話 :</strong> 02-2758-3626</p>
-            <p id="license"><strong>電子信箱 :</strong> sales@tinichats.com</p>
-            <p id="license">或上<a href="https://www.facebook.com/Tinichats-%E6%9B%BF%E4%BD%A0%E8%81%8A-1004305116338186/" class="lightb">TiniChats 替你聊紛絲團</a></p>
-            <div class='TP'>&copy;2017 tinichats.com
-               <a href="../terms.html"　><span>服務條款 &</span></a>
-               <a href="../privacy.html"　><span >隱私權條款</span></a>
+      <!-- nav bar ends -->
+      <div id="main">
+      <!-- <div class="container-fluid">
+         <div class="row">
+           <div class="col-xs-12">
+             <div id="logo-title">
+               <img src="image/logo.png"></img>
+             </div>
+           </div>
+         </div>
+         </div> -->
+      <div class="container">
+         <div class="row" >
+            <div class="col-sm-12 col-xs-12">
+               <div id="article">
+                  <div id="article-x">
+                     <header>
+                        <div class="title">培養忠實客戶，開拓一片藍海</div>
+                        <a href="">
+                        <img src="http://static.stheadline.com/stheadline/news_res/2017/11/08/308661/i_300x300_710055471.jpg" class="author-image"/>
+                        <span class="author-big">YK  ,  2017/06/05</span></a>
+                     </header>
+                     <footer class="background">
+                       <h3 class="foreword" style="line-height:2;">你可否曾經疑問過？明明是兩家店賣得是差不多的東西，怎麼排隊的人潮有著十分懸殊的差異，大部分的原因都出在顧客體驗上的差異，許多人花錢買的並不只是商品本身，而是附著在產品背後的消費體驗，可以說跟商品品質毫無關係，卻也能說這是商品的核心價值，而TiniChats替你聊讓你能在顧客消費完成後拿到第一手的消費反饋，讓客戶成為企業成長茁壯最棒的導師。最挑剔的客戶，造就最出色的企業，每個行業莫不是如此。</h3>
+                       <br>
+                        <h3 class="subtitle" style="line-height:2;">只有當企業能提供好的服務時才具有競爭力</h3>
+                        <h4 style="line-height:2;">在現今社會中所有的行業都免不了與服務扯上關係，顧客體驗已經不僅是服務業首要目標，在未來，無法成功轉型為服務業的企業將會面臨無止盡的削價競爭，而取得良好顧客體驗的企業將坐擁一群死忠客戶，替企業命脈運來生命之泉。而轉型服務業的第一課就是「客戶服務」，TiniChats替你聊提供你在客戶服務端全方面的協助，即使本身的業務繁忙，只需要將客戶服務交給TiniChats替你聊，便能讓TiniChats替你聊從枝微末節之處，抓緊提升服務品質契機。</h4>
+                        <br />
+                        <h3 class="subtitle" style="line-height:2;">客服部門的建置反映著企業的轉變</h3>
+                        <h4 style="line-height:2;">同業競爭是每個行業都免除不了的，而近幾年來競爭的模式也漸漸趨近一樣，各式各樣的折扣活動、一成不變的削價競爭、特色功能的模仿抄襲，彷彿不管無論如何怎麼也脫離不了的循環競爭，但其實只有「人」是無法改變的，華人常說人情、人情，「人」永遠擺在「事情」前面，所以當你有好的服務才能體現出企業最大的價值，並且只有客戶服務不管如何都無法模仿到維妙維肖的，這也是唯一一個你可以和同業拉出巨大差異的所在。大多數的人都願意付出較多的成本來獲取較好的服務，你可以藉此避免陷入價格戰的泥淖。而成立一個新的客服部門不僅消耗時間還消耗資本，TiniChats替你聊讓你每月只需要支付不到22K的成本，替你將整個客服部門建置完成，還進而提供數據分析與統計報表，想在一片削價競爭中獨佔鰲頭嗎？選擇TiniChats替你聊讓你在同行中脫胎換骨。</h4>
+                        <br />
+                        <h3 class="subtitle">TiniChats替你聊將你的投訴客戶轉為忠實客戶</h3>
+                        <h4 style="line-height:2;">TiniChats替你聊可以替你處理每一個顧客服務的小細節。服務是沒有盡頭的，不管你做的再怎麼好，仍難免會接到顧客投訴。其實，假使能在第一時間，讓顧客投訴得到超乎期待的處理，相較起沒有投訴的顧客，這些投訴的顧客更容易因此成為長期的忠實顧客。而在顧客投訴時，他們往往在意的是有沒有人在意他的感受，TiniChats替你聊透過第一時間真人的文字服務，妥善處理客戶的情緒，讓他們重新成為你們忠誠度最高的顧客。</h4>
+                     </footer>
+                  </div>
+               </div>
             </div>
+            <!-- <div id="blogcontent" class="col-sm-3 col-xs-12">
+               <hr style="margin-top:0px">
+
+               <div id="aside2">
+                 <strong>TINICHATS:</strong><br>
+                 前往 tinichats 官網: <a href="../tw.html">連結</a><br>
+               </div>
+
+               <hr>
+
+               <div id="">
+                 <strong>精選文章:</strong><br>
+                 <a href="a1.html">用線上客服讓顧客...</a><br>
+                 <a href="a2.html">整合即時聊天與CRM...</a><br>
+                 <a href="a3.html">完美處理客戶投訴...</a><br>
+                 <a href="a4.html">真人vs機器人</a><br>
+                 <a href="a5.html">培養忠實客戶，開拓...</a><br>
+                 <a href="a6.html">服務才是商品的本...</a><br>
+                 <a href="a7.html">數據才是說故事的...</a><br>
+               </div>
+
+               <hr class="hr-mia"> -->
+            <!-- <div  id="aside4">
+               <strong>訂閱文章:</strong>
+               <form method="" action="">
+                 <p>email:<input type="email" placeholder="Your email"></p>
+                 <p><button id="aside4-button">開始訂閱</button></p>
+               </form>
+               </div> -->
+            <!-- <hr> -->
+            <!-- <div id="aside">
+               <div id="aside-title">
+                 <strong>替你聊使用者推薦文:</strong>
+               </div>
+               <ul>
+                 <li title="a01" id="a01"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> TED推薦文</li>
+                 <div class="navside" id="navside1">
+                   <p>推薦文1</p>
+                   <p>推薦文2</p>
+                   <p>推薦文3</p>
+                   <p>推薦文4</p>
+                   <p>推薦文5</p>
+                 </div>
+                 <li title="a02" id="a02"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> X推薦文</li>
+                 <li title="a03" id="a03"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> X推薦文</li>
+                 <li title="a04" id="a04"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> X推薦文</li>
+                 <li title="a05" id="a05"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> X推薦文</li>
+               </ul>
+               </div>
+
+               <hr> -->
+            <!-- <div id="aside-socia">
+               <a href="https://www.facebook.com/Tinichats-%E6%9B%BF%E4%BD%A0%E8%81%8A-1004305116338186/"><img src="image/f.png"></img></a>
+               <a href="#"><img src="image/t.png"></img></a>
+               <a href="#"><img src="image/g.png"></img></a>
+               </div> -->
+            <!-- </div> -->
+         </div>
+      </div>
+      <div>
+      <!-- <div class="container-fluid">
+         <div class="row">
+           <div class="col-xs-12">
+             <div id="navbottom">
+               <a href="#">上一頁</a>
+               <a href="#">1</a>
+               <a href="#">2</a>
+               <a href="#">3</a>
+               <a href="#">4</a>
+               <a href="#">5</a>
+               <a href="#">下一頁</a>
+             </div>
+         </div>
+         </div>
+         </div> -->
+      <!-- footer -->
+      <div id="footer" class="text-white bg-light-grey">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 column text-center">
+              <h2 class="text-center">馬上免費試用</h2>
+              <p class="lead text-center">讓您的團隊更有效率的與客戶溝通。</p>
+            </div>
+            <div class="col-md-12 text-center">
+              <a href="../signup.html" class="btn btn-lg text-white signup-btn">
+              馬上註冊
+              </a>
+            </div>
+            <div class="col-sm-12 col-sm-offset-1 col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-1 text-center copyright-space">
+              <p>
+                &copy;2017 chatshier.com
+                &nbsp;·&nbsp; <a href="../terms.html" class="text-white" target="_blank">服務條款</a>
+                &nbsp;·&nbsp; <a href="../privacy.html" class="text-white" target="_blank">隱私權條款</a>
+              </p>
+              <br/>
+            </div>
+          </div>
         </div>
-    </div>
-    </div>
-  </div>
+      </div>
+      <!-- script -->
+      <!-- Live Chat -->
+      <!-- <script src="../assets/js/helpdesk.js"></script> -->
+      <!-- GA -->
+      <script src="../assets/js/ga.js"></script>
+      <!-- firebase -->
+      <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+      <script src="../assets/js/firebaseConfig.js"></script>
 
-
-<!-- script -->
-
-<!-- Live Chat -->
-<!-- <script src="../assets/js/helpdesk.js"></script> -->
-<!-- GA -->
-<script src="../assets/js/ga.js"></script>
-<!-- firebase -->
-<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-<script src="../assets/js/firebaseConfig.js"></script>
-
-
-
-</body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="../js/zh-tw.js" charset="utf-8"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+      <script type="text/javascript" src="../config/firebase-config-dev.js"></script>
+      <script type="text/javascript" src="../config/url-config-dev.js"></script>
+      <script src="../js/firebase-auth.js"></script>
+   </body>
 </html>
 ﻿

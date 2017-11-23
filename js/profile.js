@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('#edit-link').attr("href", chatshierURL);
   auth.onAuthStateChanged(user => {
     if(user){
       let userId = auth.currentUser.uid;
@@ -13,6 +14,7 @@ $(document).ready(function() {
         }
       });
     } else {
+      window.location.href = 'index.html';
       console.log('need to sign in');
     }
   });

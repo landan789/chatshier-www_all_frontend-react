@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('#edit-link').attr("href", chatshierURL);
   auth.onAuthStateChanged(user => {
     if(user){
       let userId = auth.currentUser.uid;

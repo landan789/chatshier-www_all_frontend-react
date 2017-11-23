@@ -1,1 +1,1 @@
-const chatshierURL =  'https://dev.chatshier.herukuapp.com';
+const chatshierURL =  'https://dev-chatshier.herokuapp.com/';

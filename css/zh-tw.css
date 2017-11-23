@@ -179,9 +179,6 @@ p {
   .lead-xxxs {
     font-size: 0.8em;
   }
-  body {
-    background-color: red;
-  }
 }
 
 @media (min-width: 392px) and (max-width: 575px){
@@ -331,4 +328,10 @@ p {
 
 .corps {
   margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tc.img-responsive{
+  display: inline-block;
 }

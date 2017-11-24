@@ -223,10 +223,9 @@ p {
   .lead-xs {
 
   }
-}
-
-@media (min-width: 768px){
-
+  .tc .navbar-brand img {
+    height: 40px;
+  }
 }
 
 @media (min-width: 992px){

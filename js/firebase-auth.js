@@ -5,7 +5,9 @@ const auth = firebase.auth();
 auth.onAuthStateChanged(user => {
   if(user){
     console.log('sign in');
-    $('[href="profile.html"]').show();
+    $('li a[href="profile.html"]').css('display','block');
+    $('li a[href="../profile.html"]').css('display','block');
+
     console.log(auth.currentUser.uid);
     database.ref('users/' + auth.currentUser.uid).on('value', snap => {
       let profInfo = snap.val();
@@ -17,8 +19,11 @@ auth.onAuthStateChanged(user => {
     });
   } else {
     console.log('need to sign in');
-    $('[href="signup.html"]').show();
-    $('[href="signin.html"]').show();
+    $('li a[href="signup.html"]').css('display','block');
+    $('li a[href="../signup.html"]').css('display','block');
+
+    $('li a[href="signin.html"]').css('display','block');
+    $('li a[href="../signin.html"]').css('display','block');
   }
 });
 

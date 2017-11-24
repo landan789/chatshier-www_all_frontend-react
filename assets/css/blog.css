@@ -32,6 +32,9 @@ line-height: 150%;/*lance20170704*/
 }
 
 /*-----------------------------------------------新版BLOG by WYA -------------------------------------------------*/
+/*一開始登入 註冊 帳號三者皆隱藏 確認過firebase auth後 再決定display哪個(原本寫在zh_tw.css中 由於路徑問題 加寫在此)*/
+.nav.navbar-nav.navbar-right li a[href="../signin.html"],.nav.navbar-nav.navbar-right li a[href="../signup.html"],.nav.navbar-nav.navbar-right li a[href="../profile.html"] { display: none; }
+
 #main .container .row .col-sm-12{ /*由於將aside廢除，因此文章頁面的col-sm-9改為col-sm-12*/
   margin-top:50px;
 }
@@ -44,6 +47,7 @@ line-height: 150%;/*lance20170704*/
 #article-x footer{ /*文章內容左右對齊*/
   text-align: justify;
   text-justify:inter-ideograph;
+  background-color: white;
 }
 #article-x header a{ /*文章作者資訊超連結不出現底線*/
   text-align: center;
@@ -138,7 +142,6 @@ line-height: 150%;/*lance20170704*/
 }
 body{
   font-family: 'Microsoft JhengHei';
-
 }
 hr{
   border: 2px solid #33ccff;

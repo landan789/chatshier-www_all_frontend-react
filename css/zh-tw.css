@@ -55,7 +55,7 @@ p {
   padding-left: 90px;
 }
 .menu a { color: rgb(255,255,255);margin-right: 20px;font-weight: bold;font-size: 16px; }
-.menu [href="signin.html"], .menu [href="signup.html"], .menu [href="profile.html"] { display: none; }
+.nav.navbar-nav.navbar-right li a[href="signin.html"],.nav.navbar-nav.navbar-right li a[href="signup.html"],.nav.navbar-nav.navbar-right li a[href="profile.html"] { display: none; }
 .main-title { margin-bottom: 40px; }
 .text-left { text-align: left; }
 .lead {
@@ -128,12 +128,34 @@ p {
   border-radius: 50%;border-color: #33CCFF;
   text-align: center;
 }
+
+/*SIGNUP SIGNIN*/
+.signin-logo img, .signup-logo img { width: 62px;height: 61px; }
+.form-content { border: 1px solid #e5e5e5; background-color: #ffffff; border-radius: 15px; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+.padding-left-right { padding: 0 50px; }
+.login-title, .signup-title { line-height: 300%; }
+.forget-password { line-height: 200%; }
+.top-blue-down-white { background: linear-gradient(#33CCFF, #ffffff); }
+.forget-password [href="signup.html"], .forget-password [href="signin.html"] { display: inline-block; }
+.forget-password a { color: #33CCFF; }
 .margin-top-0 {
   margin-top: 0pxm;
 }
 
 .padding-top-2 {
   padding-top: 2em;
+}
+
+.padding-bottom-2 {
+  padding-bottom: 2em;
+}
+
+.padding-top-15 {
+  padding-top: 15px;
+}
+
+.padding-bottom-15 {
+  padding-bottom: 15px;
 }
 
 .padding-left-15 {
@@ -146,6 +168,10 @@ p {
 
 .padding-left-30 {
   padding-left: 30px;
+}
+
+.padding-left-40 {
+  padding-left: 40px;
 }
 
 .padding-right-30 {
@@ -222,6 +248,7 @@ p {
 
 .tc.navbar-default {
   background: #33ccff;
+  font-weight: bold;
 }
 
 .tc.navbar {

@@ -3,7 +3,13 @@
   color: #33CCFF;
   font-weight: bold;
 }
-.spacing {
-  padding-left: 30%;
-  padding-right: 30%;
+.main-spacing {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+@media (min-width: 768px){
+  .main-spacing {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
 }

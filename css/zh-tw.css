@@ -22,9 +22,10 @@ footer{
 .padding-top-btm-10 { padding: 10px 0; }
 .padding-0-80 { padding: 0 80px; }
 .padding-100-0 { padding: 100px 0px; }
+.padding-left-25 { padding-left: 25px; }
 .text-uppercase-bold { text-transform: uppercase;font-weight: 600; }
-.link-style { font-size: 2.5em;color: white;padding-left: 5px;}
-.link-style3 { font-size: 3.3em;color: white;margin-left: -4px;margin-top: -4px; }
+.link-style { font-size: 2.5em; color: white;padding-left: 5px; padding-right: 20px; margin-bottom: 25px; margin-right: 25px;}
+.link-style3 { font-size: 3.3em; color: white;margin-left: -4px; padding-right: 20px; margin-top: -4px; margin-bottom: 25px; margin-right: 25px;}
 h1 { font-size: 28px; }
 hr { margin: 0px; }
 a:hover { text-decoration: none; }
@@ -34,7 +35,7 @@ p {
   text-justify: inter-word;
 }
 .col-sm-4.col-md-4 p { font-size: 16px; }
-.column { padding-right: 15px;padding-left: 15px; }
+.column { padding-right: 40px;padding-left: 40px; }
 /*HEADER*/
 #header { padding-top: 100px; }
 .logo {
@@ -55,6 +56,7 @@ p {
   padding-left: 90px;
 }
 .menu a { color: rgb(255,255,255);margin-right: 20px;font-weight: bold;font-size: 16px; }
+
 .nav.navbar-nav.navbar-right li a[href="signin.html"],.nav.navbar-nav.navbar-right li a[href="signup.html"],.nav.navbar-nav.navbar-right li a[href="profile.html"] { display: none; }
 .main-title { margin-bottom: 40px; }
 .text-left { text-align: left; }
@@ -79,9 +81,9 @@ p {
 }
 .overview-padding-0 { padding-bottom: 0px; }
 .overview-top-120 { padding-top: 120px; }
-.overview-title-style { margin-top: 0;margin-bottom: 20px;text-align: left;padding-left: 22px; }
+.overview-title-style { margin-top: 0;margin-bottom: 20px;text-align: center;}
 .font-17 { font-size: 17.5px; }
-.bold-and-red { font-weight: bold;color: #33CCFF; }
+.bold-and-blue { font-weight: bold;color: #33CCFF; }
 /*LOGIN/REGISTER*/
 .dropdown { position: relative;display: inline-block; }
 .dropdown-content {
@@ -99,7 +101,7 @@ p {
 .control-label { float: left; }
 /*VIDEO*/
 .video-block { background-color: #f9f9f9;padding-bottom: 100px; }
-.video-image-style { width: 100%;box-shadow: 0 0 0 1px #dbe0e3; }
+.video-image-style { width: 100%; height: auto; box-shadow: 0 0 0 1px #dbe0e3; }
 /*OVERVIEW*/
 #overview .item-icon.wh-icon, #about .item-icon.wh-icon, #intro .item-icon.wh-icon, #feature .item-icon.wh-icon.wh-icon3 {
   width: 75px;height: 75px;
@@ -174,6 +176,10 @@ p {
   padding-left: 40px;
 }
 
+.padding-left-70 {
+  padding-left: 70px;
+}
+
 .padding-right-30 {
   padding-right: 30px;
 }
@@ -187,6 +193,9 @@ p {
   .lead-xxxxxs {
 
   }
+  .col-xs-12.col-sm-12.col-md-6.column.p_title{ /*首頁副標題2對齊左側*/
+    padding-left: 55px;
+  }
 }
 
 @media (min-width: 158px) and (max-width: 251px){
@@ -195,6 +204,9 @@ p {
   }
   .lead-xxxxs {
 
+  }
+  .col-xs-12.col-sm-12.col-md-6.column.p_title{ /*首頁副標題2對齊左側*/
+    padding-left: 55px;
   }
 }
 
@@ -205,6 +217,9 @@ p {
   .lead-xxxs {
     font-size: 0.8em;
   }
+  .col-xs-12.col-sm-12.col-md-6.column.p_title{ /*首頁副標題2對齊左側*/
+    padding-left: 55px;
+  }
 }
 
 @media (min-width: 392px) and (max-width: 575px){
@@ -213,6 +228,9 @@ p {
   }
   .lead-xxs {
 
+  }
+  .col-xs-12.col-sm-12.col-md-6.column.p_title{ /*首頁副標題2對齊左側*/
+    padding-left: 55px;
   }
 }
 
@@ -225,6 +243,9 @@ p {
   }
   .tc .navbar-brand img {
     height: 40px;
+  }
+  .col-xs-12.col-sm-12.col-md-6.column.p_title{ /*首頁副標題2對齊左側*/
+    padding-left: 55px;
   }
 }
 
@@ -255,7 +276,7 @@ p {
   border-bottom: 0;
   border-color: #fff;
   border-style: solid;
-  border-width: 1px 1px 0px 1px;
+  border-width: 0px 0px 0px 0px;
   border-radius: 0px;
 }
 
@@ -274,12 +295,21 @@ p {
     position: absolute;
     right: calc(50% - 350px);
   }
+  .col-xs-12.col-sm-12.col-md-6.column.p_title{ /*首頁副標題2對齊左側*/
+    padding-left: 55px;
+  }
+  .nav.navbar-nav.navbar-right{ /*navbar右側對齊*/
+   padding-right:30px;
+  }
 }
 
 @media (min-width:992px){
   .tc .navbar-nav {
     position: absolute;
     right: calc(50% - 488px);
+  }
+  .nav.navbar-nav.navbar-right{ /*navbar右側對齊*/
+   padding-right:50px;
   }
 }
 
@@ -306,6 +336,10 @@ p {
     font-size: 23px;font-weight: 300;
     line-height: 1.4;
   }
+  .nav.navbar-nav.navbar-right{ /*navbar右側對齊*/
+   padding-right:30px;
+  }
+
   .overview-title-style { margin-top: 20px;text-align: center;margin-bottom: 80px; }
   .copyright-space p { text-align: center;font-size: 16px; }
   .customer-quote { font-size: 21px;font-weight: 300;margin-bottom: 20px; }

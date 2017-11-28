@@ -2,11 +2,21 @@ firebase.initializeApp(config);
 const database = firebase.database();
 const auth = firebase.auth();
 
+
 auth.onAuthStateChanged(user => {
   if(user){
+    console.log(window.location);
+    let signin = window.location.origin + '/signin.html';
+    let signup = window.location.origin + '/signup.html';
     console.log('sign in');
     $('li a[href="profile.html"]').css('display','block');
     $('li a[href="../profile.html"]').css('display','block');
+
+    console.log(window.location.href);
+    console.log(signin);
+    if(window.location.href === signin || window.location.href === signup) {
+      window.location = 'index.html';
+    }
 
     console.log(auth.currentUser.uid);
     database.ref('users/' + auth.currentUser.uid).on('value', snap => {

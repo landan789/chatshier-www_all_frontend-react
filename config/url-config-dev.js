@@ -1,6 +1,6 @@
 const urlConfig = {
-	serviceUrl: 'http://service.dev.chatshier.com',
+	serviceUrl: '',
 	port: '',
-	login: '/login', 
+	login: '/login',
 	signup: '/signup'
-} 
+}

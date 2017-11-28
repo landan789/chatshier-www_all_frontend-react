@@ -1,5 +1,5 @@
 if('undefined' === typeof window.config){
-  console.warn('Please set up the configuration file of /config/firebase-config.js and /config/url-config.js');
+  console.warn('Please set up the configuration file of /config/firebase-config.js');
 }
 firebase.initializeApp(config);
 const database = firebase.database();

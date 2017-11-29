@@ -1,13 +1,14 @@
-#header{ background-color: #33CCFF; }
 #about, #intro, #feature, #pricing, #overview, #logos, #video { padding-top: 30px;padding-bottom: 50px; }
 
 footer{
-  background-color: #33CCFF;
   padding-top: 30px;padding-bottom: 30px;
 }
 .menu .dropdown-content a { color: black; }
 .text-white { color: #ffffff; }
 .text-center { text-align: center; }
+.bg-blue{
+  background-color: #33CCFF;
+}
 .bg-light-grey { background-color: #f9f9f9; }
 .bg-white { background-color: white; }
 .margin-btm-80 { margin-bottom: 80px; }
@@ -17,6 +18,7 @@ footer{
 .margin-top-20 { margin-top: 20px; }
 .margin-top-100 { margin-top: 100px; }
 .margin-top-50 { margin-top: 50px; }
+.margin-top-60 { margin-top: 60px; }
 .margin-top15-btm50 { margin-top: 15px;margin-bottom: 50px; }
 .padding-left0-right80 { padding-left: 0px;padding-right: 80px; }
 .padding-top-btm-10 { padding: 10px 0; }
@@ -37,7 +39,6 @@ p {
 .col-sm-4.col-md-4 p { font-size: 16px; }
 .column { padding-right: 40px;padding-left: 40px; }
 /*HEADER*/
-#header { padding-top: 100px; }
 .logo {
   background-color: #33CCFF;
   position: absolute;
@@ -58,13 +59,8 @@ p {
 .menu a { color: rgb(255,255,255);margin-right: 20px;font-weight: bold;font-size: 16px; }
 
 .nav.navbar-nav.navbar-right li a[href="signin.html"],.nav.navbar-nav.navbar-right li a[href="signup.html"],.nav.navbar-nav.navbar-right li a[href="profile.html"] { display: none; }
-.main-title { margin-bottom: 40px; }
+.main-title { margin-bottom: 20px; }
 .text-left { text-align: left; }
-.lead {
-  margin-bottom: 20px;
-  font-size: 16px;font-weight: 300;
-  line-height: 1.4;
-}
 .signup-btn { background-color: #009ace;border-color: #009ace; }
 .signup-btn:hover { color: #ffffff; }
 .fb-icon {
@@ -107,7 +103,10 @@ p {
   width: 75px;height: 75px;
   padding-top: 20px;margin: 0 0;
   border-radius: 50%;border: 0;
-  background-color: #33CCFF;
+  background-color: #
+
+
+  ;
   padding-left: 19px;
 }
 /*LOGOS*/
@@ -185,6 +184,9 @@ p {
 }
 #feature h3 { color: #33CCFF;font-weight: 300; }
 
+.tc .nav {
+  padding-top: 10px;
+}
 
 @media (min-width: 1px) and (max-width: 157px){
   .hidden-xxxxxs {
@@ -229,6 +231,12 @@ p {
   .lead-xxs {
 
   }
+  .chsr .main-title{
+    font-size: 1.5em;
+  }
+  .chsr .lead{
+    font-size: 1.2em;
+  }
   .col-xs-12.col-sm-12.col-md-6.column.p_title{ /*首頁副標題2對齊左側*/
     padding-left: 55px;
   }
@@ -256,11 +264,6 @@ p {
     width: 80%;
   }
 }
-@media (min-width: 1025px){
-  .menu a { font-size: 16px; }
-  .col-sm-3.text-center img { width: 150px;height: 150px; }
-}
-
 .tc.row{
   margin-left: 0px;
   margin-right: 0px;
@@ -291,34 +294,31 @@ p {
     border-bottom: 0 solid rgba(255, 255, 255, 0.6);
     margin: 0;
   }
-  .tc .navbar-nav {
-    position: absolute;
-    right: calc(50% - 350px);
+  .main-title{
+    font-size: 1.7em;
+  }
+  .chsr .lead{
+    font-size: 1.3em;
+  }
+  .chsr .navbar-nav {
+    padding-top: 10px;
   }
   .col-xs-12.col-sm-12.col-md-6.column.p_title{ /*首頁副標題2對齊左側*/
     padding-left: 55px;
   }
   .nav.navbar-nav.navbar-right{ /*navbar右側對齊*/
-   padding-right:30px;
   }
 }
 
 @media (min-width:992px){
-  .tc .navbar-nav {
-    position: absolute;
-    right: calc(50% - 488px);
-  }
+
   .nav.navbar-nav.navbar-right{ /*navbar右側對齊*/
-   padding-right:50px;
   }
 }
 
 
 @media (min-width: 1200px){
-  .tc .navbar-nav {
-    position: absolute;
-    right: calc(50% - 555px);
-  }
+
   #about, #intro, #feature, #pricing, #overview, #logos, #video, #footer { padding-top: 100px;padding-bottom: 100px;}
   h1 { font-size: 2em; }
   .font-17 { font-size: 17.5px; }
@@ -333,11 +333,10 @@ p {
   .column { padding-right: 50px;padding-left: 50px; }
   .lead {
     margin-bottom: 20px;
-    font-size: 23px;font-weight: 300;
+    font-size: 18px;font-weight: 300;
     line-height: 1.4;
   }
   .nav.navbar-nav.navbar-right{ /*navbar右側對齊*/
-   padding-right:30px;
   }
 
   .overview-title-style { margin-top: 20px;text-align: center;margin-bottom: 80px; }
@@ -346,6 +345,13 @@ p {
   .col-sm-12.col-sm-12.col-md-12 .row { margin-right: -15px;margin-left: -15px; }
 }
 
+.tc .navbar-right{
+    margin-right: -6px;
+}
+
+.tc .navbar-toggle{
+    margin-right: 38px;
+}
 .tc.navbar-default .navbar-toggle .icon-bar {
   background-color: #ffffff;
 }
@@ -370,11 +376,25 @@ p {
 }
 
 .tc .navbar-brand {
-  padding: 0 15px;
+  padding: 0 0 15px 35px;
+  color: #ffffff;
+  font-size: 28px;
+  font-family: Calibri;
+  font-style: oblique;
+  vertical-align: text-bottom;
+}
+
+.tc .navbar-brand:hover {
+  color: #ffffff;
+}
+.tc .navbar-brand:active {
+  color: #ffffff;
 }
 
 .tc .navbar-brand img {
+  display: inline;
   height: 50px;
+  vertical-align: text-bottom;
 }
 
 .bg-s1 {

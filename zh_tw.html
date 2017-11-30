@@ -1,307 +1,300 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <title>Chatshier - beta</title>
     <link rel="icon" href="assets/images/tab.png" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="assets/css/social-media-icon.css"/>
-    <link rel="stylesheet" href="css/zh-tw.css"/>
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/social-media-icon.css" />
+    <link rel="stylesheet" href="css/zh-tw.css" />
+</head>
+
+<body>
     <!-- fb icon -->
     <a class="fbicon" target="_blank" href="https://www.facebook.com/messages/t/530755163926878">
-    <img src="assets/images/fb.png" alt="FB Icon"/>
+        <img src="assets/images/fb.png" alt="FB Icon" />
     </a>
     <a class="lineicon" target="_blank" href="https://line.me/R/ti/p/@cry4678u">
-    <img src="assets/images/oh9ei2P.png" alt="LINE Icon"/>
+        <img src="assets/images/oh9ei2P.png" alt="LINE Icon" />
     </a>
-    <nav class="navbar tc navbar-default navbar-">
-       <!-- <div class="container-fluid padding-top-15 padding-bottom-15"> -->
-         <div class="container column padding-top-15 padding-bottom-15 column">
-           <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <nav class="navbar chsr navbar-default navbar-">
+        <!-- <div class="container-fluid padding-top-15 padding-bottom-15"> -->
+        <div class="container column padding-top-15 padding-bottom-15 column">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                    <span class="sr-only">Toggle navigation</span>
                    <span class="icon-bar"></span>
                    <span class="icon-bar"></span>
                    <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="zh_tw.html"><img alt="logo" src="image/logo.png" /><span>Chatshier</span></a>
-           </div>
-           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav navbar-right">
-                   <li><a href="zh_tw.html#about">關於我們</a></li>
-                   <li><a href="zh_tw.html#feature">特色</a></li>
-                   <li><a href="pricing.html">價錢</a></li>
-                   <li><a href="faq.html">問與答</a></li>
-                   <li><a href="blog.html">論壇</a></li>
-                   <li><a id="login" href="">登入</a></li>
-                   <li><a id="signup" href="">註冊</a></li>
-                   <li><a href="profile.html">帳號</a></li>
-               </ul>
-           </div>
-           <!-- /.navbar-collapse -->
+                <a class="navbar-brand" href="zh_tw.html"><img alt="logo" src="image/logo.png" /><span>Chatshier</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="zh_tw.html#about">關於我們</a></li>
+                    <li><a href="zh_tw.html#feature">特色</a></li>
+                    <li><a href="pricing.html">價錢</a></li>
+                    <li><a href="faq.html">問與答</a></li>
+                    <li><a href="blog.html">論壇</a></li>
+                    <li><a id="login" class="hidden" href="">登入</a></li>
+                    <li><a id="signup" class="hidden" href="">註冊</a></li>
+                    <li><a id="chat" class="hidden" href="">系統</a></li>
+                    <li id="dropdown-user" class="hidden dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="user" src="./image/user.png"/><span class="caret"></span></a>
+                        <ul class="arrow-up hidden hidden-xs">
+                        </ul>
+                        <ul class="arrow-up black hidden hidden-xs">
+                        </ul>
+                        <ul class="dropdown-menu">
+                            <li><b>你好，</b><b id="name"></b></li>
+                            <li class="divider hidden-xs"></li>
+                            <li><b>Email: </b><b id="email"></b></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
 
-           </div>
-           <!-- container -->
-       <!-- </div> -->
-       <!-- /.container-fluid -->
-   </nav>
+        </div>
+        <!-- container -->
+        <!-- </div> -->
+        <!-- /.container-fluid -->
+    </nav>
 
     <div class="chsr text-white bg-blue">
-      <div class="container">
-        <!-- <div class="row">
-          <div class="col-md-6 column">
-            <div class="logo">
-              <a href="zh_tw.html"><img alt="logo" src="image/logo.png"/></a>
+        <div class="container">
+            <div class="chsr row">
+                <div class="col-xs-12 col-sm-12 col-md-6 column p_title">
+                    <h1 class="main-title margin-top-80">Chatshier，Make your life easier!</h1>
+                    <p class="chsr text-left lead">
+                        通訊平台，為您掌握客戶需求，抓住訂單。
+                        <br />機器人小幫手，助你解決客戶需求。
+                        <br />客製化功能，讓您越用越安心。
+                    </p>
+                    <br>
+                </div>
+                <div class="col-sm-12 col-md-6 column">
+                    <img alt="圖片" class="img-responsive" src="https://labstats.com/wp-content/uploads/2017/03/application-usage-report.png" />
+                </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 column header-menu">
-            <div class="menu">
-              <a href="zh_tw.html#about">關於我們</a>
-              <a href="zh_tw.html#feature">產品特色</a>
-              <a href="pricing.html">價錢方案</a>
-              <a href="faq.html">問與答</a>
-              <a href="blog.html">部落格</a>
-              <a href="signin.html">登入</a>
-              <a href="signup.html">註冊</a>
-              <a href="profile.html">帳號</a>
-            </div>
-          </div>
-        </div> -->
-        <div class="chsrrow">
-          <div class="col-xs-12 col-sm-12 col-md-6 column p_title">
-            <h1 class="main-title margin-top-80">Chatshier，Make your life easier!</h1>
-            <p class="chsr text-left lead">
-              通訊平台，為您掌握客戶需求，抓住訂單。
-              <br />機器人小幫手，助你解決客戶需求。
-              <br />客製化功能，讓您越用越安心。
-            </p>
-            <br>
-          </div>
-          <div class="col-sm-12 col-md-6 column">
-            <img alt="圖片" class="img-responsive" src="https://labstats.com/wp-content/uploads/2017/03/application-usage-report.png"/>
-          </div>
         </div>
-      </div>
     </div>
 
 
 
     <div id="about" class="text-blue overview-padding-0">
-      <div class="container">
-        <div class="row">
-          <h1 class="main-title overview-title-style column">串接通訊軟體，讓您在行銷上更便利。</h1>
-          <div class="col-xs-12 text-center">
-          </div>
-          <div class="col-sm-12 col-md-6 column">
-            <img alt="圖片" class="img-responsive" src="https://labstats.com/wp-content/uploads/2017/03/application-usage-report.png"/>
-          </div>
-          <div class="col-sm-12 col-md-6 column">
+        <div class="container">
             <div class="row">
-              <div class="col-sm-12 col-md-12 p_title">
-                <h2>串接多種通訊軟體</h2>
-                <p class="lead text-left">
-                  擁有LINE，Facebook粉絲頁，WeChat但是卻沒有統一整合的方式嗎？Chatshier可以幫您搞定！
-                </p>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-12 margin-btm-40">
-                <div class="row">
-                  <div class="col-sm-2">
-                    <div class="item-icon wh-icon">
-                      <i class="fa fa-facebook-official fa-2x link-style"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-10 col-sm-10 col-md-10 padding-left-25">
-                    <p class="font-17 bold-and-blue">客戶自動建檔</p>
-                    <p class="font-17">
-                      提供客戶進線後自動寫入個人資訊至資料庫。客製化設定問卷，提問並取得客戶資料與喜好。
-                    </p>
-                  </div>
+                <h1 class="main-title overview-title-style column">串接通訊軟體，讓您在行銷上更便利。</h1>
+                <div class="col-xs-12 text-center">
                 </div>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="row">
-                  <div class="col-sm-2">
-                    <div class="item-icon wh-icon wh-icon2">
-                      <i class="fa fa-android fa-2x link-style"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-10 col-sm-10 col-md-10 padding-left-25">
-                    <p class="font-17 bold-and-blue">機器人Chatbot</p>
-                    <p class="font-17">
-                      不會寫程式也能建置通訊機器人並客製您要的銷售內容。
-                      機器人也能解決大部分客戶常見的問題。
-                    </p>
-                  </div>
+                <div class="col-sm-12 col-md-6 column">
+                    <img alt="圖片" class="img-responsive" src="https://labstats.com/wp-content/uploads/2017/03/application-usage-report.png" />
                 </div>
-              </div>
+                <div class="col-sm-12 col-md-6 column">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 p_title">
+                            <h2>串接多種通訊軟體</h2>
+                            <p class="lead text-left">
+                                擁有LINE，Facebook粉絲頁，WeChat但是卻沒有統一整合的方式嗎？Chatshier可以幫您搞定！
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 margin-btm-40">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="item-icon wh-icon">
+                                        <i class="fa fa-facebook-official fa-2x link-style"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-10 col-sm-10 col-md-10 padding-left-25">
+                                    <p class="font-17 bold-and-blue">客戶自動建檔</p>
+                                    <p class="font-17">
+                                        提供客戶進線後自動寫入個人資訊至資料庫。客製化設定問卷，提問並取得客戶資料與喜好。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="item-icon wh-icon wh-icon2">
+                                        <i class="fa fa-android fa-2x link-style"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-10 col-sm-10 col-md-10 padding-left-25">
+                                    <p class="font-17 bold-and-blue">機器人Chatbot</p>
+                                    <p class="font-17">
+                                        不會寫程式也能建置通訊機器人並客製您要的銷售內容。 機器人也能解決大部分客戶常見的問題。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <hr/>
 
     <div id="overview" class="text-blue overview-top-120">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 column">
+        <div class="container">
             <div class="row">
-              <div class="col-sm-12 col-md-12 p_title">
-                <h2>訊息管理功能</h2>
-                <p class="lead text-left">
-                  想要推播訊息嗎？需要針對不同客戶發訊息嗎？我們可以幫您做到！
-                </p>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-12 margin-btm-40">
-                <div class="row">
-                  <div class="col-sm-2">
-                    <div class="item-icon wh-icon wh-icon3">
-                      <i class="fa fa-bullhorn fa-2x link-style"></i>
+                <div class="col-sm-12 col-md-6 column">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 p_title">
+                            <h2>訊息管理功能</h2>
+                            <p class="lead text-left">
+                                想要推播訊息嗎？需要針對不同客戶發訊息嗎？我們可以幫您做到！
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 margin-btm-40">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="item-icon wh-icon wh-icon3">
+                                        <i class="fa fa-bullhorn fa-2x link-style"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-10 col-sm-10 col-md-10 padding-left-25">
+                                    <p class="font-17 bold-and-blue">分眾群發</p>
+                                    <p class="font-17">
+                                        藉由Chatshier群發，您可以針對不同喜好的客戶群發送他們會喜歡的產品與優惠。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-xs-10 col-sm-10 col-md-10 padding-left-25">
-                    <p class="font-17 bold-and-blue">分眾群發</p>
-                    <p class="font-17">
-                      藉由Chatshier群發，您可以針對不同喜好的客戶群發送他們會喜歡的產品與優惠。
-                    </p>
-                  </div>
                 </div>
-              </div>
+                <div class="col-sm-12 col-md-6 column">
+                    <img alt="圖片" class="img-responsive stay-in-touch-img" src="https://labstats.com/wp-content/uploads/2017/03/application-usage-report.png" />
+                </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 column">
-            <img alt="圖片" class="img-responsive stay-in-touch-img" src="https://labstats.com/wp-content/uploads/2017/03/application-usage-report.png"/>
-          </div>
         </div>
-      </div>
     </div>
 
     <hr/>
 
     <div id="intro" class="text-blue">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 column">
-            <img alt="圖片" class="img-responsive" src="https://labstats.com/wp-content/uploads/2017/03/application-usage-report.png"/>
-          </div>
-          <div class="col-sm-12 col-md-6 column">
+        <div class="container">
             <div class="row">
-              <div class="col-sm-12 col-md-12 p_title margin-btm-0">
-                <h2>商用軟體讓您管理客戶更方便</h2>
-                <p class="lead text-left margin-btm-80">
-                  Chatshier也結合方便好用的商業軟體，讓使用者方便在平台上應用。
-                </p>
-              </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <div class="item-icon wh-icon wh-icon3">
-                        <i class="fa fa-life-ring fa-2x link-style3"></i>
-                      </div>
-                    </div>
-                    <div class="col-xs-10 col-sm-10 col-md-10 padding-left-25">
-                      <p class="font-17 bold-and-blue">
-                        待辦事項讓你不會忘記客戶的要求事項。
-                      </p>
-                      <p class="font-17">
-                        客戶的需求大量擁進的時候會需要一套管理系統來解決。
-                        Chatshier提供待辦事項與行事曆功能來通知使用者，不會有掉單或是客訴的情況。
-                      </p>
-                    </div>
-                  </div>
+                <div class="col-sm-12 col-md-6 column">
+                    <img alt="圖片" class="img-responsive" src="https://labstats.com/wp-content/uploads/2017/03/application-usage-report.png" />
                 </div>
-              </div>
-          </div>
+                <div class="col-sm-12 col-md-6 column">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 p_title margin-btm-0">
+                            <h2>商用軟體讓您管理客戶更方便</h2>
+                            <p class="lead text-left margin-btm-80">
+                                Chatshier也結合方便好用的商業軟體，讓使用者方便在平台上應用。
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="item-icon wh-icon wh-icon3">
+                                        <i class="fa fa-life-ring fa-2x link-style3"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-10 col-sm-10 col-md-10 padding-left-25">
+                                    <p class="font-17 bold-and-blue">
+                                        待辦事項讓你不會忘記客戶的要求事項。
+                                    </p>
+                                    <p class="font-17">
+                                        客戶的需求大量擁進的時候會需要一套管理系統來解決。 Chatshier提供待辦事項與行事曆功能來通知使用者，不會有掉單或是客訴的情況。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <div id="video" class="container-fluid text-blue video-block bg-light-grey">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 column">
-            <h2 class="text-center">帶您認識Chatshier</h2>
-            <p class="lead text-center">
-              Chatshier是一套非常好用的通訊平台，您可以串接LINE跟Facebook Messenger來服務您的客戶。
-            </p>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 column">
+                    <h2 class="text-center">帶您認識Chatshier</h2>
+                    <p class="lead text-center">
+                        Chatshier是一套非常好用的通訊平台，您可以串接LINE跟Facebook Messenger來服務您的客戶。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center padding-0-80">
+                    <img alt="圖片" class="hot-it-works-image video-image-style img-responsive" src="http://www.weareagoodcompany.com/images/work/ginkgo.png" />
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center padding-0-80">
-            <img alt="圖片" class="hot-it-works-image video-image-style img-responsive" src="http://www.weareagoodcompany.com/images/work/ginkgo.png"/>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div id="feature" class="text-blue">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 column">
-            <h2 class="text-center">產品特色</h2>
-            <p class="text-center lead">Chatshier從「心」出發希望帶給你的是「六心級」的貼心服務!</p>
-          </div>
-          <div class="col-md-8 col-md-offset-2 column">
+        <div class="container">
             <div class="row">
-              <!-- RIGHT COLUMN -->
-              <div class="col-sm-4 col-md-4">
-                <!-- #1 -->
-                <div class="item-icon wh-icon-feature">
-                  <i class="fa fa-comments fa-2x"></i>
+                <div class="col-md-12 column">
+                    <h2 class="text-center">產品特色</h2>
+                    <p class="text-center lead">Chatshier從「心」出發希望帶給你的是「六心級」的貼心服務!</p>
                 </div>
-                <h3>顧客訊息不漏接</h3>
-                <p>
-                  顧客問問題不怕漏單，有真人與機器人的服務外也可以接收離線訊息。<br/><br/><br/>
-                </p>
-                <!-- #2 -->
-                <div class="item-icon">
-                  <i class="fa fa-search fa-2x"></i>
+                <div class="col-md-8 col-md-offset-2 column">
+                    <div class="row">
+                        <!-- RIGHT COLUMN -->
+                        <div class="col-sm-4 col-md-4">
+                            <!-- #1 -->
+                            <div class="item-icon wh-icon-feature">
+                                <i class="fa fa-comments fa-2x"></i>
+                            </div>
+                            <h3>顧客訊息不漏接</h3>
+                            <p>
+                                顧客問問題不怕漏單，有真人與機器人的服務外也可以接收離線訊息。<br/><br/><br/>
+                            </p>
+                            <!-- #2 -->
+                            <div class="item-icon">
+                                <i class="fa fa-search fa-2x"></i>
+                            </div>
+                            <h3>聊天紀錄查閱</h3>
+                            <p>
+                                保留與顧客的聊天對話，交代事項不遺漏。分析顧客常見問題及詢問度高的商品，讀懂顧客的心思!
+                            </p>
+                        </div>
+                        <!-- IPHONE IMAGE -->
+                        <div class="col-sm-4 col-md-4">
+                            <!-- #1 -->
+                            <div class="item-icon wh-icon-feature">
+                                <i class="fa fa-usd fa-2x"></i>
+                            </div>
+                            <h3>把訪客變顧客</h3>
+                            <p>
+                                致力於將對你產品有興趣的訪客變成顧客!留意每位顧客細節與偏好， 悉心傾聽每個意見，把產品賣進顧客的心坎裡。
+                            </p>
+                            <!-- #2 -->
+                            <div class="item-icon">
+                                <i class="fa fa-area-chart fa-2x"></i>
+                            </div>
+                            <h3>多樣化支援</h3>
+                            <p>
+                                用優惠的價格，讓我們當你的強力後盾!不論是第一線的客戶關係處理，還是你最關心的客源分析等。
+                            </p>
+                        </div>
+                        <!-- LEFT COLUMN -->
+                        <div class="col-sm-4 col-md-4">
+                            <!-- #1 -->
+                            <div class="item-icon wh-icon-feature">
+                                <i class="fa fa-clock-o fa-2x"></i>
+                            </div>
+                            <h3>訊息客製</h3>
+                            <p>
+                                我們提供客製化訊息，讓可戶可以自訂跟客戶互動的方式。<br/><br/>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <h3>聊天紀錄查閱</h3>
-                <p>
-                  保留與顧客的聊天對話，交代事項不遺漏。分析顧客常見問題及詢問度高的商品，讀懂顧客的心思!
-                </p>
-              </div>
-              <!-- IPHONE IMAGE -->
-              <div class="col-sm-4 col-md-4">
-                <!-- #1 -->
-                <div class="item-icon wh-icon-feature">
-                  <i class="fa fa-usd fa-2x"></i>
-                </div>
-                <h3>把訪客變顧客</h3>
-                <p>
-                  致力於將對你產品有興趣的訪客變成顧客!留意每位顧客細節與偏好， 悉心傾聽每個意見，把產品賣進顧客的心坎裡。
-                </p>
-                <!-- #2 -->
-                <div class="item-icon">
-                  <i class="fa fa-area-chart fa-2x"></i>
-                </div>
-                <h3>多樣化支援</h3>
-                <p>
-                  用優惠的價格，讓我們當你的強力後盾!不論是第一線的客戶關係處理，還是你最關心的客源分析等。
-                </p>
-              </div>
-              <!-- LEFT COLUMN -->
-              <div class="col-sm-4 col-md-4">
-                <!-- #1 -->
-                <div class="item-icon wh-icon-feature">
-                  <i class="fa fa-clock-o fa-2x"></i>
-                </div>
-                <h3>訊息客製</h3>
-                <p>
-                  我們提供客製化訊息，讓可戶可以自訂跟客戶互動的方式。<br/><br/>
-                </p>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <!-- /container -->
+        <!-- /container -->
     </div>
 
     <hr/>
@@ -342,50 +335,49 @@
             </p>
           </div>
         </div>
-      </div>
-      <!-- /container -->
+        <!-- /container -->
     </div>
 
     <div id="logos" class="container-fluid text-blue padding-100-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 column">
-            <h2 class="text-center margin-btm-40">我們的合作夥伴</h2>
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center padding-0-80">
-              <img alt="圖片" class="tc img-responsive" src="image/richesse.png"/>
-              <img alt="圖片" class="tc img-responsive" src="image/applied-arch.png"/>
-            </div>
-            <!-- case onlinetours -->
+        <div class="container">
             <div class="row">
-              <div class="col-md-10 col-md-offset-1 column margin-top-100">
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <div class="row">
-                      <div class="col-sm-3 text-center">
-                        <img alt="圖片" class="img-circle logo-image-width-100" src="image/person.png"/>
-                      </div>
-                      <div class="col-sm-9">
-                        <blockquote>
-                          <div class="row">
-                            <div class="col-sm-12">
-                              <p class="customer-quote">
-                                “Chatshier可是很實用的，不光能幫我出裡客服的問題外， 還能幫我做好分析、統計的工作，非常的便利，省下了我不少功夫。”
-                              </p>
-                              <small><b>Alice Huang</b>, 豐豫投資<br/>
-                              </small>
-                            </div>
-                          </div>
-                        </blockquote>
-                      </div>
+                <div class="col-md-12 column">
+                    <h2 class="text-center margin-btm-40">我們的合作夥伴</h2>
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center padding-0-80">
+                        <img alt="圖片" class="chsr img-responsive" src="image/richesse.png" />
+                        <img alt="圖片" class="chsr img-responsive" src="image/applied-arch.png" />
                     </div>
-                  </div>
+                    <!-- case onlinetours -->
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 column margin-top-100">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center">
+                                            <img alt="圖片" class="img-circle logo-image-width-100" src="image/person.png" />
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <blockquote>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <p class="customer-quote">
+                                                            “Chatshier可是很實用的，不光能幫我出裡客服的問題外， 還能幫我做好分析、統計的工作，非常的便利，省下了我不少功夫。”
+                                                        </p>
+                                                        <small><b>Alice Huang</b>, 豐豫投資<br/>
+                              </small>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /case onlinetours -->
                 </div>
-              </div>
             </div>
-            <!-- /case onlinetours -->
-          </div>
         </div>
-      </div>
     </div>
 
     <footer id="footer" class="text-white bg-blue">
@@ -416,8 +408,11 @@
     <script type="text/javascript" src="config/firebase-config.js"></script>
     <script type="text/javascript" src="config/url-config.js"></script>
     <script src="js/firebase-auth.js"></script>
+    <script src="js/_utility.js"></script>
     <script src="js/_navbar.js"></script>
+    <script src="js/zh-tw.js"></script>
     <script src="assets/js/ga.js"></script>
 
-  </body>
+</body>
+
 </html>

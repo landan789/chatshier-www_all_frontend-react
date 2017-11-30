@@ -1,21 +1,3 @@
-/*
-/ Author: Lacne
-/ Date: 2017/06/30
-/ Version: 1
-/ Modify: blog css樣式彙整
-*/
-/*
-/ Author: Lacne
-/ Date: 2017/07/03.04
-/ Version: 2
-/ Modify: 1024介面完成
-*/
-/*
-/ Author: Lacne
-/ Date: 2017/07/05.06
-/ Version: 3
-/ Modify: RWD完成
-*/
 /*size*/
 p{
   font-size:16px
@@ -30,7 +12,10 @@ line-height: 150%;/*lance20170704*/
 #blogcontent{
   margin-top:100px
 }
-
+.consistent-padding{
+  padding-left: 150px;
+  padding-right: 150px;
+}
 /*-----------------------------------------------新版BLOG by WYA -------------------------------------------------*/
 /*一開始登入 註冊 帳號三者皆隱藏 確認過firebase auth後 再決定display哪個(原本寫在zh_tw.css中 由於路徑問題 加寫在此)*/
 .nav.navbar-nav.navbar-right li a[href="../signin.html"],.nav.navbar-nav.navbar-right li a[href="../signup.html"],.nav.navbar-nav.navbar-right li a[href="../profile.html"] { display: none; }
@@ -49,11 +34,11 @@ line-height: 150%;/*lance20170704*/
   text-justify:inter-ideograph;
   background-color: white;
 }
-#article-x header a{ /*文章作者資訊超連結不出現底線*/
+#article-x header a, #article-x .text-align-center { /*文章作者資訊超連結不出現底線*/
   text-align: center;
   text-decoration: none;
 }
-#article-x .title{ /*文章標題置中並使用微軟正黑體*/
+#article-x .title, #article .title { /*文章標題置中並使用微軟正黑體*/
   font-size: 45px;
   text-align: center;
   letter-spacing: 3px;
@@ -75,7 +60,7 @@ line-height: 150%;/*lance20170704*/
   font-weight: bolder;
   font-family: fantasy;
 }
-#article-x .background{ /*文章內容背景色*/
+#article-x .background, #article .bg-a8{ /*文章內容背景色*/
   background-color: #d1ffff;
   margin-bottom: 50px;
 }
@@ -113,7 +98,9 @@ line-height: 150%;/*lance20170704*/
   /*text-align: left;*/
 }
 /*-----------------------------------------------新版BLOG by WYA end-------------------------------------------------*/
-
+#article .text-align-center, #article .title {
+  text-align: center;
+}
 
 #article-x footer h3{
 	font-size: 20px;

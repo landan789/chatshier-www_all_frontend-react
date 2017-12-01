@@ -30,30 +30,48 @@
      <!-- <a class="tawkicon" target="_blank" href="https://tawk.to/chat/58c89b6e5b8fe5150ef2cf3d/default/?$_tawk_popout=true">
      <img src="../assets/images/tinichats_chaticon.png" alt="Tawk Icon"/>
      </a> -->
-     <nav class="navbar tc navbar-default">
-       <div class="container column padding-top-15 padding-bottom-15 column">
-         <div class="navbar-header">
-           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-           </button>
-           <a class="navbar-brand" href="zh_tw.html"><img alt="logo" src="../image/logo.png" /></a>
+     <nav class="navbar chsr navbar-default navbar-">
+         <!-- <div class="container-fluid padding-top-15 padding-bottom-15"> -->
+         <div class="container column padding-top-15 padding-bottom-15 column">
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 <a class="navbar-brand" href="../zh_tw.html"><img alt="logo" src="../image/logo.png" /><span>Chatshier</span></a>
+             </div>
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 <ul class="nav navbar-nav navbar-right">
+                     <li><a href="../zh_tw.html#about">關於我們</a></li>
+                     <li><a href="../zh_tw.html#feature">特色</a></li>
+                     <li><a href="../pricing.html">價錢</a></li>
+                     <li><a href="../faq.html">問與答</a></li>
+                     <li><a href="../blog.html">論壇</a></li>
+                     <li><a id="login" class="hidden" href="">登入</a></li>
+                     <li><a id="nav-signup" class="hidden" href="">註冊</a></li>
+                     <li><a id="chat" class="hidden" href="">系統</a></li>
+                     <li id="dropdown-user" class="hidden dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="user" src="./image/user.png"/><span class="caret"></span></a>
+                         <ul class="arrow-up hidden hidden-xs">
+                         </ul>
+                         <ul class="arrow-up black hidden hidden-xs">
+                         </ul>
+                         <ul class="dropdown-menu">
+                             <li><b>你好，</b><b id="name"></b></li>
+                             <li class="divider hidden-xs"></li>
+                             <li><b>Email: </b><b id="email"></b></li>
+                         </ul>
+                     </li>
+                 </ul>
+             </div>
+             <!-- /.navbar-collapse -->
+
          </div>
-         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-           <ul class="nav navbar-nav navbar-right">
-             <li><a href="zh_tw.html#about">關於我們</a></li>
-             <li><a href="zh_tw.html#feature">產品特色</a></li>
-             <li><a href="pricing.html">價錢方案</a></li>
-             <li><a href="faq.html">問與答 </a></li>
-             <li><a href="blog.html">部落論壇</a></li>
-             <li><a id="login" href="">登入</a></li>
-             <li><a id="signup" href="">註冊</a></li>
-             <li><a href="profile.html">帳號</a></li>
-           </ul>
-         </div>
-       </div>
+         <!-- container -->
+         <!-- </div> -->
+         <!-- /.container-fluid -->
      </nav>
 
       <!-- nav bar ends -->
@@ -204,7 +222,7 @@
          </div>
          </div> -->
       <!-- footer -->
-      <footer id="footer" class="text-white">
+      <footer id="footer" class="text-white bg-blue">
           <div class="container">
               <div class="row">
                   <div class="col-md-12 column text-center">
@@ -212,7 +230,7 @@
                       <p class="lead text-center">讓您的團隊更有效率的與客戶溝通。</p>
                   </div>
                   <div class="col-md-12 text-center">
-                      <a href="../signup.html" class="btn btn-lg text-white signup-btn">馬上註冊</a> &nbsp;或&nbsp;
+                      <a id="footer-signup" href="" class="btn btn-lg text-white signup-btn">馬上註冊</a> &nbsp;或&nbsp;
                       <a href="../contact.html" class="btn btn-lg text-white signup-btn">與我們聯絡</a>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-12 text-center copyright-space">
@@ -239,6 +257,8 @@
       <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
       <script type="text/javascript" src="../config/firebase-config-dev.js"></script>
       <script type="text/javascript" src="../config/url-config-dev.js"></script>
+      <script src="../js/_utility.js"></script>
+      <script src="../js/_navfooter.js"></script>
       <script src="../js/firebase-auth.js"></script>
 
    </body>

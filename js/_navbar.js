@@ -2,9 +2,6 @@ if ('undefined' === typeof window.urlConfig) {
   console.warn('Please set up the configuration file of /config/url-config.js');
 }
 
-document.cookie = 'name=TOM;domain=.fea.chatshier.com';
-document.cookie = 'email=aa@gmail.com;domain=.fea.chatshier.com';
-
 var wwwUrl = location.host;
 var serviceUrl = wwwUrl.replace(/^[\w\-]+\./i, 'service.').replace(/\:\d+$/i, '');
 

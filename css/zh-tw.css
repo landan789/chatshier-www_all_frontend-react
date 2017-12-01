@@ -103,10 +103,7 @@ p {
   width: 75px;height: 75px;
   padding-top: 20px;margin: 0 0;
   border-radius: 50%;border: 0;
-  background-color: #
-
-
-  ;
+  background-color: #33CCFF;
   padding-left: 19px;
 }
 /*LOGOS*/
@@ -312,6 +309,7 @@ p {
   }
   .nav.navbar-nav.navbar-right{ /*navbar右側對齊*/
   }
+
 }
 
 @media (min-width:992px){

@@ -273,14 +273,6 @@ p {
   }
 }
 
-@media (min-width: 992px){
-  h3 { font-size: 20px; }
-  .menu { padding-left: 0px;width: 116%; }
-  .col-sm-12.col-md-6.column.div-wh-img-wrapper img {
-    width: 80%;
-  }
-}
-
 .chsr.navbar-default {
   background: #33ccff;
   font-weight: bold;
@@ -323,14 +315,17 @@ p {
 }
 
 @media (min-width:992px){
-
+  h3 { font-size: 20px; }
+  .menu { padding-left: 0px;width: 116%; }
+  .col-sm-12.col-md-6.column.div-wh-img-wrapper img {
+    width: 80%;
+  }
   .nav.navbar-nav.navbar-right{ /*navbar右側對齊*/
   }
 }
 
 
 @media (min-width: 1200px){
-
   #about, #intro, #feature, #pricing, #overview, #logos, #video, #footer { padding-top: 100px;padding-bottom: 100px;}
   h1 { font-size: 2em; }
   .font-17 { font-size: 17.5px; }

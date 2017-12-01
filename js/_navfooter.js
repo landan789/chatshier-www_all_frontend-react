@@ -2,9 +2,6 @@ if ('undefined' === typeof window.urlConfig) {
   console.warn('Please set up the configuration file of /config/url-config.js');
 }
 
-document.cookie = 'name=TOM;domain=.fea.chatshier.com';
-document.cookie = 'email=aa@gmail.com;domain=.fea.chatshier.com';
-
 var wwwUrl = location.host;
 var serviceUrl = wwwUrl.replace(/^[\w\-]+\./i, 'service.').replace(/\:\d+$/i, '');
 
@@ -19,7 +16,7 @@ var email = getCookie('email');
 
 if( '' !== name && '' !== email){
   $('#login').addClass('hidden');
-  $('#signup').addClass('hidden');
+  $('#nav-signup').addClass('hidden');
   $('#chat').removeClass('hidden');
   $('#dropdown-user').removeClass('hidden');
   $('#name').html('');
@@ -29,13 +26,14 @@ if( '' !== name && '' !== email){
 
 }else{
   $('#login').removeClass('hidden');
-  $('#signup').removeClass('hidden');
+  $('#nav-signup').removeClass('hidden');
   $('#chat').addClass('hidden');
   $('#dropdown-user').addClass('hidden');
 
 }
 $('#login').attr('href', loginUrl);
-$('#signup').attr('href', signupUrl);
+$('#nav-signup').attr('href', signupUrl);
+$('#footer-signup').attr('href', signupUrl); /*footer的馬上註冊button*/
 $('#chat').attr('href', chatUrl);
 
 

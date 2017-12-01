@@ -454,7 +454,11 @@ p {
 }
 
 .chsr .dropdown-menu{
-  width: 250px;
+  width: 290px;
+}
+
+.chsr .dropdown .glyphicon {
+  top: 3px;
 }
 
 .arrow-up {
@@ -505,5 +509,4 @@ p {
   height: 200px;
   margin: 20px auto 0px auto;
   vertical-align: top;
-}
 }

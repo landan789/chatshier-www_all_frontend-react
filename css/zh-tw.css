@@ -59,7 +59,10 @@ p {
 .menu a { color: rgb(255,255,255);margin-right: 20px;font-weight: bold;font-size: 16px; }
 
 .nav.navbar-nav.navbar-right li a[href="signin.html"],.nav.navbar-nav.navbar-right li a[href="signup.html"],.nav.navbar-nav.navbar-right li a[href="profile.html"] { display: none; }
-.main-title { margin-bottom: 20px; }
+.main-title {
+  margin-bottom: 20px;
+  font-weight:bold;
+ }
 .text-left { text-align: left; }
 .signup-btn { background-color: #009ace;border-color: #009ace; }
 .signup-btn:hover { color: #ffffff; }
@@ -488,25 +491,44 @@ p {
   clear: both;
 }
 .fll{
-  width: auto;
+  width:auto;
   height: auto;
   float: left;
-    font-size: 18px;
+    font-size: 20px;
     margin-left:  50px;
-/*  border: 3px solid green ;*/
+  /*border: 3px solid green ;*/
 }
 .flr{
-  width:100px;
+  width:110px;
   height: auto;
   float: right;
   vertical-align: top;
-  font-size: 18px;
+  font-size: 20px;
   margin-right: 20px;
 /*  border: 3px solid blue ;*/
 }
 .price-box{
-  width: 250px;
+  width: 500px;
   height: 200px;
   margin: 20px auto 0px auto;
   vertical-align: top;
+}
+.font-30{
+  font-size: 30px;
+}
+.big-title{
+  font-weight:bold;
+  font-size: 25px;
+}
+.font-20{
+  font-size: 20px;
+}
+.footer-margin-bottom{
+  margin-bottom: -300px;
+}
+.margin-table{
+  margin-left: 150px;
+}
+.chsr.table>tbody>tr>td, .chsr.table>tbody>tr>th, .chsr.table>tfoot>tr>td, .chsr.table>tfoot>tr>th, .chsr.table>thead>tr>td, .chsr.table>thead>tr>th {
+     /*border-top: 0px solid #000000;*/
 }

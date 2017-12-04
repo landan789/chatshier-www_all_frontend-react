@@ -20,13 +20,13 @@ line-height: 150%;/*lance20170704*/
 /*一開始登入 註冊 帳號三者皆隱藏 確認過firebase auth後 再決定display哪個(原本寫在zh_tw.css中 由於路徑問題 加寫在此)*/
 .nav.navbar-nav.navbar-right li a[href="../signin.html"],.nav.navbar-nav.navbar-right li a[href="../signup.html"],.nav.navbar-nav.navbar-right li a[href="../profile.html"] { display: none; }
 
-#main .container .row .col-sm-12{ /*由於將aside廢除，因此文章頁面的col-sm-9改為col-sm-12*/
+#main { /*由於將aside廢除，因此文章頁面的col-sm-9改為col-sm-12 .container .row .col-sm-12*/
   margin-top:50px;
 }
-#main .container .row .col-sm-9{
+#main .container { /*.row .col-sm-9*/
   margin-top:50px;
 }
-#main .container .row .col-sm-15{ /*BLOG首頁採用col-sm-15*/
+#main { /*BLOG首頁採用col-sm-15 .container .row .col-sm-15*/
   margin-top:100px;
 }
 #article-x footer{ /*文章內容左右對齊*/
@@ -69,6 +69,7 @@ line-height: 150%;/*lance20170704*/
     height: auto;
     display: inline-block;
     border-radius: 100%; /*圓框*/
+    margin-bottom: 80px;
 }
 .author-image-big {
     width: 75px;
@@ -111,6 +112,7 @@ line-height: 150%;/*lance20170704*/
 }
 #article-x .header-title{
   padding-top: 25px;
+
 }
 #article-x footer p a{ /*more*/
 	color:#33CCFF;
@@ -203,7 +205,8 @@ hr{
   padding-top:2%;
   padding-bottom:2%;
   border-bottom: 2px; dotted whitesmoke;/*lance20170704*/
-  text-align: center;
+  margin-left: 5px;
+  /*text-align: center;*/
 }
 #article header a{
   color:black;
@@ -267,191 +270,19 @@ hr{
   color:white;
 }*/
 
-@media screen and (min-width:1200px){
-  #blogcontent{
-    margin-top:90px
-  }
-  #main .container .row .col-sm-9{
-    margin-top:87px; /*lance20170630*/
-  }
-  #main .container .row{
-    /*margin-top:65px; lance20170630*/
-  }
-  #article header strong {
-    margin-top: 20px !important;
-    color:black;
-    font-size: 24px !important;
-  }
-  #article footer p {
-    font-size: 15px !important;
-    color: grey;
-  }
-/*  #major-img{
-    width:80%;
-    height:80%;
-  }*/
+.major-img{
+  margin-bottom: 40px;
+
+
+}
+.small-image{
+  border: 1px solid #C4C4C4;
 }
 
-@media screen and (min-width:992px){
-  #blogcontent{
-    margin-top:90px
-  }
-  #main .container .row .col-sm-9{
-    margin-top:87px; /*lance20170630*/
-  }
-  #main .container .row{
-    /*margin-top:65px; lance20170630*/
-  }
-  #article header strong {
-    margin-top: 20px ;
-    color:black;
-    font-size: 24px !important;
-  }
-  #article footer p {
-    font-size: 150% !important;
-    color: grey;
-  }
-/*  #major-img{
-    width:80%;
-    height:80%;
-  }*/
+
+.header-title{
+  font-size: 20px;
 }
-
-@media screen and (min-width: 768px){
-  #blogcontent{
-    margin-top:90px
-  }
-  #main .container .row .col-sm-9{
-    margin-top:87px; /*lance20170630*/
-  }
-	#main .container .row{
-		/*margin-top:65px; lance20170630*/
-	}
-
-  #article header strong {
-    margin-top: 20px !important;
-    color:black;
-    font-size: 18px;
-  }
-  #article footer p {
-    font-size: 14px;
-    color: grey;
-  }
-  #article footer{
-    padding: 10px 10px 30px 10px;/*lance20170630*/
-  }
-  #article div{
-    /*background-color:#33CCFF;*/
-    color:black;
-    font-size: 12px
-  }
-/*  #major-img{
-    width:102% !important;
-    height:102% !important;
-  }*/
-
-
-@media screen and (max-width:767px){
-  #sidebar{
-    margin-top:0px
-  }
-    .hr-mia {
-    display: none;/* lance20170630 */
-  }
-  #article header strong {
-    margin-top: 20px !important;
-    color:black;
-    font-size: 20px;
-  }
-  #article footer p {
-    font-size: 14px;
-    color: grey;
-  }
-  #article footer{
-    padding: 10px 10px 30px 10px;/*lance20170630*/
-  }
-  #article div{
-    /*background-color:#33CCFF;*/
-    color:black;
-    font-size: 12px
-  }
-  .author-image {
-      width: 8%;
-      height: auto;
-      display: inline-block;
-      border-radius: 100%;
-  }
-}
-@media screen and (max-width:600px){
-	#blogcontent{
-		margin-top:40px
-	}
-
-	#main .container .row .col-sm-9{
-		margin-top:95px
-	}
-  #main .container .row .col-sm-12{
-    margin-top:95px; /*lance20170630*/
-  }
-  p{
-    font-size:16px
-  }
-  #article-box{
-    padding-left: 50%;
-  }
-  #article div{
-    /*background-color:#33CCFF;*/
-    color:black;
-    font-size: 12px
-  }
-  #article header strong {
-    margin-top: 20px !important;
-    color:black;
-    font-size: 18px;
-  }
-  #article footer p {
-    font-size: 14px;
-    color: grey;
-  }
-  #article footer{
-    padding: 10px 10px 30px 10px;/*lance20170630*/
-  }
-  .author-image {
-      width: 10%;
-      height: auto;
-      display: inline-block;
-      border-radius: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  #article header{
-    font-size: 30px; /*lance20170630*/
-    padding: 10px; /*lance20170630*/
-  }
-  #article footer{
-    font-size:20px;
-    padding:2% 15px 2% 15px;
-    /*padding-left:15%; lance20170630*/
-  }
-  #article header strong {
-    margin-top: 20px !important;
-    color:black;
-    font-size: 20px;
-  }
-  #article footer p {
-    font-size: 14px;
-    color: grey;
-  }
-  .author-image {
-      width: 12%;
-      height: auto;
-      display: inline-block;
-      border-radius: 100%;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  #article header {
-    /*padding-left: 0;*/
-  }
+.text-padding{
+  padding-left: 5px;
 }

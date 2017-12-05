@@ -98,7 +98,6 @@ h5.price {
 
 .more:visited, .more:active, .more:hover {
 	text-decoration: none;
-	color: #33ccff;
 }
 
 
@@ -110,4 +109,7 @@ h5.price {
 
 .links .li-s:first-child {
 	padding: 22px 0 30px;
+}
+.li-margin{
+	margin-bottom: 80px;
 }

@@ -187,6 +187,9 @@ p {
 .chsr .nav {
   padding-top: 10px;
 }
+.table-font{
+  font-size: 20px;
+}
 
 @media (min-width: 1px) and (max-width: 157px){
   .hidden-xxxxxs {
@@ -231,6 +234,9 @@ p {
   .chsr .dropdown-menu{
     color: #ffffff;
   }
+  .table-font{
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 392px) and (max-width: 575px){
@@ -251,6 +257,9 @@ p {
   }
   .chsr .dropdown-menu{
     color: #ffffff;
+  }
+  .table-font{
+    font-size: 15px;
   }
 }
 
@@ -428,6 +437,7 @@ p {
 
 .chsr.img-responsive{
   display: inline-block;
+  max-width: 80%;
 }
 
 .dropdown .user{
@@ -520,9 +530,7 @@ p {
   font-weight:bold;
   font-size: 25px;
 }
-.font-20{
-  font-size: 20px;
-}
+
 .footer-margin-bottom{
   margin-bottom: -300px;
 }
@@ -531,4 +539,11 @@ p {
 }
 .chsr.table>tbody>tr>td, .chsr.table>tbody>tr>th, .chsr.table>tfoot>tr>td, .chsr.table>tfoot>tr>th, .chsr.table>thead>tr>td, .chsr.table>thead>tr>th {
      /*border-top: 0px solid #000000;*/
+}
+.flexbox{
+display: inline-flex;
+flex-grow;
+}
+.image-margin{
+  margin-top: -10px;
 }

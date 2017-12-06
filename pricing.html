@@ -15,7 +15,7 @@
     <link rel="icon" href="image/favicon.ico" />
     <link rel="stylesheet" href="assets/css/pricing.css">
     <link rel="stylesheet" href="assets/css/social-media-icon.css">
-    <link rel="stylesheet" href="css/zh-tw.css"/>
+    <link rel="stylesheet" href="../css/_navfooter.css"/>
     <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/style.js"></script>
     <script async="true" id="xo-pptm" src="https://www.paypal.com/tagmanager/pptm.js?id=localhost&amp;t=xo"></script>
@@ -51,7 +51,7 @@
                     <li><a id="nav-signup" class="hidden" href="">註冊</a></li>
                     <li><a id="chat" class="hidden" href="">系統</a></li>
                     <li id="dropdown-user" class="hidden dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="user" src="./image/user.png"/><span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span></a>
                         <ul class="arrow-up hidden hidden-xs">
                         </ul>
                         <ul class="arrow-up black hidden hidden-xs">
@@ -85,7 +85,7 @@
           </h2>
           <h5 class="price">$0 新台幣/月</h5>
           <p class="cta">
-            <a href="" class="button-secondary button-secondary-f">開始免費版</a>
+            <a id="start-freemium" href="" class="button-secondary button-secondary-f">開始免費版</a>
           </p>
           <ul class="links ul-s">
             <li class="li-s"><a class="more" href="/blog.html">了解更多</a></li>
@@ -108,7 +108,7 @@
           </h2>
           <h5 class="price">$3,000 新台幣/月</h5>
           <p class="cta">
-            <a href="" class="button-secondary button-secondary-p">開始專業版</a>
+            <a id="start-premium" href="" class="button-secondary button-secondary-p">開始專業版</a>
           </p>
           <ul class="links ul-s">
             <li class="li-s"><a class="more" href="/blog.html">了解更多</a></li>
@@ -135,7 +135,7 @@
           </h2>
           <h5 class="price">$10,000 新台幣/月</h5>
           <p class="cta">
-            <a href="" class="button-secondary button-secondary-e">開始企業版</a>
+            <a id="start-enterprise" href="" class="button-secondary button-secondary-e">開始企業版</a>
           </p>
           <ul class="links ul-s">
             <li class="li-s"><a class="more" href="/blog.html">了解更多</a></li>
@@ -187,6 +187,7 @@
     <script src="js/login.js"></script>
     <script src="js/_utility.js"></script>
     <script src="js/_navfooter.js"></script>
+    <script src="js/pricing.js"></script>
     <script src="assets/js/ga.js"></script>
   </body>
 </html>

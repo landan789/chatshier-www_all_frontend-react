@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Chatshier - beta</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="替你聊的部落格與您分享許多在線客服的好文章，不管你是網路購物的商家、或是需要即時客服的服務，您都可以在這找到答案，並放心的把商品諮詢與售後服務交給我們" />
-    <meta name="keywords" content="即時客服 建構客服平台 客戶即時通訊 聊天機器人 線上客服 客服支援 客服委外 客服軟體 客服工具 人工智能客服
-         客戶問題 自動化客服 Messenger 替你聊
-         客服系統 文字客服 客服委外 網路購物 ">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/blog.css">
-    <link rel="icon" href="assets/images/tab.png" />
-    <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/social-media-icon.css">
-    <link rel="stylesheet" href="css/zh-tw.css" />
-    <link rel="stylesheet" href="assets/css/footer.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="UTF-8">
+  <meta name="description" content="替你聊給你最優惠的價格方案，我們不僅替你做好所有聊天環境的設置，也替你建立客服知識庫，更替你即時回覆顧客問題。線上付款馬上開始享用服務!不論你是網購賣家或在網站上販賣商品與服務，讓我們來替你即時解決顧客大小事。">
+  <meta name="keywords" content="即時客服 建構客服平台 客戶即時通訊 聊天機器人 線上客服 客服支援 客服委外 網路聊天 網路支援 客服軟體 客服工具 人工智能客服
+    客戶問題 推播行銷內容 自動化客服 客服 協助用戶 監控轉換 追蹤訪客 增加忠誠度 降低工作量隨時有問必答 數位化通訊服務 客戶體驗
+    自助聊天人員 傳訊息 貼近客人 從FB Messenger靠近客人 即刻支援 雲端專員 真人客服 即時服務 客服處理 商品諮詢 售後服務 線上諮詢 替你聊
+    客服系統 文字客服 客服委外 網路購物 ">
+  <title>Chatshier - beta</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="icon" href="image/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/pricing.css">
+  <link rel="stylesheet" href="assets/css/social-media-icon.css">
+  <link rel="stylesheet" href="../css/_navfooter.css"/>
+  <link rel="stylesheet" href="../assets/css/blog.css"/>
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/js/style.js"></script>
+  <script async="true" id="xo-pptm" src="https://www.paypal.com/tagmanager/pptm.js?id=localhost&amp;t=xo"></script>
 </head>
+  <body>
 
-<body>
+    <!-- fb icon -->
     <a class="fbicon" target="_blank" href="https://www.facebook.com/messages/t/530755163926878">
-        <img src="assets/images/fb.png" alt="FB Icon" />
+    <img src="../assets/images/fb.png" alt="FB Icon"/>
     </a>
     <a class="lineicon" target="_blank" href="https://line.me/R/ti/p/@cry4678u">
-        <img src="assets/images/oh9ei2P.png" alt="LINE Icon" />
+    <img src="../assets/images/oh9ei2P.png" alt="LINE Icon"/>
     </a>
-
-    <nav class="navbar tc navbar-default">
-        <div class="container-fluid padding-top-15 padding-bottom-15">
-            <div class="navbar-header padding-left-40">
+    <nav class="navbar chsr navbar-default navbar-">
+        <!-- <div class="container-fluid padding-top-15 padding-bottom-15"> -->
+        <div class="container column padding-top-15 padding-bottom-15 column">
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                 <a class="navbar-brand" href="zh_tw.html"><img alt="logo" src="image/logo.png" /><span>Chatshier</span></a>
-             </div>
-             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                 <ul class="nav navbar-nav navbar-right">
-                     <li><a href="zh_tw.html#about">關於我們</a></li>
-                     <li><a href="zh_tw.html#feature">特色</a></li>
-                     <li><a href="pricing.html">價錢</a></li>
-                     <li><a href="faq.html">問與答</a></li>
-                     <li><a href="blog.html">論壇</a></li>
-                     <li><a id="login" class="hidden" href="">登入</a></li>
-                     <li><a id="nav-signup" class="hidden" href="">註冊</a></li>
-                     <li><a id="chat" class="hidden" href="">系統</a></li>
-                     <li id="dropdown-user" class="hidden dropdown">
-                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="user" src="./image/user.png"/><span class="caret"></span></a>
-                         <ul class="arrow-up hidden hidden-xs">
-                         </ul>
-                         <ul class="arrow-up black hidden hidden-xs">
-                         </ul>
-                         <ul class="dropdown-menu">
-                             <li><b>你好，</b><b id="name"></b></li>
-                             <li class="divider hidden-xs"></li>
-                             <li><b>Email: </b><b id="email"></b></li>
-                         </ul>
-                     </li>
-                 </ul>
-             </div>
-             <!-- /.navbar-collapse -->
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+                <a class="navbar-brand" href="../zh_tw.html"><img alt="logo" src="../image/logo.png" /><span>Chatshier</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../zh_tw.html#about">關於我們</a></li>
+                    <li><a href="../zh_tw.html#feature">特色</a></li>
+                    <li><a href="../pricing.html">價錢</a></li>
+                    <li><a href="../faq.html">問與答</a></li>
+                    <li><a href="../blog.html">論壇</a></li>
+                    <li><a id="login" class="hidden" href="">登入</a></li>
+                    <li><a id="nav-signup" class="hidden" href="">註冊</a></li>
+                    <li><a id="chat" class="hidden" href="">系統</a></li>
+                    <li id="dropdown-user" class="hidden dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span></a>
+                        <ul class="arrow-up hidden hidden-xs">
+                        </ul>
+                        <ul class="arrow-up black hidden hidden-xs">
+                        </ul>
+                        <ul class="dropdown-menu">
+                            <li><b>你好，</b><b id="name"></b></li>
+                            <li class="divider hidden-xs"></li>
+                            <li><b>Email: </b><b id="email"></b></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
 
-         </div>
-         <!-- container -->
-         <!-- </div> -->
-         <!-- /.container-fluid -->
-     </nav>
+        </div>
+        <!-- container -->
+        <!-- </div> -->
+        <!-- /.container-fluid -->
+    </nav>
+
 
     <!-- <div id="main">
         <div class="container-fluid">
@@ -271,19 +274,17 @@
                 </div>
             </div>
         </div>
+
     </footer>
-
-
     <script src="js/zh-tw.js" charset="utf-8"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
     <script type="text/javascript" src="config/firebase-config.js"></script>
     <script type="text/javascript" src="config/url-config.js"></script>
     <script src="js/firebase-auth.js"></script>
-    <script src="js/_navbar.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/_utility.js"></script>
+    <script src="js/_navfooter.js"></script>
     <script src="assets/js/ga.js"></script>
-
 </body>
-
 </html>

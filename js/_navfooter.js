@@ -6,6 +6,7 @@ var wwwUrl = location.host;
 var serviceUrl = wwwUrl.replace(/^[\w\-]+\./i, 'service.').replace(/\:\d+$/i, '');
 
 urlConfig.serviceUrl = urlConfig.serviceUrl.replace(/^https?\:\/\//i, '');
+serviceUrl = serviceUrl.indexOf('.fea.') !== -1 ? serviceUrl + ':3002' : serviceUrl;
 var url = 'http://' + ('' === urlConfig.serviceUrl ? serviceUrl : urlConfig.serviceUrl) + ('' === urlConfig.port ? '' : ':' + urlConfig.port );
 var loginUrl = url + urlConfig.login;
 var signupUrl = url + urlConfig.signup;

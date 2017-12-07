@@ -138,7 +138,6 @@ p {
 .footer-margin-bottom{
   margin-bottom: -300px;
 }
-.column { padding-right: 50px;padding-left: 50px; }
 @media (min-width: 1200px){
   #about, #intro, #feature, #pricing, #overview, #logos, #video, #footer { padding-top: 100px;padding-bottom: 100px;}
   .copyright-space p { text-align: center;font-size: 16px; }

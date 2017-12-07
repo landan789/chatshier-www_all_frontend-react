@@ -266,9 +266,7 @@ a:hover { text-decoration: none; }
   .chsr .lead{
     font-size: 1.3em;
   }
-  .col-xs-12.col-sm-12.col-md-6{ /*首頁副標題2對齊左側*/
-    padding-left: 55px;
-  }
+
 }
 
 @media (min-width:992px){

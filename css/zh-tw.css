@@ -24,10 +24,7 @@ h1 { font-size: 28px; }
 hr { margin: 0px; }
 a:hover { text-decoration: none; }
 
-p {
-  text-align: justify;
-  text-justify: inter-word;
-}
+
 .col-sm-4.col-md-4 p { font-size: 16px; }
 .column { padding-right: 40px;padding-left: 40px; }
 /*HEADER*/
@@ -139,6 +136,8 @@ p {
 .padding-bottom-2 {
   padding-bottom: 2em;
 }
+
+
 
 .padding-left-15 {
   padding-left: 15px;
@@ -297,7 +296,7 @@ p {
   .column { padding-right: 50px;padding-left: 50px; }
   .lead {
     margin-bottom: 20px;
-    font-size: 18px;font-weight: 300;
+    font-weight: 300;
     line-height: 1.4;
   }
   .overview-title-style { margin-top: 20px;text-align: center;margin-bottom: 80px; }
@@ -354,9 +353,7 @@ p {
 }
 
 
-.chsr .dropdown .glyphicon {
-  top: 3px;
-}
+
 
 .arrow-up {
   width: 0;

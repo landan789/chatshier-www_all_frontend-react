@@ -174,12 +174,6 @@ a:hover { text-decoration: none; }
   .hidden-xxxxxs {
     display: none !important;
   }
-  .lead-xxxxxs {
-
-  }
-  .col-xs-12.col-sm-12.col-md-6{ /*首頁副標題2對齊左側*/
-    padding-left: 55px;
-  }
   .chsr .dropdown-menu{
     color: #ffffff;
   }
@@ -188,12 +182,6 @@ a:hover { text-decoration: none; }
 @media (min-width: 158px) and (max-width: 251px){
   .hidden-xxxxs {
     display: none !important;
-  }
-  .lead-xxxxs {
-
-  }
-  .col-xs-12.col-sm-12.col-md-6{ /*首頁副標題2對齊左側*/
-    padding-left: 55px;
   }
   .chsr .dropdown-menu{
     color: #ffffff;
@@ -207,9 +195,7 @@ a:hover { text-decoration: none; }
   .lead-xxxs {
     font-size: 0.8em;
   }
-  .col-xs-12.col-sm-12.col-md-6{ /*首頁副標題2對齊左側*/
-    padding-left: 55px;
-  }
+
   .chsr .dropdown-menu{
     color: #ffffff;
   }
@@ -222,17 +208,11 @@ a:hover { text-decoration: none; }
   .hidden-xxs {
     display: none !important;
   }
-  .lead-xxs {
-
-  }
   .chsr .main-title{
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
   .chsr .lead{
     font-size: 1.2em;
-  }
-  .col-xs-12.col-sm-12.col-md-6{ /*首頁副標題2對齊左側*/
-    padding-left: 55px;
   }
   .chsr .dropdown-menu{
     color: #ffffff;
@@ -246,13 +226,6 @@ a:hover { text-decoration: none; }
   .hidden-xs {
     display: none !important;
   }
-  .lead-xs {
-
-  }
-  .col-xs-12.col-sm-12.col-md-6{ /*首頁副標題2對齊左側*/
-    padding-left: 55px;
-  }
-
   .chsr .dropdown-menu{
     color: #ffffff;
   }

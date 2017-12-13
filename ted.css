@@ -473,11 +473,6 @@ h1 {
 #everyday {
     font-size: 20px
 }
-
-#tinichatsLogo {
-    width: 95px;
-}
-
 #talkImg {
     width: 346.66px;
     height: 257.95px;
@@ -2172,12 +2167,6 @@ td {
     }
     #BottomContent p {
         font-size: 20px;
-    }
-    #tinichatsLogo {
-        width: 60px;
-        position: fixed;
-        left: 10px;
-        top: 1px;
     }
     .fontTwoHundreds {
         font-size: 200px;

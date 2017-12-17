@@ -24,6 +24,10 @@ h1 { font-size: 28px; }
 hr { margin: 0px; }
 a:hover { text-decoration: none; }
 
+.hot-it-works-image{
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.4), 0 6px 40px 10px rgba(0, 0, 0, 0.6);
+
+}
 
 .col-sm-4.col-md-4 p { font-size: 16px; }
 /*HEADER*/

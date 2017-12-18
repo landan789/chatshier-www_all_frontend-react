@@ -70,7 +70,7 @@ select.no-radius{
     padding-bottom: 10px;
 }
 
-.chsr .form-control{
+.chsr input.form-control{
     height: 40px;
     padding:10px 8px;
 }

@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="assets/css/social-media-icon.css"/>
     <link rel="stylesheet" href="css/_navfooter.css"/>
+    <link rel="stylesheet" href="css/_main.css">
     <link rel="stylesheet" href="css/contact.css"/>
   </head>
   <body>
     <a class="fbicon" target="_blank" href="https://www.messenger.com/t/1004305116338186" >
-    <img src="assets/images/fb.png" alt="FB Icon" >
+      <img src="assets/images/fb.png" alt="FB Icon" >
     </a>
     <a class="lineicon" target="_blank" href="https://line.me/R/ti/p/@cry4678u" >
-    <img src="assets/images/oh9ei2P.png" alt="LINE Icon" >
+      <img src="assets/images/oh9ei2P.png" alt="LINE Icon" >
     </a>
     <nav class="navbar chsr navbar-default navbar-">
-        <!-- <div class="container-fluid padding-top-15 padding-bottom-15"> -->
         <div class="container column padding-top-15 padding-bottom-15 column">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -63,95 +63,138 @@
         <!-- /.container-fluid -->
     </nav>
 
-
-    <section id="lead-form" class="x-container d-flex">
-      <div class="x-column flex-1" id="contact-text">
-        <div class="x-img">
-          <img src="assets/images/ct_phone.png"  class="img-ct-phone" alt="Mobile Phone" />
-        </div>
-        <div class="x-text d-flex">
-          <div class="flex-1 x-fa">
-            <div class="x-fa-icon">
-                <i class="fa fa-handshake-o fa-2x link-style"></i>
+    <div class="container">
+      <div class="row row-level1">
+        <!--left column-->
+        <div class="col-sm-6 col-md-6 left-box">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 img-phone-box">
+              <img src="assets/images/ct_phone.png"  class="img-responsive" alt="Mobile Phone" width="400"/>
             </div>
           </div>
-          <div class="flex-4 text-justify" style="line-height: 250%">
-            <p class="font-18 bold-and-red">專注完美 近乎苛求</p>
-            <p class="font-17">我們致力於提供最好的產品品質和售後服務，歡迎您盡情享受與&nbsp;Chatshier&nbsp;的每一段美好時光。
-            </p>
+            <div class="row text-intro-box">
+              <div class="col-sm-4 col-md-4 chsr fa-handshake-box">
+                <i class="fa fa-handshake-o fa-2x"></i>
+              </div>
+              <div class="col-sm-8 col-md-8 col-lg-7">
+                <p class="font-17 bold-and-blue ">專注完美 近乎苛求</p>
+                <p class="font-17">我們致力於提供最好的產品品質和售後服務，歡迎您盡情享受與&nbsp;Chatshier&nbsp;的每一段美好時光。
+                </p>
+              </div>
+            </div>
+        </div>
+        <!--right column-->
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <p class="lead">請留下資料，我們會儘速與您聯絡</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
+              <fieldest>
+                <form class="form-container">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                      <div class="chsr form-group input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <label class="sr-only" for="name">名字:</label>
+                        <input type="text" class="chsr form-control" placeholder="姓名" id="name" name="name">
+                      </div>
+                    </div>
+
+                      <div class="col-sm-6 col-md-6">
+                        <div class="chsr form-group input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <label class="sr-only" for="nickname">暱稱:</label>
+                          <input type="text" class="chsr form-control" placeholder="暱稱" id="nickname" name="nickname">
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <div class="chsr form-group input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <label class="sr-only" for="email">Email:</label>
+                        <input type="text" class="chsr form-control" placeholder="Email" id="email"  name="email">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <div class="chsr form-group input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                        <label class="sr-only" for="company">公司:</label>
+                        <input type="text" class="chsr form-control" placeholder="公司" id="company" name="company">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                      <div class="chsr form-group input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                          <label class="sr-only" for="area">地區:</label>
+                          <div class="select-wrapper">
+                              <select class="no-radius" id="area" name="area">
+                                <option selected hidden>地區</option>
+                                <option value="asia">亞洲或太平洋地區</option>
+                                <option value="east-eu">中歐或東歐</option>
+                                <option value="south-america">中美洲或南美洲</option>
+                                <option value="center-east">中東</option>
+                                <option value="north-america">北美洲</option>
+                                <option value="north-africa">北非或中非</option>
+                                <option value="south-africa">南非</option>
+                                <option value="west-eu">西歐</option>
+                              </select>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                      <div class="chsr form-group input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-question-sign"></i></span>
+                          <label class="sr-only" for="problem_type">問題種類:</label>
+                          <div class="select-wrapper">
+                            <select class="no-radius" id="problem_type" name="problem_type">
+                              <option selected hidden>問題</option>
+                              <option value="prob1">一般問題</option>
+                              <option value="prob2">媒體合作</option>
+                              <option value="prob3">線上申請表協助</option>
+                              <option value="prob4">其它</option>
+                              <option value="prob5">提供工作機會</option>
+                              <option value="prob6">應徵工作</option>
+                              <option value="prob7">要求提供報價</option>
+                              <option value="prob8">技術協助</option>
+                              <option value="prob9">網頁回饋</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <div class="chsr form-group input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-comment"></i></span>
+                        <label class="sr-only" for="comment">留言</label>
+                        <textarea placeholder="留言" id="comment" name="comment" class="form-control" maxlength="2000"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <button id="contactBtn" type="submit" class="btn btn-lg text-white signup-btn btn-block">確認送出</button>
+                    </div>
+                  </div>
+                </form>
+              </fieldest>
+            </div>
           </div>
         </div>
       </div>
-      <div class="x-form flex-1" id="contact-form">
-        <div class="form-header">
-          請留下資料，我們會儘速與您聯絡
-        </div>
+    </div>
 
-        <form class="form-body">
-          <div class="form-group">
-            <label for="name">名字:</label>
-            <input type="text" class="form-style form-control" id="name" placeholder="" name="name">
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="text" class="form-style form-control" id="email" placeholder="" name="email">
-          </div>
-
-          <div class="form-group">
-            <label for="nickname">暱稱:</label>
-            <input type="text" class="form-style form-control" id="nickname" placeholder="" name="nickname">
-          </div>
-
-          <div class="form-group">
-            <label for="company">公司:</label>
-            <input type="text" class="form-style form-control" id="company" placeholder="" name="company">
-          </div>
-
-          <div class="form-group">
-            <label for="area">地區:</label>
-            <div class="select-style">
-              <select id="area" name="area">
-                <option value="">--請選擇--</option>
-                <option value="asia">亞洲或太平洋地區</option>
-                <option value="east-eu">中歐或東歐</option>
-                <option value="south-america">中美洲或南美洲</option>
-                <option value="center-east">中東</option>
-                <option value="north-america">北美洲</option>
-                <option value="north-africa">北非或中非</option>
-                <option value="south-africa">南非</option>
-                <option value="west-eu">西歐</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="problem_type">問題種類:</label>
-            <div class="select-style">
-              <select id="problem_type" name="problem_type">
-                <option value="">--請選擇--</option>
-                <option value="prob1">一般問題</option>
-                <option value="prob2">媒體合作</option>
-                <option value="prob3">線上申請表協助</option>
-                <option value="prob4">其它</option>
-                <option value="prob5">提供工作機會</option>
-                <option value="prob6">應徵工作</option>
-                <option value="prob7">要求提供報價</option>
-                <option value="prob8">技術協助</option>
-                <option value="prob9">網頁回饋</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="comment">留言</label>
-            <textarea id="comment" name="comment" rows="2" class="form-style-textarea form-control" maxlength="2000"></textarea>
-          </div>
-
-          <button id="contactBtn" type="submit" class="btn x-btn">確認送出</button>
-        </form>
-      </div>
-    </section>
 
     <footer id="footer" class="text-white bg-blue">
         <div class="container">

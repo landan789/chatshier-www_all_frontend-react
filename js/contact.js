@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  $('#area').change(function(){
+      $(this).removeClass('gery');
+      $(this).addClass('black');
+  });
+  $('#problem_type').change(function(){
+      $(this).removeClass('grey');
+      $(this).addClass('black');
+  });
+
   $('#contactBtn').click(function(event) {
     event.preventDefault();
     let name = $('#name').val();

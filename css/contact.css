@@ -38,6 +38,16 @@ select.no-radius{
     height: 40px;
     width: 100%;
     background-color: #fff;
+    color: #999999;
+}
+
+select.grey{
+    color: #999999;
+}
+
+
+select.black{
+    color: #000000;
 }
 
 .select-wrapper{

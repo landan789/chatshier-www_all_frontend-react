@@ -18,6 +18,7 @@
     margin: 20px 0;
     display: flex;
     flex-flow: row wrap-reverse;
+    align-items:center
 }
 
 .left-box{
@@ -27,10 +28,8 @@
 
 .img-phone-box{
     margin: 20px 0;
-    display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 300px;
 }
 
 select.no-radius{

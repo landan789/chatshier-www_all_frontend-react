@@ -18,7 +18,7 @@
     margin: 20px 0;
     display: flex;
     flex-flow: row wrap-reverse;
-    align-items:center
+    align-items: center;
 }
 
 .left-box{
@@ -28,8 +28,14 @@
 
 .img-phone-box{
     margin: 20px 0;
-    flex-direction: row;
-    justify-content: center;
+}
+
+.chsr.alert{
+    display: none;
+    position: fixed;
+    top: 160px;
+    right: 0px;
+    z-index: 99;
 }
 
 select.no-radius{
@@ -87,4 +93,5 @@ select.black{
 .chsr textarea.form-control{
     height: 100px;
     padding:10px 8px;
+    resize:none;
 }

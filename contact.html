@@ -63,13 +63,23 @@
         <!-- /.container-fluid -->
     </nav>
 
+    <!--alert bar-->
+    <div id="alert-success" class="chsr alert alert-info alert-dismissible" role="alert">
+      資料已送出
+      <button type="button" class="close" ><span>&times;</span></button>
+    </div>
+    <div id="alert-error" class="chsr alert alert-danger alert-dismissible" role="alert">
+      資料未送出，請輸入完整資料
+      <button type="button" class="close"><span>&times;</span></button>
+    </div>
+
     <div class="container">
       <div class="row row-level1">
         <!--left column-->
         <div class="col-sm-6 col-md-6 left-box">
           <div class="row">
             <div class="col-sm-12 col-md-12 img-phone-box">
-              <img src="assets/images/ct_phone.png"  class="img-responsive" alt="Mobile Phone" />
+              <img src="assets/images/ct_phone.png"  class="img-responsive" alt="Mobile Phone"/>
             </div>
           </div>
             <div class="row text-intro-box">
@@ -93,13 +103,12 @@
           <div class="row">
             <div class="col-sm-12 col-md-12">
               <fieldest>
-                <form class="form-container">
                   <div class="row">
                     <div class="col-sm-6 col-md-6">
                       <div class="chsr form-group input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                         <label class="sr-only" for="name">名字:</label>
-                        <input type="text" class="form-control" placeholder="姓名" id="name" name="name">
+                        <input type="text" class="form-control" placeholder="姓名" id="name-2" name="name">
                       </div>
                     </div>
 
@@ -117,7 +126,7 @@
                       <div class="chsr form-group input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                         <label class="sr-only" for="email">Email:</label>
-                        <input type="text" class="form-control" placeholder="Email" id="email"  name="email">
+                        <input type="text" class="form-control" placeholder="Email" id="email-2"  name="email">
                       </div>
                     </div>
                   </div>
@@ -137,9 +146,9 @@
                       <div class="chsr form-group input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
                           <label class="sr-only" for="area">地區:</label>
-                          <div class="select-wrapper">
+                          <div class="select-wrapper" id="area-wrapper">
                               <select class="no-radius grey" id="area" name="area">
-                                <option selected hidden>地區</option>
+                                <option value="" selected hidden >地區</option>
                                 <option value="asia">亞洲或太平洋地區</option>
                                 <option value="east-eu">中歐或東歐</option>
                                 <option value="south-america">中美洲或南美洲</option>
@@ -155,10 +164,10 @@
                     <div class="col-sm-6 col-md-6">
                       <div class="chsr form-group input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-question-sign"></i></span>
-                          <label class="sr-only" for="problem_type">問題種類:</label>
-                          <div class="select-wrapper">
-                            <select class="no-radius grey" id="problem_type" name="problem_type">
-                              <option selected hidden>問題</option>
+                          <label class="sr-only" for="problem-type">問題種類:</label>
+                          <div class="select-wrapper" id="problem-wrapper">
+                            <select class="no-radius grey" id="problem-type" name="problem-type">
+                              <option value="" selected hidden>問題</option>
                               <option value="prob1">一般問題</option>
                               <option value="prob2">媒體合作</option>
                               <option value="prob3">線上申請表協助</option>
@@ -187,7 +196,6 @@
                       <button id="contactBtn" type="submit" class="btn btn-lg text-white signup-btn btn-block">確認送出</button>
                     </div>
                   </div>
-                </form>
               </fieldest>
             </div>
           </div>

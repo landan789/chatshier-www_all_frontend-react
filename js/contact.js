@@ -8,6 +8,23 @@ $(document).ready(function() {
       $(this).addClass('black');
   });
 
+  $('#area').focusout(function(){
+    var val = $(this).val();
+    if('' === val){
+      $(this).removeClass('black');
+      $(this).addClass('gery');
+    }
+  });
+  $('#problem-type').focusout(function(){
+      var val = $(this).val();
+      if('' === val){
+        $(this).removeClass('black');
+        $(this).addClass('gery');
+      }
+
+  });
+
+
   $('#contactBtn').click(function(event) {
     event.preventDefault();
     var name = $('#name-2').val();

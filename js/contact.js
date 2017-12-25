@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  $('#area').change(function(){
+  $('#area').click(function(){
       $(this).removeClass('gery');
       $(this).addClass('black');
   });
-  $('#problem-type').change(function(){
+  $('#problem-type').click(function(){
       $(this).removeClass('grey');
       $(this).addClass('black');
   });

@@ -1,3 +1,4 @@
 /config/firebase-config.js
 /config/url-config.js
 debug.log
+/node_modules

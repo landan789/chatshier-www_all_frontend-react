@@ -4,7 +4,7 @@
 .bg-light-grey { background-color: #f9f9f9; }
 .bg-white { background-color: white; }
 .margin-btm-80 { margin-bottom: 80px; }
-.margin-btm-40 { margin-bottom: 40px; }
+.margin-btm-40 { margin-bottom: 40px; letter-spacing: 0.5rem;}
 .margin-btm-0 { margin-bottom: 0px; }
 .margin-top-80 { margin-top: 80px; }
 .margin-top-20 { margin-top: 20px; }
@@ -25,7 +25,7 @@ hr { margin: 0px; }
 a:hover { text-decoration: none; }
 
 .hot-it-works-image{
-    box-shadow: 0 10px 18px 10px rgba(0, 0, 0, 0.2), 0 6px 40px 10px rgba(0, 0, 0, 0.4);
+    filter: drop-shadow(6px 10px 15px #555);
     margin-top: 30px;
 }
 
@@ -189,6 +189,9 @@ a:hover { text-decoration: none; }
 }
 
 @media (min-width: 252px) and (max-width: 391px){
+  .chsr .container {
+    padding: 4% 0;
+  }
   .hidden-xxxs {
     display: none !important;
   }
@@ -205,6 +208,9 @@ a:hover { text-decoration: none; }
 }
 
 @media (min-width: 392px) and (max-width: 575px){
+  .chsr .container {
+    padding: 4% 0;
+  }
   .hidden-xxs {
     display: none !important;
   }
@@ -223,6 +229,9 @@ a:hover { text-decoration: none; }
 }
 
 @media (min-width: 576px) and (max-width: 767px){
+  .chsr .container {
+    padding: 4% 0;
+  }
   .hidden-xs {
     display: none !important;
   }
@@ -233,6 +242,9 @@ a:hover { text-decoration: none; }
 
 
 @media (min-width: 768px){
+  .chsr .container {
+    padding: 4% 0;
+  }
   .main-title{
     font-size: 1.7em;
   }
@@ -243,6 +255,9 @@ a:hover { text-decoration: none; }
 }
 
 @media (min-width:992px){
+  .chsr .container {
+    padding: 4% 0;
+  }
   h3 { font-size: 20px; }
   .menu { padding-left: 0px;width: 116%; }
   .col-sm-12.col-md-6.div-wh-img-wrapper img {
@@ -252,6 +267,9 @@ a:hover { text-decoration: none; }
 
 
 @media (min-width: 1200px){
+  .chsr .container {
+    padding: 4% 0;
+  }
   #about, #intro, #feature, #pricing, #overview, #logos, #video, #footer { padding-top: 100px;padding-bottom: 100px;}
   h1 { font-size: 2em; }
   .margin-top-80 { margin-top: 80px; }
@@ -266,6 +284,7 @@ a:hover { text-decoration: none; }
   .lead {
     margin-bottom: 20px;
     font-weight: 300;
+    padding: 10px 0px;
     line-height: 1.4;
   }
   .overview-title-style { margin-top: 20px;text-align: center;margin-bottom: 80px; }
@@ -369,6 +388,7 @@ a:hover { text-decoration: none; }
 }
 .font-30{
   font-size: 30px;
+  letter-spacing: 2px;
 }
 .big-title{
   font-weight:bold;

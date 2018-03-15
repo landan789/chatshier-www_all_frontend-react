@@ -4,7 +4,7 @@ footer{
 }
 .menu .dropdown-content a { color: black; }
 .text-white { color: #ffffff; }
-.text-center { text-align: center; }
+.text-center { text-align: center; letter-spacing: 1.5px;}
 .bg-blue{
   background-color: #33ccff;
 }
@@ -33,7 +33,6 @@ p {
   text-justify: inter-word;
 }
 @media (min-width: 576px) and (max-width: 767px){
-
   .chsr .navbar-brand img {
     height: 40px;
   }
@@ -56,13 +55,14 @@ p {
 
 .chsr.navbar-default .navbar-nav > li > a {
     color: #ffffff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-    margin: 0 15px;
+    border-bottom: 1.5px solid transparent;
+    transition: all .3s ease-in-out;
 }
 @media (min-width: 768px){
   .chsr.navbar-default .navbar-nav > li > a {
-    border-bottom: 0 solid rgba(255, 255, 255, 0.6);
-    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    
   }
   .chsr .navbar-nav {
     padding-top: 10px;
@@ -71,7 +71,8 @@ p {
   }
 }
 .chsr .navbar-nav > li > a:hover{
-  text-decoration: underline;
+  box-sizing: border-box;
+  border-bottom: 1.5px solid white;
 }
 
 .chsr.navbar-default .navbar-nav > .open > a, .chsr.navbar-default .navbar-nav > .open > a:focus, .chsr.navbar-default .navbar-nav >.open >a:hover {
@@ -81,6 +82,8 @@ p {
 
 .chsr .navbar-right{
     margin-right: -6px;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .chsr .navbar-toggle{
@@ -113,7 +116,7 @@ p {
   padding: 0 0 15px 25px;
   color: #ffffff;
   font-size: 28px;
-  font-family: Calibri;
+  font-family: 'Source Serif Pro', serif;
   font-style: oblique;
   vertical-align: text-bottom;
 }

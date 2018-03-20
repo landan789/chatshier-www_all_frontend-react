@@ -8,3 +8,7 @@
 @media (min-width: 580px) {
   .Toolbar {
     padding: 0 15%; } }
+
+@media (min-width: 760px) {
+  .Toolbar {
+    padding: 0 5%; } }

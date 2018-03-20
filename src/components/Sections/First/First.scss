@@ -11,7 +11,9 @@
         width: 100%;
         height: auto;
     }
-
+    .container {
+        padding-top: 30%;
+    }
     p {
         font-weight: 300;
     }
@@ -21,18 +23,37 @@
     }
 
     Button {
-        position: absolute;
-        bottom: -12px;
-        left: 50%;
-        transform: translateX(-50%);
+        position: relative;
+        margin-left: 15px;
     }
 }
 
 @media (min-width: 580px) {
     .First {
-        width: 100%;
         padding: 0 15%;
         margin: 100px 0;
+        text-align: left;
+        letter-spacing: 1.5px;
+    
+        img {
+            width: 100%;
+            height: auto;
+        }
+    
+        p {
+            font-weight: 300;
+        }
+    
+        .row {
+            align-items: center;
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .First {
+        padding: 0 5%;
+        margin: 0;
         text-align: left;
         letter-spacing: 1.5px;
     

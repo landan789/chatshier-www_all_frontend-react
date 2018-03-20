@@ -9,21 +9,34 @@
   .First img {
     width: 100%;
     height: auto; }
+  .First .container {
+    padding-top: 30%; }
   .First p {
     font-weight: 300; }
   .First .row {
     align-items: center; }
   .First Button {
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    transform: translateX(-50%); }
+    position: relative;
+    margin-left: 15px; }
 
 @media (min-width: 580px) {
   .First {
-    width: 100%;
     padding: 0 15%;
     margin: 100px 0;
+    text-align: left;
+    letter-spacing: 1.5px; }
+    .First img {
+      width: 100%;
+      height: auto; }
+    .First p {
+      font-weight: 300; }
+    .First .row {
+      align-items: center; } }
+
+@media (min-width: 760px) {
+  .First {
+    padding: 0 5%;
+    margin: 0;
     text-align: left;
     letter-spacing: 1.5px; }
     .First img {

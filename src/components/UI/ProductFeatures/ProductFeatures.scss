@@ -79,7 +79,7 @@ p {
             min-height: 200px;
         }
 
-        .Button {
+        Button {
             right: 5%;
         }
         .mockups { 
@@ -89,5 +89,29 @@ p {
             }
         }
     }
+}
 
+@media (min-width: 1024px) {
+    .ProductFeatures {
+        max-width: unset;
+
+        .content {
+            padding: 20px 10% 0 10%;
+        }
+
+        Button {
+            right: 10%;
+        }
+
+        .mockups { 
+            .desktop {
+                width: unset;
+                left: 10%;
+            }
+            .mob {
+                bottom: 0;
+                right: 40px;
+            }
+        }
+    }
 }

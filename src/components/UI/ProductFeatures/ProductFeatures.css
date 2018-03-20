@@ -55,8 +55,22 @@ p {
       padding-top: 20px;
       padding: 20px 5% 0 5%;
       min-height: 200px; }
-    .ProductFeatures .Button {
+    .ProductFeatures Button {
       right: 5%; }
+    .ProductFeatures .mockups .mob {
+      bottom: 0;
+      right: 40px; } }
+
+@media (min-width: 1024px) {
+  .ProductFeatures {
+    max-width: unset; }
+    .ProductFeatures .content {
+      padding: 20px 10% 0 10%; }
+    .ProductFeatures Button {
+      right: 10%; }
+    .ProductFeatures .mockups .desktop {
+      width: unset;
+      left: 10%; }
     .ProductFeatures .mockups .mob {
       bottom: 0;
       right: 40px; } }

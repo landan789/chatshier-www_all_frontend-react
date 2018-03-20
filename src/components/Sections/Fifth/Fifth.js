@@ -7,8 +7,8 @@ import Pricing from '../../UI/Pricing/Pricing';
 const Fifth = (props) => {
     return (
         <Fade className="Fifth">
+        <h1>Pricing</h1>
             <Container>
-                <h1>Pricing</h1>
                 <Pricing
                     title={'Free Plan'}
                     slogan={'For the new adventure runners.'}

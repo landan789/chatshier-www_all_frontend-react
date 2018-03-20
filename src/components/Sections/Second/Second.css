@@ -78,3 +78,26 @@
   .Second .small-feature {
     margin: 30px 0;
     padding: 0; } }
+
+@media (min-width: 1240px) {
+  .Second {
+    max-width: 1024px;
+    padding: 0;
+    margin: 100px auto;
+    text-align: center; }
+    .Second .small-features {
+      max-width: 1024px;
+      display: flex; }
+    .Second .small-feature {
+      display: flex;
+      flex: 1;
+      padding: 0 2%;
+      margin: 50px 0;
+      flex-direction: column; }
+      .Second .small-feature__text {
+        position: relative;
+        left: unset;
+        top: 0; }
+      .Second .small-feature .icon {
+        position: relative;
+        left: 0; } }

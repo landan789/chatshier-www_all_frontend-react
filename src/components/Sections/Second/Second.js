@@ -10,7 +10,11 @@ const Second = (props) => {
                 <Row>
                     <Col>
                         <h1>What you will <br/>find out with
-                        Chatshier?</h1>
+                    Chatshier?</h1>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className="small-features">
                         <div className="small-feature">
                             <div className="icon"><img src="http://via.placeholder.com/96x96"/></div>
                             <div className="small-feature__text">

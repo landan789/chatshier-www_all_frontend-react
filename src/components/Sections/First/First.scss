@@ -13,6 +13,7 @@
 
     .desktopHide {
         display: block;
+        margin: auto;
     }
 
     img {
@@ -80,11 +81,12 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1240px) {
     .First {
         .container {
             max-width: 1024px;
-            padding-top: 20%;
+            padding: 20% 0 10% 0;
+            box-sizing: border-box;
         }
         .desktopShow {
             display: block;

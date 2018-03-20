@@ -18,3 +18,9 @@
       .Third .features .row {
         width: 50%;
         margin: 0; } }
+
+@media (min-width: 1240px) {
+  .Third {
+    padding: 0;
+    max-width: 1024px;
+    margin: auto; } }

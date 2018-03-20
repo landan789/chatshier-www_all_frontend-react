@@ -118,3 +118,34 @@
         }
     }
 }
+
+@media (min-width: 1240px) {
+    .Second {
+        max-width: 1024px;
+        padding: 0;
+        margin: 100px auto;
+        text-align: center;
+        .small-features {
+            max-width: 1024px;
+            display: flex;
+        }
+        .small-feature {
+            display: flex;
+            flex: 1;
+            padding: 0 2%;
+            margin: 50px 0;
+            flex-direction: column;
+
+            &__text {
+                position: relative;
+                left: unset;
+                top: 0;
+            }
+    
+            .icon {
+                position: relative;
+                left: 0;
+            }
+        }
+    }
+}

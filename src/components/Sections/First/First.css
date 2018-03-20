@@ -9,7 +9,8 @@
   .First .desktopShow {
     display: none; }
   .First .desktopHide {
-    display: block; }
+    display: block;
+    margin: auto; }
   .First img {
     width: 100%;
     height: auto; }
@@ -51,10 +52,11 @@
     .First .row {
       align-items: center; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1240px) {
   .First .container {
     max-width: 1024px;
-    padding-top: 20%; }
+    padding: 20% 0 10% 0;
+    box-sizing: border-box; }
   .First .desktopShow {
     display: block;
     margin-left: 0; }

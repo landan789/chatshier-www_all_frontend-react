@@ -1,0 +1,26 @@
+.Footer {
+  width: 100%;
+  padding: 50px 5% 3% 5%;
+  background-color: #eeeeee;
+  color: #333;
+  letter-spacing: 1px; }
+  .Footer__second {
+    margin-top: 36px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 100; }
+    .Footer__second a {
+      text-decoration: none;
+      color: #333; }
+    .Footer__second span {
+      font-size: 10px;
+      font-weight: 300;
+      margin: 0; }
+    .Footer__second hr {
+      margin: 10px 0; }
+  .Footer h1 {
+    padding: 0 5%;
+    margin-bottom: 36px; }
+  .Footer Button {
+    display: flex;
+    margin: 10px auto; }

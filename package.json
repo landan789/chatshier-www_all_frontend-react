@@ -1,18 +1,45 @@
 {
   "name": "www.chatshier",
   "version": "1.0.0",
-  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
   "main": "server.js",
-  "scripts": {
-    "start": "node ./server.js"
-  },
   "dependencies": {
-    "express": "^4.16.3"
+    "bootstrap": "^4.0.0",
+    "eslint": "^4.19.0",
+    "firebase": "4.10.1",
+    "moment": "2.21.0",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "4.1.2",
+    "react": "^16.2.0",
+    "react-aux": "1.1.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "5.0.7",
+    "react-router": "4.2.0",
+    "react-router-dom": "4.2.2",
+    "react-router-redux": "4.0.8",
+    "react-scripts": "1.1.1",
+    "react-widgets": "4.2.2",
+    "react-widgets-moment": "4.0.9",
+    "reactstrap": "^5.0.0-beta.2",
+    "redux": "3.7.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "npm-run-all -p watch-css start-js",
+    "start-js": "react-scripts start",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ -w -r",
+    "build": "npm-run-all build-css build-js",
+    "build-js": "react-scripts build",
+    "build-css": "node-sass-chokidar src/ -o src/"
+  },
+  "devDependencies": {
+    "@types/react": "16.0.40",
+    "@types/react-redux": "5.0.15",
+    "@types/react-router-redux": "5.0.12",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-react": "7.7.0",
+    "eslint-plugin-standard": "3.0.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7"
   },
   "repository": {
     "type": "git",

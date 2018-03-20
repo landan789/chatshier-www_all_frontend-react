@@ -1,0 +1,69 @@
+.ProductFeatures {
+    text-align: center;
+    letter-spacing: 1.2px;
+    padding: 10% 0%;
+    margin: 20px 0;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+
+    .content {
+        padding: 0 10%;
+        
+        p {
+            font-weight: 300;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-size: 14px;
+            margin-bottom: 20px;
+    
+            li {
+                text-align: left;
+            }
+    
+            li:before {
+                content: ' <3 ';
+                margin-left: 0px;
+            }
+        }
+    }
+
+    .button-case{
+        position: relative;
+        widows: 100%;
+        margin: 20px 0;
+        min-height: 40px;
+    }
+    Button {
+        right: 10%;
+        position: absolute;
+    }
+
+    .mockups {
+        position: relative;
+        width: 100%;
+        min-height: 195px;
+        margin-top: 20px;
+
+        .desktop {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .mob {
+            position: absolute;
+            bottom: -20px;
+            right: 60px;
+        }
+    }
+}
+
+p {
+    font-size: 14px;
+}

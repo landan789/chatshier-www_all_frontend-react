@@ -1,0 +1,8 @@
+.ClientLogo {
+  width: 150px;
+  height: 70px;
+  margin: 10px 10px;
+  background-color: #cecece; }
+  .ClientLogo img {
+    width: 100%;
+    height: auto; }

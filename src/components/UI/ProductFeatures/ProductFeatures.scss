@@ -68,3 +68,26 @@ p {
     font-size: 14px;
 }
 
+@media (min-width: 760px) {
+    .ProductFeatures {
+        max-width: 375px;
+        padding: 5% 0%;
+
+        .content {
+            padding-top: 20px;
+            padding: 20px 5% 0 5%;
+            min-height: 200px;
+        }
+
+        .Button {
+            right: 5%;
+        }
+        .mockups { 
+            .mob {
+                bottom: 0;
+                right: 40px;
+            }
+        }
+    }
+
+}

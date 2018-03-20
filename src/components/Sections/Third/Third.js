@@ -7,10 +7,10 @@ import ProductFeatures from '../../UI/ProductFeatures/ProductFeatures';
 const Third = (props) => {
     return (
         <Fade className="Third">
-            <div>
-                <Row>
-                    <Col><h1>Core Features</h1></Col>
-                </Row>
+            <Row>
+                <Col><h1>Core Features</h1></Col>
+            </Row>
+            <div className="features">
                 <Row>
                     <Col>
                         <ProductFeatures

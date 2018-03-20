@@ -5,5 +5,21 @@
     text-align: center;
     letter-spacing: 1.2px;
     background-color: #ffffff;
+    box-sizing: border-box;
+}
 
+@media (min-width: 760px) {
+    .Third {
+        padding: 0 3%;
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: auto;
+            .row {
+                width: 50%;
+                margin: 0;
+            }
+        }
+    }
 }

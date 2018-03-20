@@ -12,3 +12,8 @@
 @media (min-width: 760px) {
   .Toolbar {
     padding: 0 5%; } }
+
+@media (min-width: 1440px) {
+  .Toolbar {
+    max-width: 1024px;
+    margin: auto; } }

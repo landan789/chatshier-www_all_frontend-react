@@ -11,10 +11,11 @@ const First = (props) => {
                     <Col>
                         <h1>Chatshier</h1>
                         <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. </p>
+                        <Button className="desktopShow" color="info">CTA</Button>
                     </Col>
                 </Row>
             </Container>
-            <Button color="info">CTA</Button>
+            <Button className="desktopHide" color="info">CTA</Button>
         </Fade>
     );
 };

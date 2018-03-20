@@ -6,6 +6,10 @@
   letter-spacing: 1px;
   background-color: #f4f4f4;
   position: relative; }
+  .First .desktopShow {
+    display: none; }
+  .First .desktopHide {
+    display: block; }
   .First img {
     width: 100%;
     height: auto; }
@@ -46,3 +50,13 @@
       font-weight: 300; }
     .First .row {
       align-items: center; } }
+
+@media (min-width: 1440px) {
+  .First .container {
+    max-width: 1024px;
+    padding-top: 20%; }
+  .First .desktopShow {
+    display: block;
+    margin-left: 0; }
+  .First .desktopHide {
+    display: none; } }

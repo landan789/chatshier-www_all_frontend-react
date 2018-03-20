@@ -6,6 +6,14 @@
     letter-spacing: 1px;
     background-color: #f4f4f4;
     position: relative;
+    
+    .desktopShow {
+        display: none;
+    }
+
+    .desktopHide {
+        display: block;
+    }
 
     img {
         width: 100%;
@@ -68,6 +76,23 @@
     
         .row {
             align-items: center;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .First {
+        .container {
+            max-width: 1024px;
+            padding-top: 20%;
+        }
+        .desktopShow {
+            display: block;
+            margin-left: 0;
+        }
+    
+        .desktopHide {
+            display: none;
         }
     }
 }

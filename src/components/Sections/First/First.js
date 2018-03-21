@@ -10,7 +10,8 @@ const First = (props) => {
                 <Row>
                     <Col>
                         <h1>Chatshier</h1>
-                        <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. </p>
+                        <p>數據驅動策略
+                        <br/>優化客服體驗</p>
                         <Button className="btndesktopShow" color="info">CTA</Button>
                     </Col>
                 </Row>

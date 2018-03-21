@@ -7,7 +7,7 @@ import ClientLogo from '../../UI/ClientLogo/ClientLogo';
 const Forth = (props) => {
     return (
         <Fade className="Forth">
-            <h1>Who Loves Our Products</h1>
+            <h1>我們的合作夥伴</h1>
             <div className="logos">
                 <ClientLogo/>
                 <ClientLogo/>

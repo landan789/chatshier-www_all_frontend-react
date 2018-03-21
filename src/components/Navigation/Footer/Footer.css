@@ -12,6 +12,9 @@
     .Footer__second a {
       text-decoration: none;
       color: #333; }
+    .Footer__second a:hover {
+      text-decoration: none;
+      filter: drop-shadow(1px 4px 5px #cecece); }
     .Footer__second span {
       font-size: 10px;
       font-weight: 300;

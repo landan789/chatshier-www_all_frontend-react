@@ -29,10 +29,10 @@ export default class Example extends React.Component {
                                 <NavLink href="/components/">關於我們</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">特色</NavLink>
+                                <NavLink href="#">功能</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">價錢</NavLink>
+                                <NavLink href="#">費用</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="#">問與答</NavLink>

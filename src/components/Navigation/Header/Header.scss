@@ -16,3 +16,11 @@
         
     }
 }
+
+@media (min-width: 1240px) {
+    .Header {
+        max-width: 1024px;
+        margin: auto;
+        padding: 0;
+    }
+}

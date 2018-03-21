@@ -11,10 +11,12 @@
 
 @media (min-width: 760px) {
   .Toolbar {
-    padding: 0 5%; } }
-
-@media (min-width: 1240px) {
-  .Toolbar {
-    max-width: 1024px;
-    margin: auto;
-    padding: 0; } }
+    width: 100%;
+    padding: 0 5%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.85);
+    filter: drop-shadow(0 3px 5px #e6e6e6);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; } }

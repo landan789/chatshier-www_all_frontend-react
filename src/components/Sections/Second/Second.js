@@ -7,12 +7,8 @@ const Second = (props) => {
     return (
         <Fade className="Second">
             <Container>
-                <Row>
-                    <Col>
-                        <h1>What you will <br/>find out with
+                <h1>What you will <br/>find out with
                     Chatshier?</h1>
-                    </Col>
-                </Row>
                 <Row>
                     <Col className="small-features">
                         <div className="small-feature">

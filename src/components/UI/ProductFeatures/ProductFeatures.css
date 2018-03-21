@@ -4,7 +4,8 @@
   padding: 10% 0%;
   margin: 20px 0;
   border-radius: 4px;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  box-sizing: border-box; }
   .ProductFeatures .content {
     padding: 0 10%; }
     .ProductFeatures .content p {
@@ -27,50 +28,37 @@
     margin: 20px 0;
     min-height: 40px; }
   .ProductFeatures Button {
-    right: 10%;
+    right: 0;
     position: absolute; }
-  .ProductFeatures .mockups {
-    position: relative;
-    width: 100%;
-    min-height: 195px;
-    margin-top: 20px; }
-    .ProductFeatures .mockups .desktop {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .ProductFeatures .mockups .mob {
-      position: absolute;
-      bottom: -20px;
-      right: 60px; }
 
 p {
   font-size: 14px; }
 
-@media (min-width: 760px) {
+@media (min-width: 700px) {
   .ProductFeatures {
-    max-width: 375px;
-    padding: 5% 0%; }
+    padding: 5%;
+    display: flex;
+    flex-direction: row-reverse; }
+    .ProductFeatures div {
+      flex: 1;
+      align-self: center;
+      margin: 1%; }
     .ProductFeatures .content {
       padding-top: 20px;
-      padding: 20px 5% 0 5%;
-      min-height: 200px; }
-    .ProductFeatures Button {
-      right: 5%; }
-    .ProductFeatures .mockups .mob {
-      bottom: 0;
-      right: 40px; } }
+      padding: 0; } }
 
 @media (min-width: 1024px) {
   .ProductFeatures {
     max-width: unset; }
+    .ProductFeatures .desktop img {
+      width: 100%; } }
+
+@media (min-width: 1400px) {
+  .ProductFeatures {
+    width: 100%; }
+    .ProductFeatures div {
+      width: 48%; }
     .ProductFeatures .content {
-      padding: 20px 10% 0 10%; }
-    .ProductFeatures Button {
-      right: 10%; }
-    .ProductFeatures .mockups .desktop {
-      width: unset;
-      left: 10%; }
-    .ProductFeatures .mockups .mob {
-      bottom: 0;
-      right: 40px; } }
+      float: left; }
+    .ProductFeatures .desktop {
+      float: right; } }

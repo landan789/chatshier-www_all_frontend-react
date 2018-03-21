@@ -6,28 +6,30 @@
     letter-spacing: 1.2px;
     background-color: #ffffff;
     box-sizing: border-box;
+    .features {
+    }
 }
 
-@media (min-width: 760px) {
+@media (min-width: 700px) {
     .Third {
         padding: 0 3%;
+        margin: auto;
         .features {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin: auto;
-            .row {
-                width: 50%;
-                margin: 0;
-            }
         }
     }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
     .Third {
         padding: 0;
         max-width: 1024px;
-        margin: auto;
     }
+}
+
+@media (min-width: 1400px) {
+    
 }

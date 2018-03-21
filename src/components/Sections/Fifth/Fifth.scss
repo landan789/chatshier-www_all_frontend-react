@@ -15,7 +15,13 @@
 }
 
 @media (min-width: 1024px) {
+    .Fifth {
+        max-width: 1024px;
+        margin: 100px auto;
+        padding: 0;
+    }
     .container {
         max-width: unset;;
+        justify-content: space-around;
     }
 }

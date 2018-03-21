@@ -12,17 +12,12 @@ const ProductFeatures = (props) => {
                 <ul>
                     {props.children}
                 </ul>
-            </div>
-            <div className="button-case">
-                <Button color="info">{props.cta}</Button>
-            </div>
-            <div className="mockups">
-                <div className="desktop">
-                    <img src="http://via.placeholder.com/300x195" />
+                <div className="button-case">
+                    <Button color="info">{props.cta}</Button>
                 </div>
-                <div className="mob">
-                    <img src="http://via.placeholder.com/70x125" />
-                </div>
+            </div>
+            <div className="desktop">
+                <img src="http://via.placeholder.com/300x195" />
             </div>
         </Fade>
     );

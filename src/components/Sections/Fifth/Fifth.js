@@ -6,7 +6,7 @@ import Pricing from '../../UI/Pricing/Pricing';
 
 const Fifth = (props) => {
     return (
-        <Fade className="Fifth">
+        <Fade className="Fifth" id="pricing">
             <h1>開始免費體驗，客服優化無價</h1>
             <Container>
                 <Pricing

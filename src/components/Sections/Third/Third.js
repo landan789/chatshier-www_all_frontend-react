@@ -6,7 +6,7 @@ import ProductFeatures from '../../UI/ProductFeatures/ProductFeatures';
 
 const Third = (props) => {
     return (
-        <Fade className="Third">
+        <Fade className="Third" id="features">
             <h1>提升客服效能</h1>
             <div className="features">
                 <ProductFeatures

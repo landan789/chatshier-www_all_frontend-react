@@ -18,7 +18,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div className={classes.Home}>
+            <div className="Home">
                 <First />
                 <Second
                     onScroll={this.onScrollMove} />

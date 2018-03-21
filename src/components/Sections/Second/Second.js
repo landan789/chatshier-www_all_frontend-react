@@ -5,7 +5,7 @@ import './Second.css';
 
 const Second = (props) => {
     return (
-        <Fade className="Second">
+        <Fade className="Second" id="about">
             <Container>
                 <h1>What you will <br/>find out with
                     Chatshier?</h1>

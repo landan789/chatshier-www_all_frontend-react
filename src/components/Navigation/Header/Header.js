@@ -1,5 +1,7 @@
 import React from 'react';
 import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse } from 'reactstrap';
+import TweenLite from 'gsap';
+import scrollTo from '../../../../node_modules/gsap/ScrollToPlugin';
 
 import './Header.css';
 
@@ -26,13 +28,13 @@ export default class Example extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/components/">關於我們</NavLink>
+                                <NavLink href="#about">關於我們</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">功能</NavLink>
+                                <NavLink href="#features">功能</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">費用</NavLink>
+                                <NavLink href="#pricing">費用</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="#">問與答</NavLink>

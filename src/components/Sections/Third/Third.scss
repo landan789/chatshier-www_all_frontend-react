@@ -1,7 +1,7 @@
 .Third {
     width: 100%;
-    padding: 0 0;
-    margin: 100px 0;
+    padding: 100px 0;
+    margin: 0;
     text-align: center;
     letter-spacing: 1.2px;
     background-color: #ffffff;
@@ -14,7 +14,7 @@
 
 @media (min-width: 700px) {
     .Third {
-        padding: 0 3%;
+        padding: 100px 3%;
         margin: auto;
         .features {
             display: flex;
@@ -27,7 +27,7 @@
 
 @media (min-width: 1024px) {
     .Third {
-        padding: 0;
+        padding: 100px 0;
         max-width: 1024px;
     }
 }

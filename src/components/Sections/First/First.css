@@ -44,6 +44,8 @@
     margin: 0;
     text-align: left;
     letter-spacing: 1.5px; }
+    .First .container {
+      padding-top: 20%; }
     .First img {
       width: 100%;
       height: auto; }

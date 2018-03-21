@@ -112,9 +112,31 @@
 
 @media (min-width: 760px) {
     .Second {
+        .small-features {
+            max-width: 700px;
+            margin: auto;
+            display: flex;
+        }
         .small-feature {
-            margin: 30px 0;
-            padding: 100px 0;
+            display: flex;
+            flex: 1;
+            padding: 0 2%;
+            margin: 50px 0;
+            flex-direction: column;
+
+            &__text {
+                position: relative;
+                left: unset;
+                top: 0;
+            }
+    
+            .icon {
+                position: relative;
+                left: 0;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 40px;
+            }
         }
     }
 }

@@ -7,7 +7,7 @@ const ClientLogo = (props) => {
     return (
         <Fade className="ClientLogo">
             <div>
-                <img src="http://via.placeholder.com/150x70"/>
+                <img src={props.link}/>
             </div>
         </Fade>
     );

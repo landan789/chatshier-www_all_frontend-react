@@ -9,7 +9,7 @@ const Forth = (props) => {
         <Fade className="Forth">
             <h1>我們的合作夥伴</h1>
             <div className="logos">
-                <ClientLogo/>
+                <ClientLogo link={'../../../assets/images/logos/logo1.png'}/>
                 <ClientLogo/>
                 <ClientLogo/>
                 <ClientLogo/>

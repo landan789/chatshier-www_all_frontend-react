@@ -1,0 +1,12 @@
+.Header ul {
+  padding: 1% 0;
+  box-sizing: border-box; }
+
+.Header li {
+  letter-spacing: 1.2px;
+  transition: all .3s ease-in-out;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent; }
+
+.Header li:hover {
+  border-bottom: 2px solid black; }

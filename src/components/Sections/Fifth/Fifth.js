@@ -28,15 +28,6 @@ const Fifth = (props) => {
                     <li>Curabitur lobortis id lorem id</li>
                 </Pricing>
                 <Pricing
-                    title={'Premieum'}
-                    slogan={'For the new adventure runners.'}
-                    cta={'NTD 10,000'}>
-                    <li>Curabitur lobortis id lorem id</li>
-                    <li>Curabitur lobortis id lorem id</li>
-                    <li>Curabitur lobortis id lorem id</li>
-                    <li>Curabitur lobortis id lorem id</li>
-                </Pricing>
-                <Pricing
                     title={'Customized Plan'}
                     slogan={'For the new adventure runners.'}
                     cta={'Contact Us'}>

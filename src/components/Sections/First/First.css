@@ -1,14 +1,14 @@
 .First {
   width: 100%;
   min-height: 450px;
-  padding: 50% 3%;
+  padding: 40% 3%;
   text-align: center;
   letter-spacing: 1px;
   background-color: #f4f4f4;
   position: relative; }
-  .First .desktopShow {
+  .First .btndesktopShow {
     display: none; }
-  .First .desktopHide {
+  .First .btndesktopHide {
     display: block;
     margin: auto; }
   .First img {
@@ -50,15 +50,16 @@
     .First p {
       font-weight: 300; }
     .First .row {
-      align-items: center; } }
+      align-items: center;
+      width: 100%; }
+    .First .btndesktopShow {
+      display: block;
+      margin-left: 0; }
+    .First .btndesktopHide {
+      display: none; } }
 
 @media (min-width: 1240px) {
   .First .container {
     max-width: 1024px;
     padding: 20% 0 10% 0;
-    box-sizing: border-box; }
-  .First .desktopShow {
-    display: block;
-    margin-left: 0; }
-  .First .desktopHide {
-    display: none; } }
+    box-sizing: border-box; } }

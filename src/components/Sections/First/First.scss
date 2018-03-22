@@ -4,9 +4,10 @@
     padding: 40% 3%;
     text-align: center;
     letter-spacing: 1px;
-    background-color: #f4f4f4;
     position: relative;
-    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .btndesktopShow {
         display: none;
     }
@@ -22,9 +23,14 @@
     }
     .container {
         padding-top: 30%;
-    }
-    p {
-        font-weight: 300;
+        text-align: center;
+        h1 {
+            filter: drop-shadow(2px 2px 3px #fff);
+        }
+        p {
+            font-weight: 300;
+            filter: drop-shadow(2px 2px 3px #fff);
+        }
     }
 
     .row {
@@ -49,7 +55,7 @@
             width: 100%;
             height: auto;
         }
-    
+        
         p {
             font-weight: 300;
         }
@@ -69,6 +75,7 @@
     
         .container {
             padding-top: 20%;
+            text-align: left;
         }
 
         img {

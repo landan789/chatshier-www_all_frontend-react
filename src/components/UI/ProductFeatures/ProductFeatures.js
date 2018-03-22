@@ -4,6 +4,9 @@ import { Fade, Button } from 'reactstrap';
 import './ProductFeatures.css';
 
 const ProductFeatures = (props) => {
+    const backgroundImage = {
+        backgroundImage: 'url(' + `${props.image}` + ')'
+    };
     return (
         <Fade className="ProductFeatures">
             <div className="content">
@@ -16,9 +19,7 @@ const ProductFeatures = (props) => {
                     <Button color="info">{props.cta}</Button>
                 </div>
             </div>
-            <div className="desktop">
-                <img src="http://via.placeholder.com/300x195" />
-            </div>
+            <div className="desktop" style={backgroundImage}></div>
         </Fade>
     );
 };

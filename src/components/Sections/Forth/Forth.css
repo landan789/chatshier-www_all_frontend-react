@@ -11,11 +11,8 @@
     flex-wrap: wrap;
     justify-content: space-around; }
 
-@media (min-width: 700px) {
-  .Forth .logos {
-    justify-content: space-between; } }
-
 @media (min-width: 1024px) {
   .Forth .logos {
     max-width: 1024px;
-    margin: auto; } }
+    margin: auto;
+    justify-content: space-between; } }

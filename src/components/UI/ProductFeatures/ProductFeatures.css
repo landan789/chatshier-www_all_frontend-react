@@ -6,6 +6,9 @@
   border-radius: 4px;
   background-color: #f4f4f4;
   box-sizing: border-box; }
+  .ProductFeatures div {
+    flex: 1;
+    flex-grow: 1; }
   .ProductFeatures .content {
     padding: 0 10%; }
     .ProductFeatures .content p {
@@ -22,6 +25,13 @@
       .ProductFeatures .content ul li:before {
         content: ' <3 ';
         margin-left: 0px; }
+  .ProductFeatures .desktop {
+    width: 100%;
+    height: 200px;
+    padding: 1% 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
   .ProductFeatures .button-case {
     position: relative;
     width: 100%;

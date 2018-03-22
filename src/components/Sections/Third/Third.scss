@@ -10,6 +10,14 @@
     li {
         font-size: 0.75rem;
     }
+
+    .features {
+        .desktop {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
 }
 
 @media (min-width: 700px) {
@@ -33,5 +41,14 @@
 }
 
 @media (min-width: 1400px) {
-    
+ .Third {
+     .features {
+         .desktop {
+             transition: all .3s ease-in-out;
+         }
+         .desktop:hover {
+             transform: scale(1.05);
+         }
+     }
+ }   
 }

@@ -1,12 +1,29 @@
 .ClientLogo {
-    width: 150px;
-    height: 70px;
-    margin: 10px 10px;
-    background-color: #cecece;
-
-    img {
-        width: 100%;
-        height: auto;
+    margin: 2%;
+    div {
+        width: 130px;
+        height: 65px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: grayscale(100%);
+        transition: all .2s ease-in-out;
     }
 
+    div:hover {
+        filter: grayscale(0);
+        transform: scale(1.05);
+    }
+}
+
+@media (min-width: 700px) {
+    .ClientLogo {
+        margin: 3%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ClientLogo {
+        margin: 1%;
+    }
 }

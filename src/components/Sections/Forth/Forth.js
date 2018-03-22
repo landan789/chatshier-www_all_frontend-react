@@ -9,11 +9,12 @@ const Forth = (props) => {
         <Fade className="Forth">
             <h1>我們的合作夥伴</h1>
             <div className="logos">
-                <ClientLogo link={'../../../assets/images/logos/logo1.png'}/>
-                <ClientLogo/>
-                <ClientLogo/>
-                <ClientLogo/>
-                <ClientLogo/>
+                <ClientLogo image={'https://www.chatshier.com/image/logo4.png'}/>
+                <ClientLogo image={'https://www.chatshier.com/image/applied-arch.png'}/>
+                <ClientLogo image={'https://www.chatshier.com/image/logo1.png'}/>
+                <ClientLogo image={'https://www.chatshier.com/image/logo2.png'}/>
+                <ClientLogo image={'https://www.chatshier.com/image/logo3.png'}/>
+                <ClientLogo image={'https://www.chatshier.com/image/richesse.png'}/>
             </div>
         </Fade>
     );

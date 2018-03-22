@@ -4,8 +4,10 @@
   padding: 40% 3%;
   text-align: center;
   letter-spacing: 1px;
-  background-color: #f4f4f4;
-  position: relative; }
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .First .btndesktopShow {
     display: none; }
   .First .btndesktopHide {
@@ -15,9 +17,13 @@
     width: 100%;
     height: auto; }
   .First .container {
-    padding-top: 30%; }
-  .First p {
-    font-weight: 300; }
+    padding-top: 30%;
+    text-align: center; }
+    .First .container h1 {
+      filter: drop-shadow(2px 2px 3px #fff); }
+    .First .container p {
+      font-weight: 300;
+      filter: drop-shadow(2px 2px 3px #fff); }
   .First .row {
     align-items: center; }
   .First Button {
@@ -45,7 +51,8 @@
     text-align: left;
     letter-spacing: 1.5px; }
     .First .container {
-      padding-top: 20%; }
+      padding-top: 20%;
+      text-align: left; }
     .First img {
       width: 100%;
       height: auto; }

@@ -28,13 +28,13 @@ export default class Example extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="#about">關於我們</NavLink>
+                                <NavLink href="/#about">關於我們</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#features">功能</NavLink>
+                                <NavLink href="/#features">功能</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#pricing">費用</NavLink>
+                                <NavLink href="/#pricing">費用</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/faq">問與答</NavLink>

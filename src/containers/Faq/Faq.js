@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
-import First from '../../components/Sections/First/First';
+import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
+import Footer from '../../components/Navigation/Footer/Footer';
 
 class Faq extends Component {
-    state = {
-        onScrollMove: false
-    }
-    onScrollMove = this.onScrollMove.bind(this);
-
-    onScrollMove(){
-        console.log('s');
-    }
-
+    
     render() {
         return (
             <div>
-                <First />
+                <Toolbar/>
+                
+                <Footer />
             </div>
         );
     }

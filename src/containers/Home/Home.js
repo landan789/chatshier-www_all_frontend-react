@@ -24,7 +24,6 @@ class Home extends Component {
                     onScroll={this.onScrollMove} />
                 <Third/>
                 <Forth/>
-                <Fifth/>
             </div>
         );
     }

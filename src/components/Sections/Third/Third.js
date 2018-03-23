@@ -13,7 +13,7 @@ const Third = (props) => {
                     title={'整合客服工作站'}
                     description={'接入Facebook、Line、Wechat 等通訊平台，讓Chatshier 成為你客服唯一的工作台。'}
                     cta={'了解更多'}
-                    image={'https://unsplash.it/1400/799'}>
+                    image={'https://unsplash.it/1400/789'}>
                     <li>跨平台訊息不露接，減輕客服運營負擔</li>
                     <li>機器人即時接洽，客戶體驗零時差</li>
                     <li>內部溝通功能，客服專員無縫協作</li>
@@ -31,7 +31,7 @@ const Third = (props) => {
                     title={'任務待辦功能'}
                     description={'Chatshier 任務待辦管理功能，降低客服追縱的困難度。'}
                     cta={'了解更多'}
-                    image={'https://unsplash.it/1400/799'}>
+                    image={'https://unsplash.it/1000/799'}>
                     <li>在線聊天即可新增</li>
                     <li>任務排程追蹤</li>
                     <li>整和Google 日曆</li>

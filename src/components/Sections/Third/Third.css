@@ -15,18 +15,21 @@
 
 @media (min-width: 700px) {
   .Third {
-    padding: 100px 3%;
+    padding: 100px 0;
     margin: auto; }
     .Third .features {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin: auto; } }
+      margin: auto; }
+    .Third .ProductFeatures:nth-child(odd) div {
+      flex-direction: row; } }
 
 @media (min-width: 1024px) {
   .Third {
     padding: 100px 0;
-    max-width: 1024px; } }
+    max-width: 1960px; } }
 
 @media (min-width: 1400px) {
   .Third .features .desktop {

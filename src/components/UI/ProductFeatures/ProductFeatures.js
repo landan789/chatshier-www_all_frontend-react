@@ -9,6 +9,7 @@ const ProductFeatures = (props) => {
     };
     return (
         <Fade className="ProductFeatures">
+            <div className="desktop" style={backgroundImage}></div>
             <div className="content">
                 <h5>{props.title}</h5>
                 <p>{props.description}</p>
@@ -19,7 +20,6 @@ const ProductFeatures = (props) => {
                     <Button color="info">{props.cta}</Button>
                 </div>
             </div>
-            <div className="desktop" style={backgroundImage}></div>
         </Fade>
     );
 };

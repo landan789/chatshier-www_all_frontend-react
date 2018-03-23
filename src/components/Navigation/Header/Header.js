@@ -34,9 +34,6 @@ export default class Example extends React.Component {
                                 <NavLink href="/#features">功能</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/#pricing">費用</NavLink>
-                            </NavItem>
-                            <NavItem>
                                 <NavLink href="/faq">問與答</NavLink>
                             </NavItem>
                             <NavItem>

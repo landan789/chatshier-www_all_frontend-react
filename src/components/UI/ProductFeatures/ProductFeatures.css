@@ -28,7 +28,6 @@
   .ProductFeatures .desktop {
     width: 100%;
     height: 200px;
-    padding: 1% 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -46,37 +45,28 @@ p {
 
 @media (min-width: 700px) {
   .ProductFeatures {
-    padding: 5%;
+    width: 100%;
+    height: 45vh;
+    padding: 0;
     display: flex;
-    flex-direction: row-reverse;
-    flex-grow: 1; }
+    align-items: center; }
     .ProductFeatures div {
-      width: 50%;
-      align-self: center;
-      margin: 1%; }
+      margin: 0;
+      padding: 0;
+      flex-direction: row-reverse; }
+    .ProductFeatures .desktop {
+      height: 100%;
+      overflow: hidden; }
     .ProductFeatures .content {
-      padding-top: 20px;
-      padding: 0; } }
-
-@media (min-width: 1024px) {
-  .ProductFeatures {
-    max-width: unset; }
-    .ProductFeatures .content {
-      text-align: left;
-      float: left; }
-      .ProductFeatures .content h5 {
-        margin: 20px 0; }
-      .ProductFeatures .content p {
-        font-weight: 400; }
-      .ProductFeatures .content li {
-        font-size: 14px; }
-    .ProductFeatures .desktop img {
-      width: 100%; } }
+      padding: 0 2%;
+      text-align: left; }
+  .ProductFeatures:nth-child(odd) div {
+    flex-direction: row; } }
 
 @media (min-width: 1400px) {
   .ProductFeatures {
-    width: 100%; }
+    width: 100%;
+    height: 65vh;
+    padding: 5% 0; }
     .ProductFeatures div {
-      width: 48%; }
-    .ProductFeatures .desktop {
-      float: right; } }
+      margin: 0; } }

@@ -7,21 +7,12 @@ import Fifth from '../../components/Sections/Fifth/Fifth';
 import classes from './Home.css';
 
 class Home extends Component {
-    state = {
-        onScrollMove: false
-    }
-    onScrollMove = this.onScrollMove.bind(this);
-
-    onScrollMove(){
-        console.log('s');
-    }
 
     render() {
         return (
             <div className="Home">
                 <First />
-                <Second
-                    onScroll={this.onScrollMove} />
+                <Second />
                 <Third/>
                 <Forth/>
             </div>

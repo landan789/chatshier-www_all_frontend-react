@@ -11,7 +11,8 @@
         border-bottom: 2px solid transparent;
     }
 
-    li:hover {
+    li:hover,
+    li:active {
         border-bottom: 2px solid black;
         
     }

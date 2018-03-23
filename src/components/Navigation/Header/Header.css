@@ -8,7 +8,8 @@
   box-sizing: border-box;
   border-bottom: 2px solid transparent; }
 
-.Header li:hover {
+.Header li:hover,
+.Header li:active {
   border-bottom: 2px solid black; }
 
 @media (min-width: 1240px) {

@@ -1,0 +1,14 @@
+.Faq {
+  width: 100%;
+  padding: 15% 10% 0 10%; }
+  .Faq .tab-content {
+    margin-top: 2%; }
+  .Faq .row .card {
+    margin: 3% 0%;
+    filter: drop-shadow(1px 4px 5px rgba(169, 169, 169, 0.55)); }
+    .Faq .row .card .card-title {
+      letter-spacing: 1px; }
+    .Faq .row .card .card-text {
+      color: rgba(51, 51, 51, 0.8);
+      letter-spacing: 1.2px;
+      font-weight: 300; }

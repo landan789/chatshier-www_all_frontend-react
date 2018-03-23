@@ -1,7 +1,5 @@
 import React from 'react';
 import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse } from 'reactstrap';
-import TweenLite from 'gsap';
-import scrollTo from '../../../../node_modules/gsap/ScrollToPlugin';
 
 import './Header.css';
 
@@ -41,6 +39,9 @@ export default class Example extends React.Component {
                             </NavItem>
                             <NavItem>
                                 <NavLink href="#">登入</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="#">註冊</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

@@ -11,7 +11,7 @@ const First = (props) => {
                     <Col>
                         <h1>Chatshier</h1>
                         <p>數據驅動策略<br/>優化客服體驗</p>
-                        <Button className="btndesktopShow" color="info">CTA</Button>
+                        <Button outline className="btndesktopShow" color="info">免費體驗</Button>
                     </Col>
                 </Row>
             </Container>

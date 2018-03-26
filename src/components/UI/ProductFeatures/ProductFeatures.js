@@ -17,7 +17,7 @@ const ProductFeatures = (props) => {
                     {props.children}
                 </ul>
                 <div className="button-case">
-                    <Button color="info">{props.cta}</Button>
+                    <Button outline size="sm" color="info">{props.cta}</Button>
                 </div>
             </div>
         </Fade>

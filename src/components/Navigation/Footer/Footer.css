@@ -3,7 +3,8 @@
   padding: 50px 5% 3% 5%;
   background-color: #eeeeee;
   color: #333;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  text-align: center; }
   .Footer__second {
     margin-top: 36px;
     font-size: 10px;
@@ -27,3 +28,6 @@
   .Footer Button {
     display: flex;
     margin: 10px auto; }
+
+@media (min-width: 1240px) {
+  max-width: 1024px; }

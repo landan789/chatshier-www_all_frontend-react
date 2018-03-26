@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
+import Footer from '../../components/Navigation/Footer/Footer';
 import './Faq.css';
 
 class Faq extends Component {
@@ -57,7 +58,7 @@ class Faq extends Component {
                     <TabContent activeTab={this.state.activeTab}>
                         <TabPane tabId="1">
                             <Row>
-                                <Col sm="12">
+                                <Col sm="6" className="col_margin">
                                     <Card body>
                                         <CardTitle>文字客服與電話客服的差別？</CardTitle>
                                         <CardText>文字客服有如使用通訊軟體一樣是用打字進行交流的，
@@ -65,18 +66,17 @@ class Faq extends Component {
                                         同時現代人大多習慣藉由通訊軟體進行交流， 所以我們也採取相似的方式進行客服。</CardText>
                                     </Card>
                                 </Col>
-                                <Col sm="12">
+                                <Col sm="6" className="col_margin">
                                     <Card body>
                                         <CardTitle>使用Chatshier 需要安裝特定軟體嗎？</CardTitle>
-                                        <CardText>您並不需要安裝任何軟體，皆可使用各種瀏覽器進入， Chatshier 頁面， 第一次登入時，依照各種通訊軟體完成設定即可使用。
-                                        更詳細操作說明</CardText>
+                                        <CardText>您並不需要安裝任何軟體，皆可使用各種瀏覽器進入， Chatshier 頁面， 第一次登入時，依照各種通訊軟體完成設定即可使用。</CardText>
                                     </Card>
                                 </Col>
                             </Row>
                         </TabPane>
                         <TabPane tabId="2">
                             <Row>
-                                <Col sm="12">
+                                <Col sm="6" className="col_margin">
                                     <Card body>
                                         <CardTitle>標籤功能是什麼？</CardTitle>
                                         <CardText>標籤是一個提供客服人員簡單且更輕易了解顧客的資料、需求等等。
@@ -88,7 +88,7 @@ class Faq extends Component {
                                         無上限新增標籤項目，含單選、多選、文字</CardText>
                                     </Card>
                                 </Col>
-                                <Col sm="12">
+                                <Col sm="6" className="col_margin">
                                     <Card body>
                                         <CardTitle>群發訊息是什麼？</CardTitle>
                                         <CardText>群發訊息是發送訊息給整個群組或設定的客戶群。
@@ -104,7 +104,7 @@ class Faq extends Component {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col sm="12">
+                                <Col sm="6" className="col_margin">
                                     <Card body>
                                         <CardTitle>自動回覆訊息是什麼？</CardTitle>
                                         <CardText>目前尚無客服人員在線上時，自動回應的訊息。
@@ -117,7 +117,7 @@ class Faq extends Component {
                                         </CardText>
                                     </Card>
                                 </Col>
-                                <Col sm="12">
+                                <Col sm="6" className="col_margin">
                                     <Card body>
                                         <CardTitle>關鍵字回覆訊息是什麼？</CardTitle>
                                         <CardText>客戶訊息觸發關鍵字，系統自動回覆訊息
@@ -129,7 +129,7 @@ class Faq extends Component {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col sm="12">
+                                <Col sm="6" className="col_margin">
                                     <Card body>
                                         <CardTitle>加好友回覆訊息是什麼？</CardTitle>
                                         <CardText>客戶加好友時自動回覆的訊息。
@@ -142,32 +142,32 @@ class Faq extends Component {
                         </TabPane>
                         <TabPane tabId="3">
                             <Row>
-                                <Col sm="12">
+                                <Col sm="6" className="col_margin">
                                     <Card body>
                                         <CardTitle>如何使用Chatshier？</CardTitle>
-                                        <CardText>Chatshier 一共支援多款通訊軟體  FacebookFacebook、  LINELINE 等等。
+                                        <CardText>Chatshier 一共支援多款通訊軟體  Facebook、  LINE 等等。
                                         並可以同時設定多個帳號，是個能讓店家與顧客保持緊密聯擊的最佳小工具。</CardText>
                                     </Card>
                                 </Col>
-                                <Col sm="12">
+                                <Col sm="6" className="col_margin">
                                     <Card body>
                                         <CardTitle>Chatshier 有支援哪些軟體？</CardTitle>
                                         <CardText>目前 Chatshier 支援多款通訊軟體
-                                        FacebookFacebook 
-                                        LINELINE 
+                                        Facebook
+                                        LINE 
                                         未來將會開發
-                                        WeChatWeChat</CardText>
+                                        WeChat</CardText>
                                     </Card>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col sm="12">
+                                <Col sm="6" className="col_margin">
                                     <Card body>
                                         <CardTitle>手機平板都能聯絡到線上文字客服嗎？</CardTitle>
                                         <CardText>電腦、手機、平板等行動裝置，只要能瀏覽網頁，皆能夠進行線上文字客服。</CardText>
                                     </Card>
                                 </Col>
-                                <Col sm="12">
+                                <Col sm="6" className="col_margin">
                                     <Card body>
                                         <CardTitle>客服人員離線後，顧客的詢問訊息會如何處理？</CardTitle>
                                         <CardText>客服人員可以針對一般問題，可以設定關鍵字回覆 
@@ -187,6 +187,7 @@ class Faq extends Component {
                         </TabPane>
                     </TabContent>
                 </div>
+                <Footer />
             </div>
         );
     }

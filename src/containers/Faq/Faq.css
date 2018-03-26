@@ -1,14 +1,29 @@
 .Faq {
   width: 100%;
-  padding: 15% 10% 0 10%; }
+  padding: 10% 5%; }
+  .Faq h1 {
+    color: #4c4c4c;
+    margin-bottom: 1rem; }
   .Faq .tab-content {
     margin-top: 2%; }
+  .Faq .row .col_margin {
+    margin: 2% 0; }
   .Faq .row .card {
-    margin: 3% 0%;
-    filter: drop-shadow(1px 4px 5px rgba(169, 169, 169, 0.55)); }
+    margin: 2% 0%;
+    height: 100%;
+    filter: drop-shadow(15px 15px 0px rgba(169, 169, 169, 0.15)); }
     .Faq .row .card .card-title {
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      color: #4c4c4c; }
     .Faq .row .card .card-text {
       color: rgba(51, 51, 51, 0.8);
       letter-spacing: 1.2px;
       font-weight: 300; }
+      .Faq .row .card .card-text ul {
+        list-style: none; }
+
+@media (min-width: 1240px) {
+  .Faq {
+    max-width: 1024px;
+    margin: auto;
+    padding: 10% 0; } }

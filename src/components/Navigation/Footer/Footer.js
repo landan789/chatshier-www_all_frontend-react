@@ -15,9 +15,9 @@ export default class Footer extends React.Component {
     render() {
         return (
             <div className="Footer">
-                <h1>Make your customer<br/> happier with Chatshier.</h1>
-                <Button color="info">馬上註冊</Button>{' '}
-                <Button color="info">與我們聯繫</Button>{' '}
+                <h3>Make your customer<br/> happier with Chatshier.</h3>
+                <Button outline size="sm" color="info">馬上註冊</Button>{' '}
+                <Button outline size="sm" color="info">與我們聯繫</Button>{' '}
                 <div className="Footer__second">
                     <p><a href="#">服務條款</a>  ·  <a href="#">隱私權條款</a></p>
                     <hr/>

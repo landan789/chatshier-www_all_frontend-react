@@ -1,0 +1,26 @@
+.Blog {
+  background-color: #f5fcff; }
+  .Blog__posts {
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column; }
+  .Blog__header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgba(155, 232, 255, 0.721); }
+    .Blog__header h1, .Blog__header h4 {
+      color: #4c4c4c;
+      letter-spacing: 1.2px; }
+
+@media (min-width: 760px) {
+  .Blog {
+    padding-top: 70px; }
+    .Blog__posts {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+
+@media (min-width: 1240px) {
+  .Blog__posts {
+    max-width: 1024px;
+    margin: auto; } }

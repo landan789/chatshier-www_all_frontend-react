@@ -42,7 +42,13 @@
 @media (min-width: 1240px) {
     .Faq {
         max-width: 1024px;
+        min-height: 100vh;
         margin: auto;
-        padding: 10% 0;
+        padding: 100px 0;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10%;
+        }
     }
 }

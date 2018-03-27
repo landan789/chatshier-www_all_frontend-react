@@ -1,7 +1,8 @@
 const ROUTES = {
     APP: '/',
     FAQ: '/faq',
-    BLOG: '/blog'
+    BLOG: '/blog',
+    TERMS: '/terms'
 };
 
 export default ROUTES;

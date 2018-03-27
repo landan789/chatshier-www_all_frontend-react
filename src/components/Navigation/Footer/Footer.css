@@ -28,6 +28,3 @@
   .Footer Button {
     display: flex;
     margin: 10px auto; }
-
-@media (min-width: 1240px) {
-  max-width: 1024px; }

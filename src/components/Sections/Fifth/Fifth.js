@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade, Container, Row, Col } from 'reactstrap';
+import { Fade, Container } from 'reactstrap';
 
 import './Fifth.css';
 import Pricing from '../../UI/Pricing/Pricing';

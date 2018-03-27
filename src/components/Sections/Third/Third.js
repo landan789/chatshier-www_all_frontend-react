@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade, Container, Row, Col } from 'reactstrap';
+import { Fade } from 'reactstrap';
 
 import './Third.css';
 import ProductFeatures from '../../UI/ProductFeatures/ProductFeatures';

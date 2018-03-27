@@ -1,5 +1,4 @@
 import React from 'react';
-import { Fade, Button } from 'reactstrap';
 
 import './BlogPost.css';
 

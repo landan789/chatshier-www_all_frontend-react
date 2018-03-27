@@ -6,8 +6,7 @@
     flex-direction: column; }
   .Blog__header {
     text-align: center;
-    padding: 50px 0;
-    background-color: rgba(155, 232, 255, 0.721); }
+    padding: 50px 0; }
     .Blog__header h1, .Blog__header h4 {
       color: #4c4c4c;
       letter-spacing: 1.2px; }

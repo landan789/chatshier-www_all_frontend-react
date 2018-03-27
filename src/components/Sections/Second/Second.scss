@@ -26,17 +26,14 @@
     }
 
     .icon {
-        width: 96px;
-        height: 96px;
-        border-radius: 50%;
-        overflow: hidden;
+        width: 60px;
+        height: 60px;
         margin-bottom: 20px;
-        filter: drop-shadow( 4px 4px 5px rgb(205, 205, 205));
 
         img {
             width: 100%;
-            height: auto;
-            border-radius: 50%;
+            height: 100%;
+            border-radius: 0%;
             overflow: hidden;
         }
     }
@@ -78,21 +75,6 @@
 
             .col {
                 padding: 0
-            }
-        }
-    
-        .icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            overflow: hidden;
-            filter: drop-shadow( 4px 4px 5px rgb(205, 205, 205));
-    
-            img {
-                width: 100%;
-                height: auto;
-                border-radius: 50%;
-                overflow: hidden;
             }
         }
     
@@ -141,8 +123,8 @@
             .icon {
                 position: relative;
                 left: 0;
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
                 margin-bottom: 40px;
             }
         }
@@ -175,8 +157,8 @@
             .icon {
                 position: relative;
                 left: 0;
-                width: 100px;
-                height: 100px;
+                width: 90px;
+                height: 90px;
                 margin-bottom: 40px;
             }
         }

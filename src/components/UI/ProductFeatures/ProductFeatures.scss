@@ -115,16 +115,11 @@ p {
     }
 }
 
-@media (min-width: 1024px) {
-    .ProductFeatures {
-        
-    }
-}
 
 @media (min-width: 1400px) {
     .ProductFeatures {
         width: 100%;
-        height: 65vh;
+        min-height: 600px;
         padding: 5% 0;
         div {
             margin: 0;

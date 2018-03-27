@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import Aux from 'react-aux';
 import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import classnames from 'classnames';
@@ -27,6 +28,11 @@ class Terms extends Component {
     render() {
         return (
             <Aux>
+                <Helmet>
+                    <meta charSet="utf-8"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                    <title>Chatshier 服務與隱私條款</title>
+                </Helmet>
                 <Toolbar/>
                 <div className="Terms">
                     <div><h3>服務與隱私條款</h3></div>

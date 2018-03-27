@@ -7,7 +7,13 @@ import BlogPost from '../../components/UI/Blog/BlogPost/BlogPost';
 import './Blog.css';
 
 class Blog extends Component {
-
+    constructor() {
+        super();
+        this.state = {
+            posts: []
+        };
+    }
+    
     render() {
         return (
             <div className="Blog">

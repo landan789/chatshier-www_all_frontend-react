@@ -1,0 +1,45 @@
+.Contact {
+    &__body {
+        height: 100%;
+        padding: 3%;
+        .form {
+            color: #333;
+            margin: 25% auto;
+            padding: 10%;
+            height: auto;
+            border: 2px solid rgba(155, 232, 255, 0.721);
+            border-radius: 6px;
+
+            h3 {
+                margin: 5% 0;
+                letter-spacing: 1.2px
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(145, 188, 201);
+            }
+        }
+    }
+
+    &__submit {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .Contact {
+        &__body {
+            padding: 10%;
+            .form {
+                margin: auto;
+                padding: 5% 10%;
+                width: 50%;
+            }
+        }
+    }
+}

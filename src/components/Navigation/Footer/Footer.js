@@ -24,7 +24,7 @@ export default class Footer extends React.Component {
             <div className="Footer">
                 <h3>Make your customer<br/> happier with Chatshier.</h3>
                 <Button outline size="sm" color="info">馬上註冊</Button>{' '}
-                <Button outline size="sm" color="info">與我們聯繫</Button>{' '}
+                <Button outline size="sm" color="info" href="/contact">與我們聯繫</Button>{' '}
                 <div className="Footer__second">
                     <p><a href="/terms">服務條款  ·  隱私權條款</a></p>
                     <hr/>

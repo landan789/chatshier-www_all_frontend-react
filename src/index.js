@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Faq from './containers/Faq/Faq';
 import Blog from './containers/Blog/Blog';
 import Terms from './containers/Terms/Terms';
+import Contact from './containers/Contact/Contact';
 
 const routes = [
     {
@@ -31,6 +32,11 @@ const routes = [
     {
         path: ROUTES.TERMS,
         component: Terms,
+        exact: true
+    },
+    {
+        path: ROUTES.CONTACT,
+        component: Contact,
         exact: true
     }
 ];

@@ -35,13 +35,13 @@ export default class Example extends React.Component {
                                 <NavLink href="/faq">問與答</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">論壇</NavLink>
+                                <NavLink href="/blog">論壇</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">登入</NavLink>
+                                <NavLink href="/login">登入</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">註冊</NavLink>
+                                <NavLink href="/signup">註冊</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

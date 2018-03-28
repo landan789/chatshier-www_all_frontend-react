@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade, Container } from 'reactstrap';
+import { Fade } from 'reactstrap';
 
 import './ClientLogo.css';
 

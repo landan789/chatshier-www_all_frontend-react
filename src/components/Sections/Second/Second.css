@@ -3,7 +3,8 @@
   padding: 100px 3%;
   margin: 0;
   text-align: center;
-  letter-spacing: 1.2px; }
+  letter-spacing: 1.2px;
+  margin: 10% 0; }
   .Second img {
     width: 100%;
     height: auto; }
@@ -16,16 +17,13 @@
   .Second .row {
     align-items: center; }
   .Second .icon {
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 20px;
-    filter: drop-shadow(4px 4px 5px #cdcdcd); }
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px; }
     .Second .icon img {
       width: 100%;
-      height: auto;
-      border-radius: 50%;
+      height: 100%;
+      border-radius: 0%;
       overflow: hidden; }
   .Second .small-feature {
     min-height: 205px;
@@ -55,17 +53,6 @@
       margin: 0; }
       .Second .row .col {
         padding: 0; }
-    .Second .icon {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      overflow: hidden;
-      filter: drop-shadow(4px 4px 5px #cdcdcd); }
-      .Second .icon img {
-        width: 100%;
-        height: auto;
-        border-radius: 50%;
-        overflow: hidden; }
     .Second .small-feature {
       position: relative;
       min-height: 80px;
@@ -99,15 +86,15 @@
       .Second .small-feature .icon {
         position: relative;
         left: 0;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         margin-bottom: 40px; } }
 
 @media (min-width: 1240px) {
   .Second {
     max-width: 1024px;
-    padding: 100px 0;
-    margin: 0 auto;
+    padding: 15% 0;
+    margin: 0% auto;
     text-align: center; }
     .Second .small-features {
       max-width: 1024px;
@@ -125,6 +112,6 @@
       .Second .small-feature .icon {
         position: relative;
         left: 0;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         margin-bottom: 40px; } }

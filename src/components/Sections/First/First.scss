@@ -1,15 +1,17 @@
 .First {
+    position: relative;
     width: 100%;
     min-height: 450px;
     padding: 40% 3%;
     text-align: center;
     letter-spacing: 1px;
     position: relative;
-    background-position: center;
+    background-position: center 50%;
     background-repeat: no-repeat;
     background-size: cover;
     .btndesktopShow {
         display: none;
+        letter-spacing: 1.2px;
     }
 
     .btndesktopHide {
@@ -21,8 +23,11 @@
         width: 100%;
         height: auto;
     }
-    .container {
-        padding-top: 30%;
+    .content {
+        position: absolute;
+        z-index: 300;
+        left: 50%;
+        transform: translateX(-50%);
         text-align: center;
         h1 {
             filter: drop-shadow(2px 2px 3px #fff);
@@ -33,13 +38,18 @@
         }
     }
 
-    .row {
-        align-items: center;
-    }
-
     Button {
         position: relative;
         margin-left: 15px;
+    }
+    .mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 200;
+        background-color: rgba(155, 232, 255, 0.421);
     }
 }
 
@@ -49,7 +59,9 @@
         margin: 0;
         text-align: left;
         letter-spacing: 1.5px;
-    
+        .content {
+            top: 30%;
+        }
         
         img {
             width: 100%;
@@ -58,10 +70,6 @@
         
         p {
             font-weight: 300;
-        }
-    
-        .row {
-            align-items: center;
         }
     }
 }
@@ -72,12 +80,10 @@
         margin: 0;
         text-align: left;
         letter-spacing: 1.5px;
-    
-        .container {
-            padding-top: 20%;
-            text-align: left;
-        }
 
+        .content {
+            top: 40%;
+        }
         img {
             width: 100%;
             height: auto;
@@ -86,28 +92,22 @@
         p {
             font-weight: 300;
         }
-    
-        .row {
-            align-items: center;
-            width: 100%;
-        }
-        .btndesktopShow {
-            display: block;
-            margin-left: 0;
-        }
-    
-        .btndesktopHide {
-            display: none;
-        }
     }
 }
 
 @media (min-width: 1240px) {
     .First {
-        .container {
+        min-height: 500px;
+        .content {
             max-width: 1024px;
-            padding: 20% 0 10% 0;
-            box-sizing: border-box;
+        }
+        .btndesktopShow {
+            display: block;
+            margin: auto;
+        }
+    
+        .btndesktopHide {
+            display: none;
         }
     }
 }

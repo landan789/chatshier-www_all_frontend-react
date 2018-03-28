@@ -27,7 +27,7 @@
 @media (min-width: 1024px) {
   .Third {
     padding: 100px 0;
-    max-width: 1960px; } }
+    max-width: 1024px; } }
 
 @media (min-width: 1400px) {
   .Third .features .desktop {

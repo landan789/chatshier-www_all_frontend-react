@@ -9,6 +9,8 @@ import registerServiceWorker from './registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import Faq from './containers/Faq/Faq';
+import Blog from './containers/Blog/Blog';
+import Terms from './containers/Terms/Terms';
 
 const routes = [
     {
@@ -19,6 +21,16 @@ const routes = [
     {
         path: ROUTES.FAQ,
         component: Faq,
+        exact: true
+    },
+    {
+        path: ROUTES.BLOG,
+        component: Blog,
+        exact: true
+    },
+    {
+        path: ROUTES.TERMS,
+        component: Terms,
         exact: true
     }
 ];

@@ -25,12 +25,27 @@
       .ProductFeatures .content ul li:before {
         content: ' - ';
         margin-left: 0px; }
+    .ProductFeatures .content .button-case a {
+      text-decoration: none; }
+    .ProductFeatures .content .button-case div {
+      width: fit-content;
+      padding: 10px 14px;
+      border-radius: 3px;
+      background-color: rgba(155, 232, 255, 0.721);
+      font-size: 14px;
+      color: #484848;
+      box-shadow: 2px 4px 10px #cecece; }
+    .ProductFeatures .content .button-case div:hover {
+      cursor: pointer;
+      background-color: #9be8ff;
+      transform: translateY(4%);
+      box-shadow: 2px 4px 5px #cecece; }
   .ProductFeatures .desktop {
-    width: 100%;
-    height: 200px;
-    background-position: center;
+    width: 100vw;
+    height: 300px;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: contain; }
   .ProductFeatures .button-case {
     position: relative;
     width: 100%;
@@ -44,44 +59,35 @@ p {
   font-size: 14px; }
 
 @media (min-width: 700px) {
+  .ProductFeatures .desktop {
+    min-height: 370px;
+    background-position: contain; } }
+
+@media (min-width: 1024px) {
   .ProductFeatures {
     width: 100%;
-    height: 45vh;
-    padding: 0;
-    margin: 100px 0;
     display: flex;
-    align-items: center;
-    flex-direction: row; }
+    padding: 5%;
+    margin: 0 auto; }
     .ProductFeatures div {
       margin: 0;
-      padding: 0;
-      flex-basis: 50%; }
+      flex: 1; }
     .ProductFeatures .desktop {
-      height: 100%;
-      overflow: hidden; }
+      width: 100%;
+      height: 265px; }
     .ProductFeatures .content {
-      padding: 0 2% 0 5%;
-      text-align: left; }
-      .ProductFeatures .content h5 {
-        width: fit-content;
-        line-height: 40px;
-        letter-spacing: 1.5px;
-        margin-bottom: 10px;
-        border-bottom: 2px solid rgba(155, 232, 255, 0.721); }
-      .ProductFeatures .content p {
-        font-weight: 400;
-        font-size: 1rem;
-        color: rgba(51, 51, 51, 0.8); }
-      .ProductFeatures .content ul li {
-        font-size: .8rem; }
+      padding: 0 3%;
+      margin-top: 0;
+      align-self: center; }
   .ProductFeatures:nth-child(odd) {
     flex-direction: row-reverse; } }
 
 @media (min-width: 1400px) {
   .ProductFeatures {
-    width: 100%;
-    min-height: 600px;
-    padding: 5% 0;
+    padding: 12% 0;
     margin: 0 auto; }
-    .ProductFeatures div {
-      margin: 0; } }
+    .ProductFeatures .desktop {
+      width: 100%;
+      flex-grow: 2; }
+    .ProductFeatures .content {
+      padding: 0 5%; } }

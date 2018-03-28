@@ -10,14 +10,6 @@
     li {
         font-size: 0.75rem;
     }
-
-    .features {
-        .desktop {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
 }
 
 @media (min-width: 700px) {
@@ -36,7 +28,6 @@
 
 @media (min-width: 1024px) {
     .Third {
-        padding: 100px 0;
         max-width: 1024px;
     }
 }

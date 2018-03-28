@@ -3,10 +3,10 @@ import { Fade } from 'reactstrap';
 
 import './Third.css';
 import ProductFeatures from '../../UI/ProductFeatures/ProductFeatures';
-import channelImg from '../../../assets/images/banners/channels-by-ryoji-iwata.jpg';
-import platformImg from '../../../assets/images/banners/platform-tim-bennett.jpg';
-import taskImg from '../../../assets/images/banners/task-by-kelly-sikkema.jpg';
-import dataImg from '../../../assets/images/banners/data-by-olu-eletu.jpg';
+import channelImg from '../../../assets/images/appUI/groupchat.jpg';
+import platformImg from '../../../assets/images/appUI/chatroom.jpg';
+import taskImg from '../../../assets/images/appUI/todo-list.jpg';
+import dataImg from '../../../assets/images/appUI/chart.jpg';
 
 const Third = (props) => {
     return (

@@ -79,3 +79,7 @@
       margin: auto; }
     .First .btndesktopHide {
       display: none; } }
+
+@media (min-width: 1400px) {
+  .First {
+    min-height: 700px; } }

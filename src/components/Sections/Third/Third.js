@@ -16,7 +16,7 @@ const Third = (props) => {
                 <ProductFeatures
                     title={'整合客服工作站'}
                     description={'接入Facebook、Line、Wechat 等通訊平台，讓Chatshier 成為你客服唯一的工作台。'}
-                    cta={'了解更多'}
+                    cta={'設定方式'}
                     image={platformImg}>
                     <li>跨平台訊息不露接，減輕客服運營負擔</li>
                     <li>機器人即時接洽，客戶體驗零時差</li>

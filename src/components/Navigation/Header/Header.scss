@@ -3,6 +3,12 @@
         padding: 1% 0;
         box-sizing: border-box;
     }
+    .navbar-brand {
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        color: rgb(79, 79, 79) !important;
+    }
     li {
         letter-spacing: 1.2px;
         transition: all .3s ease-in-out;

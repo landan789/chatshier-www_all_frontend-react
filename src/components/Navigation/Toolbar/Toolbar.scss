@@ -7,6 +7,10 @@
     &:hover {
         transition: all .2s ease-in-out;
     }
+
+    .SocialMedia{
+        filter: none;
+    }
 }
 
 @media (min-width: 580px) {
@@ -26,5 +30,9 @@
         left: 0;
         right: 0;
         z-index: 999;
+
+        .SocialMedia{
+            filter: none;
+        }
     }
 }

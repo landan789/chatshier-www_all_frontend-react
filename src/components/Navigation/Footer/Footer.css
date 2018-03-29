@@ -28,3 +28,5 @@
   .Footer Button {
     display: flex;
     margin: 10px auto; }
+  .Footer .hidden {
+    display: none; }

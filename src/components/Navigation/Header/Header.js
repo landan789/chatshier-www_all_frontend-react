@@ -1,5 +1,4 @@
 import React from 'react';
-import cookie from 'react-cookie';
 import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse } from 'reactstrap';
 import urlConfig from '../../../config/url-config';
 
@@ -15,24 +14,15 @@ let signinUrl = url + urlConfig.signin;
 let signupUrl = url + urlConfig.signup;
 let chatUrl = url + urlConfig.chat;
 
-// let name = cookie.load('name');
-// let email = cookie.load('email');
+const getCookie = (name) => {
+    let cookieValues = '; ' + document.cookie;
+    let parts = cookieValues.split('; ' + name + '=');
 
-// if ('' !== name && '' !== email) {
-//     document.getElementById('#login').addClass('hidden');
-//     document.getElementById('#nav-signup').addClass('hidden');
-//     document.getElementById('#chat').removeClass('hidden');
-//     document.getElementById('#dropdown-user').removeClass('hidden');
-//     document.getElementById('#name').html('');
-//     document.getElementById('#email').html('');
-//     document.getElementById('#name').html(name);
-//     document.getElementById('#email').html(email);
-// } else {
-//     document.getElementById('#login').removeClass('hidden');
-//     document.getElementById('#nav-signup').removeClass('hidden');
-//     document.getElementById('#chat').addClass('hidden');
-//     document.getElementById('#dropdown-user').addClass('hidden');
-// }
+    if (parts.length >= 2) {
+        return unescape(parts.pop().split(';').shift());
+    }
+    return '';
+};
 
 export default class Example extends React.Component {
     constructor(props) {
@@ -40,9 +30,20 @@ export default class Example extends React.Component {
 
         this.toggle = this.toggle.bind(this);
         this.state = {
+            isSignedin: false,
             isOpen: false
         };
     }
+
+    componentWillMount() {
+        let name = getCookie('_chsr_username');
+        let email = getCookie('_chsr_email');
+
+        let isSignedin = !!(name && email);
+        console.log('isSignedin: ' + isSignedin);
+        this.setState({ isSignedin: isSignedin });
+    }
+
     toggle() {
         this.setState({
             isOpen: !this.state.isOpen
@@ -68,14 +69,14 @@ export default class Example extends React.Component {
                             <NavItem>
                                 <NavLink href="https://medium.com/@chatshier" target="_blank">論壇</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink id="chat" href={chatUrl}>系統</NavLink>
+                            <NavItem id="chat" className={this.state.isSignedin ? '' : 'hidden'}>
+                                <NavLink href={chatUrl}>系統</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink id="signin" href={signinUrl}>登入</NavLink>
+                            <NavItem className={this.state.isSignedin ? 'hidden' : ''}>
+                                <NavLink href={signinUrl}>登入</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink id="signup" href={signupUrl}>註冊</NavLink>
+                            <NavItem className={this.state.isSignedin ? 'hidden' : ''}>
+                                <NavLink href={signupUrl}>註冊</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

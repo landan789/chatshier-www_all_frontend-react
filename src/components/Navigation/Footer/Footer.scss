@@ -42,9 +42,7 @@
         display: flex;
         margin: 10px auto;
     }
-}
-
-@media (min-width: 1240px) {
-    .Footer {
+    .hidden {
+        display: none;
     }
 }

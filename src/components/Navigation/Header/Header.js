@@ -1,7 +1,18 @@
 import React from 'react';
 import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse } from 'reactstrap';
+import urlConfig from '../../../config/url-config';
 
 import './Header.css';
+
+// ex: wwww.dev.chatshier.com ->  service.dev.chatshier.com
+let serviceUrl = urlConfig.serviceUrl ? urlConfig.serviceUrl : document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');
+serviceUrl += urlConfig.port ? ':' + urlConfig.port : '';
+
+urlConfig.serviceUrl = urlConfig.serviceUrl.replace(/^https?:\/\//i, '');
+let url = 'http://' + (urlConfig.serviceUrl ? (urlConfig.serviceUrl + (!urlConfig.port ? '' : ':' + urlConfig.port)) : serviceUrl);
+let loginUrl = url + urlConfig.login;
+let signupUrl = url + urlConfig.signup;
+// let chatUrl = url + urlConfig.chat;
 
 export default class Example extends React.Component {
     constructor(props) {
@@ -38,10 +49,10 @@ export default class Example extends React.Component {
                                 <NavLink href="https://medium.com/@chatshier" target="_blank">論壇</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/login">登入</NavLink>
+                                <NavLink href={loginUrl}>登入</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/signup">註冊</NavLink>
+                                <NavLink href={signupUrl}>註冊</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

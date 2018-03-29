@@ -32,10 +32,10 @@ export default class Example extends React.Component {
                                 <NavLink href="/#features">功能</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/faq">問與答</NavLink>
+                                <NavLink href="/faq" target="_blank">問與答</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/blog">論壇</NavLink>
+                                <NavLink href="https://medium.com/@chatshier" target="_blank">論壇</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/login">登入</NavLink>

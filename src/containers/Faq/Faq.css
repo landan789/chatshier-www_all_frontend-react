@@ -21,6 +21,10 @@
       font-weight: 300; }
       .Faq .row .card .card-text ul {
         list-style: none; }
+      .Faq .row .card .card-text a {
+        text-decoration: none;
+        display: block;
+        transform: translateY(10px); }
 
 @media (min-width: 1240px) {
   .Faq {

@@ -33,6 +33,12 @@
                 ul {
                     list-style: none;
                 }
+
+                a {
+                    text-decoration: none;
+                    display: block;
+                    transform: translateY(10px);
+                }
             }
         }
     }

@@ -75,7 +75,7 @@ class Faq extends Component {
                                 <Col sm="6" className="col_margin">
                                     <Card body>
                                         <CardTitle>使用Chatshier 需要安裝特定軟體嗎？</CardTitle>
-                                        <CardText>您並不需要安裝任何軟體，皆可使用各種瀏覽器進入， Chatshier 頁面， 第一次登入時，依照各種通訊軟體完成設定即可使用。</CardText>
+                                        <CardText>您並不需要安裝任何軟體，皆可使用各種瀏覽器進入， Chatshier 頁面， 第一次登入時，依照各種通訊軟體完成設定即可使用。<a href="https://medium.com/@chatshier/%E8%A8%8A%E6%81%AF%E4%B8%B2%E6%8E%A5%E8%A8%AD%E5%AE%9A-e112254e25f5" target="_blank">如何串接Line及Facebook服務？</a></CardText>
                                     </Card>
                                 </Col>
                             </Row>

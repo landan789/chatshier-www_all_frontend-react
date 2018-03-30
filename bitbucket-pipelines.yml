@@ -15,7 +15,7 @@ pipelines:
       - step:
           script:
             - npm install -g firebase-tools
-            - firebase user dev-chatshier --token ${FIREBASE_DEV_TOKEN}
+            - firebase use dev-chatshier --token ${FIREBASE_DEV_TOKEN}
             - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
             - echo "[SUCCEEDED] develop has been deployed."
     release:

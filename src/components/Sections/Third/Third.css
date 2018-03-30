@@ -1,0 +1,31 @@
+.Third {
+  width: 100%;
+  padding: 100px 0;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1.2px;
+  background-color: #ffffff;
+  box-sizing: border-box; }
+  .Third li {
+    font-size: 0.75rem; }
+
+@media (min-width: 700px) {
+  .Third {
+    padding: 100px 0;
+    margin: auto; }
+    .Third .features {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: auto; } }
+
+@media (min-width: 1024px) {
+  .Third {
+    max-width: 1024px; } }
+
+@media (min-width: 1400px) {
+  .Third .features .desktop {
+    transition: all .3s ease-in-out; }
+  .Third .features .desktop:hover {
+    transform: scale(1.05); } }

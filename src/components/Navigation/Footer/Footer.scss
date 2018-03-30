@@ -1,0 +1,48 @@
+.Footer {
+    width: 100%;
+    padding: 50px 5% 3% 5%;
+    background-color: rgba(155, 232, 255, 0.721);
+    color: #333;
+    letter-spacing: 1px;
+    text-align: center;
+
+    &__second {
+        margin-top: 36px;
+        font-size: 10px;
+        letter-spacing: 1px;
+        font-weight: 100;
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            text-decoration: none;
+            filter: drop-shadow(1px 4px 5px #cecece);
+        }
+    
+        span {
+            font-size: 10px;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        hr {
+            margin: 10px 0;
+        }
+    }
+
+    h3 {
+        padding: 0 5%;
+        margin-bottom: 36px;
+    }
+
+    Button {
+        display: flex;
+        margin: 10px auto;
+    }
+    .hidden {
+        display: none;
+    }
+}

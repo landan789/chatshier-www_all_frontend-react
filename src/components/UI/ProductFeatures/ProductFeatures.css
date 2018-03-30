@@ -1,0 +1,93 @@
+.ProductFeatures {
+  text-align: center;
+  letter-spacing: 1.2px;
+  padding: 10% 0%;
+  margin: 20px 0;
+  border-radius: 4px;
+  box-sizing: border-box; }
+  .ProductFeatures div {
+    flex: 1;
+    flex-grow: 1; }
+  .ProductFeatures .content {
+    padding: 0 15%;
+    margin-top: 5%; }
+    .ProductFeatures .content p {
+      font-weight: 300; }
+    .ProductFeatures .content ul {
+      list-style: none;
+      padding: 0;
+      font-weight: 300;
+      letter-spacing: 1px;
+      font-size: 14px;
+      margin-bottom: 20px; }
+      .ProductFeatures .content ul li {
+        text-align: left; }
+      .ProductFeatures .content ul li:before {
+        content: ' - ';
+        margin-left: 0px; }
+    .ProductFeatures .content .button-case a {
+      text-decoration: none; }
+    .ProductFeatures .content .button-case div {
+      width: fit-content;
+      padding: 10px 14px;
+      border-radius: 3px;
+      background-color: rgba(155, 232, 255, 0.721);
+      font-size: 14px;
+      color: #484848;
+      box-shadow: 2px 4px 10px #cecece; }
+    .ProductFeatures .content .button-case div:hover {
+      cursor: pointer;
+      background-color: #9be8ff;
+      transform: translateY(4%);
+      box-shadow: 2px 4px 5px #cecece; }
+  .ProductFeatures .desktop {
+    width: 100vw;
+    height: 300px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .ProductFeatures .button-case {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    min-height: 40px; }
+  .ProductFeatures Button {
+    left: 0;
+    position: absolute; }
+
+p {
+  font-size: 14px; }
+
+@media (min-width: 700px) {
+  .ProductFeatures .desktop {
+    min-height: 370px;
+    background-position: contain; } }
+
+@media (min-width: 1024px) {
+  .ProductFeatures {
+    width: 100%;
+    display: flex;
+    padding: 5%;
+    margin: 0 auto; }
+    .ProductFeatures div {
+      margin: 0;
+      flex: 1; }
+    .ProductFeatures .desktop {
+      width: 100%;
+      height: 265px; }
+    .ProductFeatures .content {
+      padding: 0 3%;
+      margin-top: 0;
+      align-self: center; }
+  .ProductFeatures:nth-child(odd) {
+    flex-direction: row-reverse; } }
+
+@media (min-width: 1400px) {
+  .ProductFeatures {
+    padding: 12% 0;
+    margin: 0 auto; }
+    .ProductFeatures .desktop {
+      width: 100%;
+      flex-grow: 2; }
+    .ProductFeatures .content {
+      padding: 0 5%; } }

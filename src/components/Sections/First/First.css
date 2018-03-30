@@ -1,0 +1,85 @@
+.First {
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+  padding: 40% 3%;
+  text-align: center;
+  letter-spacing: 1px;
+  position: relative;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .First .btndesktopShow {
+    display: none;
+    letter-spacing: 1.2px; }
+  .First .btndesktopHide {
+    display: block;
+    margin: auto; }
+  .First img {
+    width: 100%;
+    height: auto; }
+  .First .content {
+    position: absolute;
+    z-index: 300;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; }
+    .First .content h1 {
+      filter: drop-shadow(2px 2px 3px #fff); }
+    .First .content p {
+      font-weight: 300;
+      filter: drop-shadow(2px 2px 3px #fff); }
+  .First Button {
+    position: relative;
+    margin-left: 15px; }
+  .First .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background-color: rgba(155, 232, 255, 0.421); }
+
+@media (min-width: 580px) {
+  .First {
+    padding: 0 15%;
+    margin: 0;
+    text-align: left;
+    letter-spacing: 1.5px; }
+    .First .content {
+      top: 30%; }
+    .First img {
+      width: 100%;
+      height: auto; }
+    .First p {
+      font-weight: 300; } }
+
+@media (min-width: 760px) {
+  .First {
+    padding: 0 5%;
+    margin: 0;
+    text-align: left;
+    letter-spacing: 1.5px; }
+    .First .content {
+      top: 40%; }
+    .First img {
+      width: 100%;
+      height: auto; }
+    .First p {
+      font-weight: 300; } }
+
+@media (min-width: 1240px) {
+  .First {
+    min-height: 500px; }
+    .First .content {
+      max-width: 1024px; }
+    .First .btndesktopShow {
+      display: block;
+      margin: auto; }
+    .First .btndesktopHide {
+      display: none; } }
+
+@media (min-width: 1400px) {
+  .First {
+    min-height: 700px; } }

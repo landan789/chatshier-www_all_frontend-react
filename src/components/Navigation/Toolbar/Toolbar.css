@@ -1,0 +1,27 @@
+.Toolbar {
+  width: 100%;
+  padding: 0 1%;
+  transition: all .2s ease-in-out;
+  background-color: rgba(155, 232, 255, 0.721); }
+  .Toolbar:hover {
+    transition: all .2s ease-in-out; }
+  .Toolbar .SocialMedia {
+    filter: none; }
+
+@media (min-width: 580px) {
+  .Toolbar {
+    padding: 0 5%; } }
+
+@media (min-width: 760px) {
+  .Toolbar {
+    width: 100%;
+    padding: 0 5%;
+    position: fixed;
+    background-color: rgba(155, 232, 255, 0.721);
+    filter: drop-shadow(0 3px 5px #e6e6e6);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; }
+    .Toolbar .SocialMedia {
+      filter: none; } }

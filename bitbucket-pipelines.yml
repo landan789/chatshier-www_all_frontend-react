@@ -3,13 +3,27 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: node:6.9.4
+image: node:8.10.0
 
-pipelines:
-  default:
-    - step:
-        caches:
-          - node
-        script: # Modify the commands below to build your repository.
-          - npm install
-          - npm test
+pipelines:  
+  branches:
+    default:
+      - step:
+          script:
+            - rm -Rf ~/.ssh/known_host
+    develop:
+      - step:
+          script:
+            - npm install -g firebase-tools
+            - firebase user dev-chatshier --token ${FIREBASE_DEV_TOKEN}
+            - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
+            - echo "[SUCCEEDED] develop has been deployed."
+    release:
+      - step:
+          script:
+            - echo "[SUCCEEDED] release has been deployed."
+    master:
+      - step:
+          script:
+            - echo "[SUCCEEDED] master has been deployed."
+

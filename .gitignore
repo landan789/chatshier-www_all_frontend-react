@@ -2,3 +2,4 @@
 /config/url-config.js
 debug.log
 /node_modules
+/build

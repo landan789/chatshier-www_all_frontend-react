@@ -39,7 +39,7 @@ export default class Example extends React.Component {
         let name = getCookie('_chsr_username');
         let email = getCookie('_chsr_email');
 
-        let isSignedin = !!(name && email);
+        let isSignedin = !(name && email);
         console.log('isSignedin: ' + isSignedin);
         this.setState({ isSignedin: isSignedin });
     }

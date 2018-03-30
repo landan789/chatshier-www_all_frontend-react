@@ -1,16 +1,34 @@
 import React, { Component } from 'react';
-import { Container, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import Footer from '../../components/Navigation/Footer/Footer';
 
 import './Contact.css';
 
 class Contact extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            
+            name: '',
+            select: ''
         };
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(event) {
+        const target = event.target;
+        const value = 'checkbox' === target.type ? target.checked : target.value;
+        const name = target.name;
+        this.setState({
+            [name]: value
+        });
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+        alert('訊息寄送成功，我們將盡快與你聯繫！');
     }
     
     render() {
@@ -20,10 +38,16 @@ class Contact extends Component {
                 <div className="Contact__body">
                     <div className="form">
                         <h3>與我們聯繫</h3>
-                        <Form>
+                        <Form onSubmit={this.handleSubmit}>
                             <FormGroup>
                                 <Label for="name">姓名</Label>
-                                <Input type="input" name="text" id="name" placeholder="(必填)" />
+                                <Input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    value={this.state.name}
+                                    onChange={this.handleChange}
+                                    placeholder="(必填)" />
                             </FormGroup>
                             <FormGroup>
                                 <Label for="email">Email</Label>
@@ -31,12 +55,17 @@ class Contact extends Component {
                             </FormGroup>
                             <FormGroup>
                                 <Label for="exampleSelect">主題</Label>
-                                <Input type="select" name="select" id="exampleSelect">
-                                    <option>報價詢問</option>
-                                    <option>媒體合作</option>
-                                    <option>網頁回饋</option>
-                                    <option>技術協助</option>
-                                    <option>其他</option>
+                                <Input
+                                    type="select"
+                                    name="select"
+                                    id="exampleSelect"
+                                    value={this.state.select}
+                                    onChange={this.handleChange}>
+                                    <option value="報價詢問">報價詢問</option>
+                                    <option value="媒體合作">媒體合作</option>
+                                    <option value="網頁回饋">網頁回饋</option>
+                                    <option value="技術協助">技術協助</option>
+                                    <option value="其他">其他</option>
                                 </Input>
                             </FormGroup>
                             <FormGroup>
@@ -49,8 +78,13 @@ class Contact extends Component {
                                     我同意 Chatshier <a href="/terms">Service &amp; Terms</a>.
                                 </Label>
                             </FormGroup>
-                            <Button outline color="info" className="Contact__submit">送出</Button>
-                        </Form> 
+                            <Button
+                                outline
+                                color="info"
+                                className="Contact__submit"
+                                type="submit"
+                                value="Submit">送出</Button>
+                        </Form>
                     </div>
                 </div>
                 <Footer />

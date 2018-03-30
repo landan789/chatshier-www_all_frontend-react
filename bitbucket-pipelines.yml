@@ -16,7 +16,7 @@ pipelines:
           script:
             - npm install -g firebase-tools
             - npm install
-            - unset CI
+            - unset CI # clear the node evironment 'CI' in Docker  
             - npm run build
             - firebase use dev-chatshier --token ${FIREBASE_DEV_TOKEN}
             - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}

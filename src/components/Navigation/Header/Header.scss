@@ -10,6 +10,7 @@
         color: rgb(79, 79, 79) !important;
     }
     li {
+        align-self: center;
         letter-spacing: 1.2px;
         transition: all .3s ease-in-out;
         box-sizing: border-box;
@@ -18,9 +19,9 @@
 
     li:hover,
     li:active {
-        border-bottom: 2px solid black;
-        
+        border-bottom: 2px solid black; 
     }
+
     .hidden {
         display: none;
     }
@@ -50,5 +51,32 @@
         max-width: 1024px;
         margin: auto;
         padding: 0;
+
+        &__userAvatar {
+            width: 32px;
+            height: 32px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        #Header__userAvatar {
+            border: 0;
+        }
+
+        #Header__userAvatar:hover {
+            border: 0;
+            cursor: pointer;
+        }
+
+        #dropdownMenu {
+            font-weight: 300;
+            button {
+                letter-spacing: 1.2px;
+                font-size: .8rem;
+            }
+            &.show {
+                transform: translate3d(0px, 50px, 0px) !important;
+            }
+        }
     }
 }

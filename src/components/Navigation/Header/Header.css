@@ -9,6 +9,7 @@
   color: #4f4f4f !important; }
 
 .Header li {
+  align-self: center;
   letter-spacing: 1.2px;
   transition: all .3s ease-in-out;
   box-sizing: border-box;
@@ -41,4 +42,21 @@
   .Header {
     max-width: 1024px;
     margin: auto;
-    padding: 0; } }
+    padding: 0; }
+    .Header__userAvatar {
+      width: 32px;
+      height: 32px;
+      background-color: #fff;
+      border-radius: 50%; }
+    .Header #Header__userAvatar {
+      border: 0; }
+    .Header #Header__userAvatar:hover {
+      border: 0;
+      cursor: pointer; }
+    .Header #dropdownMenu {
+      font-weight: 300; }
+      .Header #dropdownMenu button {
+        letter-spacing: 1.2px;
+        font-size: .8rem; }
+      .Header #dropdownMenu.show {
+        transform: translate3d(0px, 50px, 0px) !important; } }

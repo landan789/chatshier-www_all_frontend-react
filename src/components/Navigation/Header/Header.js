@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse, Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
+import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse, UncontrolledDropdown, Dropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
 import urlConfig from '../../../config/url-config';
 
 import './Header.css';
@@ -49,6 +49,7 @@ export default class Example extends React.Component {
             isOpen: !this.state.isOpen
         });
     }
+
     render() {
         return (
             <div className="Header">
@@ -78,22 +79,19 @@ export default class Example extends React.Component {
                             <NavItem className={this.state.isSignedin ? 'hidden' : ''}>
                                 <NavLink href={signupUrl}>註冊</NavLink>
                             </NavItem>
-                            <NavItem>
+                            <NavItem 
+                                id="Header__userAvatar" 
+                                className={this.state.isSignedin ? '' : 'hidden'}>
                                 <NavLink>
-                                    <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                                        <DropdownToggle
-                                            tag="span"
-                                            onClick={this.toggle}
-                                            data-toggle="dropdown"
-                                            aria-expanded={this.state.dropdownOpen}>
-                                        Custom Dropdown Content</DropdownToggle>
-                                        <DropdownMenu>
-                                            <div onClick={this.toggle}>Custom dropdown item</div>
-                                            <div onClick={this.toggle}>Custom dropdown item</div>
-                                            <div onClick={this.toggle}>Custom dropdown item</div>
-                                            <div onClick={this.toggle}>Custom dropdown item</div>
+                                    <UncontrolledDropdown>
+                                        <DropdownToggle tag="span">
+                                            <div className="Header__userAvatar"></div>
+                                        </DropdownToggle>
+                                        <DropdownMenu id="dropdownMenu">
+                                            <DropdownItem>Hi, Username 您好！</DropdownItem>
+                                            <DropdownItem>登出</DropdownItem>
                                         </DropdownMenu>
-                                    </Dropdown>
+                                    </UncontrolledDropdown>
                                 </NavLink>
                             </NavItem>
                         </Nav>

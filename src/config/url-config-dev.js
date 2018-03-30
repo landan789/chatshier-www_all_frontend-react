@@ -1,6 +1,6 @@
 const urlConfig = {
     serviceUrl: '',
-    port: '3002',
+    port: '',
     login: '/signin',
     signup: '/signup',
     chat: '/chat'

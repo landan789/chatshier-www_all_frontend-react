@@ -10,7 +10,7 @@ serviceUrl += urlConfig.port ? ':' + urlConfig.port : '';
 
 urlConfig.serviceUrl = urlConfig.serviceUrl.replace(/^https?:\/\//i, '');
 let url = 'http://' + (urlConfig.serviceUrl ? (urlConfig.serviceUrl + (!urlConfig.port ? '' : ':' + urlConfig.port)) : serviceUrl);
-let signinUrl = url + urlConfig.signin;
+let signinUrl = url + urlConfig.login;
 let signupUrl = url + urlConfig.signup;
 let chatUrl = url + urlConfig.chat;
 

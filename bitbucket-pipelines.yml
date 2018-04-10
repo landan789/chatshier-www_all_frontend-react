@@ -25,6 +25,13 @@ pipelines:
     release:
       - step:
           script:
+            - npm install -g firebase-tools
+            - npm install
+            - unset CI # clear the node evironment 'CI' in Docker  
+            - cp src/config/url-config-dev.js src/config/url-config.js
+            - npm run build
+            - firebase use rel-chatshier --token ${FIREBASE_REL_TOKEN}
+            - firebase deploy --only hosting --token ${FIREBASE_REL_TOKEN}
             - echo "[SUCCEEDED] release has been deployed."
     master:
       - step:

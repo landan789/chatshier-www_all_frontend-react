@@ -57,7 +57,7 @@ export default class Footer extends React.Component {
                     color="info" 
                     href={signupUrl}
                     className={this.state.isSignedin ? 'hidden' : ''}>馬上註冊</Button>{' '}
-                <Button outline size="sm" color="info" href="https://9thflrrd.typeform.com/to/c7Q8yS">與我們聯繫</Button>{' '}
+                <Button outline size="sm" color="info" href="https://chatshier.typeform.com/to/c7Q8yS" target="_blank">與我們聯繫</Button>{' '}
                 <div className="Footer__second">
                     <p><a href="/terms" target="_blank">服務條款  ·  隱私權條款</a></p>
                     <hr/>

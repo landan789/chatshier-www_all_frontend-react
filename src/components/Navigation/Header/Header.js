@@ -4,6 +4,9 @@ import urlConfig from '../../../config/url-config';
 
 import './Header.css';
 
+// Before we develop the feature for users to upload their own pictures for avatar, we use Chatshier logo as default picture.
+import chatshierLogo from '../../../assets/images/logos/chatshier_logo.png';
+
 // ex: wwww.dev.chatshier.com ->  service.dev.chatshier.com
 let serviceUrl = urlConfig.serviceUrl ? urlConfig.serviceUrl : document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');
 serviceUrl += urlConfig.port ? ':' + urlConfig.port : '';
@@ -23,6 +26,8 @@ const getCookie = (name) => {
     }
     return '';
 };
+
+let userName = getCookie('_chsr_username');
 
 export default class Example extends React.Component {
     constructor(props) {
@@ -79,16 +84,16 @@ export default class Example extends React.Component {
                             <NavItem className={this.state.isSignedin ? 'hidden' : ''}>
                                 <NavLink href={signupUrl}>註冊</NavLink>
                             </NavItem>
-                            <NavItem 
-                                id="Header__userAvatar" 
+                            <NavItem
+                                id="Header__userAvatar"
                                 className={this.state.isSignedin ? '' : 'hidden'}>
                                 <NavLink>
                                     <UncontrolledDropdown>
                                         <DropdownToggle tag="span">
-                                            <div className="Header__userAvatar"></div>
+                                            <div className="Header__userAvatar"><img src={chatshierLogo} alt="userAvatar"/></div>
                                         </DropdownToggle>
                                         <DropdownMenu id="dropdownMenu">
-                                            <DropdownItem>Hi, Username 您好！</DropdownItem>
+                                            <DropdownItem>Hi, {userName} 您好！</DropdownItem>
                                             <DropdownItem>登出</DropdownItem>
                                         </DropdownMenu>
                                     </UncontrolledDropdown>

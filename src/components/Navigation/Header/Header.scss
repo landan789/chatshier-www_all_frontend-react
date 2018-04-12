@@ -32,6 +32,7 @@
         border-radius: 4px;
         background-color: rgba(255, 255, 255, .85);
         margin-left: 10px;
+        margin-right: 10px;
         border-bottom: none;
     }
 
@@ -57,6 +58,11 @@
             height: 32px;
             background-color: #fff;
             border-radius: 50%;
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
         }
 
         #Header__userAvatar {

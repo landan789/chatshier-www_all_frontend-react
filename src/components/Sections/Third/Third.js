@@ -18,7 +18,7 @@ const Third = (props) => {
                     description={'接入Facebook、Line、Wechat 等通訊平台，讓Chatshier 成為你客服唯一的工作台。'}
                     cta={'設定方式'}
                     image={platformImg}>
-                    <li>跨平台訊息不露接，減輕客服運營負擔</li>
+                    <li>跨平台訊息不漏接，減輕客服運營負擔</li>
                     <li>機器人即時接洽，客戶體驗零時差</li>
                     <li>內部溝通功能，客服專員無縫協作</li>
                 </ProductFeatures>

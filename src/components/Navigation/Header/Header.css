@@ -39,6 +39,16 @@
   .Header #chat:hover a {
     border-bottom: none; }
 
+.Header__userAvatar {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%; }
+  .Header__userAvatar img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; }
+
 @media (min-width: 1240px) {
   .Header {
     max-width: 1024px;

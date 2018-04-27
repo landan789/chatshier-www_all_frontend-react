@@ -11,8 +11,8 @@ var loginUrl = url + urlConfig.login;
 var signupUrl = url + urlConfig.signup;
 var chatUrl = url + urlConfig.chat;
 
-var name = getCookie('name');
-var email = getCookie('email');
+var name = getCookie('_chsr_username');
+var email = getCookie('_chsr_email');
 
 if( '' !== name && '' !== email){
   $('#login').addClass('hidden');

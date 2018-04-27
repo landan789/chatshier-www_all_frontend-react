@@ -5,7 +5,7 @@ function getCookie(cName) {
             cStart = cStart + cName.length + 1
             cEnd = document.cookie.indexOf(";", cStart)
             if (cEnd == -1) cEnd = document.cookie.length
-            return unescape(document.cookie.substring(cStart, cEnd))
+            return unescape(decodeURIComponent(document.cookie.substring(cStart, cEnd)))
         }
     }
     return ""

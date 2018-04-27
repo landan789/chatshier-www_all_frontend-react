@@ -22,7 +22,7 @@ const getCookie = (name) => {
     let parts = cookieValues.split('; ' + name + '=');
 
     if (parts.length >= 2) {
-        return unescape(parts.pop().split(';').shift());
+        return unescape(decodeURIComponent(parts.pop().split(';').shift()));
     }
     return '';
 };

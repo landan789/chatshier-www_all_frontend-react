@@ -51,15 +51,18 @@ export default class Footer extends React.Component {
         return (
             <div className="Footer">
                 <h3>Make your customer<br/> happier with Chatshier.</h3>
-                <Button 
-                    outline 
-                    size="sm" 
-                    color="info" 
+                <Button outline
+                    size="sm"
+                    color="info"
                     href={signupUrl}
                     className={this.state.isSignedin ? 'hidden' : ''}>馬上註冊</Button>{' '}
                 <Button outline size="sm" color="info" href="https://chatshier.typeform.com/to/c7Q8yS" target="_blank">與我們聯繫</Button>{' '}
                 <div className="Footer__second">
-                    <p><a href="/terms" target="_blank">服務條款  ·  隱私權條款</a></p>
+                    <p>
+                        <a href="/terms" target="_blank">服務條款</a>
+                        <span>  ·  </span>
+                        <a href="/privacy" target="_blank">隱私權條款</a>
+                    </p>
                     <hr/>
                     <span>©2018 Chatshier All Right Reserved</span>
                 </div>

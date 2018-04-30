@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Helmet } from 'react-helmet';
+import Aux from 'react-aux';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
@@ -16,6 +16,10 @@ class Faq extends Component {
         };
     }
 
+    componentWillMount() {
+        document.title = 'Chatshier 幫助中心';
+    }
+
     toggle(tab) {
         if (this.state.activeTab !== tab) {
             this.setState({
@@ -23,15 +27,10 @@ class Faq extends Component {
             });
         }
     }
-    
+
     render() {
         return (
-            <div>
-                <Helmet>
-                    <meta charSet="utf-8"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-                    <title>Chatshier 幫助中心</title>
-                </Helmet>
+            <Aux>
                 <Toolbar/>
                 <div className="Faq">
                     <div><h1>Help Center</h1></div>
@@ -194,7 +193,7 @@ class Faq extends Component {
                     </TabContent>
                 </div>
                 <Footer />
-            </div>
+            </Aux>
         );
     }
 }

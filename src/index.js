@@ -12,6 +12,7 @@ import Faq from './containers/Faq/Faq';
 import Blog from './containers/Blog/Blog';
 import Terms from './containers/Terms/Terms';
 import Contact from './containers/Contact/Contact';
+import Privacy from './containers/Privacy/Privacy';
 
 const routes = [
     {
@@ -32,6 +33,11 @@ const routes = [
     {
         path: ROUTES.TERMS,
         component: Terms,
+        exact: true
+    },
+    {
+        path: ROUTES.PRIVACY,
+        component: Privacy,
         exact: true
     },
     {

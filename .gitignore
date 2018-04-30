@@ -3,3 +3,4 @@
 debug.log
 /node_modules
 /build/*
+src/config/url-config.js

@@ -1,7 +1,7 @@
 .ProductFeatures {
     text-align: center;
     letter-spacing: 1.2px;
-    padding: 6rem 0%;
+    padding: 5rem 1rem;
     margin: 20px 0;
     border-radius: 4px;
     box-sizing: border-box;
@@ -119,7 +119,7 @@ p {
 
 @media (min-width: 1400px) {
     .ProductFeatures {
-        padding: 7.2rem 0;
+        padding: 6rem 0;
         margin: 0 auto;
         .desktop {
             width: 100%;

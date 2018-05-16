@@ -10,7 +10,6 @@ import logo4 from '../../../assets/images/logos/logo_4.png';
 import logo5 from '../../../assets/images/logos/logo_5.png';
 import logo6 from '../../../assets/images/logos/logo_6.png';
 
-
 const Forth = (props) => {
     return (
         <Fade className="Forth">
@@ -18,9 +17,6 @@ const Forth = (props) => {
             <div className="logos">
                 <ClientLogo image={logo1}/>
                 <ClientLogo image={logo2}/>
-                <ClientLogo image={logo3}/>
-                <ClientLogo image={logo4}/>
-                <ClientLogo image={logo5}/>
                 <ClientLogo image={logo6}/>
             </div>
         </Fade>

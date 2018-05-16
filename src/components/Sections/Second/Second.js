@@ -11,29 +11,28 @@ const Second = (props) => {
     return (
         <Fade className="Second" id="about">
             <Container>
-                <h1>What you will <br/>find out with
-                    Chatshier?</h1>
+                <h1>新一代擴散型行銷客服整合平台</h1>
                 <Row>
                     <Col className="small-features">
                         <div className="small-feature">
                             <div className="icon"><img src={messageIcon}/></div>
                             <div className="small-feature__text">
-                                <h5>多平台整合</h5>
-                                <p>導入Facebook、Line、WeChat 對話訊息，在線即時生成用戶資訊。</p>
+                                <h5>多社群平台整合擴散行銷路徑</h5>
+                                <p>跨 Facebook、LINE、WeChat ，以高市佔率聊天軟體做擴散性行銷。</p>
                             </div>
                         </div>
                         <div className="small-feature">
                             <div className="icon"><img src={chatbotIcon}/></div>
                             <div className="small-feature__text">
-                                <h5>聊天機器人Chatbot</h5>
-                                <p>一站式客服通訊機器人，減少多平台管理程序，提高客服效率。</p>
+                                <h5>群發訊息不再亂槍打鳥</h5>
+                                <p>企業可分類不同顧客, 針對目標族群預設廣告推播計畫,  讓投放更精準！</p>
                             </div>
                         </div>
                         <div className="small-feature">
                             <div className="icon"><img src={dataIcon}/></div>
                             <div className="small-feature__text">
-                                <h5>數據驅動客服策略</h5>
-                                <p>藉由 Chatshier 整合數據分析工具，精準優化售前及售後客服體驗。</p>
+                                <h5>有效掌握社群顧客名單</h5>
+                                <p>以數據及聊天機器人整合追蹤與管理客戶資料，降低成本同時提高行銷轉換率。</p>
                             </div>
                         </div>
                     </Col>

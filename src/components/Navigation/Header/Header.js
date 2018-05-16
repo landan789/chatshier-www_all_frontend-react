@@ -64,25 +64,25 @@ export default class Example extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/#about">關於我們</NavLink>
+                                <NavLink href="/#about">產品特色</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/#features">功能</NavLink>
+                                <NavLink href="/#features">主要功能</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/faq" target="_blank">問與答</NavLink>
+                                <NavLink href="/faq" target="_blank">常見問題</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="https://medium.com/@chatshier" target="_blank">論壇</NavLink>
+                                <NavLink href="https://medium.com/@chatshier" target="_blank">部落格</NavLink>
                             </NavItem>
                             <NavItem id="chat" className={this.state.isSignedin ? '' : 'hidden'}>
                                 <NavLink href={chatUrl}>系統</NavLink>
                             </NavItem>
                             <NavItem className={this.state.isSignedin ? 'hidden' : ''}>
-                                <NavLink href={signinUrl}>登入</NavLink>
+                                <NavLink href={signupUrl}>立即申請</NavLink>
                             </NavItem>
                             <NavItem className={this.state.isSignedin ? 'hidden' : ''}>
-                                <NavLink href={signupUrl}>註冊</NavLink>
+                                <NavLink href={signinUrl}>登入</NavLink>
                             </NavItem>
                             <NavItem
                                 id="Header__userAvatar"

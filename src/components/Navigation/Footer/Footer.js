@@ -46,16 +46,16 @@ export default class Footer extends React.Component {
             modal: !this.state.modal
         });
     }
-    
+
     render() {
         return (
             <div className="Footer">
-                <h3>Make your customer<br/> happier with Chatshier.</h3>
+                <h3>讓錢掌櫃為您提升業績。</h3>
                 <Button outline
                     size="sm"
                     color="info"
                     href={signupUrl}
-                    className={this.state.isSignedin ? 'hidden' : ''}>馬上註冊</Button>{' '}
+                    className={this.state.isSignedin ? 'hidden' : ''}>立即申請</Button>{' '}
                 <Button outline size="sm" color="info" href="https://chatshier.typeform.com/to/c7Q8yS" target="_blank">與我們聯繫</Button>{' '}
                 <div className="Footer__second">
                     <p>

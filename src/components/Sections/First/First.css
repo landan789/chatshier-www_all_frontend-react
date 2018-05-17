@@ -26,6 +26,9 @@
     text-align: center; }
     .First .content .title-line, .First .content .desc-line {
       display: block; }
+    .First .content .desc-line {
+      display: block;
+      font-size: 1.5rem; }
     .First .content h1 {
       filter: drop-shadow(2px 2px 3px #fff); }
     .First .content p {

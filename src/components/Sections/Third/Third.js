@@ -17,13 +17,13 @@ const Third = (props) => {
                     title={'群發管理'}
                     description={'分類不同喜好之客戶並建立標籤，針對同屬性客戶一鍵發送產品訊息。'}
                     cta={'了解更多'}
-                    image={platformImg}>
+                    image={channelImg}>
                 </ProductFeatures>
                 <ProductFeatures
                     title={'一站登入'}
                     description={'於單一平台串接客戶最常用之社群軟體，完美銜接所有客戶資訊，隨時隨地有效同步互動。'}
                     cta={'了解更多'}
-                    image={channelImg}>
+                    image={platformImg}>
                 </ProductFeatures>
                 <ProductFeatures
                     title={'任務待辦'}

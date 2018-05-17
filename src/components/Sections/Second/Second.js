@@ -17,7 +17,7 @@ const Second = (props) => {
                         <div className="small-feature">
                             <div className="icon"><img src={messageIcon}/></div>
                             <div className="small-feature__text">
-                                <h5>多社群平台整合擴散行銷路徑</h5>
+                                <h5>整合多社群平台,擴散行銷路徑</h5>
                                 <p>跨 Facebook、LINE、WeChat ，以高市佔率聊天軟體做擴散性行銷。</p>
                             </div>
                         </div>

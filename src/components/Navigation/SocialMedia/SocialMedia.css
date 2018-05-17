@@ -3,7 +3,8 @@
   right: 5%;
   bottom: 0;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  z-index: 250; }
   .SocialMedia a {
     width: 100%;
     height: 100%; }

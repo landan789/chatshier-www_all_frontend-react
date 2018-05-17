@@ -8,7 +8,7 @@ const ProductFeatures = (props) => {
         backgroundImage: 'url(' + `${props.image}` + ')'
     };
     return (
-        <Fade className="ProductFeatures">
+        <Fade className="ProductFeatures px-2">
             <div className="desktop" style={backgroundImage}></div>
             <div className="content">
                 <h5>{props.title}</h5>

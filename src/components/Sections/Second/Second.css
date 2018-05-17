@@ -1,10 +1,12 @@
 .Second {
   width: 100%;
-  padding: 100px 3%;
+  padding: 1rem 3%;
   margin: 0;
   text-align: center;
   letter-spacing: 1.2px;
   margin: 10% 0; }
+  .Second .title-line {
+    display: block; }
   .Second img {
     width: 100%;
     height: auto; }
@@ -96,6 +98,8 @@
     padding: 10% 0;
     margin: 0% auto;
     text-align: center; }
+    .Second .title-line {
+      display: inline; }
     .Second .small-features {
       max-width: 1024px;
       display: flex; }

@@ -11,7 +11,7 @@ const Second = (props) => {
     return (
         <Fade className="Second" id="about">
             <Container>
-                <h1>新一代擴散型行銷客服整合平台</h1>
+                <h1><span className="title-line">新一代擴散型</span><span className="title-line">行銷客服整合平台</span></h1>
                 <Row>
                     <Col className="small-features">
                         <div className="small-feature">

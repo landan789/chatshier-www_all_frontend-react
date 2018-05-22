@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
+import { translate } from 'react-i18next';
 
 import './Footer.css';
 import urlConfig from '../../../config/url-config';
@@ -21,7 +22,7 @@ const getCookie = (name) => {
     return '';
 };
 
-export default class Footer extends React.Component {
+export default translate()(class Footer extends React.Component {
     constructor(props) {
         super(props);
 
@@ -50,7 +51,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <div className="Footer">
-                <h3>讓錢掌櫃為您提升業績。</h3>
+                <h3>{this.props.t('Footer.title')}</h3>
                 <Button outline
                     size="sm"
                     color="info"
@@ -69,4 +70,4 @@ export default class Footer extends React.Component {
             </div>
         );
     }
-}
+});

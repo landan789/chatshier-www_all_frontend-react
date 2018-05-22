@@ -1,5 +1,6 @@
 import React from 'react';
 import { Fade } from 'reactstrap';
+import { translate } from 'react-i18next';
 
 import './Third.css';
 import ProductFeatures from '../../UI/ProductFeatures/ProductFeatures';
@@ -10,36 +11,48 @@ import dataImg from '../../../assets/images/appUI/chart.jpg';
 
 const Third = (props) => {
     return (
-        <Fade className="Third" id="features">
+        <Fade className='Third' id='features'>
             <h1>主要功能</h1>
-            <div className="features">
+            <div className='features'>
                 <ProductFeatures
-                    title={'群發管理'}
-                    description={'分類不同喜好之客戶並建立標籤，針對同屬性客戶一鍵發送產品訊息。'}
+                    title={props.t('Third.title1')}
+                    description={props.t('Third.desc1')}
                     cta={'了解更多'}
                     image={channelImg}>
                 </ProductFeatures>
                 <ProductFeatures
-                    title={'一站登入'}
-                    description={'於單一平台串接客戶最常用之社群軟體，完美銜接所有客戶資訊，隨時隨地有效同步互動。'}
+                    title={props.t('Third.title2')}
+                    description={props.t('Third.desc2')}
                     cta={'了解更多'}
                     image={platformImg}>
                 </ProductFeatures>
                 <ProductFeatures
-                    title={'任務待辦'}
-                    description={'快速指派及確認待辦事項清單，大幅提升行銷及客服工作效率。'}
+                    title={props.t('Third.title3')}
+                    description={props.t('Third.desc3')}
                     cta={'了解更多'}
                     image={taskImg}>
                 </ProductFeatures>
                 <ProductFeatures
-                    title={'即時報表'}
-                    description={'以數據驅動行銷策略，深入了解即時分析並洞察商機關鍵。'}
+                    title={props.t('Third.title4')}
+                    description={props.t('Third.desc4')}
                     cta={'了解更多'}
                     image={dataImg}>
+                </ProductFeatures>
+                <ProductFeatures
+                    title={props.t('Third.title5')}
+                    description={props.t('Third.desc5')}
+                    cta={'了解更多'}
+                    image={''}>
+                </ProductFeatures>
+                <ProductFeatures
+                    title={props.t('Third.title6')}
+                    description={props.t('Third.desc6')}
+                    cta={'了解更多'}
+                    image={''}>
                 </ProductFeatures>
             </div>
         </Fade>
     );
 };
 
-export default Third;
+export default translate()(Third);

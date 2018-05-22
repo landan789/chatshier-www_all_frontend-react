@@ -1,5 +1,6 @@
 import React from 'react';
-import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse, UncontrolledDropdown, Dropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
+import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse, UncontrolledDropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
+import { translate } from 'react-i18next';
 import urlConfig from '../../../config/url-config';
 
 import './Header.css';
@@ -29,7 +30,7 @@ const getCookie = (name) => {
 
 let userName = getCookie('_chsr_username');
 
-export default class Example extends React.Component {
+export default translate()(class Example extends React.Component {
     constructor(props) {
         super(props);
 
@@ -59,7 +60,7 @@ export default class Example extends React.Component {
         return (
             <div className="Header">
                 <Navbar color="faded" light expand="md">
-                    <NavbarBrand href="/">Chatshier</NavbarBrand>
+                    <NavbarBrand href="/">{this.props.t('Header.title')}</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
@@ -105,4 +106,4 @@ export default class Example extends React.Component {
             </div>
         );
     }
-}
+});

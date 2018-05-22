@@ -12,6 +12,9 @@ urlConfig.serviceUrl = urlConfig.serviceUrl.replace(/^https?:\/\//i, '');
 let url = 'http://' + (urlConfig.serviceUrl ? (urlConfig.serviceUrl + (!urlConfig.port ? '' : ':' + urlConfig.port)) : serviceUrl);
 let signupUrl = url + urlConfig.signup;
 
+let isDsdsds = serviceUrl.includes('dsdsds.com.tw');
+let product = isDsdsds ? '凍蒜小精靈' : 'Chatshier';
+
 const getCookie = (name) => {
     let cookieValues = '; ' + document.cookie;
     let parts = cookieValues.split('; ' + name + '=');
@@ -65,7 +68,7 @@ export default translate()(class Footer extends React.Component {
                         <a href="/privacy" target="_blank">隱私權條款</a>
                     </p>
                     <hr/>
-                    <span>©2018 Chatshier All Right Reserved</span>
+                    <span>©2018 {product} All Right Reserved</span>
                 </div>
             </div>
         );

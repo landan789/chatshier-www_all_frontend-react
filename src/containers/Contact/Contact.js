@@ -5,6 +5,10 @@ import Footer from '../../components/Navigation/Footer/Footer';
 
 import './Contact.css';
 
+let serviceUrl = document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');
+let isDsdsds = serviceUrl.includes('dsdsds.com.tw');
+let product = isDsdsds ? '凍蒜小精靈' : '錢掌櫃';
+
 class Contact extends Component {
     constructor(props) {
         super(props);
@@ -75,7 +79,7 @@ class Contact extends Component {
                             <FormGroup check>
                                 <Label check>
                                     <Input type="checkbox" />{' '}
-                                    我同意 Chatshier <a href="/terms">Service &amp; Terms</a>.
+                                    我同意 {product} <a href="/terms">Service &amp; Terms</a>.
                                 </Label>
                             </FormGroup>
                             <Button

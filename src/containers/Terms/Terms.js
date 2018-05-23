@@ -6,7 +6,7 @@ import './Terms.css';
 
 let serviceUrl = document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');
 let isDsdsds = serviceUrl.includes('dsdsds.com.tw');
-let product = isDsdsds ? '凍蒜小精靈' : 'Chatshier';
+let product = isDsdsds ? '凍蒜小精靈' : '錢掌櫃';
 
 class Terms extends Component {
     constructor(props) {

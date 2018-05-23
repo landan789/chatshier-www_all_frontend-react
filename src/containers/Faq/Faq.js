@@ -9,7 +9,7 @@ import './Faq.css';
 
 let serviceUrl = document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');
 let isDsdsds = serviceUrl.includes('dsdsds.com.tw');
-let product = isDsdsds ? '凍蒜小精靈' : 'Chatshier';
+let product = isDsdsds ? '凍蒜小精靈' : '錢掌櫃';
 
 class Faq extends Component {
     constructor(props) {
@@ -22,7 +22,7 @@ class Faq extends Component {
     }
 
     componentWillMount() {
-        document.title = 'Chatshier 幫助中心';
+        document.title = `${product} 幫助中心`;
     }
 
     toggle(tab) {
@@ -38,7 +38,7 @@ class Faq extends Component {
             <Aux>
                 <Toolbar/>
                 <div className="Faq">
-                    <div><h1>Help Center</h1></div>
+                    <div><h1>常見問題</h1></div>
                     <Nav tabs>
                         <NavItem>
                             <NavLink

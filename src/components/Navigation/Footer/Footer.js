@@ -13,7 +13,7 @@ let url = 'http://' + (urlConfig.serviceUrl ? (urlConfig.serviceUrl + (!urlConfi
 let signupUrl = url + urlConfig.signup;
 
 let isDsdsds = serviceUrl.includes('dsdsds.com.tw');
-let product = isDsdsds ? '凍蒜小精靈' : 'Chatshier';
+let product = isDsdsds ? '凍蒜小精靈' : '錢掌櫃';
 
 const getCookie = (name) => {
     let cookieValues = '; ' + document.cookie;

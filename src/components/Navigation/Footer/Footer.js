@@ -68,6 +68,9 @@ export default translate()(class Footer extends React.Component {
                         <a href="/privacy" target="_blank">隱私權條款</a>
                     </p>
                     <hr/>
+                    <p>
+                        <span>地址 : 台北市信義區信義路四段415號9樓</span>
+                    </p>
                     <span>©2018 {product} All Right Reserved</span>
                 </div>
             </div>

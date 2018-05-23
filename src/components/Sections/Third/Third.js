@@ -8,6 +8,8 @@ import channelImg from '../../../assets/images/appUI/groupchat.jpg';
 import platformImg from '../../../assets/images/appUI/chatroom.jpg';
 import taskImg from '../../../assets/images/appUI/todo-list.jpg';
 import dataImg from '../../../assets/images/appUI/chart.jpg';
+import payImg from '../../../assets/images/appUI/pay.jpg';
+import marketingImg from '../../../assets/images/appUI/marketing.jpg';
 
 const Third = (props) => {
     return (
@@ -42,13 +44,13 @@ const Third = (props) => {
                     title={props.t('Third.title5')}
                     description={props.t('Third.desc5')}
                     cta={'了解更多'}
-                    image={''}>
+                    image={payImg}>
                 </ProductFeatures>
                 <ProductFeatures
                     title={props.t('Third.title6')}
                     description={props.t('Third.desc6')}
                     cta={'了解更多'}
-                    image={''}>
+                    image={marketingImg}>
                 </ProductFeatures>
             </div>
         </Fade>

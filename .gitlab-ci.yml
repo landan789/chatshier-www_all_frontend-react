@@ -1,0 +1,39 @@
+# This file is a template, and might need editing before it works on your project.
+# Official framework image. Look for the different tagged releases at:
+# https://hub.docker.com/r/library/node/tags/
+image: node:8.11.1
+
+stages:
+  - WWW-CHATSHIER
+  - WWW-DSDSDS
+before_script:
+  - npm install -g firebase-tools
+  - npm install
+  - unset CI # clear the node evironment 'CI' in Docker  
+
+# Pick zero or more services to be used on all builds.
+# Only needed when using a docker container to run your tests in.
+# Check out: http://docs.gitlab.com/ce/ci/docker/using_docker_images.html#what-is-a-service
+services:
+
+DEVELOP:
+  stage: WWW-CHATSHIER
+  script:
+    - cp src/config/url-config-dev.js src/config/url-config.js
+    - npm run build
+    - firebase use dev-chatshier --token ${FIREBASE_DEV_CHATSHIER_TOKEN}
+    - firebase deploy --only hosting --token ${FIREBASE_DEV_CHATSHIER_TOKEN}
+  only:
+    refs:
+      - develop
+
+DEVELOP:
+  stage: WWW-DSDSDS
+  script:
+    - cp src/config/url-config-dev.js src/config/url-config.js
+    - npm run build
+    - firebase use dev-dsdsds --token ${FIREBASE_DEV_DSDSDS_TOKEN}
+    - firebase deploy --only hosting --token ${FIREBASE_DEV_DSDSDS_TOKEN}
+  only:
+    refs:
+      - develop

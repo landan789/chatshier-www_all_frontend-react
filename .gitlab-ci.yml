@@ -4,9 +4,8 @@
 image: node:8.11.1
 
 stages:
-  - DEVELOP
-  - RELEASE
-  - MASTER
+  - WWW-CHATSHIER
+  - WWW-DSDSDS
 before_script:
 # firebase login:ci
   - npm install -g firebase-tools
@@ -18,8 +17,8 @@ before_script:
 # Check out: http://docs.gitlab.com/ce/ci/docker/using_docker_images.html#what-is-a-service
 services:
 
-WWW-CHATSHIER:
-  stage: DEVELOP
+DEVELOP_a:
+  stage: WWW-CHATSHIER
   script:
     - cp src/config/url-config-dev.js src/config/url-config.js
     - npm run build
@@ -29,8 +28,8 @@ WWW-CHATSHIER:
     refs:
       - develop
 
-WWW-DSDSDS:
-  stage: DEVELOP
+DEVELOP_b:
+  stage: WWW-DSDSDS
   script:
     - cp src/config/url-config-dev.js src/config/url-config.js
     - npm run build
@@ -41,8 +40,8 @@ WWW-DSDSDS:
       - develop
 
 
-WWW-CHATSHIER:
-  stage: RELEASE
+RELEASE_a:
+  stage: WWW-CHATSHIER
   script:
     - cp src/config/url-config-dev.js src/config/url-config.js
     - npm run build
@@ -52,8 +51,8 @@ WWW-CHATSHIER:
     refs:
       - release
 
-WWW-DSDSDS:
-  stage: RELEASE
+RELEASE_b:
+  stage: WWW-DSDSDS
   script:
     - cp src/config/url-config-dev.js src/config/url-config.js
     - npm run build

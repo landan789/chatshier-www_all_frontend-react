@@ -7,6 +7,10 @@ import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import Footer from '../../components/Navigation/Footer/Footer';
 import './Faq.css';
 
+let serviceUrl = document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');
+let isDsdsds = serviceUrl.includes('dsdsds.com.tw');
+let product = isDsdsds ? '凍蒜小精靈' : 'Chatshier';
+
 class Faq extends Component {
     constructor(props) {
         super(props);
@@ -41,7 +45,7 @@ class Faq extends Component {
                                 className={classnames({ active: this.state.activeTab === '1' })}
                                 onClick={() => { this.toggle('1'); }}
                             >
-                            關於Chatshier
+                            關於{product}
                             </NavLink>
                         </NavItem>
                         <NavItem>

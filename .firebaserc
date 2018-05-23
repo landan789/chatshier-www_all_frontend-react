@@ -1,8 +1,9 @@
 {
   "projects": {
-    "default": "dev-chatshier",
+    "dev-chatshier": "dev-chatshier",
     "rel-chatshier": "rel-chatshier",
     "chatshier": "chatshier-d4dfd",
-    "dev-dsdsds": "dev-dsdsds"
+    "dev-dsdsds": "dev-dsdsds",
+    "rel-dsdsds": "rel-dsdsds"
   }
 }

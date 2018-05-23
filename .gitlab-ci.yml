@@ -39,3 +39,26 @@ WWW-DSDSDS:
   only:
     refs:
       - develop
+
+
+WWW-CHATSHIER:
+  stage: RELEASE
+  script:
+    - cp src/config/url-config-dev.js src/config/url-config.js
+    - npm run build
+    - firebase use rel-chatshier --token ${FIREBASE_REL_TOKEN}
+    - firebase deploy --only hosting --token ${FIREBASE_REL_TOKEN}
+  only:
+    refs:
+      - release
+
+WWW-DSDSDS:
+  stage: RELEASE
+  script:
+    - cp src/config/url-config-dev.js src/config/url-config.js
+    - npm run build
+    - firebase use rel-dsdsds --token ${FIREBASE_REL_TOKEN}
+    - firebase deploy --only hosting --token ${FIREBASE_REL_TOKEN}
+  only:
+    refs:
+      - release

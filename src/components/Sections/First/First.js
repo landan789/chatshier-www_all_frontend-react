@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade, Button } from 'reactstrap';
-import { translate } from 'react-i18next';
+import { withDomain } from '../../../config/i18ndomain.js';
 
 import './First.css';
 import homeBanner from '../../../assets/images/banners/homebanner-by-rawpixel.jpg';
@@ -34,4 +34,4 @@ const First = (props) => {
     );
 };
 
-export default translate()(First);
+export default withDomain(First);

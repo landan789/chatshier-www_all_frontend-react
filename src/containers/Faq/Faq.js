@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import Aux from 'react-aux';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, CardTitle, CardText, Row, Col } from 'reactstrap';
-import { translate } from 'react-i18next';
+import { withDomain } from '../../config/i18ndomain.js';
 import classnames from 'classnames';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import Footer from '../../components/Navigation/Footer/Footer';
 import './Faq.css';
-
-let serviceUrl = document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');
-let isDsdsds = serviceUrl.includes('dsdsds.com.tw');
-let product = isDsdsds ? '凍蒜小精靈' : '錢掌櫃';
 
 class Faq extends Component {
     constructor(props) {
@@ -22,7 +18,7 @@ class Faq extends Component {
     }
 
     componentWillMount() {
-        document.title = `${product} 幫助中心`;
+        document.title = `${this.props.t('Header.title')} 幫助中心`;
     }
 
     toggle(tab) {
@@ -45,7 +41,7 @@ class Faq extends Component {
                                 className={classnames({ active: this.state.activeTab === '1' })}
                                 onClick={() => { this.toggle('1'); }}
                             >
-                            關於{product}
+                            關於{this.props.t('Header.title')}
                             </NavLink>
                         </NavItem>
                         <NavItem>
@@ -158,4 +154,4 @@ class Faq extends Component {
     }
 }
 
-export default translate()(Faq);
+export default withDomain(Faq);

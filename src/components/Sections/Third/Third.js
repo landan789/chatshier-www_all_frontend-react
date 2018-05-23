@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade } from 'reactstrap';
-import { translate } from 'react-i18next';
+import { withDomain } from '../../../config/i18ndomain.js';
 
 import './Third.css';
 import ProductFeatures from '../../UI/ProductFeatures/ProductFeatures';
@@ -57,4 +57,4 @@ const Third = (props) => {
     );
 };
 
-export default translate()(Third);
+export default withDomain(Third);

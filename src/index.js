@@ -14,7 +14,7 @@ import Terms from './containers/Terms/Terms';
 import Contact from './containers/Contact/Contact';
 import Privacy from './containers/Privacy/Privacy';
 
-import './config/i18n';
+import './config/i18ndomain';
 
 const routes = [
     {

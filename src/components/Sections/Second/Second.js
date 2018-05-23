@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade, Container, Row, Col } from 'reactstrap';
-import { translate } from 'react-i18next';
+import { withDomain } from '../../../config/i18ndomain.js';
 
 import './Second.css';
 
@@ -43,4 +43,4 @@ const Second = (props) => {
     );
 };
 
-export default translate()(Second);
+export default withDomain(Second);

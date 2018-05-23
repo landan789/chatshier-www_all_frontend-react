@@ -1,14 +1,13 @@
 import i18nDomain from 'i18next';
 import Backend from 'i18next-xhr-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import { reactI18nextModule } from 'react-i18next';
+import { reactI18nextModule, translate } from 'react-i18next';
 
 let serviceUrl = document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');
 let isDsdsds = serviceUrl.includes('dsdsds.com.tw');
 
-i18nDomain.use(Backend).use(LanguageDetector).use(reactI18nextModule).init({
+i18nDomain.use(Backend).use(reactI18nextModule).init({
     lng: isDsdsds ? 'dsdsds' : 'chatshier',
-    debug: true,
+    debug: false,
     react: {
         wait: true
     },
@@ -18,3 +17,5 @@ i18nDomain.use(Backend).use(LanguageDetector).use(reactI18nextModule).init({
 });
 
 export default i18nDomain;
+const withDomain = translate();
+export { withDomain };

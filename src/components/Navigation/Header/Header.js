@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse, UncontrolledDropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
-import { translate } from 'react-i18next';
+import { withDomain } from '../../../config/i18ndomain.js';
 import urlConfig from '../../../config/url-config';
 
 import './Header.css';
@@ -30,7 +30,7 @@ const getCookie = (name) => {
 
 let userName = getCookie('_chsr_username');
 
-export default translate()(class Example extends React.Component {
+export default withDomain(class Example extends React.Component {
     constructor(props) {
         super(props);
 

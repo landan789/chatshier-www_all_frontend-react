@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import { translate } from 'react-i18next';
+import { withDomain } from '../../../config/i18ndomain.js';
 
 import './Footer.css';
 import urlConfig from '../../../config/url-config';
@@ -12,9 +12,6 @@ urlConfig.serviceUrl = urlConfig.serviceUrl.replace(/^https?:\/\//i, '');
 let url = 'http://' + (urlConfig.serviceUrl ? (urlConfig.serviceUrl + (!urlConfig.port ? '' : ':' + urlConfig.port)) : serviceUrl);
 let signupUrl = url + urlConfig.signup;
 
-let isDsdsds = serviceUrl.includes('dsdsds.com.tw');
-let product = isDsdsds ? '凍蒜小精靈' : '錢掌櫃';
-
 const getCookie = (name) => {
     let cookieValues = '; ' + document.cookie;
     let parts = cookieValues.split('; ' + name + '=');
@@ -25,7 +22,7 @@ const getCookie = (name) => {
     return '';
 };
 
-export default translate()(class Footer extends React.Component {
+export default withDomain(class Footer extends React.Component {
     constructor(props) {
         super(props);
 
@@ -71,7 +68,7 @@ export default translate()(class Footer extends React.Component {
                     <p>
                         <span>地址 : 台北市信義區信義路四段415號9樓</span>
                     </p>
-                    <span>©2018 {product} All Right Reserved</span>
+                    <span>©2018 {this.props.t('Header.title')} All Right Reserved</span>
                 </div>
             </div>
         );

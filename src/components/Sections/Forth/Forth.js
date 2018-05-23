@@ -17,6 +17,7 @@ const Forth = (props) => {
             <div className="logos">
                 <ClientLogo image={logo1}/>
                 <ClientLogo image={logo2}/>
+                <ClientLogo image={logo5}/>
                 <ClientLogo image={logo6}/>
             </div>
         </Fade>

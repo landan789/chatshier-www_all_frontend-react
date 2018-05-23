@@ -11,13 +11,13 @@ const Second = (props) => {
     return (
         <Fade className="Second" id="about">
             <Container>
-                <h1>新一代擴散型行銷客服整合平台</h1>
+                <h1><span className="title-line">新一代擴散型</span><span className="title-line">行銷客服整合平台</span></h1>
                 <Row>
                     <Col className="small-features">
                         <div className="small-feature">
                             <div className="icon"><img src={messageIcon}/></div>
                             <div className="small-feature__text">
-                                <h5>多社群平台整合擴散行銷路徑</h5>
+                                <h5>整合多社群平台,擴散行銷路徑</h5>
                                 <p>跨 Facebook、LINE、WeChat ，以高市佔率聊天軟體做擴散性行銷。</p>
                             </div>
                         </div>

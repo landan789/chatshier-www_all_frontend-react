@@ -5,8 +5,8 @@ import './Forth.css';
 import ClientLogo from '../../UI/ClientLogo/ClientLogo';
 import logo1 from '../../../assets/images/logos/logo_1.png';
 import logo2 from '../../../assets/images/logos/logo_2.png';
-import logo3 from '../../../assets/images/logos/logo_3.png';
-import logo4 from '../../../assets/images/logos/logo_4.png';
+// import logo3 from '../../../assets/images/logos/logo_3.png';
+// import logo4 from '../../../assets/images/logos/logo_4.png';
 import logo5 from '../../../assets/images/logos/logo_5.png';
 import logo6 from '../../../assets/images/logos/logo_6.png';
 

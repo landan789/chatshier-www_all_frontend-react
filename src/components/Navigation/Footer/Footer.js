@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
+import { withDomain } from '../../../config/i18ndomain.js';
 
 import './Footer.css';
 import urlConfig from '../../../config/url-config';
@@ -21,7 +22,7 @@ const getCookie = (name) => {
     return '';
 };
 
-export default class Footer extends React.Component {
+export default withDomain(class Footer extends React.Component {
     constructor(props) {
         super(props);
 
@@ -50,7 +51,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <div className="Footer">
-                <h3>讓錢掌櫃為您提升業績。</h3>
+                <h3>{this.props.t('Footer.title')}</h3>
                 <Button outline
                     size="sm"
                     color="info"
@@ -64,9 +65,12 @@ export default class Footer extends React.Component {
                         <a href="/privacy" target="_blank">隱私權條款</a>
                     </p>
                     <hr/>
-                    <span>©2018 Chatshier All Right Reserved</span>
+                    <p>
+                        <span>地址 : 台北市信義區信義路四段415號9樓</span>
+                    </p>
+                    <span>©2018 {this.props.t('Header.title')} All Right Reserved</span>
                 </div>
             </div>
         );
     }
-}
+});

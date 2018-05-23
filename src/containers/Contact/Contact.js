@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { withDomain } from '../../config/i18ndomain.js';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import Footer from '../../components/Navigation/Footer/Footer';
 
@@ -75,7 +76,7 @@ class Contact extends Component {
                             <FormGroup check>
                                 <Label check>
                                     <Input type="checkbox" />{' '}
-                                    我同意 Chatshier <a href="/terms">Service &amp; Terms</a>.
+                                    我同意 {this.props.t('Header.title')} <a href="/terms">Service &amp; Terms</a>.
                                 </Label>
                             </FormGroup>
                             <Button
@@ -93,4 +94,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default withDomain(Contact);

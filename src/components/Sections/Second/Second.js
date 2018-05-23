@@ -1,5 +1,6 @@
 import React from 'react';
 import { Fade, Container, Row, Col } from 'reactstrap';
+import { withDomain } from '../../../config/i18ndomain.js';
 
 import './Second.css';
 
@@ -11,28 +12,28 @@ const Second = (props) => {
     return (
         <Fade className="Second" id="about">
             <Container>
-                <h1><span className="title-line">新一代擴散型</span><span className="title-line">行銷客服整合平台</span></h1>
+                <h1><span className="title-line">{props.t('Second.title1')}</span><span className="title-line">{props.t('Second.title2')}</span></h1>
                 <Row>
                     <Col className="small-features">
                         <div className="small-feature">
                             <div className="icon"><img src={messageIcon}/></div>
                             <div className="small-feature__text">
-                                <h5>整合多社群平台,擴散行銷路徑</h5>
-                                <p>跨 Facebook、LINE、WeChat ，以高市佔率聊天軟體做擴散性行銷。</p>
+                                <h5>{props.t('Second.title3')}</h5>
+                                <p>{props.t('Second.desc1')}</p>
                             </div>
                         </div>
                         <div className="small-feature">
                             <div className="icon"><img src={chatbotIcon}/></div>
                             <div className="small-feature__text">
-                                <h5>群發訊息不再亂槍打鳥</h5>
-                                <p>企業可分類不同顧客, 針對目標族群預設廣告推播計畫,  讓投放更精準！</p>
+                                <h5>{props.t('Second.title4')}</h5>
+                                <p>{props.t('Second.desc2')}</p>
                             </div>
                         </div>
                         <div className="small-feature">
                             <div className="icon"><img src={dataIcon}/></div>
                             <div className="small-feature__text">
-                                <h5>有效掌握社群顧客名單</h5>
-                                <p>以數據及聊天機器人整合追蹤與管理客戶資料，降低成本同時提高行銷轉換率。</p>
+                                <h5>{props.t('Second.title5')}</h5>
+                                <p>{props.t('Second.desc3')}</p>
                             </div>
                         </div>
                     </Col>
@@ -42,4 +43,4 @@ const Second = (props) => {
     );
 };
 
-export default Second;
+export default withDomain(Second);

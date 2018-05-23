@@ -42,6 +42,7 @@ export default withDomain(class Example extends React.Component {
     }
 
     componentWillMount() {
+        document.title = `${this.props.t('Header.title')} 專業客服整合平台`;
         let name = getCookie('_chsr_username');
         let email = getCookie('_chsr_email');
 

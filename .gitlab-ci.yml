@@ -54,3 +54,21 @@ RELEASE_b:
   only:
     refs:
       - release
+
+RELEASE_a:
+  stage: WWW-CHATSHIER
+  script:
+    - firebase use chatshier --token ${FIREBASE_TOKEN}
+    - firebase deploy --only hosting --token ${FIREBASE_TOKEN}
+  only:
+    refs:
+      - master
+
+RELEASE_b:
+  stage: WWW-DSDSDS
+  script:
+    - firebase use dsdsds --token ${FIREBASE_TOKEN}
+    - firebase deploy --only hosting --token ${FIREBASE_TOKEN}
+  only:
+    refs:
+      - master

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Fade, Button } from 'reactstrap';
+import { withDomain } from '../../../config/i18ndomain.js';
 
 import './First.css';
 import homeBanner from '../../../assets/images/banners/homebanner-by-rawpixel.jpg';
@@ -16,14 +17,21 @@ const First = (props) => {
     return (
         <Fade className="First" style={{backgroundImage: 'url(' + homeBanner + ')'}}>
             <div className="content">
-                <h1>錢掌櫃 Chatshier 多社群整合平台</h1>
-                <p>數位整合行銷及客服應用最佳選擇</p>
-                <Button outline className="btndesktopShow" color="info" href={signupUrl}>立即申請</Button>
-                <Button className="btndesktopHide" color="info" href={signupUrl}>立即申請</Button>
+                <h1>
+                    <span className="title-line">{props.t('First.title1')}</span>
+                    <span className="title-line">{props.t('First.title2')}</span>
+                    <span className="title-line">{props.t('First.title3')}</span>
+                </h1>
+                <p>
+                    <span className="desc-line">{props.t('First.desc1')}</span>
+                    <span className="desc-line">{props.t('First.desc2')}</span>
+                </p>
+                <Button outline className="btndesktopShow" color="info" href={signupUrl}>{props.t('First.button')}</Button>
+                <Button className="btndesktopHide" color="info" href={signupUrl}>{props.t('First.button')}</Button>
             </div>
             <div className="mask"></div>
         </Fade>
     );
 };
 
-export default First;
+export default withDomain(First);

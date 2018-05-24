@@ -19,7 +19,7 @@ class Blog extends Component {
             <div className="Blog">
                 <Toolbar/>
                 <div className="Blog__header">
-                    <h1>Chatshier</h1>
+                    <h1>錢掌櫃</h1>
                     <h4>專業客服體驗管理平台</h4>
                 </div>
                 <Container className="Blog__posts">
@@ -47,7 +47,7 @@ class Blog extends Component {
                     <BlogPost
                         image={'https://unsplash.it/1400/789'}
                         title={'真人vs機器人'}
-                        body={'為了避免被機器取代， Chatshier 使用真人代替高科技，帶給你的潛在客戶潛在客戶、陌生訪客一個最貼近人心的服務。  Chatshier 可以依據潛在客戶與陌生訪客說話方式的不同，而進一步去 ...'}
+                        body={'為了避免被機器取代，  使用真人代替高科技，帶給你的潛在客戶潛在客戶、陌生訪客一個最貼近人心的服務。  Chatshier 可以依據潛在客戶與陌生訪客說話方式的不同，而進一步去 ...'}
                         link={'/post/1'}
                         author={'YK'}
                         updatedTime={'2017/11/17'} />

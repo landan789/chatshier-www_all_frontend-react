@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade, Button } from 'reactstrap';
+import { Fade } from 'reactstrap';
 
 import './ProductFeatures.css';
 
@@ -8,7 +8,7 @@ const ProductFeatures = (props) => {
         backgroundImage: 'url(' + `${props.image}` + ')'
     };
     return (
-        <Fade className="ProductFeatures px-2">
+        <Fade className={`ProductFeatures px-2 ${props.title ? '' : 'd-none'}`}>
             <div className="desktop" style={backgroundImage}></div>
             <div className="content">
                 <h5>{props.title}</h5>

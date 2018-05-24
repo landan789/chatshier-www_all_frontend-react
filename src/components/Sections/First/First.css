@@ -24,6 +24,11 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center; }
+    .First .content .title-line, .First .content .desc-line {
+      display: block; }
+    .First .content .desc-line {
+      display: block;
+      font-size: 1.5rem; }
     .First .content h1 {
       filter: drop-shadow(2px 2px 3px #fff); }
     .First .content p {
@@ -49,6 +54,8 @@
     letter-spacing: 1.5px; }
     .First .content {
       top: 30%; }
+      .First .content .desc-line {
+        display: inline; }
     .First img {
       width: 100%;
       height: auto; }
@@ -74,6 +81,8 @@
     min-height: 500px; }
     .First .content {
       max-width: 1024px; }
+      .First .content .title-line {
+        display: inline; }
     .First .btndesktopShow {
       display: block;
       margin: auto; }
@@ -82,4 +91,6 @@
 
 @media (min-width: 1400px) {
   .First {
-    min-height: 700px; } }
+    min-height: 700px; }
+    .First .content .title-line {
+      display: inline; } }

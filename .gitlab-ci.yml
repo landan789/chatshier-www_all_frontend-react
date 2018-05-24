@@ -11,6 +11,8 @@ before_script:
   - npm install -g firebase-tools
   - npm install
   - unset CI # clear the node evironment 'CI' in Docker  
+  - cp src/config/url-config-dev.js src/config/url-config.js
+  - npm run build
 
 # Pick zero or more services to be used on all builds.
 # Only needed when using a docker container to run your tests in.
@@ -20,8 +22,6 @@ services:
 DEVELOP_a:
   stage: WWW-CHATSHIER
   script:
-    - cp src/config/url-config-dev.js src/config/url-config.js
-    - npm run build
     - firebase use dev-chatshier --token ${FIREBASE_DEV_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
   only:
@@ -31,8 +31,6 @@ DEVELOP_a:
 DEVELOP_b:
   stage: WWW-DSDSDS
   script:
-    - cp src/config/url-config-dev.js src/config/url-config.js
-    - npm run build
     - firebase use dev-dsdsds --token ${FIREBASE_DEV_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
   only:
@@ -43,8 +41,6 @@ DEVELOP_b:
 RELEASE_a:
   stage: WWW-CHATSHIER
   script:
-    - cp src/config/url-config-dev.js src/config/url-config.js
-    - npm run build
     - firebase use rel-chatshier --token ${FIREBASE_REL_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_REL_TOKEN}
   only:
@@ -54,8 +50,6 @@ RELEASE_a:
 RELEASE_b:
   stage: WWW-DSDSDS
   script:
-    - cp src/config/url-config-dev.js src/config/url-config.js
-    - npm run build
     - firebase use rel-dsdsds --token ${FIREBASE_REL_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_REL_TOKEN}
   only:

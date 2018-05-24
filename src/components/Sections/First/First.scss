@@ -29,6 +29,13 @@
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
+        .title-line, .desc-line {
+            display: block;
+        }
+        .desc-line {
+            display: block;
+            font-size: 1.5rem;
+        }
         h1 {
             filter: drop-shadow(2px 2px 3px #fff);
         }
@@ -61,6 +68,9 @@
         letter-spacing: 1.5px;
         .content {
             top: 30%;
+            .desc-line {
+                display: inline;
+            }
         }
         
         img {
@@ -100,6 +110,9 @@
         min-height: 500px;
         .content {
             max-width: 1024px;
+            .title-line {
+                display: inline;
+            }
         }
         .btndesktopShow {
             display: block;
@@ -115,5 +128,10 @@
 @media (min-width: 1400px) {
     .First {
         min-height: 700px;
+        .content {
+            .title-line {
+                display: inline;
+            }
+        }
     }
 }

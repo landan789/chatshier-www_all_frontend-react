@@ -6,6 +6,8 @@
   letter-spacing: 1.2px;
   background-color: #ffffff;
   box-sizing: border-box; }
+  .Third .features .desktop {
+    z-index: 100; }
   .Third li {
     font-size: 0.75rem; }
 
@@ -28,4 +30,4 @@
   .Third .features .desktop {
     transition: all .3s ease-in-out; }
   .Third .features .desktop:hover {
-    transform: scale(1.05); } }
+    transform: scale(1.2); } }

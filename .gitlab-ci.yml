@@ -19,7 +19,7 @@ before_script:
 # Check out: http://docs.gitlab.com/ce/ci/docker/using_docker_images.html#what-is-a-service
 services:
 
-DEVELOP_a:
+DEVELOP:
   stage: WWW-CHATSHIER
   script:
     - firebase use dev-chatshier --token ${FIREBASE_DEV_TOKEN}
@@ -28,16 +28,7 @@ DEVELOP_a:
     refs:
       - develop
 
-DEVELOP_b:
-  stage: WWW-DSDSDS
-  script:
-    - firebase use dev-dsdsds --token ${FIREBASE_DEV_TOKEN}
-    - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
-  only:
-    refs:
-      - develop
-
-RELEASE_a:
+RELEASE:
   stage: WWW-CHATSHIER
   script:
     - firebase use rel-chatshier --token ${FIREBASE_REL_TOKEN}
@@ -46,28 +37,10 @@ RELEASE_a:
     refs:
       - release
 
-RELEASE_b:
-  stage: WWW-DSDSDS
-  script:
-    - firebase use rel-dsdsds --token ${FIREBASE_REL_TOKEN}
-    - firebase deploy --only hosting --token ${FIREBASE_REL_TOKEN}
-  only:
-    refs:
-      - release
-
-RELEASE_a:
+MASTER:
   stage: WWW-CHATSHIER
   script:
     - firebase use chatshier --token ${FIREBASE_TOKEN}
-    - firebase deploy --only hosting --token ${FIREBASE_TOKEN}
-  only:
-    refs:
-      - master
-
-RELEASE_b:
-  stage: WWW-DSDSDS
-  script:
-    - firebase use dsdsds --token ${FIREBASE_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_TOKEN}
   only:
     refs:

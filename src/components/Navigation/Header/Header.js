@@ -6,7 +6,7 @@ import urlConfig from '../../../config/url-config';
 import './Header.css';
 
 // Before we develop the feature for users to upload their own pictures for avatar, we use Chatshier logo as default picture.
-import chatshierLogo from '../../../assets/images/logos/chatshier_logo.png';
+import chatshierLogo from '../../../assets/images/logos/user.png';
 
 // ex: wwww.dev.chatshier.com ->  service.dev.chatshier.com
 let serviceUrl = urlConfig.serviceUrl ? urlConfig.serviceUrl : document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');

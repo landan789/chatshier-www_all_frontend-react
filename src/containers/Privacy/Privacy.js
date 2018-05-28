@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Aux from 'react-aux';
-import { withDomain } from '../../config/i18ndomain.js';
+import { withDomain } from '../../helpers/i18ndomain.js';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import Footer from '../../components/Navigation/Footer/Footer';
 

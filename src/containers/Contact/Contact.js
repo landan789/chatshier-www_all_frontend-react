@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import { withDomain } from '../../config/i18ndomain.js';
+import { withDomain } from '../../helpers/i18ndomain.js';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import Footer from '../../components/Navigation/Footer/Footer';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import { withDomain } from '../../../config/i18ndomain.js';
+import { withDomain } from '../../../helpers/i18ndomain.js';
 
 import './Footer.css';
 import urlConfig from '../../../config/url-config';
@@ -57,7 +57,10 @@ export default withDomain(class Footer extends React.Component {
                     color="info"
                     href={signupUrl}
                     className={this.state.isSignedin ? 'hidden' : ''}>立即申請</Button>{' '}
-                <Button outline size="sm" color="info" href="https://chatshier.typeform.com/to/c7Q8yS" target="_blank">與我們聯繫</Button>{' '}
+                <Button outline size="sm" color="info" href="https://chatshier.typeform.com/to/c7Q8yS" target="_blank">與我們聯繫</Button>
+                <p className="mt-3 font-weight-bold">
+                    <span>地址 : 台北市信義區信義路四段415號9樓-8</span>
+                </p>
                 <div className="Footer__second">
                     <p>
                         <a href="/terms" target="_blank">服務條款</a>
@@ -65,9 +68,6 @@ export default withDomain(class Footer extends React.Component {
                         <a href="/privacy" target="_blank">隱私權條款</a>
                     </p>
                     <hr/>
-                    <p>
-                        <span>地址 : 台北市信義區信義路四段415號9樓</span>
-                    </p>
                     <span>©2018 {this.props.t('Header.title')} All Right Reserved</span>
                 </div>
             </div>

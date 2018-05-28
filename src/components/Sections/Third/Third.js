@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade } from 'reactstrap';
-import { withDomain } from '../../../config/i18ndomain.js';
+import { withDomain } from '../../../helpers/i18ndomain.js';
 
 import './Third.css';
 import ProductFeatures from '../../UI/ProductFeatures/ProductFeatures';

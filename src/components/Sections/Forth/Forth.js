@@ -1,5 +1,6 @@
 import React from 'react';
 import { Fade } from 'reactstrap';
+import { withDomain } from '../../../helpers/i18ndomain.js';
 
 import './Forth.css';
 import ClientLogo from '../../UI/ClientLogo/ClientLogo';
@@ -11,8 +12,9 @@ import logo5 from '../../../assets/images/logos/logo_5.png';
 import logo6 from '../../../assets/images/logos/logo_6.png';
 
 const Forth = (props) => {
+    let domain = props.i18n.language;
     return (
-        <Fade className="Forth">
+        <Fade className={`Forth ${'dsdsds' === domain ? 'd-none' : ''}`}>
             <h1>我們的合作夥伴</h1>
             <div className="logos">
                 <ClientLogo image={logo1}/>
@@ -24,4 +26,4 @@ const Forth = (props) => {
     );
 };
 
-export default Forth;
+export default withDomain(Forth);

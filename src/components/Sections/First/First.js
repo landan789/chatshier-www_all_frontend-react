@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade, Button } from 'reactstrap';
-import { withDomain } from '../../../config/i18ndomain.js';
+import { withDomain } from '../../../helpers/i18ndomain.js';
 
 import './First.css';
 import homeBanner from '../../../assets/images/banners/homebanner-by-rawpixel.jpg';

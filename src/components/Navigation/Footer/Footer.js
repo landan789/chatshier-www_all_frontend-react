@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 import { withDomain } from '../../../helpers/i18ndomain.js';
-import { getCookie } from '../../../helpers/cookie';
+import CookieHlp from '../../../helpers/cookie';
 
 import './Footer.css';
 import urlConfig from '../../../config/url-config';
@@ -25,8 +25,8 @@ export default withDomain(class Footer extends React.Component {
     }
 
     componentWillMount() {
-        let name = getCookie('_chsr_username');
-        let email = getCookie('_chsr_email');
+        let name = CookieHlp.get('_chsr_username');
+        let email = CookieHlp.get('_chsr_email');
 
         let isSignedin = !!(name && email);
         console.log('isSignedin: ' + isSignedin);

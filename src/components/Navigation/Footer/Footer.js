@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 import { withDomain } from '../../../helpers/i18ndomain.js';
+import { getCookie } from '../../../helpers/cookie';
 
 import './Footer.css';
 import urlConfig from '../../../config/url-config';
@@ -11,16 +12,6 @@ serviceUrl += urlConfig.port ? ':' + urlConfig.port : '';
 urlConfig.serviceUrl = urlConfig.serviceUrl.replace(/^https?:\/\//i, '');
 let url = 'http://' + (urlConfig.serviceUrl ? (urlConfig.serviceUrl + (!urlConfig.port ? '' : ':' + urlConfig.port)) : serviceUrl);
 let signupUrl = url + urlConfig.signup;
-
-const getCookie = (name) => {
-    let cookieValues = '; ' + document.cookie;
-    let parts = cookieValues.split('; ' + name + '=');
-
-    if (parts.length >= 2) {
-        return unescape(decodeURIComponent(parts.pop().split(';').shift()));
-    }
-    return '';
-};
 
 export default withDomain(class Footer extends React.Component {
     constructor(props) {

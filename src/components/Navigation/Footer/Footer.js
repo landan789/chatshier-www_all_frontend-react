@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 import { withDomain } from '../../../helpers/i18ndomain.js';
-import CookieHelper from '../../../helpers/cookie';
+import cookieHelper from '../../../helpers/cookie';
 
 import './Footer.css';
 import urlConfig from '../../../config/url-config';
@@ -25,11 +25,10 @@ export default withDomain(class Footer extends React.Component {
     }
 
     componentWillMount() {
-        let name = CookieHelper.get('_chsr_username');
-        let email = CookieHelper.get('_chsr_email');
+        let name = cookieHelper.get('_chsr_username');
+        let email = cookieHelper.get('_chsr_email');
 
         let isSignedin = !!(name && email);
-        console.log('isSignedin: ' + isSignedin);
         this.setState({ isSignedin: isSignedin });
     }
 

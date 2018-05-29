@@ -10,7 +10,7 @@ let serviceUrl = urlConfig.serviceUrl ? urlConfig.serviceUrl : document.domain.r
 serviceUrl += urlConfig.port ? ':' + urlConfig.port : '';
 
 urlConfig.serviceUrl = urlConfig.serviceUrl.replace(/^https?:\/\//i, '');
-let url = 'http://' + (urlConfig.serviceUrl ? (urlConfig.serviceUrl + (!urlConfig.port ? '' : ':' + urlConfig.port)) : serviceUrl);
+let url = '//' + (urlConfig.serviceUrl ? (urlConfig.serviceUrl + (!urlConfig.port ? '' : ':' + urlConfig.port)) : serviceUrl);
 let signupUrl = url + urlConfig.signup;
 
 const First = (props) => {

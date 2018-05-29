@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade, Button } from 'reactstrap';
-import { withDomain } from '../../../config/i18ndomain.js';
+import { withDomain } from '../../../helpers/i18ndomain.js';
 
 import './First.css';
 import homeBanner from '../../../assets/images/banners/homebanner-by-rawpixel.jpg';
@@ -18,16 +18,16 @@ const First = (props) => {
         <Fade className="First" style={{backgroundImage: 'url(' + homeBanner + ')'}}>
             <div className="content">
                 <h1>
-                    <span className="title-line">{props.t('First.title1')}</span>
-                    <span className="title-line">{props.t('First.title2')}</span>
-                    <span className="title-line">{props.t('First.title3')}</span>
+                    <span className="title-line">{props.t('FIRST_TITLE_1')}</span>
+                    <span className="title-line">{props.t('FIRST_TITLE_2')}</span>
+                    <span className="title-line">{props.t('FIRST_TITLE_3')}</span>
                 </h1>
                 <p>
-                    <span className="desc-line">{props.t('First.desc1')}</span>
-                    <span className="desc-line">{props.t('First.desc2')}</span>
+                    <span className="desc-line">{props.t('FIRST_DESC_1')}</span>
+                    <span className="desc-line">{props.t('FIRST_DESC_2')}</span>
                 </p>
-                <Button outline className="btndesktopShow" color="info" href={signupUrl}>{props.t('First.button')}</Button>
-                <Button className="btndesktopHide" color="info" href={signupUrl}>{props.t('First.button')}</Button>
+                <Button outline className="btndesktopShow" color="info" href={signupUrl}>{props.t('FIRST_BUTTON')}</Button>
+                <Button className="btndesktopHide" color="info" href={signupUrl}>{props.t('FIRST_BUTTON')}</Button>
             </div>
             <div className="mask"></div>
         </Fade>

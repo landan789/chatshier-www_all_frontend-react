@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse, UncontrolledDropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
 import { withDomain } from '../../../helpers/i18ndomain.js';
 import urlConfig from '../../../config/url-config';
-import CookieHlp from '../../../helpers/cookie';
+import CookieHelper from '../../../helpers/cookie';
 
 import './Header.css';
 
@@ -20,7 +20,8 @@ let signinUrl = url + urlConfig.login;
 let signupUrl = url + urlConfig.signup;
 let chatUrl = url + urlConfig.chat;
 
-let userName = CookieHlp.get('_chsr_username');
+let cookieHlp = new CookieHelper();
+let userName = cookieHlp.get('_chsr_username');
 
 export default withDomain(class Example extends React.Component {
     constructor(props) {
@@ -36,8 +37,8 @@ export default withDomain(class Example extends React.Component {
 
     componentWillMount() {
         document.title = `${this.props.t('PRODUCT_NAME')} 專業客服整合平台`;
-        let name = CookieHlp.get('_chsr_username');
-        let email = CookieHlp.get('_chsr_email');
+        let name = cookieHlp.get('_chsr_username');
+        let email = cookieHlp.get('_chsr_email');
 
         let isSignedin = !!(name && email);
         console.log('isSignedin: ' + isSignedin);
@@ -51,8 +52,8 @@ export default withDomain(class Example extends React.Component {
     }
 
     signout() {
-        CookieHlp.clear('_chsr_username', cookieDomainRange);
-        CookieHlp.clear('_chsr_email', cookieDomainRange);
+        cookieHlp.clear('_chsr_username', cookieDomainRange);
+        cookieHlp.clear('_chsr_email', cookieDomainRange);
         this.setState({ isSignedin: false });
     }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 import { withDomain } from '../../../helpers/i18ndomain.js';
-import CookieHlp from '../../../helpers/cookie';
+import CookieHelper from '../../../helpers/cookie';
 
 import './Footer.css';
 import urlConfig from '../../../config/url-config';
@@ -12,6 +12,8 @@ serviceUrl += urlConfig.port ? ':' + urlConfig.port : '';
 urlConfig.serviceUrl = urlConfig.serviceUrl.replace(/^https?:\/\//i, '');
 let url = 'http://' + (urlConfig.serviceUrl ? (urlConfig.serviceUrl + (!urlConfig.port ? '' : ':' + urlConfig.port)) : serviceUrl);
 let signupUrl = url + urlConfig.signup;
+
+let cookieHlp = new CookieHelper();
 
 export default withDomain(class Footer extends React.Component {
     constructor(props) {
@@ -25,8 +27,8 @@ export default withDomain(class Footer extends React.Component {
     }
 
     componentWillMount() {
-        let name = CookieHlp.get('_chsr_username');
-        let email = CookieHlp.get('_chsr_email');
+        let name = cookieHlp.get('_chsr_username');
+        let email = cookieHlp.get('_chsr_email');
 
         let isSignedin = !!(name && email);
         console.log('isSignedin: ' + isSignedin);

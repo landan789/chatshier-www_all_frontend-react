@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse, UncontrolledDropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
 import { withDomain } from '../../../helpers/i18ndomain.js';
 import urlConfig from '../../../config/url-config';
+import cookieHelper from '../../../helpers/cookie';
 
 import './Header.css';
 
@@ -10,6 +11,7 @@ import chatshierLogo from '../../../assets/images/logos/user.png';
 
 // ex: wwww.dev.chatshier.com ->  service.dev.chatshier.com
 let serviceUrl = urlConfig.serviceUrl ? urlConfig.serviceUrl : document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');
+let cookieDomainRange = document.domain.replace(/^[\w-]+\./i, '.').replace(/:\d+$/i, '');
 serviceUrl += urlConfig.port ? ':' + urlConfig.port : '';
 
 urlConfig.serviceUrl = urlConfig.serviceUrl.replace(/^https?:\/\//i, '');
@@ -18,17 +20,7 @@ let signinUrl = url + urlConfig.login;
 let signupUrl = url + urlConfig.signup;
 let chatUrl = url + urlConfig.chat;
 
-const getCookie = (name) => {
-    let cookieValues = '; ' + document.cookie;
-    let parts = cookieValues.split('; ' + name + '=');
-
-    if (parts.length >= 2) {
-        return unescape(decodeURIComponent(parts.pop().split(';').shift()));
-    }
-    return '';
-};
-
-let userName = getCookie('_chsr_username');
+let userName = cookieHelper.get('_chsr_username');
 
 export default withDomain(class Example extends React.Component {
     constructor(props) {
@@ -39,15 +31,15 @@ export default withDomain(class Example extends React.Component {
             isSignedin: false,
             isOpen: false
         };
+        this.signout = this.signout.bind(this);
     }
 
     componentWillMount() {
         document.title = `${this.props.t('PRODUCT_NAME')} 專業客服整合平台`;
-        let name = getCookie('_chsr_username');
-        let email = getCookie('_chsr_email');
+        let name = cookieHelper.get('_chsr_username');
+        let email = cookieHelper.get('_chsr_email');
 
         let isSignedin = !!(name && email);
-        console.log('isSignedin: ' + isSignedin);
         this.setState({ isSignedin: isSignedin });
     }
 
@@ -55,6 +47,12 @@ export default withDomain(class Example extends React.Component {
         this.setState({
             isOpen: !this.state.isOpen
         });
+    }
+
+    signout() {
+        cookieHelper.clear('_chsr_username', cookieDomainRange);
+        cookieHelper.clear('_chsr_email', cookieDomainRange);
+        this.setState({ isSignedin: false });
     }
 
     render() {
@@ -96,7 +94,7 @@ export default withDomain(class Example extends React.Component {
                                         </DropdownToggle>
                                         <DropdownMenu id="dropdownMenu">
                                             <DropdownItem>Hi, {userName} 您好！</DropdownItem>
-                                            <DropdownItem>登出</DropdownItem>
+                                            <DropdownItem onClick={this.signout}><NavLink href="/">登出</NavLink></DropdownItem>
                                         </DropdownMenu>
                                     </UncontrolledDropdown>
                                 </NavLink>

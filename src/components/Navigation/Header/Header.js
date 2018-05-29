@@ -20,8 +20,7 @@ let signinUrl = url + urlConfig.login;
 let signupUrl = url + urlConfig.signup;
 let chatUrl = url + urlConfig.chat;
 
-let cookieHlp = new CookieHelper();
-let userName = cookieHlp.get('_chsr_username');
+let userName = CookieHelper.get('_chsr_username');
 
 export default withDomain(class Example extends React.Component {
     constructor(props) {
@@ -37,8 +36,8 @@ export default withDomain(class Example extends React.Component {
 
     componentWillMount() {
         document.title = `${this.props.t('PRODUCT_NAME')} 專業客服整合平台`;
-        let name = cookieHlp.get('_chsr_username');
-        let email = cookieHlp.get('_chsr_email');
+        let name = CookieHelper.get('_chsr_username');
+        let email = CookieHelper.get('_chsr_email');
 
         let isSignedin = !!(name && email);
         console.log('isSignedin: ' + isSignedin);
@@ -52,8 +51,8 @@ export default withDomain(class Example extends React.Component {
     }
 
     signout() {
-        cookieHlp.clear('_chsr_username', cookieDomainRange);
-        cookieHlp.clear('_chsr_email', cookieDomainRange);
+        CookieHelper.clear('_chsr_username', cookieDomainRange);
+        CookieHelper.clear('_chsr_email', cookieDomainRange);
         this.setState({ isSignedin: false });
     }
 

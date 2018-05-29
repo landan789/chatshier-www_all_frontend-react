@@ -14,4 +14,4 @@ class CookieHelper {
     }
 }
 
-export default CookieHelper;
+export default new CookieHelper();

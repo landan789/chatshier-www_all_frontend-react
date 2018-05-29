@@ -13,8 +13,6 @@ urlConfig.serviceUrl = urlConfig.serviceUrl.replace(/^https?:\/\//i, '');
 let url = 'http://' + (urlConfig.serviceUrl ? (urlConfig.serviceUrl + (!urlConfig.port ? '' : ':' + urlConfig.port)) : serviceUrl);
 let signupUrl = url + urlConfig.signup;
 
-let cookieHlp = new CookieHelper();
-
 export default withDomain(class Footer extends React.Component {
     constructor(props) {
         super(props);
@@ -27,8 +25,8 @@ export default withDomain(class Footer extends React.Component {
     }
 
     componentWillMount() {
-        let name = cookieHlp.get('_chsr_username');
-        let email = cookieHlp.get('_chsr_email');
+        let name = CookieHelper.get('_chsr_username');
+        let email = CookieHelper.get('_chsr_email');
 
         let isSignedin = !!(name && email);
         console.log('isSignedin: ' + isSignedin);

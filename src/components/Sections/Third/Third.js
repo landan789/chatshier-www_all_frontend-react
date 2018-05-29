@@ -17,38 +17,38 @@ const Third = (props) => {
             <h1>主要功能</h1>
             <div className='features'>
                 <ProductFeatures
-                    title={props.t('Third.title1')}
-                    description={props.t('Third.desc1')}
+                    title={props.t('THIRD_TITLE_1')}
+                    description={props.t('THIRD_DESC_1')}
                     cta={'了解更多'}
                     image={channelImg}>
                 </ProductFeatures>
                 <ProductFeatures
-                    title={props.t('Third.title2')}
-                    description={props.t('Third.desc2')}
+                    title={props.t('THIRD_TITLE_2')}
+                    description={props.t('THIRD_DESC_2')}
                     cta={'了解更多'}
                     image={platformImg}>
                 </ProductFeatures>
                 <ProductFeatures
-                    title={props.t('Third.title3')}
-                    description={props.t('Third.desc3')}
+                    title={props.t('THIRD_TITLE_3')}
+                    description={props.t('THIRD_DESC_3')}
                     cta={'了解更多'}
                     image={taskImg}>
                 </ProductFeatures>
                 <ProductFeatures
-                    title={props.t('Third.title4')}
-                    description={props.t('Third.desc4')}
+                    title={props.t('THIRD_TITLE_4')}
+                    description={props.t('THIRD_DESC_4')}
                     cta={'了解更多'}
                     image={dataImg}>
                 </ProductFeatures>
                 <ProductFeatures
-                    title={props.t('Third.title5')}
-                    description={props.t('Third.desc5')}
+                    title={props.t('THIRD_TITLE_5')}
+                    description={props.t('THIRD_DESC_5')}
                     cta={'了解更多'}
                     image={payImg}>
                 </ProductFeatures>
                 <ProductFeatures
-                    title={props.t('Third.title6')}
-                    description={props.t('Third.desc6')}
+                    title={props.t('THIRD_TITLE_6')}
+                    description={props.t('THIRD_DESC_6')}
                     cta={'了解更多'}
                     image={marketingImg}>
                 </ProductFeatures>

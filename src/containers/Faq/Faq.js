@@ -18,7 +18,7 @@ class Faq extends Component {
     }
 
     componentWillMount() {
-        document.title = `${this.props.t('Header.title')} 幫助中心`;
+        document.title = `${this.props.t('PRODUCT_NAME')} 幫助中心`;
     }
 
     toggle(tab) {
@@ -41,7 +41,7 @@ class Faq extends Component {
                                 className={classnames({ active: this.state.activeTab === '1' })}
                                 onClick={() => { this.toggle('1'); }}
                             >
-                            關於{this.props.t('Header.title')}
+                            關於{this.props.t('PRODUCT_NAME')}
                             </NavLink>
                         </NavItem>
                         <NavItem>
@@ -66,14 +66,14 @@ class Faq extends Component {
                             <Row>
                                 <Col sm="6" className="col_margin">
                                     <Card body>
-                                        <CardTitle>{this.props.t('About.title1')}</CardTitle>
-                                        <CardText>{this.props.t('About.desc1')}</CardText>
+                                        <CardTitle>{this.props.t('ABOUT_TITLE_1')}</CardTitle>
+                                        <CardText>{this.props.t('ABOUT_DESC_1')}</CardText>
                                     </Card>
                                 </Col>
                                 <Col sm="6" className="col_margin">
                                     <Card body>
-                                        <CardTitle>{this.props.t('About.title2')}</CardTitle>
-                                        <CardText>{this.props.t('About.desc2-1')}<a href="https://medium.com/@chatshier/%E8%A8%8A%E6%81%AF%E4%B8%B2%E6%8E%A5%E8%A8%AD%E5%AE%9A-e112254e25f5" target="_blank">{this.props.t('About.desc2-2')}</a></CardText>
+                                        <CardTitle>{this.props.t('ABOUT_TITLE_2')}</CardTitle>
+                                        <CardText>{this.props.t('ABOUT_DESC_2_1')}<a href="https://medium.com/@chatshier/%E8%A8%8A%E6%81%AF%E4%B8%B2%E6%8E%A5%E8%A8%AD%E5%AE%9A-e112254e25f5" target="_blank">{this.props.t('ABOUT_DESC_2_2')}</a></CardText>
                                     </Card>
                                 </Col>
                             </Row>
@@ -82,36 +82,36 @@ class Faq extends Component {
                             <Row>
                                 <Col sm="6" className="col_margin">
                                     <Card body>
-                                        <CardTitle>{this.props.t('Feature.title1')}</CardTitle>
-                                        <CardText>{this.props.t('Feature.desc1')}</CardText>
+                                        <CardTitle>{this.props.t('FEATURE_TITLE_1')}</CardTitle>
+                                        <CardText>{this.props.t('FEATURE_DESC_1')}</CardText>
                                     </Card>
                                 </Col>
                                 <Col sm="6" className="col_margin">
                                     <Card body>
-                                        <CardTitle>{this.props.t('Feature.title2')}</CardTitle>
-                                        <CardText>{this.props.t('Feature.desc2')}</CardText>
-                                    </Card>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col sm="6" className="col_margin">
-                                    <Card body>
-                                        <CardTitle>{this.props.t('Feature.title3')}</CardTitle>
-                                        <CardText>{this.props.t('Feature.desc3')}</CardText>
-                                    </Card>
-                                </Col>
-                                <Col sm="6" className="col_margin">
-                                    <Card body>
-                                        <CardTitle>{this.props.t('Feature.title4')}</CardTitle>
-                                        <CardText>{this.props.t('Feature.desc4')}</CardText>
+                                        <CardTitle>{this.props.t('FEATURE_TITLE_2')}</CardTitle>
+                                        <CardText>{this.props.t('FEATURE_DESC_2')}</CardText>
                                     </Card>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col sm="6" className="col_margin">
                                     <Card body>
-                                        <CardTitle>{this.props.t('Feature.title5')}</CardTitle>
-                                        <CardText>{this.props.t('Feature.desc5')}</CardText>
+                                        <CardTitle>{this.props.t('FEATURE_TITLE_3')}</CardTitle>
+                                        <CardText>{this.props.t('FEATURE_DESC_3')}</CardText>
+                                    </Card>
+                                </Col>
+                                <Col sm="6" className="col_margin">
+                                    <Card body>
+                                        <CardTitle>{this.props.t('FEATURE_TITLE_4')}</CardTitle>
+                                        <CardText>{this.props.t('FEATURE_DESC_4')}</CardText>
+                                    </Card>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col sm="6" className="col_margin">
+                                    <Card body>
+                                        <CardTitle>{this.props.t('FEATURE_TITLE_5')}</CardTitle>
+                                        <CardText>{this.props.t('FEATURE_DESC_5')}</CardText>
                                     </Card>
                                 </Col>
                             </Row>
@@ -120,28 +120,28 @@ class Faq extends Component {
                             <Row>
                                 <Col sm="6" className="col_margin">
                                     <Card body>
-                                        <CardTitle>{this.props.t('ProductService.title1')}</CardTitle>
-                                        <CardText>{this.props.t('ProductService.desc1')}</CardText>
+                                        <CardTitle>{this.props.t('PRODUCTSERVICE_TITLE_1')}</CardTitle>
+                                        <CardText>{this.props.t('PRODUCTSERVICE_DESC_1')}</CardText>
                                     </Card>
                                 </Col>
                                 <Col sm="6" className="col_margin">
                                     <Card body>
-                                        <CardTitle>{this.props.t('ProductService.title2')}</CardTitle>
-                                        <CardText>{this.props.t('ProductService.desc2')}</CardText>
+                                        <CardTitle>{this.props.t('PRODUCTSERVICE_TITLE_2')}</CardTitle>
+                                        <CardText>{this.props.t('PRODUCTSERVICE_DESC_2')}</CardText>
                                     </Card>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col sm="6" className="col_margin">
                                     <Card body>
-                                        <CardTitle>{this.props.t('ProductService.title3')}</CardTitle>
-                                        <CardText>{this.props.t('ProductService.desc3')}</CardText>
+                                        <CardTitle>{this.props.t('PRODUCTSERVICE_TITLE_3')}</CardTitle>
+                                        <CardText>{this.props.t('PRODUCTSERVICE_DESC_3')}</CardText>
                                     </Card>
                                 </Col>
                                 <Col sm="6" className="col_margin">
                                     <Card body>
-                                        <CardTitle>{this.props.t('ProductService.title4')}</CardTitle>
-                                        <CardText>{this.props.t('ProductService.desc4')}</CardText>
+                                        <CardTitle>{this.props.t('PRODUCTSERVICE_TITLE_4')}</CardTitle>
+                                        <CardText>{this.props.t('PRODUCTSERVICE_DESC_4')}</CardText>
                                     </Card>
                                 </Col>
                             </Row>

@@ -42,7 +42,7 @@ export default withDomain(class Example extends React.Component {
     }
 
     componentWillMount() {
-        document.title = `${this.props.t('Header.title')} 專業客服整合平台`;
+        document.title = `${this.props.t('PRODUCT_NAME')} 專業客服整合平台`;
         let name = getCookie('_chsr_username');
         let email = getCookie('_chsr_email');
 
@@ -61,7 +61,7 @@ export default withDomain(class Example extends React.Component {
         return (
             <div className="Header">
                 <Navbar color="faded" light expand="md">
-                    <NavbarBrand href="/">{this.props.t('Header.title')}</NavbarBrand>
+                    <NavbarBrand href="/">{this.props.t('PRODUCT_NAME')}</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>

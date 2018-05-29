@@ -76,7 +76,7 @@ class Contact extends Component {
                             <FormGroup check>
                                 <Label check>
                                     <Input type="checkbox" />{' '}
-                                    我同意 {this.props.t('Header.title')} <a href="/terms">Service &amp; Terms</a>.
+                                    我同意 {this.props.t('PRODUCT_NAME')} <a href="/terms">Service &amp; Terms</a>.
                                 </Label>
                             </FormGroup>
                             <Button

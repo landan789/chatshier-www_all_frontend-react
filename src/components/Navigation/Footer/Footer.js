@@ -51,7 +51,7 @@ export default withDomain(class Footer extends React.Component {
     render() {
         return (
             <div className="Footer">
-                <h3>{this.props.t('Footer.title')}</h3>
+                <h3>{this.props.t('FOOTER_TITLE')}</h3>
                 <Button outline
                     size="sm"
                     color="info"
@@ -68,7 +68,7 @@ export default withDomain(class Footer extends React.Component {
                         <a href="/privacy" target="_blank">隱私權條款</a>
                     </p>
                     <hr/>
-                    <span>©2018 {this.props.t('Header.title')} All Right Reserved</span>
+                    <span>©2018 {this.props.t('PRODUCT_NAME')} All Right Reserved</span>
                 </div>
             </div>
         );

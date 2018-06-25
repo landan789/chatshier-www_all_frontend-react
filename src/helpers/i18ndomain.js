@@ -1,13 +1,12 @@
 import i18nDomain from 'i18next';
 import Backend from 'i18next-xhr-backend';
 import { reactI18nextModule, translate } from 'react-i18next';
-import DOMAINS from '../config/domain';
+import CHATSHIER from '../config/chatshier';
 
 let serviceUrl = document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');
-// let isDsdsds = serviceUrl.includes('dsdsds.com.tw');
 
 i18nDomain.use(Backend).use(reactI18nextModule).init({
-    lng: _setDomain(DOMAINS),
+    lng: _setDomain(CHATSHIER.DOMAINS),
     debug: false,
     react: {
         wait: true

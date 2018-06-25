@@ -15,6 +15,7 @@ import Contact from './containers/Contact/Contact';
 import Privacy from './containers/Privacy/Privacy';
 
 import './helpers/i18ndomain';
+import './helpers/googleAnalytics';
 
 const routes = [
     {

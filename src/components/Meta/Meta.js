@@ -24,8 +24,8 @@ const Meta = (props) => (
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:description" content={`"${props.t('META_DESCRIPTION')}"`}/>
         <meta name="description" content={`"${props.t('META_DESCRIPTION')}"`}/>
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
-        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"/>
+        <link rel="manifest" href="/manifest.json"/>
+        <link rel="shortcut icon" href="/favicon.ico"/>
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossOrigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossOrigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:700" rel="stylesheet"/>

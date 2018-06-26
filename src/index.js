@@ -1,4 +1,5 @@
 import React from 'react';
+import Aux from 'react-aux';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 
@@ -13,6 +14,7 @@ import Blog from './containers/Blog/Blog';
 import Terms from './containers/Terms/Terms';
 import Contact from './containers/Contact/Contact';
 import Privacy from './containers/Privacy/Privacy';
+import MetaElements from './components/Meta/Meta';
 
 import './helpers/i18ndomain';
 import './helpers/google_analytics';
@@ -51,16 +53,19 @@ const routes = [
 ];
 
 ReactDOM.render(
-    <BrowserRouter>
-        <Switch>
-            {routes.map((route) => (
-                <Route key={route.path}
-                    exact={route.exact}
-                    path={route.path}
-                    component={route.component} />
-            ))}
-            <Redirect to={ROUTES.APP}/>
-        </Switch>
-    </BrowserRouter>,
+    <Aux>
+        <MetaElements />
+        <BrowserRouter>
+            <Switch>
+                {routes.map((route) => (
+                    <Route key={route.path}
+                        exact={route.exact}
+                        path={route.path}
+                        component={route.component} />
+                ))}
+                <Redirect to={ROUTES.APP}/>
+            </Switch>
+        </BrowserRouter>
+    </Aux>,
     document.getElementById('root'));
 registerServiceWorker();

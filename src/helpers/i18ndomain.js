@@ -17,7 +17,8 @@ i18nDomain.use(Backend).use(reactI18nextModule).init({
 });
 
 function _setDomain(domains) {
-    let result = domains.filter((domain) => serviceUrl.includes(domain)).pop();
+    let domainsArr = Object.values(domains)
+    let result = domainsArr.filter((domain) => serviceUrl.includes(domain)).pop();
     return result;
 }
 

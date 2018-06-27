@@ -2,8 +2,8 @@ var fs = require('fs');
 var createHTML = require('create-html');
 
 return Promise.all([
-    fs.readFileSync('./public/head-chatshier.html', {encoding: 'utf8'}),
-    fs.readFileSync('./public/body.html', {encoding: 'utf8'})
+    fs.readFileSync('./bin/head-chatshier.html', {encoding: 'utf8'}),
+    fs.readFileSync('./bin/body.html', {encoding: 'utf8'})
 ]).then((readFileOutput) => {
     let head = readFileOutput[0];
     let body = readFileOutput[1];

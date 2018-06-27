@@ -23,7 +23,14 @@ services:
 DEVELOP:
   stage: WWW-CHATSHIER
   script:
+    - npm run pre-build chatshier
+    - npm run build
     - firebase use dev-chatshier --token ${FIREBASE_DEV_TOKEN}
+    - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
+
+    - npm run pre-build dsdsds
+    - npm run build
+    - firebase use dev-dsdsds --token ${FIREBASE_DEV_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
   only:
     refs:
@@ -32,7 +39,14 @@ DEVELOP:
 RELEASE:
   stage: WWW-CHATSHIER
   script:
+    - npm run pre-build chatshier
+    - npm run build
     - firebase use rel-chatshier --token ${FIREBASE_REL_TOKEN}
+    - firebase deploy --only hosting --token ${FIREBASE_REL_TOKEN}
+
+    - npm run pre-build dsdsds
+    - npm run build
+    - firebase use rel-dsdsds --token ${FIREBASE_REL_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_REL_TOKEN}
   only:
     refs:
@@ -41,7 +55,14 @@ RELEASE:
 MASTER:
   stage: WWW-CHATSHIER
   script:
+    - npm run pre-build chatshier
+    - npm run build
     - firebase use chatshier --token ${FIREBASE_TOKEN}
+    - firebase deploy --only hosting --token ${FIREBASE_TOKEN}
+
+    - npm run pre-build dsdsds
+    - npm run build
+    - firebase use dsdsds --token ${FIREBASE_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_TOKEN}
   only:
     refs:

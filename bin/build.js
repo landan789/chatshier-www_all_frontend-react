@@ -1,9 +1,11 @@
 var fs = require('fs');
 var createHTML = require('create-html');
 
+var domain = getDomainName();
+
 return Promise.all([
-    fs.readFileSync('./bin/head-chatshier.html', {encoding: 'utf8'}),
-    fs.readFileSync('./bin/body.html', {encoding: 'utf8'})
+    fs.readFileSync(`./pub/head-${domain}.html`, {encoding: 'utf8'}),
+    fs.readFileSync('./pub/body.html', {encoding: 'utf8'})
 ]).then((readFileOutput) => {
     let head = readFileOutput[0];
     let body = readFileOutput[1];
@@ -12,3 +14,12 @@ return Promise.all([
 }).catch((ERR) => {
     console.log(ERR);
 });
+
+function getDomainName() {
+    switch (process.argv[2]) {
+        case 'dsdsds':
+            return 'dsdsds'
+        default:
+            return 'chatshier'
+    }
+}

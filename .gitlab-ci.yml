@@ -26,7 +26,7 @@ DEVELOP:
     - npm run build
     - firebase use dev-chatshier --token ${FIREBASE_DEV_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
-
+    - ls ./public
     - npm run pre-build dsdsds
     - npm run build
     - firebase use dev-dsdsds --token ${FIREBASE_DEV_TOKEN}

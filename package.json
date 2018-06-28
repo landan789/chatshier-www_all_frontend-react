@@ -7,7 +7,7 @@
     "start-js": "react-scripts start",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ -w -r",
     "pre-build": "node ./bin/build.js",
-    "build": "npm-run-all build-css build-js && rm -rf ./public/index.html",
+    "build": "npm-run-all build-css build-js",
     "build-js": "react-scripts build",
     "build-css": "node-sass-chokidar src/ -o src/"
   },

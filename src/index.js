@@ -14,7 +14,6 @@ import Blog from './containers/Blog/Blog';
 import Terms from './containers/Terms/Terms';
 import Contact from './containers/Contact/Contact';
 import Privacy from './containers/Privacy/Privacy';
-import MetaElements from './components/Meta/Meta';
 
 import './helpers/i18ndomain';
 import './helpers/google_analytics';
@@ -54,7 +53,6 @@ const routes = [
 
 ReactDOM.render(
     <Aux>
-        <MetaElements />
         <BrowserRouter>
             <Switch>
                 {routes.map((route) => (

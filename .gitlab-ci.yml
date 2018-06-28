@@ -22,21 +22,23 @@ services:
 DEVELOP:
   stage: WWW-CHATSHIER
   script:
-    - rm -rf ./public/index.html
     - npm run pre-build chatshier
+    - cat ./build/index.html
+    - ls ./build
     - npm run build
     - rm -rf ./public/index.html
+    - cat ./build/index.html
     - firebase use dev-chatshier --token ${FIREBASE_DEV_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
-    - rm -rf ./public/index.html
-    - ls ./public
-    - rm -rf ./public/index.html
+
     - npm run pre-build dsdsds
+    - cat ./build/index.html
+    - ls ./build
     - npm run build
     - rm -rf ./public/index.html
+    - cat ./build/index.html
     - firebase use dev-dsdsds --token ${FIREBASE_DEV_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
-    - rm -rf ./public/index.html
   only:
     refs:
       - develop

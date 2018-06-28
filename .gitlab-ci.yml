@@ -12,7 +12,6 @@ before_script:
   - npm install
   - unset CI # clear the node evironment 'CI' in Docker  
   - cp src/config/url-config-dev.js src/config/url-config.js
-  - npm run build
 
 # Pick zero or more services to be used on all builds.
 # Only needed when using a docker container to run your tests in.

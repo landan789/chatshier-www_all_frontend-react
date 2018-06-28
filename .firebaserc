@@ -1,9 +1,10 @@
 {
   "projects": {
-    "dev-chatshier": "dev-chatshier",
-    "rel-chatshier": "rel-chatshier",
     "chatshier": "chatshier-d4dfd",
-    "dev-dsdsds": "dev-dsdsds",
-    "rel-dsdsds": "rel-dsdsds-9ca66"
+    "dsdsds": "dsdsds-bf1dd",
+    "rel-chatshier": "rel-chatshier",
+    "rel-dsdsds": "rel-dsdsds-9ca66",
+    "dev-chatshier": "dev-chatshier",
+    "dev-dsdsds": "dev-dsdsds"
   }
 }

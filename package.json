@@ -6,7 +6,8 @@
     "start": "npm-run-all -p watch-css start-js",
     "start-js": "react-scripts start",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ -w -r",
-    "build": "npm-run-all build-css build-js",
+    "pre-build": "node ./bin/build.js",
+    "build": "npm-run-all build-css build-js && rm -rf ./public/index.html",
     "build-js": "react-scripts build",
     "build-css": "node-sass-chokidar src/ -o src/"
   },
@@ -31,6 +32,7 @@
     "@types/react": "16.3.13",
     "@types/react-redux": "5.0.19",
     "@types/react-router-redux": "5.0.13",
+    "create-html": "^4.1.0",
     "eslint": "4.19.1",
     "eslint-plugin-import": "2.11.0",
     "eslint-plugin-promise": "3.7.0",

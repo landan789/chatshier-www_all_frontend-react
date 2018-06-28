@@ -24,17 +24,11 @@ DEVELOP:
   script:
     - npm run pre-build chatshier
     - npm run build
-    - cat ./build/index.html
-    - ls ./build
-    - rm -rf ./public/index.html
     - firebase use dev-chatshier --token ${FIREBASE_DEV_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
 
     - npm run pre-build dsdsds
     - npm run build
-    - cat ./build/index.html
-    - ls ./build
-    - rm -rf ./public/index.html
     - firebase use dev-dsdsds --token ${FIREBASE_DEV_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
   only:

@@ -12,7 +12,6 @@ before_script:
   - npm install
   - unset CI # clear the node evironment 'CI' in Docker  
   - cp src/config/url-config-dev.js src/config/url-config.js
-  - npm run build
 
 # Pick zero or more services to be used on all builds.
 # Only needed when using a docker container to run your tests in.
@@ -23,7 +22,14 @@ services:
 DEVELOP:
   stage: WWW-CHATSHIER
   script:
+    - npm run pre-build chatshier
+    - npm run build
     - firebase use dev-chatshier --token ${FIREBASE_DEV_TOKEN}
+    - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
+
+    - npm run pre-build dsdsds
+    - npm run build
+    - firebase use dev-dsdsds --token ${FIREBASE_DEV_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_DEV_TOKEN}
   only:
     refs:
@@ -32,7 +38,14 @@ DEVELOP:
 RELEASE:
   stage: WWW-CHATSHIER
   script:
+    - npm run pre-build chatshier
+    - npm run build
     - firebase use rel-chatshier --token ${FIREBASE_REL_TOKEN}
+    - firebase deploy --only hosting --token ${FIREBASE_REL_TOKEN}
+
+    - npm run pre-build dsdsds
+    - npm run build
+    - firebase use rel-dsdsds --token ${FIREBASE_REL_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_REL_TOKEN}
   only:
     refs:
@@ -41,7 +54,14 @@ RELEASE:
 MASTER:
   stage: WWW-CHATSHIER
   script:
+    - npm run pre-build chatshier
+    - npm run build
     - firebase use chatshier --token ${FIREBASE_TOKEN}
+    - firebase deploy --only hosting --token ${FIREBASE_TOKEN}
+
+    - npm run pre-build dsdsds
+    - npm run build
+    - firebase use dsdsds --token ${FIREBASE_TOKEN}
     - firebase deploy --only hosting --token ${FIREBASE_TOKEN}
   only:
     refs:

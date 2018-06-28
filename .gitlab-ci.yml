@@ -22,8 +22,8 @@ services:
 DEVELOP:
   stage: WWW-CHATSHIER
   script:
-    - rm -rf ./public/index.html
     - npm run pre-build chatshier
+    - ls ./build
     - npm run build
     - rm -rf ./public/index.html
     - firebase use dev-chatshier --token ${FIREBASE_DEV_TOKEN}
@@ -32,6 +32,7 @@ DEVELOP:
     - ls ./public
     - rm -rf ./public/index.html
     - npm run pre-build dsdsds
+    - ls ./build
     - npm run build
     - rm -rf ./public/index.html
     - firebase use dev-dsdsds --token ${FIREBASE_DEV_TOKEN}

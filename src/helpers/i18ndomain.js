@@ -3,8 +3,7 @@ import Backend from 'i18next-xhr-backend';
 import { reactI18nextModule, translate } from 'react-i18next';
 import CHATSHIER from '../config/chatshier';
 
-let domain = document.domain;
-let domainName = domain.replace(/^[\w-]+\./i, '').replace(/^rel\./i,'').replace(/^dev\./i,'').replace(/com\.tw$/i,'').replace(/\.tw$/i,'');
+let domainName = document.domain.replace(/^[w{3}]+\./i, '').replace(/^rel\./i,'').replace(/^dev\./i,'').replace(/com\.tw$/i,'').replace(/\.tw$/i,'');
 
 i18nDomain.use(Backend).use(reactI18nextModule).init({
     lng: CHATSHIER.DOMAINS[domainName] || 'chatshier',

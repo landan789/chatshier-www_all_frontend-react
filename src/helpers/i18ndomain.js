@@ -5,6 +5,8 @@ import CHATSHIER from '../config/chatshier';
 
 let domainName = document.domain.replace(/^[w{3}]+\./i, '').replace(/^rel\./i,'').replace(/^dev\./i,'').replace(/com\.tw$/i,'').replace(/\.tw$/i,'');
 
+domainName = domainName.toUpperCase();
+
 i18nDomain.use(Backend).use(reactI18nextModule).init({
     lng: CHATSHIER.DOMAINS[domainName] || 'chatshier',
     debug: false,

@@ -3,7 +3,7 @@ import Backend from 'i18next-xhr-backend';
 import { reactI18nextModule, translate } from 'react-i18next';
 import CHATSHIER from '../config/chatshier';
 
-let domainName = document.domain.replace(/^[w{3}]+\./i, '').replace(/^rel\./i,'').replace(/^dev\./i,'').replace(/com\.tw$/i,'').replace(/\.tw$/i,'');
+let domainName = document.domain.replace(/^[w{3}]+\./i, '').replace(/^rel\./i,'').replace(/^dev\./i,'').replace(/\.com\.tw$/i,'').replace(/\.tw$/i,'');
 
 domainName = domainName.toUpperCase();
 

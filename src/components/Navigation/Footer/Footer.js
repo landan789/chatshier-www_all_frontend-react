@@ -6,6 +6,7 @@ import cookieHelper from '../../../helpers/cookie';
 import './Footer.css';
 import urlConfig from '../../../config/url-config';
 // ex: wwww.dev.chatshier.com ->  service.dev.chatshier.com
+// TODO React Component will not have this method
 let serviceUrl = urlConfig.serviceUrl ? urlConfig.serviceUrl : document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');
 serviceUrl += urlConfig.port ? ':' + urlConfig.port : '';
 
@@ -51,7 +52,7 @@ export default withDomain(class Footer extends React.Component {
                     <i class="fas fa-map-marker-alt"></i><span> 台北市信義區信義路四段415號9樓-8</span>
                 </p>
                 <p className="mt-3 font-weight-bold">
-                    <i class="fas fa-envelope"></i><span>{this.props.t('SUPPORT_EMAIL')}</span>
+                    <i class="fas fa-envelope"></i><span> {this.props.t('SUPPORT_EMAIL')}</span>
                 </p>    
                 <p className="mt-3 font-weight-bold">
                     <i class="fas fa-phone"></i><span> 02-27583626</span>

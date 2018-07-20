@@ -37,7 +37,6 @@ export default withDomain(class Footer extends React.Component {
             modal: !this.state.modal
         });
     }
-
     render() {
         return (
             <div className="Footer">
@@ -49,8 +48,14 @@ export default withDomain(class Footer extends React.Component {
                     className={this.state.isSignedin ? 'hidden' : ''}>立即申請</Button>{' '}
                 <Button outline size="sm" color="info" href="https://chatshier.typeform.com/to/c7Q8yS" target="_blank">與我們聯繫</Button>
                 <p className="mt-3 font-weight-bold">
-                    <span>地址 : 台北市信義區信義路四段415號9樓-8</span>
+                    <i class="fas fa-map-marker-alt"></i><span>: 台北市信義區信義路四段415號9樓-8</span>
                 </p>
+                <p className="mt-3 font-weight-bold">
+                    <i class="fas fa-envelope"></i><span>: support@chatshier.com</span>
+                </p>    
+                <p className="mt-3 font-weight-bold">
+                    <i class="fas fa-phone"></i><span>: 02-27583626</span>
+                </p>                
                 <div className="Footer__second">
                     <p>
                         <a href="/terms" target="_blank">服務條款</a>

@@ -35,7 +35,7 @@ export default withDomain(class Example extends React.Component {
     }
 
     componentWillMount() {
-        document.title = ${this.props.t('PRODUCT_NAME')};
+        document.title = this.props.t('PRODUCT_NAME');
         let name = cookieHelper.get('_chsr_username');
         let email = cookieHelper.get('_chsr_email');
 

@@ -10,8 +10,8 @@ import './Header.css';
 import chatshierLogo from '../../../assets/images/logos/user.png';
 
 // ex: wwww.dev.chatshier.com ->  service.dev.chatshier.com
-let serviceUrl = urlConfig.serviceUrl ? urlConfig.serviceUrl : document.domain.replace(/^[\w-]+\./i, 'service.').replace(/:\d+$/i, '');
-let cookieDomainRange = document.domain.replace(/^[\w-]+\./i, '.').replace(/:\d+$/i, '');
+let serviceUrl = urlConfig.serviceUrl ? urlConfig.serviceUrl : document.domain.replace(/^[\w-]+\./i, '').replace(/^/i, 'service.').replace(/:\d+$/i, '');
+let cookieDomainRange = document.domain.replace(/^[\w-]+\./i,'').replace(/^/i, '.').replace(/:\d+$/i, '');
 serviceUrl += urlConfig.port ? ':' + urlConfig.port : '';
 
 urlConfig.serviceUrl = urlConfig.serviceUrl.replace(/^https?:\/\//i, '');

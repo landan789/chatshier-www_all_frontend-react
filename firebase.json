@@ -6,9 +6,21 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [ {
+    "rewrites": [{
+      "source": "/robots.txt",
+      "destination": "/robots.txt"
+    }, {
+      "source": "/sitemap-chatshier.xml",
+      "destination": "/sitemap-chatshier.xml"
+    }, {
+      "source": "/sitemap-dsdsds.xml",
+      "destination": "/sitemap-dsdsds.xml"
+    }, {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap.xml"
+    }, {
       "source": "**",
       "destination": "/index.html"
-    } ]
+    }]
   }
 }

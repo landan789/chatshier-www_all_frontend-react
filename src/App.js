@@ -3,6 +3,7 @@ import './App.css';
 import Toolbar from './components/Navigation/Toolbar/Toolbar';
 import Home from './containers/Home/Home';
 import Footer from './components/Navigation/Footer/Footer';
+import SocialMedia from './components/SocialMedia/SocialMedia';
 
 class App extends Component {
     render() {
@@ -11,6 +12,7 @@ class App extends Component {
                 <Toolbar/>
                 <Home/>
                 <Footer />
+                <SocialMedia />
             </div>
         );
     }
